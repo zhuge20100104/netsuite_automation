@@ -1,0 +1,1 @@
+com.netsuite.chinalocalization.vat.p2.ChinaVATCanBeSavedTest#test_6_3_1|com.netsuite.common.P2, com.netsuite.common.OW|Fail

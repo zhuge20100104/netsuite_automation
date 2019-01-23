@@ -1,0 +1,19 @@
+{
+  "test_1_14_2_1":{
+    "labels":{
+      "subsidiary":"Parent Company : China BU",
+      "periodFrom":"Aug 2016",
+      "periodTo": "Aug 2016",
+      "tranDateFrom":"8/2/2016",
+      "tranDateTo":"8/2/2016"
+    },
+    "expect":{
+      "trandate":"8/2/2016",
+      "fileName":"记账凭证",
+      "title":"记账凭证",
+      "expectedAmount":"21"
+    }
+
+  }
+
+}

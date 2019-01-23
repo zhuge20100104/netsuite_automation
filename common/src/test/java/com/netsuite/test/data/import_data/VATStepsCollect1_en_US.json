@@ -1,0 +1,374 @@
+{
+  "createInvoice": [
+    {
+      "define":{
+        "#invoiceData":[
+
+          { "main": {
+            "trantype": "invoice",
+            "entity": "Mini Cooper",
+            "trandate": "6/1/2018",
+            "postingperiod": "Jun 2018",
+            "location": "Munich",
+            "currency": "DEU",
+            "exchangerate": "1",
+            "memo": "one item and fully pay"
+          },
+            "item": [
+              {
+                "item": "Term12_EMEA Non-inventory Item for Sale 1",
+                "quantity": "1",
+                "amount": "1000.00",
+                "taxcode": "RR-DE-19%",
+                "tax1amt":"239.00"
+              }
+            ]
+          }
+
+        ]
+      }
+    },
+
+
+    {
+
+      "createRecord": {
+        "data":"#invoiceData",
+        "ret":"#dirtyData"
+      }
+    }
+  ],
+
+
+
+
+  "createInvoice1": [
+
+    {
+
+      "createRecord": {
+        "data":[
+
+          { "main": {
+            "trantype": "invoice",
+            "entity": "Mini Cooper",
+            "trandate": "6/1/2018",
+            "postingperiod": "Jun 2018",
+            "location": "Munich",
+            "currency": "DEU",
+            "exchangerate": "1",
+            "memo": "one item and fully pay"
+          },
+            "item": [
+              {
+                "item": "Term12_EMEA Non-inventory Item for Sale 1",
+                "quantity": "1",
+                "amount": "1000.00",
+                "taxcode": "RR-DE-19%",
+                "tax1amt":"239.00"
+              }
+            ]
+          }
+
+        ],
+        "ret":"#dirtyData"
+      }
+    }
+
+
+  ],
+
+  "updateRevenueArrangementAndPlans":[
+    {
+      "click":{
+        "type:value":"id:managerevenuearrangements"
+      }
+    },
+    {
+      "sleep":{
+        "secs":"20"
+      }
+    },
+    {
+      "click":{
+        "type:value":"id:managerevenueplans"
+      }
+    },
+    {
+      "sleep":{
+        "secs":"20"
+      }
+    }
+
+  ],
+
+  "createRevenueRecognitionJournalEntries0": [
+    {
+      "define":{
+        "#entryData0": { "main": {
+
+          "postingperiod":"Jun 2018",
+          "trandate":"6/30/2018",
+          "subsidiary":"Germany Company 01",
+          "revrecsource":"Revenue Recognition Plans",
+
+
+          "trantype":"Revenue Arrangement",
+          "entitytype":"Mini Cooper",
+
+
+          "itemtype":"Non-inventory Item",
+          "deferralaccount":"Deferred Revenue"
+        }
+        }
+      }
+    },
+
+    {
+      "setCurrentRecord": {
+        "data":"#entryData0"
+      }
+    },
+    {
+      "sleep":{
+        "secs":"5"
+      }
+    },
+    {
+      "click":{
+        "type:value":"id:createjebtn"
+      }
+    }
+  ],
+
+
+  "createRevenueRecognitionJournalEntries1": [
+    {
+      "define":{
+        "#entryData1": { "main": {
+
+          "postingperiod":"Jul 2018",
+          "trandate":"7/31/2018",
+          "subsidiary":"Germany Company 01",
+          "revrecsource":"Revenue Recognition Plans",
+
+
+          "trantype":"Revenue Arrangement",
+          "entitytype":"Mini Cooper",
+
+
+          "itemtype":"Non-inventory Item",
+          "deferralaccount":"Deferred Revenue"
+        }
+        }
+      }
+    },
+
+    {
+      "setCurrentRecord": {
+        "data":"#entryData1"
+      }
+    },
+    {
+      "sleep":{
+        "secs":"5"
+      }
+    },
+    {
+      "click":{
+        "type:value":"id:createjebtn"
+      }
+    }
+  ],
+
+
+  "submitVAT0":[
+    {
+      "selectItem":{
+        "type:value:item":"xpath://*[@id='custpage_subsidiary_fs']:Germany Company 01"
+      }
+    },
+    {
+      "selectItem":{
+        "type:value:item":"xpath://*[@id='custpage_period_fs']:Jun 2018"
+      }
+    },
+    {
+      "click":{
+        "type:value":"id:custpage_submit"
+      }
+    },
+    {
+      "waitForPageToLoad":{
+
+      }
+    }
+  ],
+
+
+
+  "submitVAT1":[
+    {
+      "selectItem":{
+        "type:value:item":"xpath://*[@id='custpage_subsidiary_fs']:Germany Company 01"
+      }
+    },
+    {
+      "selectItem":{
+        "type:value:item":"xpath://*[@id='custpage_period_fs']:Jul 2018"
+      }
+    },
+    {
+      "click":{
+        "type:value":"id:custpage_submit"
+      }
+    },
+    {
+      "waitForPageToLoad":{
+
+      }
+    }
+  ],
+
+
+  "fullPay0":[
+    {
+      "selectItem":{
+        "type:name:item":"xpath://*[@id='customer_fs']:Mini Cooper"
+      }
+    },
+    {
+      "getDirtyDataInternalId":{
+        "index":"0",
+        "ret":"#internalid0"
+      }
+    }
+    ,
+    {
+      "findField":{
+        "recordType:inField:inValue:outField":"invoice:internalid:#internalid0:tranid",
+        "ret":"#tranid0"
+      }
+    },
+    {
+      "selectInvoiceCheckBox":{
+        "tranid":"#tranid0"
+      }
+    },
+    {
+      "click":{
+        "type:value":"id:btn_secondarymultibutton_submitter"
+      }
+    }
+  ],
+
+
+
+
+  "createRevenueRecognitionJournalEntries2": [
+    {
+      "define":{
+        "#entryData2":  { "main": {
+
+          "postingperiod":"Aug 2018",
+          "trandate":"8/31/2018",
+          "subsidiary":"Germany Company 01",
+          "revrecsource":"Revenue Recognition Plans",
+
+
+          "trantype":"Revenue Arrangement",
+          "entitytype":"Mini Cooper",
+
+
+          "itemtype":"Non-inventory Item",
+          "deferralaccount":"Deferred Revenue"
+        }
+        }
+      }
+    },
+
+    {
+      "setCurrentRecord": {
+        "data":"#entryData2"
+      }
+    },
+    {
+      "sleep":{
+        "secs":"5"
+      }
+    },
+    {
+      "click":{
+        "type:value":"id:createjebtn"
+      }
+    }
+  ],
+
+
+
+  "submitVAT2":[
+    {
+      "selectItem":{
+        "type:value:item":"xpath://*[@id='custpage_subsidiary_fs']:Germany Company 01"
+      }
+    },
+    {
+      "selectItem":{
+        "type:value:item":"xpath://*[@id='custpage_period_fs']:Aug 2018"
+      }
+    },
+    {
+      "click":{
+        "type:value":"id:custpage_submit"
+      }
+    },
+    {
+      "waitForPageToLoad":{
+
+      }
+    }
+  ],
+
+
+
+
+
+
+  "fun1": [
+    {
+      "getObject": {
+        "ret": "#obj"
+      }
+    },
+    {
+      "printObject": {
+        "obj": "#obj"
+      }
+    },
+    {
+      "findByTranId": {
+        "tranId": "11",
+        "ret": "#internalId"
+      }
+    },
+    {
+      "printId": {
+        "internalId": "#internalId"
+      }
+    },
+    {
+      "navigateToPage": {
+      }
+    },
+    {
+      "sleep": {
+        "Sec": "10"
+      }
+    },
+    {
+      "setFieldText": {
+        "type:name:value": "id:itemid:non_inventory_Item_for_resale"
+      }
+    }
+  ]
+}

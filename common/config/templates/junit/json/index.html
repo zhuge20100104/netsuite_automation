@@ -1,0 +1,41 @@
+<body class="clear">
+<div class='body_wrapper'>
+    <div class='test_results tr_exec_summary'>
+        <div class = 'header_wrapper'>
+            <h1><span class='header_text'>Test Execution Results </span>
+                <span class='header_stats'>
+                    [
+                    <span class='tests_passed'><span class='count'></span> passed, </span>
+                    <span class='tests_failed'><span class='count'></span> failed, </span>
+					<span class='tests_ignored'><span class='count'></span> ignored : </span>
+                    <span class='duration'><span class='count'></span></span>
+                    ]
+                </span>
+            </h1>
+        </div>
+        <div class ='test_details'>
+        </div>
+        <div class='datatable_wrapper'>
+            <table class="results_datatable"></table>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function() {
+        TestResultsRenderer.init().start();
+    });
+</script>
+<div id="error_message_dialog" style="display:none; font-size: 12px;">
+    <span style="font-weight:bold;color: red;">An error occurred while loading data.</span>
+    <br/><br/>This might be an Access-Control-Allow-Origin related error and could be resolved by using either
+    Firefox or Internet Explorer.
+    <br/><br/>If you must use Chrome, please close all open chrome windows/instances and re-launch chrome from
+    the command line with the following arguments : "--allow-file-access-from-files"
+    <br/><br/>e.g. (From the Windows command prompt)
+    <br/>prompt> "C:\Program Files\Google Chrome\chrome.exe" --allow-file-access-from-files
+    <br/><br/><i>Note that this enables <span style='font-weight:bold;'>LOCAL FILE ACCESS</span>. Use this mode for
+    this purpose ONLY and refrain from browsing other sites that may take advantage of risks while on this setting.</i>
+    <br/>
+    <br/>
+</div>
+</body>

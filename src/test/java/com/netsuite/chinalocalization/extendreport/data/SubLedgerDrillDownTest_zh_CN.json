@@ -1,0 +1,191 @@
+{
+    "docNum":"无",
+    "test_case_8_1_1": {
+        "filter" : {
+            "subsidiary" : "中国 SubLedger 03",
+            "datefrom" : "2018/5/1",
+            "dateto" : "2018/5/31",
+            "accountfrom" : "6003 - 企业营业收入&(Special)",
+            "accountto" : "6003 - 企业营业收入&(Special)",
+            "accountlevel" : "至末级"
+        },
+        "expectedResult" : {
+            "account" : [
+                "6003 - 企业营业收入&(Special)",
+                "6003-02 - 服务类收入&(Special)",
+                "6003.01 - 产品类收入&(Special)"
+            ],
+            "subtitle" : "中国明细账",
+            "journaltype" : "日记账",
+
+            "filter" : {
+                "subsidiary" : "中国 SubLedger 03",
+                "datefrom" : "2018/5/1",
+                "dateto" : "2018/5/31",
+                "accountfrom" : "6003-02 - 服务类收入&(Special)",
+                "accountto" : "6003-02 - 服务类收入&(Special)"
+            },
+            "gltitle" : "总账影响",
+            "glaccount" : [
+                "6003-02 服务类收入&(Special)"
+            ],
+            "glreturn" : "返回至"
+
+        }
+    },
+    "test_case_8_1_2": {
+
+        "filter": {
+            "subsidiary": "中国 SubLedger 03",
+            "datefrom": "2018/5/1",
+            "dateto": "2018/5/31",
+            "accountfrom": "6003 - 企业营业收入&(Special)",
+            "accountto":"6003 - 企业营业收入&(Special)",
+            "accountlevel": "至末级"
+        },
+        "expectedResult": {
+            "account":[
+                "6003 - 企业营业收入&(Special)",
+                "6003-02 - 服务类收入&(Special)",
+                "6003.01 - 产品类收入&(Special)"
+            ],
+            "subtitle":"中国明细账",
+            "journaltype": "日记账",
+
+            "filter": {
+                "subsidiary": "中国 SubLedger 03",
+                "datefrom": "2018/5/1",
+                "dateto": "2018/5/31",
+                "accountfrom": "6003 - 企业营业收入&(Special)",
+                "accountto":"6003 - 企业营业收入&(Special)"
+            },
+            "gltitle":"总账影响",
+            "glaccount":[
+                "6003-02 服务类收入&(Special)",
+                "6003.01 产品类收入&(Special)"
+            ],
+            "glreturn":"返回至"
+        }
+    },
+    "test_case_8_1_3": {
+
+        "filter" : {
+            "subsidiary" : "中国 SubLedger 03",
+            "datefrom" : "2018/5/1",
+            "dateto" : "2018/5/31",
+            "accountfrom" : "6003.01 - 产品类收入&(Special)",
+            "accountto" : "6003.01 - 产品类收入&(Special)",
+            "accountlevel" : "仅末级"
+        },
+        "expectedResult" : {
+            "account" : [
+                "6003.01 - 产品类收入&(Special)"
+            ],
+            "subtitle" : "中国明细账",
+            "journaltype" : "日记账",
+
+            "filter" : {
+                "subsidiary" : "中国 SubLedger 03",
+                "datefrom" : "2018/5/1",
+                "dateto" : "2018/5/31",
+                "accountfrom" : "6003.01 - 产品类收入&(Special)",
+                "accountto" : "6003.01 - 产品类收入&(Special)"
+            },
+            "gltitle" : "总账影响",
+            "glaccount" : [  "6003.01 产品类收入&(Special)" ],
+            "glreturn" : "返回至"
+        }
+
+    },
+    "test_case_8_2_2": {
+
+        "filter": {
+            "subsidiary": "中国 SubLedger 03",
+            "datefrom": "2018/7/1",
+            "dateto": "2018/7/31",
+            "accountfrom": "6003-02 - 服务类收入&(Special)",
+            "accountto":"6003-02 - 服务类收入&(Special)",
+            "accountlevel": "仅末级"
+        },
+        "expectedResult": {
+            "account" : [
+                "6003-02 - 服务类收入&(Special)"
+            ],
+            "subtitle" : "中国明细账",
+            "journaltype" : "日记账",
+
+            "filter" : {
+                "subsidiary" : "中国 SubLedger 03",
+                "datefrom": "2018/7/1",
+                "dateto": "2018/7/31",
+                "accountfrom" : "6003-02 - 服务类收入&(Special)",
+                "accountto" : "6003-02 - 服务类收入&(Special)"
+            },
+            "gltitle" : "总账影响",
+            "glaccount" : [  "6003-02 服务类收入&(Special)" ],
+            "glreturn" : "返回至"
+        }
+    },
+    "test_case_8_2_3": {
+
+        "filter": {
+            "subsidiary": "中国 SubLedger 03",
+            "datefrom": "2018/7/1",
+            "dateto": "2018/7/31",
+            "accountfrom": "6003 - 企业营业收入&(Special)",
+            "accountto":"6003 - 企业营业收入&(Special)",
+            "accountlevel": "至末级"
+        },
+        "expectedResult": {
+            "account" :[
+                "6003 - 企业营业收入&(Special)",
+                "6003-02 - 服务类收入&(Special)",
+                "6003.01 - 产品类收入&(Special)"
+            ],
+            "subtitle" : "中国明细账",
+            "journaltype" : "日记账",
+
+            "filter" : {
+                "subsidiary" : "中国 SubLedger 03",
+                "datefrom": "2018/7/1",
+                "dateto": "2018/7/31",
+                "accountfrom" : "6003.01 - 产品类收入&(Special)",
+                "accountto" : "6003.01 - 产品类收入&(Special)"
+            },
+            "gltitle" : "总账影响",
+            "glaccount" : [  "6003.01 产品类收入&(Special)" ],
+            "glreturn" : "返回至"
+        }
+    },
+    "test_case_8_2_4": {
+
+        "filter": {
+            "subsidiary": "China SubLedger 01",
+            "datefrom": "2018/7/1",
+            "dateto": "2018/7/31",
+            "accountfrom": "1100 - Accounts Receivable",
+            "accountto":"1100 - Accounts Receivable",
+            "accountlevel": "仅末级"
+        },
+        "expectedResult": {
+            "account" : [
+                "1100 - Accounts Receivable"
+            ],
+            "subtitle" : "中国明细账",
+            "journaltype" : "付款",
+
+            "filter" : {
+                "subsidiary" : "China SubLedger 01",
+                "datefrom": "2018/7/1",
+                "dateto": "2018/7/31",
+                "accountfrom" : "1100 - Accounts Receivable",
+                "accountto" : "1100 - Accounts Receivable"
+            },
+            "gltitle" : "总账影响",
+            "glaccount" : [  "1100 Accounts Receivable","1090 Undeposited Funds" ],
+            "glreturn" : "返回至"
+        }
+    }
+
+}
+

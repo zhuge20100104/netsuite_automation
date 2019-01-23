@@ -1,0 +1,6 @@
+2018-09-15 06:58:58,108 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: SuiteSetup(com.netsuite.chinalocalization.vat.p2.IssueChinaVATTest)
+2018-09-15 06:59:09,383 INFO  org.apache.log4j.Category$info - Navigated to: https://system.na3.netsuite.com/app/login/secure/enterpriselogin.nl?c=4803899&whence=
+2018-09-15 06:59:20,375 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Logged in successfully.
+2018-09-15 06:59:20,632 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Logged in successfully.
+2018-09-15 06:59:21,412 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Page title: 主页 - NetSuite (CN Sprint Auto Testing - OW)
+2018-09-15 06:59:21,840 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - End of: SuiteSetup(com.netsuite.chinalocalization.vat.p2.IssueChinaVATTest)

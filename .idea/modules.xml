@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ChinaLocalization_Automation.iml" filepath="$PROJECT_DIR$/ChinaLocalization_Automation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/nscommon_automation.iml" filepath="$PROJECT_DIR$/common/nscommon_automation.iml" />
+    </modules>
+  </component>
+</project>

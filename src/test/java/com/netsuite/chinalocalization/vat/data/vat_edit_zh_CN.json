@@ -1,0 +1,70 @@
+{
+  "filter": {
+    "subsidiary": "北京VAT",
+    "invoicetype_c": "增值税普通发票",
+    "invoicetype_s": "增值税专用发票"
+  },
+  "tableHeader": {
+    "internalId": "内部标识",
+    "customerName": "客户名称",
+    "tranType": "事务处理类型",
+    "docNum": "单据编号",
+    "status": "状态",
+    "docDate": "单据日期",
+    "amount": "不含税金额",
+    "afterdiscountamt": "折后金额"
+  },
+  "itemHeader": {
+    "itemName": "货物名称",
+    "model": "规格型号",
+    "uom": "单位",
+    "quantity": "数量",
+    "amount": "不含税金额",
+    "unitPrice": "单价",
+    "taxRate": "税率",
+    "discountAmount": "折扣金额"
+  },
+  "preViewHeader": {
+    "internalId": "内部标识",
+    "tranType": "事务处理类型",
+    "docNum": "单据编号",
+    "docDate": "单据日期",
+    "lineQuantity": "行数",
+    "customerName": "客户名称",
+    "taxRegisNum": "客户纳税人识别号",
+    "addressAndPhone": "客户地址、电话",
+    "bankAccount": "客户开户行及账号",
+    "remark": "备注",
+    "itemNameForSale": "清单行商品名称",
+    "message": "消息"
+  },
+  "tranType": {
+  "CustInvc": "发票",
+  "CashSale": "现金交易",
+  "CustCred": "贷项通知单",
+  "CashRfnd": "现金交易退款"
+},
+  "tranNum": {
+    "发票": 1,
+    "现金交易" : 2,
+    "贷项通知单" : 3,
+    "现金交易退款": 4
+  },
+  "expectedResults": {
+    "importtitle": "导入中国增值税发票",
+    "title": "生成中国增值税事务处理",
+    "editTitle": "中国增值税事务处理",
+    "loadingMsg": "数据加载中..."
+  },
+  "errorMessage": {
+    "noDataExport": "没有与搜索条件匹配的结果。"
+  },
+  "saleListName": "详见销货清单",
+  "groupSameItem":"合并相同货品行",
+  "mergeStatus" : "已合并",
+  "saleslist": {
+    "labelName": "启用销货清单",
+    "yes": "是",
+    "no": "否"
+  }
+}

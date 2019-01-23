@@ -1,0 +1,113 @@
+{
+  "test case 1.27.1.2": {
+    "data": [
+      {
+        "main": {
+          "id": "1.27.1.2_1",
+          "trantype": "invoice",
+          "entity": "CN Automation Customer",
+          "account": "11220103 应收账款 : 销售商品 : 设备T1",
+          "trandate": "9/5/2017",
+          "postingperiod": "Sep 2017",
+          "location": "CN_BJ",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services",
+          "memo": "test case 1.27.1.2"
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item1",
+            "quantity": "1",
+            "amount": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ],
+        "promotions": [
+          {
+            "promocode": "Standard Promotion 10"
+          }
+        ]
+      },
+      {
+        "main": {
+          "id": "1.27.1.2_2",
+          "trantype": "creditmemo",
+          "entity": "CN Automation Customer",
+          "account": "11220103 应收账款 : 销售商品 : 设备T1",
+          "trandate": "9/5/2017",
+          "postingperiod": "Sep 2017",
+          "location": "CN_BJ",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "custbody_cseg_cn_cfi": "Other cash receipts related to operating activities",
+          "memo": "test case 1.27.1.2"
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item1",
+            "quantity": "1",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "amount": "1000",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ],
+        "promotions": [
+          {
+            "promocode": "Fixed Price Promotion-Non-Posting 20"
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id": "1.27.1.2_3",
+          "trantype": "customerpayment",
+          "customer": "CN Automation Customer",
+          "aracct": "1120103 应收账款 : 销售商品 : 设备T1",
+          "account": "10020103 银行存款 : 人民币 : 工行T1",
+          "trandate": "9/5/2017",
+          "postingperiod": "Sep 2017",
+          "transaction_trandatefrom": "9/1/2017",
+          "transaction_trandate": "9/30/2017"
+        },
+        "apply": [
+          {
+            "refid": "1.27.1.2_1",
+            "amount": "990"
+          },
+          {
+            "refid": "1.27.1.2_2",
+            "amount": "970"
+          }
+        ]
+      }
+    ],
+    "expected": [
+      {
+        "1.27.1.2_3": [
+          {
+            "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+            "trandate": "9/5/2017",
+            "item": "Cash received from sales and services",
+            "amount": "970.00"
+          },
+          {
+            "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+            "trandate": "9/5/2017",
+            "item": "Cash received from sales and services",
+            "amount": "20.00"
+          },
+          {
+            "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+            "trandate": "9/5/2017",
+            "item": "Other cash receipts related to operating activities",
+            "amount": "-20.00"
+          }
+        ]
+      }
+    ]
+  }
+}

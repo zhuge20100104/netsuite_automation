@@ -1,0 +1,37 @@
+{
+  "test_case_4_1_1": {
+    "main": {
+      "entity": "CN Automation Vendor",
+      "entitytype": "vendor",
+      "subsidiary": "China BU",
+      "trandate": "12/1/2017",
+      "postingperiod": "Dec 2017",
+      "memo": "test case cfs disable"
+    },
+    "expense": [
+      {
+        "account": "6150 Office Expense",
+        "amount": "1000",
+        "taxcode": "VAT_CN:UNDEF-CN",
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  },
+  "test_case_4_1_2": {
+    "main": {
+      "entity": "auto1.03",
+      "subsidiary": "China BU",
+      "trandate": "12/1/2017",
+      "postingperiod": "Dec 2017"
+    },
+    "expense": [
+      {
+        "expensedate": "12/1/2017",
+        "category": "Office Expense",
+        "currency": "Yuan",
+        "amount": "1000",
+        "memo": "test case cfs disable"
+      }
+    ]
+  }
+}

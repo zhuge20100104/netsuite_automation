@@ -1,0 +1,134 @@
+{
+  "test_case_6_1_1" : {
+    "SearchParm_OW" : {
+      "subsidiary" : "China SubLedger 01",
+      "datefrom" : "6/1/2016",
+      "dateto" : "6/20/2016",
+      "accountfrom" : "100105 - 库存现金ChinaSL01",
+      "accountto" : "100105 - 库存现金ChinaSL01"
+    },
+    "SearchParm_SI" : {
+      "datefrom" : "3/1/2012",
+      "dateto" : "3/16/2012",
+      "accountfrom" : "100106 - 库存现金ChinaSL02",
+      "accountto" : "100106 - 库存现金ChinaSL02"
+    },
+    "ExcelButton" : {
+      "text" : "导出Excel",
+      "fieldid" : "custpage_export_excel",
+      "displayed" : true,
+      "disabled" : true
+    }
+  },
+  "test_case_6_1_2" : {
+    "SearchParm" : {
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "6/1/2018",
+      "dateto" : "6/30/2018",
+      "accountfrom" : "100106 - 库存现金ChinaSL02",
+      "accountto" : "100106 - 库存现金ChinaSL02"
+    },
+    "ExcelButton" : {
+      "text" : "导出Excel",
+      "fieldid" : "custpage_export_excel",
+      "displayed" : true,
+      "disabled" : false
+    }
+  },
+  "test_case_6_2_1" : {
+    "SearchParm" : {
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "6/1/2018",
+      "dateto" : "6/30/2018",
+      "accountfrom" : "100106 - 库存现金ChinaSL02",
+      "accountto" : "100106 - 库存现金ChinaSL02"
+    },
+    "ExcelData" : {
+      "filename" : "现金银行日记账.xls",
+      "reportHeader" : {
+        "title" : {
+          "row" : 0,
+          "col" : 0,
+          "text" : "现金银行日记账"
+        },
+        "subsidiary" : {
+          "row" : 1,
+          "col" : 0,
+          "text" : "子公司"
+        },
+        "dateZone" : {
+          "row" : 1,
+          "col" : 2,
+          "text" : "6/1/2018 - 6/30/2018"
+        },
+        "currency" : {
+          "row" : 1,
+          "col" : 6,
+          "text" : "币种: CNY"
+        },
+        "account_name": {
+          "row": 2,
+          "col": 0,
+          "text":"科目"
+        },
+        "date": {
+          "row": 2,
+          "col": 1,
+          "text":"日期"
+        },
+        "type": {
+          "row": 2,
+          "col": 2,
+          "text":"类型"
+        },
+        "memo": {
+          "row": 2,
+          "col": 3,
+          "text":"摘要"
+        },
+        "document_number": {
+          "row": 2,
+          "col": 4,
+          "text":"文件号码"
+        },
+        "payment_method": {
+          "row": 3,
+          "col": 5,
+          "text":"支付方式"
+        },
+        "gl_number": {
+          "row": 2,
+          "col": 6,
+          "text":"GL#"
+        },
+        "debit_amount": {
+          "row": 2,
+          "col": 7,
+          "text":"借记"
+        },
+        "credit_amount": {
+          "row": 2,
+          "col": 8,
+          "text":"贷记"
+        },
+        "balance": {
+          "row": 2,
+          "col": 9,
+          "text":"余额"
+        },
+        "balance_direction": {
+          "row": 3,
+          "col": 8,
+          "text":"方向"
+        },
+        "balance_amount": {
+          "row": 3,
+          "col": 9,
+          "text":"金额"
+        }
+      },
+      "datastartrow" : 4,
+      "datastartcol" : 0
+    }
+  }
+}

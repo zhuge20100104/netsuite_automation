@@ -1,0 +1,38 @@
+{
+  "caseId": "test 1.37.1",
+  "data": {
+    "item": [
+      {
+        "lineid": "1",
+        "itemold": "CN Auto Non-inventory Item3 for Purchase",
+        "cfsnew": "Other cash payments related to operating activities"
+      },
+      {
+        "lineid": "2",
+        "itemold": "CN Auto Other Charge Item4 for Purchase",
+        "itemnew": "CN Auto Service Item4 for Purchase"
+      },
+      {
+        "lineid": "3",
+        "itemold": "CN Auto Service Item4 for Purchase",
+        "itemnew": "CN Auto Other Charge Item4 for Purchase"
+      }
+    ]
+  },
+  "expected": {
+    "item": [
+      {
+        "cfsold": "Cash paid for goods and services",
+        "cfsnew": "Other cash payments related to operating activities"
+      },
+      {
+        "cfsold": "Taxes and surcharges cash payments",
+        "cfsnew": "Cash paid to and for employees"
+      },
+      {
+        "cfsold": "Cash paid to and for employees",
+        "cfsnew": "Taxes and surcharges cash payments"
+      }
+    ]
+  }
+}

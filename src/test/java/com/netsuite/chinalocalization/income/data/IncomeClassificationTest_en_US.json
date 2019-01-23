@@ -1,0 +1,400 @@
+{
+    "test_case_8_2_1_1": {
+        "report": {
+            "name": "China Income Statement Testing Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "1. Operating revenue"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "CURRENT PERIOD (JUN 2017)"
+                },
+                {
+                    "columnHeader": "PRIOR PERIOD (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "Prepared by: 中国 Income",
+                "period": "Jun 2017",
+                "currency": "Unit: USD/Unit"
+            }
+        },
+        "filter": {
+            "reportName": "China Income Statement Testing Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"Unit"
+
+        }
+    },
+    "test_case_8_2_1_2": {
+        "report": {
+            "name": "China Income Statement Testing Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+                {
+                    "label": "Location",
+                    "filterOperator": "IN",
+                    "text": ["中国 Income华北区"]
+                }
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "1. Operating revenue"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "CURRENT PERIOD (JUN 2017)"
+                },
+                {
+                    "columnHeader": "PRIOR PERIOD (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "Prepared by: 中国 Income",
+                "period": "Jun 2017",
+                "currency": "Unit: USD/Unit"
+            },
+            "LabelIn4thLine": {
+                "reportHeaderL4Left": "Location: 中国 Income华北区"
+            }
+        },
+        "filter": {
+            "reportName": "China Income Statement Testing Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"Unit",
+            "location":"中国 Income华北区"
+        }
+    },
+    "test_case_8_2_1_3": {
+        "report": {
+            "name": "China Income Statement Testing Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+                {
+                    "label": "Location",
+                    "filterOperator": "IN",
+                    "text": ["中国 Income华北区"]
+                },
+                {
+                    "label": "Department",
+                    "filterOperator": "IN",
+                    "text": ["Income生产部"]
+                }
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "1. Operating revenue"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "CURRENT PERIOD (JUN 2017)"
+                },
+                {
+                    "columnHeader": "PRIOR PERIOD (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "Prepared by: 中国 Income",
+                "period": "Jun 2017",
+                "currency": "Unit: USD/Unit"
+            },
+            "LabelIn4thLine": {
+                "reportHeaderL4Left": "Location: 中国 Income华北区",
+                "reportHeaderL4Center": "Department: Income生产部"
+            }
+        },
+        "filter": {
+            "reportName": "China Income Statement Testing Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"Unit",
+            "location":"中国 Income华北区",
+            "department":"Income生产部"
+        }
+    },
+    "test_case_8_2_1_4": {
+        "report": {
+            "name": "China Income Statement Testing Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+                {
+                    "label": "Location",
+                    "filterOperator": "IN",
+                    "text": ["中国 Income华北区"]
+                },
+                {
+                    "label": "Department",
+                    "filterOperator": "IN",
+                    "text": ["Income生产部"]
+                },
+                {
+                    "label": "Class",
+                    "filterOperator": "IN",
+                    "text": ["智能手机"]
+                }
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "1. Operating revenue"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "CURRENT PERIOD (JUN 2017)"
+                },
+                {
+                    "columnHeader": "PRIOR PERIOD (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "Prepared by: 中国 Income",
+                "period": "Jun 2017",
+                "currency": "Unit: USD/Unit"
+            },
+            "LabelIn4thLine": {
+                "reportHeaderL4Left": "Location: 中国 Income华北区",
+                "reportHeaderL4Center": "Department: Income生产部",
+                "reportHeaderL4Right": "Class: 智能手机"
+            },
+            "fileNameExcel": "IncomeStatement.xls",
+            "fileNamePDF": "IncomeStatement.pdf"
+        },
+        "filter": {
+            "reportName": "China Income Statement Testing Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"Unit",
+            "location":"中国 Income华北区",
+            "department":"Income生产部",
+            "class": "智能手机"
+        }
+    },
+    "test_case_8_2_1_5": {
+        "report": {
+            "name": "China Income Statement Testing Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+
+                {
+                    "label": "Department",
+                    "filterOperator": "IN",
+                    "text": ["Income生产部"]
+                },
+                {
+                    "label": "Class",
+                    "filterOperator": "IN",
+                    "text": ["智能手机"]
+                }
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "1. Operating revenue"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "CURRENT PERIOD (JUN 2017)"
+                },
+                {
+                    "columnHeader": "PRIOR PERIOD (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "Prepared by: 中国 Income",
+                "period": "Jun 2017",
+                "currency": "Unit: USD/Unit"
+            },
+            "LabelIn4thLine": {
+                "reportHeaderL4Left": "Department: Income生产部",
+                "reportHeaderL4Center": "Class: 智能手机"
+            }
+        },
+        "filter": {
+            "reportName": "China Income Statement Testing Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"Unit",
+            "department":"Income生产部",
+            "class": "智能手机"
+        }
+    },
+    "test_case_8_2_1_6": {
+        "report": {
+            "name": "China Income Statement Testing Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+
+                {
+                    "label": "Class",
+                    "filterOperator": "IN",
+                    "text": ["智能手机"]
+                }
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "1. Operating revenue"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "CURRENT PERIOD (JUN 2017)"
+                },
+                {
+                    "columnHeader": "PRIOR PERIOD (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "Prepared by: 中国 Income",
+                "period": "Jun 2017",
+                "currency": "Unit: USD/Unit"
+            },
+            "LabelIn4thLine": {
+                "reportHeaderL4Left": "Class: 智能手机"
+            }
+        },
+        "filter": {
+            "reportName": "China Income Statement Testing Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"Unit",
+            "class": "智能手机"
+        }
+    },
+    "test_case_8_1_1_1": {
+        "expectedResult": {
+            "locations":["中国 Income华北区",
+                "中国 北京",
+                "中国 Income华中区",
+                "中国 上海",
+                "中国 Income华南区"],
+            "departments": ["Income业务部",
+                "Income会计部",
+                "Income生产部",
+                "Income生产部01",
+                "Income生产部02",
+                "Income开发部"],
+            "classes": [
+                "售后支持",
+                "智能手机",
+                "Plus系列",
+                "X系列",
+                "电脑",
+                "穿戴设备",
+                "配件"
+            ],
+            "defaultLocation":"",
+            "defaultDepartment":"",
+            "defaultClass": ""
+        },
+        "filter": {
+            "reportName": "China Income Statement Testing Month",
+            "subsidiary": "中国 Income"
+        }
+    }
+}
+

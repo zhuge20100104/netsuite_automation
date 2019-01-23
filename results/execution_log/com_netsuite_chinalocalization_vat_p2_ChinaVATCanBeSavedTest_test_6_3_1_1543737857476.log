@@ -1,0 +1,26 @@
+2018-12-02 16:04:37,772 INFO  com.netsuite.testautomation.junit.reporting.TestLogger - Start of: test_6_3_1(com.netsuite.chinalocalization.vat.p2.ChinaVATCanBeSavedTest)
+2018-12-02 16:04:41,697 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: SuiteTeardown(com.netsuite.chinalocalization.vat.p2.ChinaVATCanBeSavedTest)
+2018-12-02 16:04:44,629 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - End of: SuiteTeardown(com.netsuite.chinalocalization.vat.p2.ChinaVATCanBeSavedTest)
+2018-12-02 16:04:44,645 ERROR com.netsuite.testautomation.junit.reporting.TestLogger - Error while executing javascript command 'return nlapiResolveURL('SUITELET', 'customscript_sl_cn_vat', 'customdeploy_sl_cn_vat');'
+net.qaautomation.exceptions.TestCaseException: Error while executing javascript command 'return nlapiResolveURL('SUITELET', 'customscript_sl_cn_vat', 'customdeploy_sl_cn_vat');'
+	at com.netsuite.testautomation.driver.SeleniumDriver.executeScriptInternal(SeleniumDriver.java:1517)
+	at com.netsuite.testautomation.driver.SeleniumDriver.executeScript(SeleniumDriver.java:1498)
+	at com.netsuite.testautomation.aut.GenericWebApp.executeScript(GenericWebApp.java:1335)
+	at com.netsuite.testautomation.aut.GenericWebApp$executeScript$2.call(Unknown Source)
+	at com.netsuite.chinalocalization.common.BaseAppTestSuite.resolveSuiteletURL(BaseAppTestSuite.groovy:301)
+	at com.netsuite.chinalocalization.common.BaseAppTestSuite$resolveSuiteletURL$3.callCurrent(Unknown Source)
+	at com.netsuite.chinalocalization.vat.VATAppP2TestSuite.navigateToGenerateChinaVATPage(VATAppP2TestSuite.groovy:117)
+	at com.netsuite.chinalocalization.vat.VATAppP2TestSuite$navigateToGenerateChinaVATPage.callCurrent(Unknown Source)
+	at com.netsuite.chinalocalization.vat.p2.ChinaVATCanBeSavedTest.test_6_3_1(ChinaVATCanBeSavedTest.groovy:34)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: call function result missing int 'status'
+  (Session info: chrome=70.0.3538.110)
+  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'ZHONGZHU-CN', ip: '10.191.25.85', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\headless\profile}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50392}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.110, webStorageEnabled: true}
+Session ID: 2612d7c7c8e20096ada6d33f178ce021
+	at com.netsuite.testautomation.driver.SeleniumDriver.executeScriptInternal(SeleniumDriver.java:1509)
+	... 8 more
+2018-12-02 16:04:44,645 INFO  com.netsuite.testautomation.junit.reporting.TestLogger - End of: test_6_3_1(com.netsuite.chinalocalization.vat.p2.ChinaVATCanBeSavedTest)

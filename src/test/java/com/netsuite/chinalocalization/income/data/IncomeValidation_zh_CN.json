@@ -1,0 +1,337 @@
+{
+
+  "test_2_1_4_2":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "20",
+            "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList 02",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='custpage_period_fs']":
+            {
+              "values": ["Oct 2017"]
+            }
+          }
+      }}
+    ]
+  },
+  "test_2_1_3_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='incomestatement_data']":{
+              "displayed" : false
+
+            }
+          }
+
+        }}
+    ]
+  },
+  "test_2_1_1_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='custpage_refresh']":
+            {
+              "values": "刷新"
+            },
+            "//*[@id='main_form']/table/tbody/tr[1]/td/div[1]/div[2]/h1":
+            {
+              "values": "中国利润表"
+            },
+            "//*[@id='custpage_reportname_fs_lbl']":
+            {
+              "values": "利润表名称 *"
+            },
+            "//*[@id='custpage_subsidiary_fs_lbl']":
+            {
+              "values": "子公司"
+            },
+            "//*[@id='custpage_period_fs_lbl']":
+            {
+              "values": "期间"
+            },
+            "//*[@id='custpage_unit_fs_lbl']":
+            {
+              "values": "单位"
+            },
+            "//*[@id='custpage_unit_fs']":
+            {
+              "values": "元"
+            }
+          }
+        }}
+    ]
+  },
+
+
+  "test_4_4_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "20",
+            "//*[@id='custpage_subsidiary_fs']":"中国 Income 02",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "dialogs":[
+              {
+                "type":"common",
+                "message":"未对此财政日历定义期间。请依次转到“设置”>“会计”>“管理会计期间”，然后设置或指定所需期间。"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "test_4_6_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "20",
+            "custpage_reportname": "中国利润表测试Month1ColOnly",
+            "//*[@id='custpage_refresh']":"",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "dialogs":[
+              {
+                "type":"common",
+                "message":"请在“财务报表生成器”为利润表定义两个金额列。"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "test_2_2_3_1_1":{
+  "steps":[
+
+    {
+      "navigateToPage":{
+        "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+      }
+    },
+    {
+      "actions": {
+        "data":{
+          "waitforload":"",
+          "sleep" : "10",
+          "custpage_reportname": "中国利润表测试Month",
+          "//*[@id='custpage_subsidiary_fs']":"中国 Income 03",
+          "//*[@id='custpage_period_fs']":"Jun 2017",
+          "//*[@id='custpage_unit_fs']":"元",
+          "//*[@id='custpage_refresh']":"",
+          "sleep" : "10"
+        }
+      }
+    },
+    {
+      "expects":{
+        "data":{
+          "//*[@id='incomestatement_header']/tbody/tr[1]/td/b":
+          {
+            "values": ["利　润　表"]
+          },
+          "//*[@id='incomestatement_header']/tbody/tr[3]/td[1]/b":
+          {
+            "values": ["编制单位： "]
+          },
+          "//*[@id='incomestatement_header']/tbody/tr[3]/td[2]":
+          {
+            "values": ["Jun 2017"]
+          },
+          "//*[@id='incomestatement_header']/tbody/tr[2]/td":
+          {
+            "values": ["会企02表"]
+          },
+          "//*[@id='incomestatement_header']/tbody/tr[3]/td[3]":
+          {
+            "values": ["<b>单位： </b>CNY/元"]
+          },
+          "//*[@id='incomestatement_data']/tbody/tr[1]/th[1]":
+          {
+            "values": ["项目"]
+          },
+          "//*[@id='incomestatement_data']/tbody/tr[1]/th[2]":
+          {
+            "values": ["行次"]
+          },
+          "//*[@id='incomestatement_data']/tbody/tr[1]/th[3]":
+          {
+            "values": ["本期金额"]
+          },
+          "//*[@id='incomestatement_data']/tbody/tr[1]/th[4]":
+          {
+            "values": ["上期金额"]
+          },
+
+          "//*[@id='incomestatement_data']/tbody/tr[2]/td[2]":
+          {
+            "values": ["1"]
+          },
+          "//*[@id='incomestatement_data']/tbody/tr[2]/td[3]":
+          {
+            "values": ["400,000.00"]
+          },
+          "//*[@id='incomestatement_data']/tbody/tr[2]/td[4]":
+          {
+            "values": ["40,000.00"]
+          },
+          "//*[@id='incomestatement_data']/tbody/tr[18]/td[4]":
+          {
+            "values": ["-530,000.00"]
+          },
+          "//*[@id='incomestatement_data']/tbody/tr[18]/td[2]":
+          {
+            "values": ["17"]
+          },
+          "//*[@id='incomestatement_data']/tbody/tr[18]/td[3]":
+          {
+            "values": ["-5,300,000.00"]
+          }
+        }
+      }
+    }
+  ]
+},
+  "test_2_2_3_1_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "10",
+            "custpage_reportname": "中国利润表模板_中文",
+            "//*[@id='custpage_subsidiary_fs']":"中国 Income 03",
+            "//*[@id='custpage_period_fs']":"Jun 2017",
+            "//*[@id='custpage_unit_fs']":"元",
+            "//*[@id='custpage_refresh']":"",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='incomestatement_header']/tbody/tr[1]/td/b":
+            {
+              "values": ["利　润　表"]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[3]/td[1]/b":
+            {
+              "values": ["编制单位： "]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[3]/td[2]":
+            {
+              "values": ["Jun 2017"]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[2]/td":
+            {
+              "values": ["会企02表"]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[3]/td[3]":
+            {
+              "values": ["<b>单位： </b>CNY/元"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[1]":
+            {
+              "values": ["项目"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[2]":
+            {
+              "values": ["行次"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[3]":
+            {
+              "values": ["本期金额"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[4]":
+            {
+              "values": ["上期金额"]
+            }
+
+          }
+        }
+      }
+    ]
+  }
+
+}

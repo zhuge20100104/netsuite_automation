@@ -1,0 +1,26 @@
+{
+  "test_case_4_1_2": {
+    "expectedResult": {
+      "subTab": "China VAT",
+      "bankAccount": "China Bank Account Name",
+      "taxpayer": "China VAT taxpayer types",
+      "taxpayerOptions": [
+          "", "- New -",
+        "General taxpayer",
+        "Small-scale taxpayer"
+      ]
+    }
+  },
+  "test_case_11_2_3": {
+    "expectedResult": {
+      "subTab": "China VAT",
+      "message": "No records to show."
+    }
+  },
+  "test_case_11_2_4": {
+    "expectedResult": {
+      "subTab": "China VAT",
+      "message": "No records to show."
+    }
+  }
+}

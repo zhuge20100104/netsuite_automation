@@ -1,0 +1,75 @@
+{
+
+    "test_8_1_2":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "deletefile":"",
+                        "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+                        "//*[@id='custpage_periodfrom_fs']":"May 2018",
+                        "//*[@id='custpage_periodto_fs']":"May 2018",
+                        "custpage_datefrom":"5/1/2018",
+                        "custpage_dateto":"5/1/2018",
+                        "//*[@id='submitter']":"",
+                        "waitforload":"",
+                        "sleep" : "10",
+                        "//*[@id='custpage_print']":"",
+                        "sleep" : "10"
+                    }
+                }
+            },
+
+            {
+                "expects":{
+                    "data":{
+                        "checkreportfile":"AccountingVoucher"
+                    }
+                }
+            }
+        ]
+
+    },
+    "test_8_1_3":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "deletefile":"",
+                        "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+                        "//*[@id='custpage_periodfrom_fs']":"May 2018",
+                        "//*[@id='custpage_periodto_fs']":"May 2018",
+                        "custpage_datefrom":"8/1/2018",
+                        "custpage_dateto":"8/1/2018",
+                        "//*[@id='submitter']":"",
+                        "waitforload":"",
+                        "sleep" : "10"
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "custpage_print":{
+                            "value":"Print All",
+                            "disable" : true
+                        }
+                    }
+                }
+            }
+        ]
+
+    }
+}

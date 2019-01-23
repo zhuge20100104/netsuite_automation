@@ -1,0 +1,112 @@
+{
+  "test case 1.32.2.1": {
+    "data": [
+      {
+        "main": {
+          "id": "1.32.2.1_1",
+          "trantype": "customerdeposit",
+          "customer": "CN Automation Customer",
+          "trandate": "9/22/2017",
+          "payment": "500",
+          "currency": "Yuan",
+          "exchangerate": "1.00",
+          "account": "10020104 银行存款 : 人民币 : 建行T1",
+          "custbody_cseg_cn_cfi": "Other cash receipts related to operating activities"
+        }
+      },
+      {
+        "main": {
+          "id": "1.32.2.1_2",
+          "trantype": "invoice",
+          "entity": "CN Automation Customer",
+          "account": "11220103 应收账款 : 销售商品 : 设备T1",
+          "trandate": "9/22/2017",
+          "postingperiod": "Sep 2017",
+          "location": "CN_BJ",
+          "currency": "Yuan",
+          "exchangerate": "1.00",
+          "memo": "test case 1.32.2.1",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item2",
+            "quantity": "1",
+            "amount": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      },
+      {
+        "main": {
+          "id": "1.32.2.1_3",
+          "trantype": "invoice",
+          "entity": "CN Automation Customer",
+          "account": "11220103 应收账款 : 销售商品 : 设备T1",
+          "trandate": "9/22/2017",
+          "postingperiod": "Sep 2017",
+          "location": "CN_BJ",
+          "currency": "Yuan",
+          "exchangerate": "1.00",
+          "memo": "test case 1.32.2.1",
+          "custbody_cseg_cn_cfi": "Cash paid to and for employees"
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item2",
+            "quantity": "1",
+            "amount": "2000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id":"1.32.2.1_4",
+          "trantype": "CUSTOMER_PAYMENT",
+          "customer": "CN Automation Customer",
+          "aracct": "11220103 应收账款 : 销售商品 : 设备T1",
+          "account": "10020104 银行存款 : 人民币 : 建行T1",
+          "trandate": "9/22/2017",
+          "postingperiod":"Sep 2017",
+          "transaction_trandatefrom": "9/1/2017",
+          "transaction_trandate": "9/30/2017"
+        },
+        "apply": [
+          {
+            "refid": "1.32.2.1_1",
+            "amount": "500"
+          },
+          {
+            "refid": "1.32.2.1_2",
+            "amount": "1000"
+          },
+          {
+            "refid": "1.32.2.1_3",
+            "amount": "2000"
+          }
+        ]
+      }
+    ],
+    "expect": [
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "9/22/2017",
+        "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+        "item": "Cash paid to and for employees",
+        "amount": "1500.00"
+      },
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "9/22/2017",
+        "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+        "item": "Cash received from sales and services",
+        "amount": "1000.00"
+      }
+    ]
+  }
+}

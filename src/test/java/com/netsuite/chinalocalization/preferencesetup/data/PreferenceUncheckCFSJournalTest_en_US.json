@@ -1,0 +1,36 @@
+{
+  "test_case_3_1_1": {
+    "data": [
+      {
+        "main": {
+          "id": "CFS1.50_Journal_1",
+          "trantype": "journalentry",
+          "subsidiary": "CFS Validation BU",
+          "trandate": "6/27/2016",
+          "postingperiod": "Jun 2016",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "memo":"test_case_3_1_1"
+        },
+        "line": [
+          {
+            "account": "10020113 银行存款 : 人民币 : 建行_M",
+            "debit": "200"
+          },
+          {
+            "account": "10020119 银行存款 : 人民币 : 工行_M",
+            "debit": "500"
+          },
+          {
+            "account": "1105 Other Receivables",
+            "debit": "300"
+          },
+          {
+            "account": "1100 Accounts Receivable",
+            "credit": "1000"
+          }
+        ]
+      }
+    ]
+  }
+}

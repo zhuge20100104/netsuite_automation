@@ -1,0 +1,12 @@
+{
+  "test_1_5_1_2":{
+    "labels":{
+      "subsidiary":"Parent Company : China BU",
+      "periodFrom":"May 2017",
+      "periodTo": "May 2017"
+    },
+    "expect":{
+      "fileName":"记账凭证"
+    }
+  }
+}

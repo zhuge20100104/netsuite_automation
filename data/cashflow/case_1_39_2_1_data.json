@@ -1,0 +1,99 @@
+{
+  "caseId": "test 1.39.2.1",
+  "data": {
+    "item": [
+      {
+        "lineid": "1",
+        "itemold": "CN Auto Non-inventory Item4 for Purchase"
+      },
+      {
+        "lineid": "2",
+        "itemold": "CN Auto Service Item4 for Purchase"
+      },
+      {
+        "lineid": "3",
+        "itemold": "CN Auto Other Charge Item4 for Purchase"
+      },
+      {
+        "lineid": "4",
+        "itemold": "CN Inv Item1"
+      },
+      {
+        "lineid": "5",
+        "itemold": "T1 Non-Inventory for Resale"
+      },
+      {
+        "lineid": "6",
+        "itemold": "CFS Inventory Item Matrix : CFS Inventory Item Matrix-B-S"
+      },
+      {
+        "lineid": "7",
+        "itemold": "CFS Subtotal"
+      },
+      {
+        "lineid": "8",
+        "itemold": "T1 Shipping 200 with Handling 20 yuan"
+      }
+    ],
+    "expense": [
+      {
+        "lineid": "1",
+        "categoryold": "Rent",
+        "amount": "100",
+        "cfsnew": ""
+      },
+      {
+        "lineid": "2",
+        "categoryold": "Office Expense",
+        "amount": "100",
+        "cfsnew": "Taxes and surcharges cash payments"
+      }
+    ]
+  },
+  "expected": {
+    "item": [
+      {
+        "cfsold": "Other cash payments related to operating activities",
+        "cfsnew": "Other cash payments related to operating activities"
+      },
+      {
+        "cfsold": "Cash paid to and for employees",
+        "cfsnew": "Cash paid to and for employees"
+      },
+      {
+        "cfsold": "Taxes and surcharges cash payments",
+        "cfsnew": "Taxes and surcharges cash payments"
+      },
+      {
+        "cfsold": "Cash paid for goods and services",
+        "cfsnew": "Cash paid for goods and services"
+      },
+      {
+        "cfsold": "",
+        "cfsnew": ""
+      },
+      {
+        "cfsold": "Cash paid for goods and services",
+        "cfsnew": "Cash paid for goods and services"
+      },
+      {
+        "cfsold": "",
+        "cfsnew": ""
+      },
+      {
+        "cfsold": "",
+        "cfsnew": ""
+      }
+    ],
+    "expense": [
+      {
+        "cfsold": "Other cash payments related to operating activities",
+        "cfsnew": ""
+      },
+      {
+        "cfsold": "Cash paid to and for employees",
+        "cfsnew": "Taxes and surcharges cash payments"
+      }
+    ]
+  }
+}

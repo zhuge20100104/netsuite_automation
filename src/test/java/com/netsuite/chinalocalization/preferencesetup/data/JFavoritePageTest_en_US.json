@@ -1,0 +1,388 @@
+{
+
+  "test_9_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+        }
+      },
+        {
+            "actions": {
+                "data":{
+                    "waitforload":"",
+                    "//*[@id='custrecord_cn_favo_vhls_template_fs']":"Multiple Currency"                }
+            }
+        },
+        {
+            "expects":{
+                "data":{
+                    "//*[@id='custrecord_cn_favo_vhls_template_fs']":{
+                        "values":["Multiple Currencies"]
+                    },
+                    "custrecord_cn_favo_vhls_location":{
+                        "value" : "F",
+                        "disable" : true
+
+                    },
+                    "custrecord_cn_favo_vhls_department":{
+                        "value" : "F",
+                        "disable" : true,
+                        "exist" : true
+                    },
+                    "custrecord_cn_favo_vhls_class":{
+                        "value" : "F",
+                        "disable" : true,
+                        "exist" : true
+                    }
+                }
+            }
+        },
+        {
+            "actions": {
+                "data":{
+                    "//*[@id='custrecord_cn_favo_vhls_template_fs']":"Single Currency",
+                    "custrecord_cn_favo_vhls_location": "F",
+                    "custrecord_cn_favo_vhls_department":"F",
+                    "custrecord_cn_favo_vhls_class":"T"
+
+                }
+            }
+        },
+
+        {
+            "expects":{
+                "data":{
+                    "custrecord_cn_favo_vhls_location":{
+                        "value" : "F",
+                        "checked" : false
+
+                    },
+                    "custrecord_cn_favo_vhls_department":{
+                        "value" : "F",
+                        "checked" : false,
+                        "exist" : true
+                    },
+                    "custrecord_cn_favo_vhls_class":{
+                        "value" : "T",
+                        "checked" : true,
+                        "exist" : true
+                    }
+
+                }
+            }
+        }
+
+
+    ]
+  },
+  "test_9_2":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                    "//*[@id='custrecord_cn_favo_vhls_template_fs']":"Single Currency",
+                    "//*[@id='submitter']":""
+                    }
+                }
+            },
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "//*[@id='custrecord_cn_favo_vhls_template_fs']":{
+                            "values":["Single Currency"]
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custrecord_cn_favo_vhls_template_fs']":"Multiple Currencies"
+                    }
+                }
+            },
+
+            {
+                "expects" : {
+                    "data" : {
+                        "//*[@id='custrecord_cn_favo_vhls_template_fs']" : {
+                            "values" : [
+                                "Multiple Currencies"
+                            ]
+                        }
+                    }
+                }
+            }
+
+        ]
+    },
+    "test_9_3_2_1":{
+        "steps":[
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "//*[@id='custrecord_cn_favo_vhls_maxloadedlines_fs_lbl']":{
+                            "values":["MAX LOADED LINES(100-5000)"]
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "waitforload":"",
+                    "data":{
+                        "custrecord_cn_favo_vhls_maxloadedlines":"10"
+
+                    }
+
+                }
+            },
+
+            {
+                "expects":{
+                    "data":{
+                        "dialogs":[
+                            {
+                                "type":"common",
+                                "message":"Invalid number (must be between 100 and 5000)"
+                            }
+                        ]
+                    }
+                }
+            }
+
+        ]
+
+
+    },
+    "test_9_3_2_2":{
+        "steps":[
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "//*[@id='custrecord_cn_favo_vhls_maxloadedlines_fs_lbl']":{
+                            "values":["MAX LOADED LINES(100-5000)"]
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "waitforload":"",
+                    "data":{
+                        "custrecord_cn_favo_vhls_maxloadedlines":"6000"
+
+                    }
+
+                }
+            },
+
+            {
+                "expects":{
+                    "data":{
+                        "dialogs":[
+                            {
+                                "type":"common",
+                                "message":"Invalid number (must be between 100 and 5000)"
+                            }
+                        ]
+                    }
+                }
+            }
+
+        ]
+
+
+    },
+    "test_9_3_3_1":{
+        "steps":[
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "custrecord_cn_favo_vhls_maxloadedlines":"100",
+                        "//*[@id='submitter']":""
+                    }
+                }
+            },
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "waitforload":"",
+                        "//*[@id='custpage_subsidiary_fs']":"北京VAT",
+                        "//*[@id='custpage_periodfrom_fs']":"Jan 2017",
+                        "//*[@id='custpage_periodto_fs']":"Sep 2018",
+                        "//*[@id='submitter']":"",
+                        "waitforload":"",
+                        "sleep" : "30"
+                    }
+                }
+            }
+
+
+
+
+        ]
+
+
+    },
+    "test_9_3_3_2":{
+        "steps":[
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "custrecord_cn_favo_vhls_maxloadedlines":"100",
+                        "//*[@id='submitter']":""
+                    }
+                }
+            },
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "waitforload":"",
+                        "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+                        "//*[@id='custpage_periodfrom_fs']":"Aug 2018",
+                        "//*[@id='custpage_periodto_fs']":"Sep 2018",
+                        "custpage_datefrom":"8/1/2018",
+                        "custpage_dateto":"8/2/2018",
+                        "//*[@id='submitter']":"",
+                        "waitforload":"",
+                        "sleep" : "30"
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "values0":{
+                            "id":"custpage_sublist",
+                            "values":[
+                                {
+                                    "custpage_docnum": {
+                                        "view_values": ["VLVB0001","VLIN0001"]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+
+        ]
+
+
+    },
+    "test_11_1":{
+        "steps":[
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "custrecord_cn_favo_vhls_maxloadedlines":"5000",
+                        "//*[@id='submitter']":"",
+                        "sleep" : "10"
+                    }
+                }
+            },
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "//*[@id='custpage_print']":{
+                            "values": ["Print All"]
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "deletefile":"",
+                        "//*[@id='custpage_subsidiary_fs']":"北京VAT",
+                        "//*[@id='custpage_periodfrom_fs']":"FY 2017",
+                        "//*[@id='custpage_periodto_fs']":"Oct 2018",
+                        "//*[@id='submitter']":"",
+                        "sleep" : "60",
+                        "//*[@id='custpage_print']":"",
+                        "sleep" : "5"
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "dialogs":[
+                            {
+                                "type":"common",
+                                "message":"This report may take some time to generate. You will be alerted once the report is generated and available for viewing."
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        ".//*[@class='uir-message-buttons']/button[2]":"",
+                        "sleep" : "5",
+                        "//*[@id='custpage_print']":"",
+                        "sleep" : "5",
+                        ".//*[@class='uir-message-buttons']/button[1]":"",
+                        "sleep" : "10"
+                    }
+                }
+            }
+        ]
+
+    }
+}

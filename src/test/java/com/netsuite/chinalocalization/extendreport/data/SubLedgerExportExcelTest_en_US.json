@@ -1,0 +1,203 @@
+{
+  "test_case_6_2_1": {
+    "expectedResult": {
+      "buttons":[{
+        "text" : "Export Excel",
+        "fieldid" : "custpage_export_excel",
+        "displayed": false
+      }
+      ],
+      "buttonsAfterRefresh":[{
+        "text" : "Export Excel",
+        "fieldid" : "custpage_export_excel",
+        "displayed": true,
+        "disabled": false
+      }
+      ],
+      "filename":"Subledger.xls",
+      "reportheader":
+      {
+        "title": {
+          "row": 0,
+          "col": 0,
+          "text": "Subledger"
+        },
+        "subsidiary": {
+          "row": 1,
+          "col": 0,
+          "text": "Subsidiary: 中国 SubLedger 03"
+        },
+        "period": {
+          "row": 1,
+          "col": 2,
+          "text": "7/1/2016 - 7/31/2016"
+        },
+        "currency": {
+          "row": 1,
+          "col": 6,
+          "text":"Currency: CNY"
+        },
+        "account_name": {
+          "row": 2,
+          "col": 0,
+          "text":"Account"
+        },
+        "type": {
+          "row": 2,
+          "col": 1,
+          "text":"Type"
+        },
+        "document_number": {
+          "row": 2,
+          "col": 2,
+          "text":"Document Number"
+        },
+        "gl_number": {
+          "row": 2,
+          "col": 3,
+          "text":"GL#"
+        },
+        "date": {
+          "row": 2,
+          "col": 4,
+          "text":"Date"
+        },
+        "memo": {
+          "row": 2,
+          "col": 5,
+          "text":"Memo"
+        },
+
+        "debit_amount": {
+          "row": 2,
+          "col": 6,
+          "text":"Debit"
+        },
+        "credit_amount": {
+          "row": 2,
+          "col": 7,
+          "text":"Credit"
+        },
+        "balance": {
+          "row": 2,
+          "col": 8,
+          "text":"Balance"
+        },
+        "balance_direction": {
+          "row": 3,
+          "col": 8,
+          "text":"Debit/Credit"
+        },
+        "balance_amount": {
+          "row": 3,
+          "col": 9,
+          "text":"Amount"
+        }
+      },
+      "datastartrow": 4,
+      "datastartcol" : 0
+
+    },
+    "filter": {
+      "subsidiary": "中国 SubLedger 03",
+      "datefrom": "7/1/2016",
+      "dateto": "7/31/2016",
+      "accountfrom": "600201 - 产品类收入",
+      "accountto":"600203 - 资产增值收入"
+    }
+  },
+  "test_case_6_2_2": {
+    "expectedResult": {
+      "filename":"Subledger.xls",
+      "reportheader":
+      {
+        "title": {
+          "row": 0,
+          "col": 0,
+          "text": "Subledger"
+        },
+        "subsidiary": {
+          "row": 1,
+          "col": 0,
+          "text": "Subsidiary: 中国 SubLedger 03"
+        },
+        "period": {
+          "row": 1,
+          "col": 2,
+          "text": "5/1/2018 - 5/31/2018"
+        },
+        "currency": {
+          "row": 1,
+          "col": 6,
+          "text":"Currency: CNY"
+        },
+        "account_name": {
+          "row": 2,
+          "col": 0,
+          "text":"Account"
+        },
+        "type": {
+          "row": 2,
+          "col": 1,
+          "text":"Type"
+        },
+        "document_number": {
+          "row": 2,
+          "col": 2,
+          "text":"Document Number"
+        },
+        "gl_number": {
+          "row": 2,
+          "col": 3,
+          "text":"GL#"
+        },
+        "date": {
+          "row": 2,
+          "col": 4,
+          "text":"Date"
+        },
+        "memo": {
+          "row": 2,
+          "col": 5,
+          "text":"Memo"
+        },
+
+        "debit_amount": {
+          "row": 2,
+          "col": 6,
+          "text":"Debit"
+        },
+        "credit_amount": {
+          "row": 2,
+          "col": 7,
+          "text":"Credit"
+        },
+        "balance": {
+          "row": 2,
+          "col": 8,
+          "text":"Balance"
+        },
+        "balance_direction": {
+          "row": 3,
+          "col": 8,
+          "text":"Debit/Credit"
+        },
+        "balance_amount": {
+          "row": 3,
+          "col": 9,
+          "text":"Amount"
+        }
+      },
+      "datastartrow": 4,
+      "datastartcol" : 0
+
+    },
+    "filter": {
+      "subsidiary": "中国 SubLedger 03",
+      "datefrom": "5/1/2018",
+      "dateto": "5/31/2018",
+      "accountfrom": "6003 - 企业营业收入&(Special)",
+      "accountto":"6003 - 企业营业收入&(Special)"
+    }
+  }
+}

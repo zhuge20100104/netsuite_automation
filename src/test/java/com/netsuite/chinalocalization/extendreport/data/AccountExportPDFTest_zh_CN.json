@@ -1,0 +1,181 @@
+{
+    "title" : "科目余额表",
+    "subsidiary": "子公司：",
+    "currency": "币种：",
+    "company" : "公司：",
+    "printby" : "DEMO",
+    "printTime" : "打印时间：",
+
+    "page" : "页码：",
+    "labels": {
+        "subsidiary": "子公司",
+        "datefrom": "日期自",
+        "dateto": "至",
+        "accountfrom": "科目自",
+        "accountto": "至",
+        "accountlevel": "科目层级"
+    },
+    "test_case_6_1_1": {
+    "filter": {
+      "subsidiary": "Parent Company",
+        "datefrom": "6/1/2014",
+        "dateto": "12/31/2014",
+      "accountlevel": "至末级"
+    }
+  },
+    "test_case_6_1_2": {
+        "expectedResult": {
+            "currency": "CNY"
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "6/1/2016",
+            "dateto": "12/31/2016",
+            "accountfrom": "608402 - shipment",
+            "accountto":"608403 - destruction",
+            "accountlevel": "至末级"
+        }
+    },
+    "test_case_6_1_3":{
+        "expectedResult": {
+            "datastartrow": 4,
+            "datastartcol" : 0
+        },
+        "filter": {
+            "subsidiary": "China BU",
+            "datefrom": "1/1/2013",
+            "dateto": "5/31/2018",
+            "accountlevel": "至末级"
+        }
+    },
+    "test_case_6_2_1": {
+        "expectedResult": {
+            "currency": "CNY",
+            "subsidiary": "中国 AccountBalance 03",
+            "data":[
+                {
+                    "accountName": "608402 - shipment",
+                    "openBalanceDirection": "借",
+                    "openBalance_amount": "99.899,45",
+                    "debitAmount": "500.200,80",
+                    "creditAmount": "400.300,72",
+                    "closeBalanceDirection": "借",
+                    "closeBalanceAmount": "199.799,53"
+                },
+                {
+                    "accountName": "60840201 - Ocean shipping",
+                    "openBalanceDirection": "借",
+                    "openBalance_amount": "100.000,00",
+                    "debitAmount": "300.000,00",
+                    "creditAmount": "300.000,00",
+                    "closeBalanceDirection": "借",
+                    "closeBalanceAmount": "100.000,00"
+                },
+                {
+                    "accountName": "60840202 - Air shipping",
+                    "openBalanceDirection": "贷",
+                    "openBalance_amount": "100,55",
+                    "debitAmount": "200,80",
+                    "creditAmount": "300,72",
+                    "closeBalanceDirection": "贷",
+                    "closeBalanceAmount": "200,47"
+                },
+                {
+                    "accountName": "60840203 - Road shipping",
+                    "openBalanceDirection": "平",
+                    "openBalance_amount": "0,00",
+                    "debitAmount": "200.000,00",
+                    "creditAmount": "100.000,00",
+                    "closeBalanceDirection": "借",
+                    "closeBalanceAmount": "100.000,00"
+                },
+                {
+                    "accountName": "608403 - destruction",
+                    "openBalanceDirection": "平",
+                    "openBalance_amount": "0,00",
+                    "debitAmount": "100,00",
+                    "creditAmount": "0,00",
+                    "closeBalanceDirection": "借",
+                    "closeBalanceAmount": "100,00"
+                }
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "2016/6/1",
+            "dateto": "2016/12/31",
+            "accountfrom": "608402 - shipment",
+            "accountto":"608403 - destruction",
+            "accountlevel": "至末级"
+        }
+
+    },
+    "test_case_6_2_2": {
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "2018 5 1",
+            "dateto": "2018 5 31",
+            "accountfrom": "9003 - Longest account-for-balance sprint test for truncate test",
+            "accountto":"9003 - Longest account-for-balance sprint test for truncate test",
+            "accountlevel": "至末级"
+        },
+        "expectedResult": {
+            "currency": "CNY",
+            "subsidiary": "中国 AccountBalance 03",
+            "data": [
+                {
+                    "accountName": "9003 - Longest account-for-balance sprint test for truncate test",
+                    "openBalanceDirection": "平",
+                    "openBalance_amount": "0.00",
+                    "debitAmount": "1,000,000,001.16",
+                    "creditAmount": "0.00",
+                    "closeBalanceDirection": "借",
+                    "closeBalanceAmount": "1,000,000,001.16"
+                },
+                {
+                    "accountName": "900301 - Longest account-for-balance sprint test for truncate test01",
+                    "openBalanceDirection": "平",
+                    "openBalance_amount": "0.00",
+                    "debitAmount": "100,000,000.98",
+                    "creditAmount": "0.00",
+                    "closeBalanceDirection": "借",
+                    "closeBalanceAmount": "100,000,000.98"
+                },
+                {
+                    "accountName": "900302 - Longest account-for-balance sprint test for truncate test02",
+                    "openBalanceDirection": "平",
+                    "openBalance_amount": "0.00",
+                    "debitAmount": "900,000,000.18",
+                    "creditAmount": "0.00",
+                    "closeBalanceDirection": "借",
+                    "closeBalanceAmount": "900,000,000.18"
+                }
+            ]
+        }
+    },
+    "test_case_6_3_1": {
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "5/1/2018",
+            "dateto": "5/31/2018",
+            "accountto": "608403 - destruction",
+            "accountlevel": "All Accounts and Subaccounts"
+        },
+        "expectedResult": {
+            "currency": "CNY",
+            "subsidiary": "中国 AccountBalance 03"
+        }
+    },
+    "test_case_6_4_1": {
+        "filter": {
+            "subsidiary": "China AccountBalance 01",
+            "datefrom": "5/1/2018",
+            "dateto": "5/31/2018",
+            "accountlevel": "All Accounts and Subaccounts"
+        },
+        "expectedResult": {
+            "currency": "USD"
+        }
+    }
+}
+

@@ -1,0 +1,181 @@
+{
+    "test_2_2_1_1":{
+    "steps":[
+
+        {
+            "navigateToPage":{
+                "type:scriptId:deployId":"suitelet:customscript_sl_cn_blsheet:customdeploy_sl_cn_blsheet"
+            }
+        },
+        {
+            "expects":{
+                "data":{
+                    "custpage_refresh":{
+                        "value":"刷新",
+                        "disable" : false
+                    },
+                    "custpage_reportname":{
+                        "label":"资产负债表名称"
+                    },
+                    "custpage_subsidiary":{
+                        "label":"子公司"
+                    },
+                    "custpage_asof":{
+                        "label":"期间"
+                    },
+                    "custpage_unit":{
+                        "label":"单位"
+                    },
+                    "//*[@id='custpage_unit_fs']":{
+                        "values":["元"]
+                    },
+                    ".//*[@id='main_form']/table/tbody/tr[1]/td/div[1]/div[2]/h1":{
+                        "values":["中国资产负债表"]
+                    }
+                }
+            }
+        },
+        {
+            "actions": {
+                "data":{
+                    "//*[@id='custpage_reportname_fs']":"中国资产负债表（China BISheet 03)",
+                    "//*[@id='custpage_subsidiary_fs']":"China BlSheet 03",
+                    "//*[@id='custpage_asof_fs']":"Jun 2017",
+                    "//*[@id='custpage_unit_fs']":"千元",
+                    "//*[@id='custpage_refresh']":"",
+                    "waitforload":""
+
+                }
+            }
+        },
+
+        {
+            "expects":{
+                "data":{
+                    "custpage_refresh":{
+                        "value":"刷新",
+                        "disable" : false
+                    },
+                    "custpage_export_excel":{
+                        "value":"导出Excel",
+                        "disable" : false
+                    },
+                    "custpage_export_pdf":{
+                        "value":"导出PDF",
+                        "disable" : false
+                    },
+                    ".//*[@id='blsheet_header']/tbody/tr[1]/td/b":{
+                        "values":["资产负债表"]
+                    },
+                    ".//*[@id='blsheet_header']/tbody/tr[2]/td[2]/p":{
+                        "values":["会企01表"]
+                    },
+                    ".//*[@id='blsheet_header']/tbody/tr[3]/td[1]/b":{
+                        "values":["编制单位:"]
+                    },
+                    ".//*[@id='blsheet_header']/tbody/tr[3]/td[2]/p":{
+                        "values":["6/30/2017"]
+                    },
+                    ".//*[@id='blsheet_header']/tbody/tr[3]/td[3]":{
+                        "values":["<b>单位:</b> CNY/千元"]
+                    }
+                }
+            }
+        }
+    ]
+
+
+},
+    "test_builtin_template":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_blsheet:customdeploy_sl_cn_blsheet"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_reportname_fs']":"中国资产负债表模板_中文",
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":""
+
+                    }
+                }
+            },
+
+            {
+                "expects":{
+                    "data":{
+                        "custpage_refresh":{
+                            "value":"刷新",
+                            "disable" : false
+                        },
+                        "custpage_export_excel":{
+                            "value":"导出Excel",
+                            "disable" : false
+                        },
+                        "custpage_export_pdf":{
+                            "value":"导出PDF",
+                            "disable" : false
+                        },
+                        ".//*[@id='blsheet_header']/tbody/tr[1]/td/b":{
+                            "values":["资产负债表"]
+                        }
+                    }
+                }
+            }
+        ]
+
+
+    },
+    "test_2_2_2_1_1":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_blsheet:customdeploy_sl_cn_blsheet"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_reportname_fs']":"中国资产负债表（China BISheet 03)",
+                        "//*[@id='custpage_subsidiary_fs']":"China BlSheet 01",
+                        "//*[@id='custpage_asof_fs']":"FY 2017",
+                        "//*[@id='custpage_subsidiary_fs']":"China BlSheet 03",
+                        "//*[@id='custpage_asof_fs']":"Jun 2017",
+                        "//*[@id='custpage_unit_fs']":"千元",
+                        "//*[@id='custpage_unit_fs']":"万元",
+                        "//*[@id='custpage_unit_fs']":"元",
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":""
+
+                    }
+                }
+            },
+            {
+                "expects": {
+                    "data": {
+                        "custpage_refresh": {
+                            "value": "刷新",
+                            "disable": false
+                        },
+                        "custpage_export_excel": {
+                            "value": "导出Excel",
+                            "disable": false
+                        },
+                        "custpage_export_pdf": {
+                            "value": "导出PDF",
+                            "disable": false
+                        }
+                    }
+                }
+            }
+        ]
+
+
+    }
+
+}

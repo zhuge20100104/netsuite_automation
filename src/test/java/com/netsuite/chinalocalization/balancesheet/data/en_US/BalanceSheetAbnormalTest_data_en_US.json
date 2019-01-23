@@ -1,0 +1,78 @@
+{
+    "test_case_8_2_1_1": {
+        "report": {
+            "reportName": "",
+            "subsidiary": "China BlSheet 03",
+            "asof": "Jan 2017",
+            "unit": "Ten Thousand"
+        },
+        "error": {
+            "title": "Error",
+            "text": "Enter a value for Balance Sheet Name."
+
+        }
+
+    },
+    "test_case_8_2_1_2": {
+        "report": {
+            "reportName": "中国资产负债表（China BISheet 03)",
+            "subsidiary": "China BlSheet 03",
+            "asof": "Jan 2017",
+            "unit": "Ten Thousand"
+        }
+
+    },
+    "test_case_8_2_1_3": {
+        "report": {
+            "reportName": "中国资产负债表（China BISheet 03)XXX",
+            "subsidiary": "China BlSheet 03",
+            "asof": "Jan 2017",
+            "unit": "Ten Thousand"
+        },
+        "error": {
+            "title": "Error",
+            "text": "Enter a correct value for Balance Sheet Name."
+
+        }
+
+    },
+    "test_case_8_2_1_4": {
+        "normal": {
+            "reportName": "中国资产负债表（China BISheet 03)",
+            "subsidiary": "China BlSheet 03",
+            "asof": "Jan 2017",
+            "unit": "Ten Thousand"
+        }
+
+    },
+    "test_case_8_3_1_1": {
+        "normal": {
+            "reportName": "中国资产负债表（China BISheet 03)case41",
+            "subsidiary": "China BlSheet 03",
+            "asof": "Jan 2017",
+            "unit": "Ten Thousand"
+        },
+        "error": {
+            "title": "Error",
+            "text":"The row name of the Balance Sheet is incorrect. The {Current assets,Non-current assets,Total assets,Current liabilities,Non-current liabilities,Total liabilities,Equity,Total liabilities and owner's equity} are fixed names that you must define in the Balance Sheet using the Report Builder."
+        }
+
+    },
+
+    "test_case_8_3_1_2": {
+        "normal": {
+            "reportName": "中国资产负债表（China BISheet 03)case43",
+            "subsidiary": "China BlSheet 03",
+            "asof": "Jan 2017",
+            "unit": "Ten Thousand"
+        },
+        "error": {
+            "title": "Error",
+            "text": "The column name of the Balance Sheet is incorrect. The {Opening Balance,Closing Balance} are fixed names that you must define in the Balance Sheet using the Report Builder. "
+
+        }
+
+    }
+
+
+}

@@ -1,0 +1,75 @@
+{
+
+  "test_10_3_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+            "//*[@id='custpage_periodfrom_fs']":"May 2018",
+            "//*[@id='custpage_periodto_fs']":"May 2018",
+            "custpage_datefrom":"5/8/2018",
+            "custpage_dateto":"5/8/2018",
+            "custpage_transactiontype":"Invoice",
+            "//*[@id='submitter']":"",
+            "waitforload":"",
+            "//*[@id='custpage_sublistrow0']/td[1]/a":"",
+            "switchwindow" : "",
+            "sleep" : "10"
+          }
+        }
+      },
+
+      {
+        "expects":{
+          "data":{
+            "custpage_transactiontype_fs_lbl":{
+              "values":["TRANSACTION TYPE: JOURNAL"]
+            }
+          }
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "//*[@id='custpage_print']":"",
+            "sleep" : "30"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "checkreportfile":"AccountingVoucher"
+          }
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "custpage_docnum_fs_lbl":"",
+            "waitforload":""
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='main_form']/table/tbody/tr[1]/td/div[1]/div[3]/h1":{
+              "values":["Journal"]
+            }
+          }
+        }
+      }
+    ]
+
+
+  }
+}

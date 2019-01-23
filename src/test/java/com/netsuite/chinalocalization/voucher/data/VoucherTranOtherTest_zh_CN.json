@@ -1,0 +1,42 @@
+{
+  "test_1_11_2_1_3":{
+    "labels":{
+      "subsidiary":"Parent Company : China BU",
+      "periodFrom":"Jul 2017",
+      "periodTo":"Jul 2017",
+      "startDate":"7/10/2017",
+      "endDate":"7/10/2017"
+    },
+    "data":{
+    },
+    "expect":[
+      {
+        "creator": "auto1.05",
+        "approver":"auto1.06",
+        "poster":"auto1.07"
+      }
+    ],
+    "record": [
+      {
+        "main": {
+          "id": "1.11.2.1.3",
+          "trantype": "inventoryadjustment",
+          "subsidiary":"Parent Company : China BU",
+          "customer": "CN Automation Customer",
+          "account": "10020104",
+          "postingperiod": "Jul 2017",
+          "trandate": "7/10/2017",
+          "memo": "test_1_11_2_1_3"
+        },
+        "inventory": [
+          {
+            "item": "CN Inv Item1",
+            "location":"CN_BJ",
+            "adjustqtyby":"2"
+          }
+        ]
+      }
+
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "test case 1.41.1.1": {
+    "data": [
+      {
+        "main": {
+          "id": "CFS1.41.1.1",
+          "trantype": "customercharge",
+          "entity": "CN Automation Customer",
+          "account": "11220103 应收账款 : 销售商品 : 设备T1",
+          "exchangerate": "1.00",
+          "trandate": "12/24/2017",
+          "postingperiod": "Dec 2017",
+          "item": "T1 Non-Inventory for Resale",
+          "rate": "1000",
+          "total": "200",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      },
+      {
+        "main": {
+          "id": "CFS1.41.1.1_2",
+          "trantype": "customerpayment",
+          "customer": "CN Automation Customer",
+          "aracct": "11220103 应收账款 : 销售商品 : 设备T1",
+          "exchangerate": "1.00",
+          "trandate": "1/25/2018",
+          "postingperiod": "Jan 2018",
+          "memo": "CFS Case 1.41.1.1",
+          "paymentmethod": "Cash"
+        },
+        "apply": [
+          {
+            "refid": "CFS1.41.1.1",
+            "amount": "200"
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id": "CFS1.41.1.1_3",
+          "account": "10020104 银行存款 : 人民币 : 建行T1",
+          "trandate": "1/26/2018",
+          "memo": "CFS Case 1.41.1.1",
+          "transaction_trandate": "1/25/2018"
+        }
+      }
+    ],
+    "expected": [
+      {
+        "CFS1.41.1.1_2": [
+          {
+            "subsidiary": "Parent Company : China BU",
+            "trandate": "1/26/2018",
+            "postingperiod": "FY 2018 : Q1 2018 : Jan 2018",
+            "item": "Cash received from sales and services",
+            "amount": "200.00"
+          }
+        ]
+      }
+    ]
+  },
+  "test case 1.41.2.1": {
+    "data": [
+      {
+        "main": {
+          "id": "141211",
+          "trantype": "customercharge",
+          "entity": "CN Automation Customer",
+          "account": "11220103 应收账款 : 销售商品 : 设备T1",
+          "trandate": "12/24/2017",
+          "postingperiod": "Dec 2017",
+          "location": "CN_Loc",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "item": "T1 Non-Inventory for Resale",
+          "rate": "1000",
+          "total": "200",
+          "description": "CFS1.41.2.1",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      },
+      {
+        "main": {
+          "id": "141212",
+          "trantype": "customercharge",
+          "entity": "CN Automation Customer",
+          "account": "11220103 应收账款 : 销售商品 : 设备T1",
+          "trandate": "12/25/2017",
+          "postingperiod": "Dec 2017",
+          "location": "CN_Loc",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "item": "T1 Non-Inventory for Resale",
+          "rate": "1000",
+          "total": "800",
+          "description": "CFS1.41.2.1",
+          "custbody_cseg_cn_cfi": "Taxes and surcharges refunds"
+        }
+      },
+      {
+        "main": {
+          "id": "141213",
+          "trantype": "creditmemo",
+          "entity": "CN Automation Customer",
+          "account": "11220103 应收账款 : 销售商品 : 设备T1",
+          "trandate": "11/24/2017",
+          "postingperiod": "Nov 2017",
+          "location": "CN_Loc",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "memo": "CFS1.41.2.1"
+        },
+        "item": [
+          {
+            "item": "CN Inv Item1",
+            "quantity": "1",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "amount": "300",
+            "custcol_cseg_cn_cfi": "Cash received from withdraw of investments"
+          }
+        ]
+      },
+      {
+        "main": {
+          "id": "141214",
+          "trantype": "creditmemo",
+          "entity": "CN Automation Customer",
+          "account": "11220103 应收账款 : 销售商品 : 设备T1",
+          "trandate": "11/25/2017",
+          "postingperiod": "Nov 2017",
+          "location": "CN_Loc",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "memo": "CFS1.41.2.1"
+        },
+        "item": [
+          {
+            "item": "CN Inv Item1",
+            "quantity": "1",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "amount": "400",
+            "custcol_cseg_cn_cfi": "Other cash receipts related to operating activities"
+          }
+        ]
+      },
+      {
+        "main": {
+          "id": "141215",
+          "trantype": "customerpayment",
+          "customer": "CN Automation Customer",
+          "trandate": "1/26/2018",
+          "postingperiod": "Jan 2018",
+          "location": "CN_Loc",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "aracct": "11220103 应收账款 : 销售商品 : 设备T1",
+          "account": "10020104 银行存款 : 人民币 : 建行T1"
+        },
+        "apply": [
+          {
+            "refid": "141211",
+            "amount": "200"
+          },
+          {
+            "refid": "141212",
+            "amount": "600"
+          }
+        ],
+        "credit": [
+          {
+            "refid": "141213",
+            "amount": "300"
+          },
+          {
+            "refid": "141214",
+            "amount": "400"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "labels": {
+    "fieldLabel": {
+      "vatinvoicetype": "增值税发票类型",
+      "vatinfosheetnumber": "红字增值税专用发票信息表编号",
+      "vatcreatefrom": "创建自",
+      "vatsplitrule": "增值税发票拆分规则",
+
+      "tabLabel": "中国增值税",
+      "commonCompany2":"北京一般纳税公司02",
+      "smallCompanyC":"北京小规模纳税公司C",
+      "vatSpecialInvoice":"增值税专用发票",
+
+      "sublistLabel": "增值税发票",
+      "vatStatus": "开票状态",
+      "vatInvoiceCode": "发票代码",
+      "vatInvoiceNum": "发票号码",
+      "vatInvoiceDate": "开票日期",
+      "vatInvoiceTaxAmount": "合计税额",
+      "vatInvoiceTaxExclusiveAmount": "不含税金额"
+    }
+  },
+  "data":{
+    "wrongCreditNumber":"11111111111111111111",
+    "wrongInformationSheet":"11111111111111111111",
+    "shortWrongCreditNumber":"1111111111",
+    "shortWrongInformationSheet":"11111111",
+    "wrongCreditMsg":"请维护正确的16位红字增值税专用发票信息表编号。",
+    "wrongInformationSheetMsg":"请维护正确的16位红字增值税专用发票信息表编号。",
+    "wrongCreditMsgSmallCompany":"小规模纳税人不能开增值税专用发票。",
+    "wrongInvoiceMsgSmallCompany":"小规模纳税人不能开增值税专用发票。",
+    "wrongCashSalesMsgSmallCompany":"小规模纳税人不能开增值税专用发票。",
+    "cashRefundNotExistMsg":"现金交易编号错误或者不存在。",
+
+    "hasBeenRefundMsg":"该现金交易已退款。",
+
+    "invalidCashRefundNum":"10013",
+    "hasBeenRefundNum":"10001"
+  }
+}

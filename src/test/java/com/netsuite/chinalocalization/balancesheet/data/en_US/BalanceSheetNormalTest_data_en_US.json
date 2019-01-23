@@ -1,0 +1,269 @@
+{
+  "filter": {
+    "nomal": {
+      "reportName": "China BLSheet English Version",
+      "subsidiary": "China BlSheet 03",
+      "asof": "Jun 2017",
+      "unit": "Unit"
+    },
+    "withUnitValueThousand": {
+      "reportName": "China BLSheet English Version",
+      "subsidiary": "China BlSheet 03",
+      "asof": "Jun 2017",
+      "unit": "Thousand"
+    }
+  },
+  "test_case_3_2_1_1_1_1": {
+    "expected": {
+      "label":{
+      },
+      "header": {
+        "assets":"Assets",
+        "assetsLines":"Lines",
+        "closingBalance":"Closing Balance",
+        "openingBalance":"Opening Balance",
+        "liabilities":"Liabilities and Owner's Equity",
+        "liabilitiesLines":"Lines",
+        "closingBalance":"Closing Balance",
+        "openingBalance":"Opening Balance"
+      },
+      "rows": [
+        {
+        "assetsLabel":"Current assets",
+        "assetsLineNumber":"1",
+        "liabilitiesLabel":"Current liabilities",
+        "liabilitiesLineNumber":"36"
+      },
+        {
+          "assetsLabel":"Cash and bank",
+          "assetsLineNumber":"2",
+          "liabilitiesLabel":"Short-term borrowings",
+          "liabilitiesLineNumber":"37"
+        },
+        {
+          "assetsLabel":"Financial assets at fair value through profit and loss",
+          "assetsLineNumber":"3",
+          "liabilitiesLabel":"Financial liabilities at fair value through profit and loss",
+          "liabilitiesLineNumber":"38"
+        },
+        {
+          "assetsLabel":"Notes receivable",
+          "assetsLineNumber":"4",
+          "liabilitiesLabel":"Notes payable",
+          "liabilitiesLineNumber":"39"
+        },
+        {
+          "assetsLabel":"Accounts receivable",
+          "assetsLineNumber":"5",
+          "liabilitiesLabel":"Accounts payable",
+          "liabilitiesLineNumber":"40"
+        },
+        {
+          "assetsLabel":"Advances to suppliers",
+          "assetsLineNumber":"6",
+          "liabilitiesLabel":"Advances from customers",
+          "liabilitiesLineNumber":"41"
+        },
+        {
+          "assetsLabel":"Interest receivable",
+          "assetsLineNumber":"7",
+          "liabilitiesLabel":"Employee benefits payable",
+          "liabilitiesLineNumber":"42"
+        },
+        {
+          "assetsLabel":"Dividends receivable",
+          "assetsLineNumber":"8",
+          "liabilitiesLabel":"Taxes and surcharges payable",
+          "liabilitiesLineNumber":"43"
+        },
+        {
+          "assetsLabel":"Other receivables",
+          "assetsLineNumber":"9",
+          "liabilitiesLabel":"Interest payable",
+          "liabilitiesLineNumber":"44"
+        },
+        {
+          "assetsLabel":"Inventories",
+          "assetsLineNumber":"10",
+          "liabilitiesLabel":"Dividends payable",
+          "liabilitiesLineNumber":"45"
+        },
+        {
+          "assetsLabel":"Held-for-sale assets",
+          "assetsLineNumber":"11",
+          "liabilitiesLabel":"Other payables",
+          "liabilitiesLineNumber":"46"
+        },
+        {
+          "assetsLabel":"Current portion of non-current assets",
+          "assetsLineNumber":"12",
+          "liabilitiesLabel":"Held-for-sale liabilities",
+          "liabilitiesLineNumber":"47"
+        },
+        {
+          "assetsLabel":"Other current assets",
+          "assetsLineNumber":"13",
+          "liabilitiesLabel":"Current portion of non-current liabilities",
+          "liabilitiesLineNumber":"48"
+        },
+        {
+          "assetsLabel":"Total current assets",
+          "assetsLineNumber":"14",
+          "liabilitiesLabel":"Other current liabilities",
+          "liabilitiesLineNumber":"49"
+        },
+        {
+          "assetsLabel":"Non-current assets",
+          "assetsLineNumber":"15",
+          "liabilitiesLabel":"Total current liabilities",
+          "liabilitiesLineNumber":"50"
+        },
+        {
+          "assetsLabel":"Available-for-sale financial assets",
+          "assetsLineNumber":"16",
+          "liabilitiesLabel":"Non-current liabilities",
+          "liabilitiesLineNumber":"51"
+        },
+        {
+          "assetsLabel":"Held-to-maturity investments",
+          "assetsLineNumber":"17",
+          "liabilitiesLabel":"Long-term borrowings",
+          "liabilitiesLineNumber":"52"
+        },
+        {
+          "assetsLabel":"Long-term receivables",
+          "assetsLineNumber":"18",
+          "liabilitiesLabel":"Bonds payable",
+          "liabilitiesLineNumber":"53"
+        },
+        {
+          "assetsLabel":"Long-term equity investments",
+          "assetsLineNumber":"19",
+          "liabilitiesLabel":"Long-term payable",
+          "liabilitiesLineNumber":"54"
+        },
+        {
+          "assetsLabel":"Investment property",
+          "assetsLineNumber":"20",
+          "liabilitiesLabel":"Grants payable",
+          "liabilitiesLineNumber":"55"
+        },
+        {
+          "assetsLabel":"Fixed assets",
+          "assetsLineNumber":"21",
+          "liabilitiesLabel":"Provisions",
+          "liabilitiesLineNumber":"56"
+        },
+        {
+          "assetsLabel":"Construction in progress",
+          "assetsLineNumber":"22",
+          "liabilitiesLabel":"Deferred income",
+          "liabilitiesLineNumber":"57"
+        },
+        {
+          "assetsLabel":"Construction materials",
+          "assetsLineNumber":"23",
+          "liabilitiesLabel":"Deferred tax liabilities",
+          "liabilitiesLineNumber":"58"
+        },
+        {
+          "assetsLabel":"Fixed assets pending for disposal",
+          "assetsLineNumber":"24",
+          "liabilitiesLabel":"Other non-current liabilities",
+          "liabilitiesLineNumber":"59"
+        },
+        {
+          "assetsLabel":"Intangible assets",
+          "assetsLineNumber":"25",
+          "liabilitiesLabel":"Total non-current liabilities",
+          "liabilitiesLineNumber":"60"
+        },
+        {
+          "assetsLabel":"Development disbursements",
+          "assetsLineNumber":"26",
+          "liabilitiesLabel":"Total liabilities",
+          "liabilitiesLineNumber":"61"
+        },
+        {
+          "assetsLabel":"Goodwill",
+          "assetsLineNumber":"27",
+          "liabilitiesLabel":"Equity",
+          "liabilitiesLineNumber":"62"
+        },
+        {
+          "assetsLabel":"Long-term deferred expenses",
+          "assetsLineNumber":"28",
+          "liabilitiesLabel":"Paid-in capital",
+          "liabilitiesLineNumber":"63"
+        },
+        {
+          "assetsLabel":"Deferred tax assets",
+          "assetsLineNumber":"29",
+          "liabilitiesLabel":"Capital reserve",
+          "liabilitiesLineNumber":"64"
+        },
+        {
+          "assetsLabel":"Other non-current assets",
+          "assetsLineNumber":"30",
+          "liabilitiesLabel":"Less:treasury shares",
+          "liabilitiesLineNumber":"65"
+        },
+        {
+          "assetsLabel":"Total non-current assets",
+          "assetsLineNumber":"31",
+          "liabilitiesLabel":"Other comprehensive income",
+          "liabilitiesLineNumber":"66"
+        },
+        {
+          "assetsLabel":"",
+          "assetsLineNumber":"32",
+          "liabilitiesLabel":"Surplus reserve",
+          "liabilitiesLineNumber":"67"
+        },
+        {
+          "assetsLabel":"",
+          "assetsLineNumber":"33",
+          "liabilitiesLabel":"Retained earnings",
+          "liabilitiesLineNumber":"68"
+        },
+        {
+          "assetsLabel":"",
+          "assetsLineNumber":"34",
+          "liabilitiesLabel":"Total owner's equity",
+          "liabilitiesLineNumber":"69"
+        },
+        {
+          "assetsLabel":"Total assets",
+          "assetsLineNumber":"35",
+          "liabilitiesLabel":"Total liabilities and owner's equity",
+          "liabilitiesLineNumber":"70"
+        }]
+    }
+  },
+  "test_case_9_2_4": {
+    "expected": {
+      "currency": "Unit: CNY/Unit"
+    }
+  },
+  "test_case_4_1_1_1_1": {
+    "expected": {
+      "fileName": "Balance Sheet.xls"
+    }
+  },
+  "test_case_4_1_1_2_1": {
+    "expected": {
+      "fileName": "Balance Sheet.pdf"
+    }
+  },
+  "test_case_6_2_1_2_1": {
+    "expected": {
+      "fileName": "Balance Sheet.xls"
+    }
+  },
+  "test_case_6_2_1_2_2": {
+    "expected": {
+      "fileName": "Balance Sheet.pdf"
+    }
+  }
+
+}

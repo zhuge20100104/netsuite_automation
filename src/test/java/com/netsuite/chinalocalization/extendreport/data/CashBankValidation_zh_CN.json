@@ -1,0 +1,67 @@
+{
+  "test_case_5_1_1":{
+    "SearchParm" : {
+      "subsidiary":"中国 SubLedger 02"
+    },
+    "CalenderToTest" : "No Period Calendar",
+    "errMsg" : "未对此财政日历定义期间。请依次转到“设置”>“会计”>“管理会计期间”，然后设置或指定所需期间。",
+    "FieldDefault":{
+      "subsidiary":"Parent Company",
+      "datefrom":"1.6.2018",
+      "dateto":"30.6.2018",
+      "accountfrom":"",
+      "accountto":""
+    }
+  },
+
+  "test_case_5_2_1":{
+    "errMsg" : "高级PDF/HTML模板 功能没有启用。请访问“设置>公司>启用功能>SuiteCloud”开启该功能。",
+    "FieldDefault":{
+      "subsidiary":"Parent Company",
+      "datefrom":"1.6.2018",
+      "dateto":"30.6.2018",
+      "accountfrom":"",
+      "accountto":""
+    }
+  },
+
+  "test_case_5_3_1":{
+    "errMsg" : "请输入一个有效的日期范围。起始日期必须在截止日期前。",
+    "SearchParm":{
+      "datefrom":"30.6.2018",
+      "dateto":"1.6.2017"
+    },
+    "FieldDefault":{
+
+      "datefrom":"30.6.2018",
+      "dateto":"30.6.2018"
+    }
+  },
+
+  "test_case_5_3_2":{
+    "errMsg" : "请输入一个有效的日期范围。起始日期必须在截止日期前。",
+    "SearchParm":{
+      "datefrom":""
+    },
+    "FieldDefault":{
+      "subsidiary":"Parent Company",
+      "datefrom":"1.6.2018",
+      "dateto":"30.6.2018"
+    }
+  },
+
+  "test_case_5_4_1":{
+    "errMsg" : "请输入一个有效的科目范围。起始科目必须在截止科目前。",
+    "SearchParm":{
+      "subsidiary":"中国 SubLedger 03",
+      "accountfrom":"600203 - 资产增值收入",
+      "accountto":"600201 - 产品类收入"
+    },
+    "FieldDefault":{
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"1.6.2018",
+      "dateto":"30.6.2018"
+    }
+  }
+
+}

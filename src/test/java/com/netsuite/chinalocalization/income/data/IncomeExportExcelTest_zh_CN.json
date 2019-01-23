@@ -1,0 +1,343 @@
+{
+
+  "test_case_5_1": {
+    "report": {
+      "name": "中国利润表测试Month",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "中国 Income 03"
+        },
+        {
+          "label": "From",
+          "text": "Jun 2017"
+        },
+        {
+          "label": "To",
+          "text": "Jun 2017"
+        }
+      ],
+      "customFilters": [
+
+        {
+          "label": "Department",
+          "filterOperator": "IN",
+          "text": ["Income生产部"]
+        },
+        {
+          "label": "Class",
+          "filterOperator": "IN",
+          "text": ["智能手机"]
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "财务报表",
+          "text": "一、营业收入"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "减：营业成本"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "营业税金及附加"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "销售费用"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "管理费用"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "财务费用"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "资产减值损失"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "加：公允价值变动收益（损失以\"-\"号填列）"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "投资收益（损失以\"-\"号填列）"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "二、营业利润(亏损以\"\"－\"\"号填列)"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "加：营业外收入"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "其中：非流动资产处置利得"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "减：营业外支出"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "其中：非流动资产处置损失"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "三、利润总额（亏损总额以\"－\"号填列）"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "减：所得税费用"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "四、净利润（净亏损以\"－\"号填列）"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "本期金额 (JUN 2017)"
+        },
+        {
+          "columnHeader": "上期金额 (JUN 2016)"
+        }
+      ]
+    },
+    "expResult": {
+      "filename":"利润表.xls",
+      "datastartrow": 4,
+      "datastartcol" : 0,
+      "reportheader":
+      {
+        "title": {
+          "row": 0,
+          "col": 0,
+          "text": "利　润　表"
+        },
+        "legal": {
+          "row": 1,
+          "col": 0,
+          "text": "会企02表"
+        },
+        "subsidiary": {
+          "row": 2,
+          "col": 0,
+          "text": "编制单位： 中国 Income 03"
+        },
+        "period": {
+          "row": 2,
+          "col": 3,
+          "text":" Jun 2017"
+        },
+        "unit": {
+          "row": 2,
+          "col": 5,
+          "text":"单位： CNY/千元"
+        }
+      },
+      "reporttableheader":{
+        "item": {
+          "row": 3,
+          "col": 0,
+          "text":"项目"
+        },
+        "rowNum": {
+          "row": 3,
+          "col": 5,
+          "text":"行次"
+        },
+        "currentperiod": {
+          "row": 3,
+          "col": 6,
+          "text":"本期金额"
+        },
+        "priorperiod": {
+          "row": 3,
+          "col": 7,
+          "text":"上期金额"
+        }
+      }
+    },
+    "filter": {
+      "reportName": "中国利润表测试Month",
+      "subsidiary": "中国 Income 03",
+      "period": "Jun 2017",
+      "unit":"千元"
+
+    }
+  },
+  "test_case_8_2_2_1": {
+    "report": {
+      "name": "中国利润表测试Month",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "中国 Income"
+        },
+        {
+          "label": "From",
+          "text": "Jun 2017"
+        },
+        {
+          "label": "To",
+          "text": "Jun 2017"
+        }
+      ],
+      "customFilters": [
+
+        {
+          "label": "Department",
+          "filterOperator": "IN",
+          "text": ["Income生产部"]
+        },
+        {
+          "label": "Class",
+          "filterOperator": "IN",
+          "text": ["智能手机"]
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "财务报表",
+          "text": "一、营业收入"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "减：营业成本"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "营业税金及附加"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "销售费用"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "管理费用"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "财务费用"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "资产减值损失"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "加：公允价值变动收益（损失以\"-\"号填列）"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "投资收益（损失以\"-\"号填列）"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "二、营业利润(亏损以\"\"－\"\"号填列)"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "加：营业外收入"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "其中：非流动资产处置利得"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "减：营业外支出"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "其中：非流动资产处置损失"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "三、利润总额（亏损总额以\"－\"号填列）"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "减：所得税费用"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "四、净利润（净亏损以\"－\"号填列）"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "本期金额 (JUN 2017)"
+        },
+        {
+          "columnHeader": "上期金额 (JUN 2016)"
+        }
+      ]
+    },
+    "expResult": {
+      "filename":"利润表.xls",
+      "datastartrow": 5,
+      "datastartcol" : 0,
+      "reportheader":
+      {
+        "location": {
+          "row": 3,
+          "col": 0,
+          "text":"地点： 中国 Income华北区"
+        },
+        "department": {
+          "row": 3,
+          "col": 3,
+          "text":"部门： Income生产部"
+        },
+        "class": {
+          "row": 3,
+          "col": 5,
+          "text":"类别： 智能手机"
+        }
+      },
+      "reporttableheader":{
+        "item": {
+          "row": 4,
+          "col": 0,
+          "text":"项目"
+        },
+        "rowNum": {
+          "row": 4,
+          "col": 5,
+          "text":"行次"
+        },
+        "currentperiod": {
+          "row": 4,
+          "col": 6,
+          "text":"本期金额"
+        },
+        "priorperiod": {
+          "row": 4,
+          "col": 7,
+          "text":"上期金额"
+        }
+      }
+    },
+    "filter": {
+      "reportName": "中国利润表测试Month",
+      "subsidiary": "中国 Income",
+      "period": "Jun 2017",
+      "unit":"元",
+      "location":"中国 Income华北区",
+      "department":"Income生产部",
+      "class": "智能手机"
+
+    }
+  }
+
+
+}
+

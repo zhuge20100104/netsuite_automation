@@ -1,0 +1,10 @@
+2018-12-02 16:07:33,610 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: SuiteSetup(com.netsuite.chinalocalization.vat.p2.ChinaVATCanBeSavedTest)
+2018-12-02 16:07:42,193 INFO  org.apache.log4j.Category$info - Navigated to: https://system.netsuite.com/app/login/secure/enterpriselogin.nl?whence=
+2018-12-02 16:07:53,380 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Logged in successfully.
+2018-12-02 16:07:53,529 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Logged in successfully.
+2018-12-02 16:07:59,671 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Field 'showall' in form 'footer_actions_form' does not support nlapi calls.
+2018-12-02 16:07:59,687 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Got field 'showall' value as 'F'
+2018-12-02 16:07:59,989 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Field 'showall' in form 'footer_actions_form' does not support nlapi calls.
+2018-12-02 16:08:00,005 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Got field 'showall' value as 'F'
+2018-12-02 16:08:24,291 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Page title: Home - NetSuite (CN Sprint QA Testing - OW)
+2018-12-02 16:08:25,055 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - End of: SuiteSetup(com.netsuite.chinalocalization.vat.p2.ChinaVATCanBeSavedTest)

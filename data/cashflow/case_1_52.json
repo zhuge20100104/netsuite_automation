@@ -1,0 +1,263 @@
+{
+  "testcase_1.52.1.1.1": {
+    "labels": {
+      "main": {
+        "entity": "CN Automation Customer",
+        "entitytype": "customer",
+        "trandate": "4/16/2018",
+        "postingperiod": "Apr 2018",
+        "location": "CN_Loc",
+        "memo": "1.52.1.1_regular_item"
+      },
+      "item": [
+        {
+          "item": "CN Inv Item1",
+          "quantity": "1",
+          "taxcode": "VAT_CN:UNDEF-CN",
+          "amount": "500",
+          "custcol_cseg_cn_cfi": ""
+        }
+      ]
+    }
+  },
+  "testcase_1.52.1.1.2": {
+    "labels": {
+      "main": {
+        "entity": "CN Automation Customer",
+        "entitytype": "customer",
+        "trandate": "4/16/2018",
+        "postingperiod": "Apr 2018",
+        "location": "CN_Loc",
+        "memo": "1.52.1.1.2_Discount Item"
+      },
+      "item": [
+        {
+          "item": "CN Inv Item1",
+          "quantity": "1",
+          "taxcode": "VAT_CN:UNDEF-CN",
+          "amount": "500",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        {
+          "item": "Discount Item 10%",
+          "custcol_cseg_cn_cfi": ""
+        }
+      ]
+    }
+  },
+  "testcase_1.52.1.1.3": {
+    "labels": {
+      "main": {
+        "entity": "CN Automation Customer",
+        "entitytype": "customer",
+        "trandate": "4/16/2018",
+        "postingperiod": "Apr 2018",
+        "location": "CN_Loc",
+        "memo": "1.52.1.1.3_markup_item"
+      },
+      "item": [
+        {
+          "item": "Markup for Purchase 10",
+          "rate": "10",
+          "amount": "10",
+          "taxcode": "VAT_CN:UNDEF-CN",
+          "custcol_cseg_cn_cfi": ""
+        }
+      ]
+    }
+  },
+  "testcase_1.52.1.1.4": {
+    "labels": {
+      "main": {
+        "entity": "CN Automation Customer",
+        "entitytype": "customer",
+        "trandate": "4/16/2018",
+        "postingperiod": "Apr 2018",
+        "location": "CN_Loc",
+        "memo": "1.52.1.1_regular_item"
+      },
+      "item": [
+        {
+          "item": "CN Inv Item1",
+          "quantity": "1",
+          "taxcode": "VAT_CN:UNDEF-CN",
+          "amount": "500",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      ]
+    }
+  },
+  "testcase_1.52.1.2.1": {
+    "labels": {
+      "main": {
+        "entity": "CN Automation Customer",
+        "entitytype": "customer",
+        "trandate": "4/16/2018",
+        "postingperiod": "Apr 2018",
+        "location": "CN_Loc",
+        "memo": "1.52.1.2.1_regular_item"
+      },
+      "item": [
+        {
+          "item": "CN Inv Item1",
+          "quantity": "1",
+          "taxcode": "VAT_CN:UNDEF-CN",
+          "amount": "500",
+          "custcol_cseg_cn_cfi": ""
+        }
+      ]
+    }
+  },
+  "testcase_1.52.2.1.1": {
+    "labels": {
+      "main": {
+        "customer": "CN Automation Customer",
+        "entitytype": "customer",
+        "trandate": "4/18/2018",
+        "payment": "500",
+        "currency": "Yuan",
+        "exchangerate": "1.00",
+        "custbody_cseg_cn_cfi": "Cash received from sales and services",
+        "memo": "1.52.2.1.1"
+      }
+    }
+  },
+  "testcase_1.52.2.1.2": {
+    "labels": {
+      "main": {
+        "customer": "CN Automation Customer",
+        "entitytype": "customer",
+        "trandate": "4/18/2018",
+        "payment": "500",
+        "currency": "Yuan",
+        "custbody_cseg_cn_cfi": "",
+        "memo": "1.52.2.1.2"
+      }
+    }
+  },
+  "testcase_1.52.2.2.1": {
+    "labels": {
+      "main": {
+        "customer": "CN Automation Customer",
+        "entitytype": "customer",
+        "payment": "500",
+        "currency": "Yuan",
+        "custbody_cseg_cn_cfi": "",
+        "memo": "1.52.2.2.1"
+      }
+    }
+  },
+  "testcase_1.52.3.1.1": {
+    "labels": [
+      {
+        "main": {
+          "customer": "CN Automation Customer",
+          "entitytype": "customer",
+          "trandate": "4/18/2018",
+          "payment": "500",
+          "currency": "Yuan",
+          "exchangerate": "1.00",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services",
+          "memo": "1.52.3.1.1_customer_deposit"
+        }
+      },
+      {
+        "main": {
+          "customer": "CN Automation Customer",
+          "entitytype": "customer",
+          "account": "10020104 银行存款 : 人民币 : 建行T1",
+          "aracct": "11220103 应收账款 : 销售商品 : 设备T1",
+          "exchangerate": "1.00",
+          "trandate": "4/18/2018",
+          "postingperiod": "Apr 2018",
+          "paymentmethod": "Cash",
+          "memo": "1.52.3.1.1_customer_refund",
+          "custbody_cseg_cn_cfi": "Taxes and surcharges refunds"
+        },
+        "deposit": [
+          {
+            "apply": "T"
+          }
+        ]
+      }
+    ]
+  },
+  "testcase_1.52.3.1.2": {
+    "labels": [
+      {
+        "main": {
+          "customer": "CN Automation Customer",
+          "entitytype": "customer",
+          "trandate": "4/18/2018",
+          "payment": "500",
+          "currency": "Yuan",
+          "exchangerate": "1.00",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services",
+          "memo": "1.52.3.1.2_customer_deposit"
+        }
+      },
+      {
+        "main": {
+          "customer": "CN Automation Customer",
+          "entitytype": "customer",
+          "account": "10020104 银行存款 : 人民币 : 建行T1",
+          "aracct": "11220103 应收账款 : 销售商品 : 设备T1",
+          "exchangerate": "1.00",
+          "trandate": "4/18/2018",
+          "postingperiod": "Apr 2018",
+          "paymentmethod": "Cash",
+          "memo": "1.52.3.1.2_customer_refund",
+          "custbody_cseg_cn_cfi": ""
+        },
+        "deposit": [
+          {
+            "apply": "T"
+          }
+        ]
+      }
+    ]
+  },
+  "testcase_1.52.3.2.1": {
+    "labels": [
+      {
+        "main": {
+          "customer": "CN Automation Customer",
+          "entitytype": "customer",
+          "payment": "500",
+          "currency": "Yuan",
+          "exchangerate": "1.00",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services",
+          "memo": "1.52.3.1.2_customer_deposit"
+        }
+      },
+      {
+        "main": {
+          "customer": "CN Automation Customer",
+          "entitytype": "customer",
+          "account": "10020104 银行存款 : 人民币 : 建行T1",
+          "aracct": "11220103 应收账款 : 销售商品 : 设备T1",
+          "exchangerate": "1.00",
+          "trandate": "4/18/2018",
+          "postingperiod": "Apr 2018",
+          "paymentmethod": "Cash",
+          "memo": "1.52.3.1.1_customer_refund",
+          "custbody_cseg_cn_cfi": ""
+        },
+        "deposit": [
+          {
+            "apply": "T"
+          }
+        ]
+      }
+    ]
+  }
+}
+
+
+
+
+
+
+
+
+

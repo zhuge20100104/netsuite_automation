@@ -1,0 +1,55 @@
+{
+  "test_case_1_2_1" : {
+    "Buttons" : {
+      "saveBut" : {
+        "text" : "Save",
+        "displayed" : true
+      },
+      "cancelBut" : {
+        "text" : "Cancel",
+        "displayed" : true
+      }
+    }
+  },
+  "test_case_1_2_2" : {
+    "Labels" : {
+      "page_title" : {
+        "text" : "Configuration"
+      },
+      "general_tab" : {
+        "text" : "General",
+        "fieldid" : "custpage_general_subtab"
+      },
+      "enable_feature" : {
+        "text" : "Enable Features",
+        "fieldid" : "custpage_general_field_group"
+      },
+      "vat" : {
+        "text" : "CHINA VAT INTEGRATION",
+        "fieldid" : "custrecord_cn_pref_vat"
+      },
+      "cfs" : {
+        "text" : "CHINA CASH FLOW STATEMENT",
+        "fieldid" : "custrecord_cn_pref_cfs"
+      }
+    }
+  },
+  "test_case_2_1_1" : {
+    "ItemStat" : {
+      "vat" : "T",
+      "cfs" : "T"
+    }
+  },
+  "test_case_2_1_2" : {
+    "ItemStat" : {
+      "vat" : "F",
+      "cfs" : "F"
+    }
+  },
+  "test_case_2_1_3" : {
+    "ItemStat" : {
+      "vat" : "T",
+      "cfs" : "T"
+    }
+  }
+}

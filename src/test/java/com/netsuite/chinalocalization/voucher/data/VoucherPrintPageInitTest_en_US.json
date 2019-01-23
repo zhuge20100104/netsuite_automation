@@ -1,0 +1,11 @@
+{
+  "test_1_3_1_1_8":{
+
+    "expect":{
+      "defaultTemplate":"Single Currency",
+      "printTemplateLOV":["Single Currency","Multiple Currencies"]
+    }
+
+  }
+
+}

@@ -1,0 +1,59 @@
+{
+  "caseId": "test 1.36.1.2",
+  "data": {
+    "item": [
+      {
+        "lineid": "1",
+        "itemold": "CN Auto CashFlow Item1"
+      },
+      {
+        "lineid": "2",
+        "itemold": "CFS Service for Sale"
+      },
+      {
+        "lineid": "3",
+        "itemold": "CN Inv Item1"
+      },
+      {
+        "lineid": "4",
+        "itemold": "T1 Non-Inventory for Resale"
+      },
+      {
+        "lineid": "5",
+        "itemold": "CFS Inventory Item Matrix : CFS Inventory Item Matrix-B-S"
+      },
+      {
+        "lineid": "6",
+        "itemold": "CFS Subtotal"
+      }
+    ]
+  },
+  "expected": {
+    "item": [
+      {
+        "cfsold": "Taxes and surcharges refunds",
+        "cfsnew": "Taxes and surcharges refunds"
+      },
+      {
+        "cfsold": "Cash received from sales and services",
+        "cfsnew": "Cash received from sales and services"
+      },
+      {
+        "cfsold": "Taxes and surcharges refunds",
+        "cfsnew": "Taxes and surcharges refunds"
+      },
+      {
+        "cfsold": "",
+        "cfsnew": ""
+      },
+      {
+        "cfsold": "Taxes and surcharges refunds",
+        "cfsnew": "Taxes and surcharges refunds"
+      },
+      {
+        "cfsold": "",
+        "cfsnew": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "caseId": "test 1.36.3.5",
+  "data": {
+    "item": [
+      {
+        "lineid": "1",
+        "itemold": "CFS Lot Numbered Inventory Item"
+      },
+      {
+        "lineid": "2",
+        "itemold": "T1 Service for Resale"
+      },
+      {
+        "lineid": "3",
+        "itemold": "CFS Description Item"
+      }
+    ]
+  },
+  "expected": {
+    "item": [
+      {
+        "cfsold": "Taxes and surcharges refunds",
+        "cfsnew": "Taxes and surcharges refunds"
+      },
+      {
+        "cfsold": "Taxes and surcharges refunds",
+        "cfsnew": "Taxes and surcharges refunds"
+      },
+      {
+        "cfsold": "",
+        "cfsnew": ""
+      }
+    ]
+  }
+}

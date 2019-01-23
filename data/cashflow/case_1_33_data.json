@@ -1,0 +1,123 @@
+{
+  "test case 1.33.2.2": {
+    "data":[
+      {
+        "main": {
+          "id": "1.33.2.2",
+          "trantype": "invoice",
+          "entity": "CN Automation Customer",
+          "trandate": "9/5/2017",
+          "postingperiod": "Sep 2017",
+          "location": "CN_BJ",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "account": "11220103 应收账款 : 销售商品 : 设备T1",
+          "memo": "test case 1.33.2.2",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item1",
+            "quantity": "1",
+            "amount": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ],
+        "promotions": [
+          {
+            "promocode": "Standard Promotion 10%"
+          }
+        ]
+      },
+      {
+        "main": {
+          "trantype": "customerpayment",
+          "customer": "CN Automation Customer",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "trandate": "9/5/2017",
+          "postingperiod": "Sep 2017",
+          "account": "10020103 银行存款 : 人民币 : 工行T1"
+        },
+        "apply": [
+          {
+            "refid": "1.33.2.2",
+            "amount": "900"
+          }
+        ]
+      }
+    ],
+    "expect": [
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "9/5/2017",
+        "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+        "item": "Cash received from sales and services",
+        "amount": "900.00"
+      }
+    ]
+  },
+  "test case 1.33.2.4": {
+    "data": [
+      {
+        "main": {
+          "id": "1.33.2.4_invoice",
+          "trantype": "invoice",
+          "entity": "CN Automation Customer",
+          "account": "11220103 应收账款 : 销售商品 : 设备T1",
+          "trandate": "9/5/2017",
+          "postingperiod": "Sep 2017",
+          "location": "CN_BJ",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "memo": "test case 1.32.2.4",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item1",
+            "quantity": "1",
+            "amount": "20",
+            "taxcode": "VAT_CN:CN_VATOUT_6",
+            "custcol_cseg_cn_cfi": ""
+          },
+          {
+            "item": "Discount Item 10",
+            "quantity": "1",
+            "amount": "-1.47",
+            "taxcode": "VAT_CN:CN_VATOUT_6",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      },
+      {
+        "main": {
+          "id": "1.33.2.4_customerpayment",
+          "trantype": "customerpayment",
+          "customer": "CN Automation Customer",
+          "aracct": "11220103 应收账款 : 销售商品 : 设备T1",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "trandate": "9/5/2017",
+          "postingperiod": "Sep 2017"
+        },
+        "apply": [
+          {
+            "refid": "1.33.2.4_invoice",
+            "amount": "15.68"
+          }
+        ]
+      }
+    ],
+    "expect": [
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "9/5/2017",
+        "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+        "item": "Cash received from sales and services",
+        "amount": "18.53"
+      }
+    ]
+  }
+}

@@ -1,0 +1,337 @@
+{
+
+  "test_2_1_4_2":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "20",
+            "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList 02",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='custpage_period_fs']":
+            {
+              "values": ["Oct 2017"]
+            }
+          }
+        }}
+    ]
+  },
+  "test_2_1_3_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='incomestatement_data']":{
+              "displayed" : false
+
+            }
+          }
+
+        }}
+    ]
+  },
+  "test_2_1_1_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='custpage_refresh']":
+            {
+              "values": "Refresh"
+            },
+            "//*[@id='main_form']/table/tbody/tr[1]/td/div[1]/div[2]/h1":
+            {
+              "values": "China Income Statement"
+            },
+            "//*[@id='custpage_reportname_fs_lbl']":
+            {
+              "values": "INCOME STATEMENT NAME *"
+            },
+            "//*[@id='custpage_subsidiary_fs_lbl']":
+            {
+              "values": "SUBSIDIARY"
+            },
+            "//*[@id='custpage_period_fs_lbl']":
+            {
+              "values": "PERIOD"
+            },
+            "//*[@id='custpage_unit_fs_lbl']":
+            {
+              "values": "UNIT"
+            },
+            "//*[@id='custpage_unit_fs']":
+            {
+              "values": "Unit"
+            }
+          }
+        }}
+    ]
+  },
+
+
+  "test_4_4_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "20",
+            "//*[@id='custpage_subsidiary_fs']":"中国 Income 02",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "dialogs":[
+              {
+                "type":"common",
+                "message":"Accounting Period is not defined for this fiscal calendar. Go to Setup > Accounting > Manage Accounting Periods and set up or assign the period you need."
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "test_4_6_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "20",
+            "custpage_reportname": "中国利润表测试Month1ColOnly",
+            "//*[@id='custpage_refresh']":"",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "dialogs":[
+              {
+                "type":"common",
+                "message":"Income Statement Reports should have two amount columns defined using the Financial Report Builder."
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "test_2_2_3_1_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "10",
+            "custpage_reportname": "中国利润表测试Month",
+            "//*[@id='custpage_subsidiary_fs']":"中国 Income 03",
+            "//*[@id='custpage_period_fs']":"Jun 2017",
+            "//*[@id='custpage_unit_fs']":"Unit",
+            "//*[@id='custpage_refresh']":"",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='incomestatement_header']/tbody/tr[1]/td/b":
+            {
+              "values": ["Income Statement"]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[3]/td[1]/b":
+            {
+              "values": ["Prepared by: "]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[3]/td[2]":
+            {
+              "values": ["Jun 2017"]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[2]/td":
+            {
+              "values": ["Form 02"]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[3]/td[3]":
+            {
+              "values": ["<b>Unit: </b>CNY/Unit"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[1]":
+            {
+              "values": ["Items"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[2]":
+            {
+              "values": ["Lines"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[3]":
+            {
+              "values": ["本期金额"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[4]":
+            {
+              "values": ["上期金额"]
+            },
+
+            "//*[@id='incomestatement_data']/tbody/tr[2]/td[2]":
+            {
+              "values": ["1"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[2]/td[3]":
+            {
+              "values": ["400,000.00"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[2]/td[4]":
+            {
+              "values": ["40,000.00"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[18]/td[4]":
+            {
+              "values": ["-530,000.00"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[18]/td[2]":
+            {
+              "values": ["17"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[18]/td[3]":
+            {
+              "values": ["-5,300,000.00"]
+            }
+          }
+        }
+      }
+    ]
+  },
+  "test_2_2_3_1_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "sleep" : "10",
+            "custpage_reportname": "中国利润表模板_中文",
+            "//*[@id='custpage_subsidiary_fs']":"中国 Income 03",
+            "//*[@id='custpage_period_fs']":"Jun 2017",
+            "//*[@id='custpage_unit_fs']":"Unit",
+            "//*[@id='custpage_refresh']":"",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='incomestatement_header']/tbody/tr[1]/td/b":
+            {
+              "values": ["Income Statement"]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[3]/td[1]/b":
+            {
+              "values": ["Prepared by: "]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[3]/td[2]":
+            {
+              "values": ["Jun 2017"]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[2]/td":
+            {
+              "values": ["Form 02"]
+            },
+            "//*[@id='incomestatement_header']/tbody/tr[3]/td[3]":
+            {
+              "values": ["<b>Unit: </b>CNY/Unit"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[1]":
+            {
+              "values": ["Items"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[2]":
+            {
+              "values": ["Lines"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[3]":
+            {
+              "values": ["本期金额"]
+            },
+            "//*[@id='incomestatement_data']/tbody/tr[1]/th[4]":
+            {
+              "values": ["上期金额"]
+            }
+
+          }
+        }
+      }
+    ]
+  }
+
+}

@@ -1,0 +1,38 @@
+{
+	"test VATExport 2.5.2-2": {
+		"filter": {
+			"subsidiary": "北京VAT",
+			"invoicetype": "增值税普通发票",
+			"datefrom": "8/8/2017",
+			"dateto": "8/8/2017"
+		},
+		"data": [
+			{
+			    "main": {
+				    "trantype":"invoice",
+				    "entity":"北京小规模纳税公司C",
+				    "trandate":"8/8/2017",
+				    "postingperiod":"Aug 2017",
+				    "location":"海淀",
+					"custbody_cn_vat_invoice_type": "2"
+			    },
+			    "item":[
+				    {"item":"思科CiscoPhone 7970","quantity":"1"}
+			    ]
+		    },
+			{
+				"main": {
+					"trantype":"creditmemo",
+					"entity":"北京小规模纳税公司C",
+					"trandate":"8/8/2017",
+					"postingperiod":"Aug 2017",
+					"location":"海淀",
+					"custbody_cn_vat_invoice_type": "2"
+				},
+				"item":[
+					{"item":"思科CiscoPhone 7970","quantity":"1"}
+				]
+			}
+		]
+	}
+}

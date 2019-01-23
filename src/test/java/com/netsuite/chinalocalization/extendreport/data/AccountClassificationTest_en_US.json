@@ -1,0 +1,225 @@
+{
+    "filename": "AccountBalance",
+    "title": "Account Balance",
+    "subsidiary": "Subsidiary: ",
+    "company" : "Company: ",
+    "page" : "Page: ",
+    "defaultUserPreference": {
+        "NUMBERFORMAT": "1,000,000.00",
+        "DATEFORMAT": "M/D/YYYY",
+        "TIMEFORMAT": "hh:mm AM/PM",
+        "ONLYSHOWLASTSUBACCT": "T"
+    },
+    "test_case_8_1_2": {
+        "expectedResult": {
+            "locations": ["中国 Income华北区","中国 北京","中国 上海","中国 Income华南区"],
+            "departments":["Income业务部",
+                "Income会计部",
+                "Income生产部",
+                "Income生产部01",
+                "Income生产部02",
+                "Income开发部"],
+            "classes":["售后支持",
+                "智能手机",
+                "Plus系列",
+                "X系列",
+                "电脑",
+                "穿戴设备",
+                "配件"]
+        },
+        "filter": {
+            "subsidiary": "中国 Income"
+        }
+    },
+    "test_case_8_2_1": {
+        "expectedResult": {
+            "data": [
+                {
+                    "accountName": "100104 - 库存现金中国Income",
+                    "openBalanceDirection": "Balanced",
+                    "openBalance_amount": "0.00",
+                    "debitAmount": "10,000.00",
+                    "creditAmount": "0.00",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "10,000.00"
+                },
+                {
+                    "accountName": "6001 - 主营业务收入",
+                    "openBalanceDirection": "Balanced",
+                    "openBalance_amount": "0.00",
+                    "debitAmount": "0.00",
+                    "creditAmount": "10,000.00",
+                    "closeBalanceDirection": "Credit",
+                    "closeBalanceAmount": "10,000.00"
+                }
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 Income",
+            "datefrom": "6/10/2016",
+            "dateto": "6/10/2016",
+            "location": "中国 Income华北区",
+            "department": "Income生产部",
+            "class": "智能手机"
+        },
+        "accountToSL":"6001 - 主营业务收入",
+        "sltitle" : "China Subledger",
+        "accountToCB":"100104 - 库存现金中国Income",
+        "cbtitle" : "China Cash & Bank Journal Ledger"
+    },
+    "test_case_8_2_2": {
+        "expectedResult": {
+            "filename":"AccountBalance.xls",
+            "reportheader":
+            {
+                "title": {
+                    "row": 0,
+                    "col": 0,
+                    "text": "Account Balance"
+                },
+                "subsidiary": {
+                    "row": 1,
+                    "col": 0,
+                    "text": "Subsidiary: 中国 Income"
+                },
+                "period": {
+                    "row": 1,
+                    "col": 2,
+                    "text": "6/10/2016 - 6/10/2016"
+                },
+                "currency": {
+                    "row": 1,
+                    "col": 5,
+                    "text":"Currency: USD"
+                },
+                "location": {
+                    "row": 2,
+                    "col": 0,
+                    "text": "Location: 中国 Income华北区"
+                },
+                "department": {
+                    "row": 2,
+                    "col": 2,
+                    "text": "Department: Income生产部"
+                },
+                "class": {
+                    "row": 2,
+                    "col": 5,
+                    "text":"Class: 智能手机"
+                }
+            },
+            "datastartrow": 5,
+            "datastartcol" : 0
+        },
+        "filter": {
+            "subsidiary": "中国 Income",
+            "datefrom": "6/10/2016",
+            "dateto": "6/10/2016",
+            "location": "中国 Income华北区",
+            "department": "Income生产部",
+            "class": "智能手机"
+        }
+    },
+
+    "test_case_8_2_4_Excel": {
+        "expectedResult": {
+            "filename":"AccountBalance.xls",
+            "reportheader":
+            {
+                "location": {
+                    "row": 2,
+                    "col": 0,
+                    "text": "Department: Income生产部"
+                },
+                "department": {
+                    "row": 2,
+                    "col": 2,
+                    "text": "Class: 智能手机"
+                }
+            },
+            "datastartrow": 5,
+            "datastartcol" : 0
+        },
+        "filter": {
+            "subsidiary": "中国 Income",
+            "datefrom": "6/10/2016",
+            "dateto": "6/10/2016",
+            "department": "Income生产部",
+            "class": "智能手机"
+        }
+    },
+    "test_case_8_2_5_Excel": {
+        "expectedResult": {
+            "filename":"AccountBalance.xls",
+            "reportheader":
+            {
+                "location": {
+                    "row": 2,
+                    "col": 0,
+                    "text": "Class: 智能手机"
+                }
+            },
+            "datastartrow": 5,
+            "datastartcol" : 0
+        },
+        "filter": {
+            "subsidiary": "中国 Income",
+            "datefrom": "6/10/2016",
+            "dateto": "6/10/2016",
+            "class": "智能手机"
+        }
+    },
+    "test_case_8_2_3": {
+        "filter": {
+            "subsidiary": "中国 Income",
+            "datefrom": "6/10/2016",
+            "dateto": "6/10/2016",
+            "location": "中国 Income华北区",
+            "department": "Income生产部",
+            "class": "智能手机"
+        },
+        "expectedResult": {
+
+            "title": "Account Balance",
+            "subsidiary":"Subsidiary: ",
+            "period":"6/10/2016 - 6/10/2016",
+            "currency":"Currency: USD",
+            "classification":["Location:","Department:","Class:"]
+        }
+    },
+    "test_case_8_2_4_PDF": {
+        "filter": {
+            "subsidiary": "中国 Income",
+            "datefrom": "6/10/2016",
+            "dateto": "6/10/2016",
+            "department": "Income生产部",
+            "class": "智能手机"
+        },
+        "expectedResult": {
+
+            "title": "Account Balance",
+            "subsidiary":"Subsidiary: ",
+            "period":"6/10/2016 - 6/10/2016",
+            "currency":"Currency: USD",
+            "classification":["Department:","Class:"]
+        }
+    },
+
+    "test_case_8_2_5_PDF": {
+        "filter": {
+            "subsidiary": "中国 Income",
+            "datefrom": "6/10/2016",
+            "dateto": "6/10/2016",
+            "class": "智能手机"
+        },
+        "expectedResult": {
+
+            "title": "Account Balance",
+            "subsidiary":"Subsidiary: ",
+            "period":"6/10/2016 - 6/10/2016",
+            "currency":"Currency: USD",
+            "classification":["Class:"]
+        }
+    }
+}
+

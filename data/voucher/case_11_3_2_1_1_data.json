@@ -1,0 +1,58 @@
+{
+  "case_11_3_2_1_1": {
+    "data": [
+      {
+        "main": {
+          "id": "voucher_11_3_2_1_1",
+          "trantype": "journalentry",
+          "subsidiary": "China BU",
+          "trandate": "8/6/2017",
+          "postingperiod": "Aug 2017",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "approvalstatus": "2"
+        },
+        "line": [
+          {
+            "account": "10020104 银行存款 : 人民币 : 建行T1",
+            "credit": "1400"
+          },
+          {
+            "account": "1100 Accounts Receivable",
+            "debit": "1400"
+          }
+        ]
+      }
+    ],
+    "ui": {
+      "voucherPrintParams": {
+        "subsidiary": "Parent Company : China BU",
+        "periodFrom": "Aug 2017",
+        "periodTo": "Aug 2017",
+        "tranDateFrom": "8/6/2017",
+        "tranDateTo": "8/6/2017"
+      }
+    },
+    "expected": {
+      "expectedHeader": {
+        "subsidiary": "China BU",
+        "tranType": "Journal",
+        "trandate": "8/6/2017"
+      },
+      "voucherReportBody": [
+        {
+          "lineNum": 1,
+          "acctDesp": "10020104 银行存款 : 人民币 : 建行T1",
+          "funcCcyCredit": "1400.00",
+          "funcCcyDebit": ""
+        },
+        {
+          "lineNum": 2,
+          "acctDesp": "1100 Accounts Receivable",
+          "funcCcyCredit": "",
+          "funcCcyDebit": "1400.00"
+        }
+      ]
+    }
+  }
+}

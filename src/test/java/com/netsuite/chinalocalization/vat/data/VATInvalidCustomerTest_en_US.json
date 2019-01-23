@@ -1,0 +1,77 @@
+{
+  "test_case_6_4_1_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice"
+    },
+    "data": [
+      {
+        "main": {
+          "trantype": "customer",
+          "companyname": "VAT Invalid Customer6411",
+          "externalid": "VATCU6411",
+          "subsidiary": "Parent Company : 中国VAT : 北京VAT"
+        }
+      },
+      {
+        "main": {
+          "trantype": "invoice",
+          "entity": "VAT Invalid Customer6411",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResults": {
+      "tax_reg_num_missing": "Please enter value(s) for: {Customer Tax Registration Number}."
+    }
+  },
+  "test_case_6_4_1_3": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice"
+    },
+    "data": [
+      {
+        "main": {
+          "trantype": "customer",
+          "companyname": "VAT Invalid Customer6413",
+          "externalid": "VATCU6413",
+          "subsidiary": "Parent Company : 中国VAT : 北京VAT"
+        }
+      },
+      {
+        "main": {
+          "trantype": "invoice",
+          "entity": "VAT Invalid Customer6413",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResults": {
+      "customer_fields_missing": "Please enter value(s) for: {Customer Tax Registration Number, Customer Bank Account, Customer Address and Phone Number}."
+    }
+  },
+  "test_case_2_12_1": {
+
+    "expectedResults": {
+      "errmsg1": "The value for {Customer Bank Account} has exceeded the 100 limit.",
+      "errmsg2" :"The value for {Item Name} has exceeded the 92 limit.",
+      "errmsg3" : "The value for {UOM} has exceeded the 22 limit.",
+      "errmsg4":"Click Cancel to stop exporting or click OK to proceed."
+    }
+  }
+}

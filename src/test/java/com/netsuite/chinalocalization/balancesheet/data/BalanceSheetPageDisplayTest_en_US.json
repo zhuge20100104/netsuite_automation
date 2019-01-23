@@ -1,0 +1,182 @@
+{
+    "test_2_2_1_1":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_blsheet:customdeploy_sl_cn_blsheet"
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "custpage_refresh":{
+                            "value":"Refresh",
+                            "disable" : false
+                        },
+                        "custpage_reportname":{
+                            "label":"BALANCE SHEET NAME"
+                        },
+                        "custpage_subsidiary":{
+                            "label":"SUBSIDIARY"
+                        },
+                        "custpage_asof":{
+                            "label":"AS OF"
+                        },
+                        "custpage_unit":{
+                            "label":"UNIT"
+                        },
+                        "//*[@id='custpage_unit_fs']":{
+                            "values":["Unit"]
+                        },
+                        ".//*[@id='main_form']/table/tbody/tr[1]/td/div[1]/div[2]/h1":{
+                            "values":["China Balance Sheet"]
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_reportname_fs']":"中国资产负债表（China BISheet 03)",
+                        "//*[@id='custpage_subsidiary_fs']":"China BlSheet 03",
+                        "//*[@id='custpage_asof_fs']":"Jun 2017",
+                        "//*[@id='custpage_unit_fs']":"Thousand",
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":""
+
+                    }
+                }
+            },
+
+            {
+                "expects":{
+                    "data":{
+                        "custpage_refresh":{
+                            "value":"Refresh",
+                            "disable" : false
+                        },
+                        "custpage_export_excel":{
+                            "value":"Export Excel",
+                            "disable" : false
+                        },
+                        "custpage_export_pdf":{
+                            "value":"Export PDF",
+                            "disable" : false
+                        },
+                        ".//*[@id='blsheet_header']/tbody/tr[1]/td/b":{
+                            "values":["Balance Sheet"]
+                        },
+                        ".//*[@id='blsheet_header']/tbody/tr[2]/td[2]/p":{
+                            "values":["Form 01"]
+                        },
+                        ".//*[@id='blsheet_header']/tbody/tr[3]/td[1]/b":{
+                            "values":["Prepared by:"]
+                        },
+                        ".//*[@id='blsheet_header']/tbody/tr[3]/td[2]/p":{
+                            "values":["6/30/2017"]
+                        },
+                        ".//*[@id='blsheet_header']/tbody/tr[3]/td[3]":{
+                            "values":["<b>Unit:</b> CNY/Thousand"]
+                        }
+                    }
+                }
+            }
+        ]
+
+
+    },
+    "test_builtin_template":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_blsheet:customdeploy_sl_cn_blsheet"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_reportname_fs']":"China Balance Sheet Template_English",
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":""
+
+                    }
+                }
+            },
+
+            {
+                "expects":{
+                    "data":{
+                        "custpage_refresh":{
+                            "value":"Refresh",
+                            "disable" : false
+                        },
+                        "custpage_export_excel":{
+                            "value":"Export Excel",
+                            "disable" : false
+                        },
+                        "custpage_export_pdf":{
+                            "value":"Export PDF",
+                            "disable" : false
+                        },
+                        ".//*[@id='blsheet_header']/tbody/tr[1]/td/b":{
+                            "values":["Balance Sheet"]
+                        }
+                    }
+                }
+            }
+        ]
+
+
+    },
+    "test_2_2_2_1_1":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_blsheet:customdeploy_sl_cn_blsheet"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_reportname_fs']":"中国资产负债表（China BISheet 03)",
+                        "//*[@id='custpage_subsidiary_fs']":"China BlSheet 01",
+                        "//*[@id='custpage_asof_fs']":"FY 2017",
+                        "//*[@id='custpage_subsidiary_fs']":"China BlSheet 03",
+                        "//*[@id='custpage_asof_fs']":"Jun 2017",
+                        "//*[@id='custpage_unit_fs']":"千元",
+                        "//*[@id='custpage_unit_fs']":"万元",
+                        "//*[@id='custpage_unit_fs']":"元",
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":""
+
+                    }
+                }
+            },
+            {
+                "expects": {
+                    "data": {
+                        "custpage_refresh": {
+                            "value": "Refresh",
+                            "disable": false
+                        },
+                        "custpage_export_excel": {
+                            "value": "Export Excel",
+                            "disable": false
+                        },
+                        "custpage_export_pdf": {
+                            "value": "Export PDF",
+                            "disable": false
+                        }
+                    }
+                }
+            }
+        ]
+
+
+    }
+
+
+}

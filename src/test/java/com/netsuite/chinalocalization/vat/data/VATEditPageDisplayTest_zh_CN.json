@@ -1,0 +1,188 @@
+{
+  "tranHeader": {
+    "select": "选择",
+    "internalId": "内部标识",
+    "customerName": "客户名称",
+    "tranType": "事务处理类型",
+    "docNum": "单据编号",
+    "status": "状态",
+    "docDate": "单据日期",
+    "amount": "不含税金额",
+    "afterdiscountamt": "折后金额"
+  },
+  "itemHeader": {
+    "itemName": "货物名称",
+    "model": "规格型号",
+    "uom": "单位",
+    "quantity": "数量",
+    "amount": "不含税金额",
+    "unitPrice": "单价",
+    "taxRate": "税率",
+    "discountAmount": "折扣金额"
+  },
+  "test_case_19_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "11/29/2017",
+      "dateto": "11/29/2017"
+    },
+    "expectedResult": {
+      "items": []
+    },
+    "labels": {
+      "title": "中国增值税事务处理",
+      "cancelButton": "取消",
+      "primaryInforHeader": "主要信息",
+      "MergeButton": "合并",
+      "unmergeButton": "取消合并",
+      "selectCol": "选择",
+      "internalIdCol": "内部标识",
+      "customerCol": "客户名称",
+      "tranTypeCol": "事务处理类型",
+      "docNumCol": "单据编号",
+      "statusCol": "状态",
+      "docDateCol": "单据日期",
+      "taxExAmountCol": "不含税金额",
+      "amountAftDisCol": "折后金额",
+      "itemsHeader": "货品",
+      "itemNameCol": "货物名称",
+      "modelCol": "规格型号",
+      "uomCol": "单位",
+      "quantityCol": "数量",
+      "unitPriceCol": "单价",
+      "itemTaxExAmountCol": "不含税金额",
+      "taxRateCol": "税率",
+      "itemDisAmountCol": "折扣金额"
+    }
+  },
+  "test_case_19_3_1_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "11/29/2017",
+      "dateto": "11/29/2017",
+      "customer": "北京一般纳税公司01",
+      "tranType": "发票",
+      "docNum": "10701"
+    },
+    "expectedResult": {
+      "internalId": "IN10701",
+      "customer": "北京一般纳税公司01",
+      "tranType": "发票",
+      "docNum": "10701",
+      "status": "",
+      "docDate": "20171129",
+      "taxExAmount": "35,303.96",
+      "amountAftDis": "35,303.96",
+      "type": "invoice",
+      "items": [
+        {
+          "itemName": "思科CiscoPhone 7970",
+          "model": "7970型号",
+          "uom": "台",
+          "quantity": "1",
+          "unitprice": "5,600.99",
+          "taxExAmount": "5,600.99",
+          "taxRate": "0.17",
+          "disAmount": ""
+        },
+        {
+          "itemName": "联想ThinkPad T460",
+          "model": "T460型号",
+          "uom": "Meter",
+          "quantity": "1",
+          "unitprice": "10,600.99",
+          "taxExAmount": "10,600.99",
+          "taxRate": "0.17",
+          "disAmount": ""
+        },
+        {
+          "itemName": "联想ThinkPad T470",
+          "model": "",
+          "uom": "",
+          "quantity": "1",
+          "unitprice": "13,500.99",
+          "taxExAmount": "13,500.99",
+          "taxRate": "0.17",
+          "disAmount": ""
+        },
+        {
+          "itemName": "思科CiscoPhone 7970",
+          "model": "7970型号",
+          "uom": "台",
+          "quantity": "1",
+          "unitprice": "5,600.99",
+          "taxExAmount": "5,600.99",
+          "taxRate": "0.13",
+          "disAmount": ""
+        }
+      ]
+    }
+  },
+  "test_case_19_1_2_2": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "11/29/2017",
+      "dateto": "11/29/2017",
+      "customer": "北京一般纳税公司01",
+      "tranType": "现金交易",
+      "docNum": "10701"
+    },
+    "expectedResult": {
+      "internalId": "CS10701",
+      "customer": "北京一般纳税公司01",
+      "tranType": "现金交易",
+      "docNum": "10701",
+      "status": "",
+      "docDate": "20171129",
+      "taxExAmount": "16,409.98",
+      "amountAftDis": "13,169.58",
+      "type": "cashsale",
+      "items": [
+        {
+          "itemName": "思科CiscoPhone 7970",
+          "model": "7970型号",
+          "uom": "台",
+          "quantity": "1",
+          "unitprice": "5,600.99",
+          "taxExAmount": "5,600.99",
+          "taxRate": "0.17",
+          "disAmount": "1,120.2"
+        },
+        {
+          "itemName": "联想ThinkPad T460",
+          "model": "T460型号",
+          "uom": "Meter",
+          "quantity": "1",
+          "unitprice": "10,600.99",
+          "taxExAmount": "10,600.99",
+          "taxRate": "0.13",
+          "disAmount": "2,120.2"
+        },
+        {
+          "itemName": "运费",
+          "model": "",
+          "uom": "",
+          "quantity": "1",
+          "unitprice": "160",
+          "taxExAmount": "160",
+          "taxRate": "0.17",
+          "disAmount": ""
+        },
+
+        {
+          "itemName": "手续费",
+          "model": "",
+          "uom": "",
+          "quantity": "1",
+          "unitprice": "48",
+          "taxExAmount": "48",
+          "taxRate": "0.13",
+          "disAmount": ""
+        }
+      ]
+    }
+  }
+}

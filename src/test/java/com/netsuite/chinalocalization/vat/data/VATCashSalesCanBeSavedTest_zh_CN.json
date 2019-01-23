@@ -1,0 +1,18 @@
+{
+  "labels": {
+    "fieldLabel": {
+      "tabLabel": "中国增值税",
+      "tabGoods": "货品",
+      "itemLabel": "思科CiscoPhone 7970",
+      "smallCompanyC":"北京小规模纳税公司C",
+      "commonCompany1":"北京一般纳税公司02",
+      "unCategoryCompany":"北京未分类公司",
+      "vatSpecialInvoice":"增值税专用发票",
+      "vatCommonInvoice":"增值税普通发票",
+      "location":"海淀"
+    }
+  },
+  "data":{
+
+  }
+}

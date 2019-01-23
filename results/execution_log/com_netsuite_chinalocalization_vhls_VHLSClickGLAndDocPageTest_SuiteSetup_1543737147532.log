@@ -1,0 +1,4 @@
+2018-12-02 15:52:28,759 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: SuiteSetup(com.netsuite.chinalocalization.vhls.VHLSClickGLAndDocPageTest)
+2018-12-02 15:52:31,878 INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: OSS
+2018-12-02 15:52:31,904 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Browser is: [ChromeDriver: chrome on XP (27f34e3b418d0bf79e66407bf8343c4d)]
+2018-12-02 15:52:31,914 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Selenium web driver initialized

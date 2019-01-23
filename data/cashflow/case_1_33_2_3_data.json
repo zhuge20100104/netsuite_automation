@@ -1,0 +1,45 @@
+{
+  "test case 1.33.2.3": {
+    "data": [
+      {
+        "main": {
+          "id": "1.33.2.3_1",
+          "trantype": "cashsale",
+          "entity": "CN Automation Customer",
+          "trandate": "9/5/2017",
+          "postingperiod": "Sep 2017",
+          "account": "10020103 银行存款 : 人民币 : 工行T1",
+          "shipmethod": "T1 Shipping method 200 Yuan",
+          "shippingcost":"0.00",
+          "giftcertapplied":"",
+          "location": "CN_BJ",
+          "currency": "Yuan",
+          "memo": "test case 1.33.2.3",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item1",
+            "quantity": "1",
+            "amount": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          },
+          {
+            "item": "CFS Gift Certificate Item",
+            "quantity": "1",
+            "amount": "300",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ],
+        "promotions": [
+          {
+            "promocode": "Shipping promotion T1 Free"
+          }
+        ]
+
+      }
+    ]
+  }
+}

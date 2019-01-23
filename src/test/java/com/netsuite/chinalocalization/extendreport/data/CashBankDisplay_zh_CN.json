@@ -1,0 +1,125 @@
+{
+  "test_case_2_1_2_1":{
+    "Labels":{
+      "subsidiary":"子公司",
+      "datefrom":"日期自",
+      "dateto":"至",
+      "accountfrom":"科目自",
+      "accountto":"至",
+      "location" : "地点",
+      "department":"部门",
+      "class" : "类别"
+    }
+  },
+
+  "test_case_2_1_2_2":{
+    "FieldDefault":{
+
+      "datefrom":"6/1/2018",
+      "dateto":"6/30/2018",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "",
+      "department":"",
+      "class" : ""
+    }
+  },
+
+  "test_case_2_1_2_3":{
+    "subOptions":[
+      "中国 SubLedger",
+      "China SubLedger 01",
+      "中国 SubLedger 02",
+      "中国 SubLedger 03"
+    ]
+  },
+
+  "test_case_2_1_2_4":{
+    "SearchParm" : {
+      "subsidiary":"中国 SubLedger 02"
+    },
+    "CalenderToTest" : "Calendar without CurrPeriod",
+    "Dates" : {
+      "datefrom":"6/1/2018",
+      "dateto":"6/30/2018"
+    }
+  },
+
+  "test_case_2_1_2_5":{
+    "SearchParm" : {
+      "subsidiary":"中国 SubLedger 02"
+    },
+    "CalenderToTest" : "No Period Calendar",
+    "Dates" : {
+      "datefrom":"6/1/2018",
+      "dateto":"6/30/2018"
+    }
+  },
+
+  "test_case_2_1_2_6":{
+    "SearchParm" : {
+      "subsidiary":"中国 SubLedger 03"
+    },
+    "BankAccounts" : [
+      "100106 - 库存现金ChinaSL02",
+      "6002 - 企业营业收入",
+      "600201 - 产品类收入",
+      "600202 - 服务类收入",
+      "600203 - 资产增值收入"
+    ],
+    "UnBankAccounts" : "100105 - 库存现金ChinaSL01"
+  },
+
+  "test_case_2_1_2_7":{
+    "SearchParm" : {
+      "subsidiary":"中国 SubLedger 03"
+    },
+    "BankAccounts" : [
+      "100106 - 库存现金 : 库存现金ChinaSL02",
+      "6002 - 企业营业收入",
+      "600201 - 企业营业收入 : 产品类收入",
+      "600202 - 企业营业收入 : 服务类收入",
+      "600203 - 企业营业收入 : 资产增值收入"
+    ],
+    "UnBankAccounts" : "100105 - 库存现金ChinaSL01"
+  },
+
+  "test_case_8_1_2" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "中国 Income华北区",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "LocOptions" : [
+      "中国 Income华中区",
+      "中国 Income华北区",
+      "中国 上海",
+      "中国 北京",
+      "中国 Income华南区"
+    ],
+    "DepOptions" : [
+      "Income业务部",
+      "Income会计部",
+      "Income生产部",
+      "Income生产部01",
+      "Income生产部02",
+      "Income开发部"
+    ],
+    "ClassOptions" : [
+      "售后支持",
+      "智能手机",
+      "Plus系列",
+      "X系列",
+      "电脑",
+      "穿戴设备",
+      "配件"
+    ]
+  }
+
+
+}

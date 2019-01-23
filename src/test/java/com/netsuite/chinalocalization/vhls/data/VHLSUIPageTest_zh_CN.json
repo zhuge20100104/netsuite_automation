@@ -1,0 +1,235 @@
+{
+    "test_2_1_1":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "waitforload":"",
+                        "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+                        "//*[@id='custpage_periodfrom_fs']":"Aug 2018",
+                        "//*[@id='custpage_periodto_fs']":"Sep 2018",
+                        "custpage_datefrom":"8/1/2018",
+                        "custpage_dateto":"8/15/2018",
+
+                        "//*[@id='submitter']":"",
+                        "waitforload":""
+
+                    }
+                }
+            },
+
+            {
+                "expects":{
+                    "data":{
+                        "//*[@id='submitter']":{
+                            "values": ["刷新"]
+                        },
+                        "//td[@id='fg_custpage_main_filter_group']/b":{
+                            "values":["过滤器"]
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+
+                        "//td[@id='fg_custpage_main_filter_group']":"",
+                        "sleep": "10"
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "//*[@id='custpage_subsidiary_fs']":{
+                            "values":["中国 VoucherList"]
+                        },
+                        "//*[@id='custpage_periodfrom_fs']":{
+                            "values" : ["Aug 2018"]
+                        },
+                        "//*[@id='custpage_periodto_fs']":{
+                            "values":["Sep 2018"]
+                        },
+                        "custpage_datefrom":{
+                            "value" : "8/1/2018",
+                            "disable" : false,
+                            "exist" : true,
+                            "trantype": "date"
+                        },
+                        "custpage_dateto":{
+                            "value" : "8/15/2018",
+                            "disable" : false,
+                            "exist" : true,
+                            "trantype": "date"
+                        },
+
+                        "//*[@id='submitter']":{
+                            "values":["刷新"]
+                        }
+                    }
+                }
+            }
+        ]
+
+
+    },
+    "test_2_1_2":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "waitforload":"",
+                        "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+                        "//*[@id='custpage_periodfrom_fs']":"FY 2018",
+                        "//*[@id='custpage_periodto_fs']":"FY 2018",
+                        "custpage_createdby": ["ying huang"],
+                        "//*[@id='submitter']":"",
+                        "waitforload":""
+                    }
+                }
+            }
+
+
+        ],
+
+       "sublist_report":{
+        "rows": [
+            {
+                "glnum":"",
+                "memo":"China VoucherList:Journal VL2018060101",
+                "date":"6/1/2018",
+                "docnum":"VL2018060101",
+                "trantype":"日记账",
+                "amount":60000.0,
+                "createdby":"ying huang"
+            },
+            {
+                "glnum":"VL2018Q3000001",
+                "memo":"China VoucherList:Journal VL2018070101",
+                "date":"7/1/2018",
+                "docnum":"VL2018070101",
+                "trantype":"日记账",
+                "amount":70000.0,
+                "createdby":"ying huang"
+            },
+            {
+                "glnum":"VL2018Q3000009",
+                "memo":"China VoucherList:Journal VL2018090101",
+                "date":"9/1/2018",
+                "docnum":"VL2018090101",
+                "trantype":"日记账",
+                "amount":90000.0,
+                "createdby":"ying huang"
+            },
+            {
+                "glnum":"VL2018Q3000010",
+                "memo":"China VoucherList:Journal VL2018100101",
+                "date":"10/1/2018",
+                "docnum":"VL2018100101",
+                "trantype":"日记账",
+                "amount":100000.0,
+                "createdby":"ying huang"
+            }
+        ]
+
+       }
+
+    },
+    "test_3_1_3": {
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "waitforload":"",
+                        "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+
+                        "custpage_datefrom":"9/1/2018",
+                        "custpage_dateto":"8/15/2018",
+                        "//*[@id='submitter']":"",
+                        "waitforload":""
+
+                    }
+                }
+            },
+
+            {
+                "expects":{
+                    "data":{
+
+                        "//*[@id='submitter']":{
+                            "values":["刷新"]
+                        },
+                        "dialogs":[
+                            {
+                                "type":"common",
+                                "message":"请输入一个有效的日期范围。起始日期必须在截止日期前。"
+                            }
+                        ]
+                    }
+                }
+            }
+
+
+        ]
+    },
+    "test_3_1_6": {
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "waitforload":"",
+                        "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+                        "//*[@id='custpage_periodfrom_fs']":"Sep 2018",
+                        "//*[@id='custpage_periodto_fs']":"Aug 2018",
+                        "//*[@id='submitter']":"",
+                        "waitforload":""
+
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+
+                        "//*[@id='submitter']":{
+                            "values":["刷新"]
+                        },
+                        "dialogs":[
+                            {
+                                "type":"common",
+                                "message":"请输入一个有效的期间范围。起始期间必须在截止期间前。"
+                            }
+                        ]
+
+                    }
+                }
+            }
+
+        ]
+    }
+}

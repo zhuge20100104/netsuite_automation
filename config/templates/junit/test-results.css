@@ -1,0 +1,17 @@
+body { font-family: "Consolas", monospace; font-size: small; }
+ol { list-style-type: none; border: 1px solid lightgray; margin: 5px; }
+li { padding: 0; }
+.green, .INFO { color: green; }
+.red, .WARN, .ERROR { color: red; }
+.gray, .DEBUG, .TRACE { color: gray }
+.link {text-decoration: underline; color: blue; }
+.timestamp { float: left; font-size: 0.8em; color: gray; }
+.message-container { overflow: auto; padding-left: 15px; }
+.message { float: left; }
+.result { text-align: right; }
+.links { clear: both; padding: 3px; }
+.code { white-space: pre; }
+.error-summary, .success-summary { margin-left: 10px; }
+.pagesource, .exception { max-height: 600px; font-size: 0.9em; }
+.test-start .DEBUG { font-weight: bold; color: black; font-size: 1.1em; }
+.suite-start .DEBUG { font-weight: bold; color: black; font-size: 1.1em; }

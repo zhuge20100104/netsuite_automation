@@ -1,0 +1,56 @@
+{
+  "test case 1.45.1.7" : {
+    "data": [
+      {
+        "main": {
+          "id": "CFS1.45.1.7_1",
+          "trantype":"vendorcredit",
+          "entity":"CN Automation Vendor",
+          "subsidiary":"Parent Company : China BU",
+          "currency":"Yuan",
+          "exchangerate":"1",
+          "trandate": "12/1/2017",
+          "postingperiod":"Dec 2017",
+          "memo": "bill credit 1.45.1.7",
+          "custbody_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        "item": [
+          {
+            "item": "CN Auto Service Item4 for Purchase",
+            "quantity": "1",
+            "rate": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "amount": "1000"
+          }
+        ]
+      }
+    ]
+  },
+  "test case 1.45.1.8" : {
+    "data": [
+      {
+        "main": {
+          "id": "CFS1.45.1.8_1",
+          "trantype":"vendorcredit",
+          "entity":"CN Automation Vendor",
+          "subsidiary":"Parent Company : China BU",
+          "currency":"Yuan",
+          "exchangerate":"1",
+          "trandate": "12/1/2017",
+          "postingperiod":"Dec 2017",
+          "memo": "bill credit 1.45.1.7",
+          "custbody_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        "item": [
+          {
+            "item": "CN Auto Service Item4 for Purchase",
+            "quantity": "1",
+            "rate": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "amount": "1000"
+          }
+        ]
+      }
+    ]
+  }
+}

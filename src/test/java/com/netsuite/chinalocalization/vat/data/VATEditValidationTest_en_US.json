@@ -1,0 +1,1388 @@
+{
+  "tranHeader": {
+    "select": "Select",
+    "internalId": "Internal ID",
+    "customerName": "Customer Name",
+    "tranType": "Transaction Type",
+    "docNum": "Document Number",
+    "status": "Status",
+    "docDate": "Document Date",
+    "amount": "Tax Exclusive Amount",
+    "afterdiscountamt": "Amount after discount"
+  },
+  "itemHeader": {
+    "itemName": "Item Name",
+    "model": "Model",
+    "uom": "UOM",
+    "quantity": "Quantity",
+    "unitPrice": "Unit Price",
+    "amount": "Tax Exclusive Amount",
+    "discountAmount": "Discount Amount",
+    "taxRate": "Tax Rate"
+  },
+  "test_case_19_4_2_1": {
+    "param": {
+      "name": "北京VAT",
+      "amount": "10000"
+    },
+    "paramReset": {
+      "name": "北京VAT",
+      "amount": ""
+    },
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10902",
+      "docNumTo": "10903"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10902",
+          "tranid": "10902",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      { "main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "invoice",
+        "externalid": "IN10903",
+        "tranid": "10903",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"Unable to Merge. The selected transactions are more than the China MAX VAT Invoice Amount limit (current limit: {10000})."
+    }
+  },
+  "test_case_19_4_2_2": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10904",
+      "docNumTo": "10905",
+      "enableSalesList": "No"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10904",
+          "tranid": "10904",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "discountitem": "打折测试20%Item",
+          "shipmethod": "UPS Express",
+          "shippingcost": "200",
+          "handlingcost": "60",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10905",
+          "tranid": "10905",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "shipmethod": "UPS Express",
+          "shippingcost": "200",
+          "handlingcost": "60",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "2"
+          },
+          {
+            "item": "打折测试Item Amount 200",
+            "amount": "-200"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          },
+          {
+            "item": "打折测试Item Amount 200",
+            "amount": "-200"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"Unable to Merge. The selected transactions are more than the 8-line limit after consolidation. Either enable Sales List or reduce your selected transactions to merge."
+    }
+  },
+  "test_case_19_4_2_4": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "20908",
+      "docNumTo": "20911"
+    },
+    "data":[
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "invoice",
+        "externalid": "IN20908",
+        "tranid": "20908",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashsale",
+        "externalid": "CS20909",
+        "tranid": "20909",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          },
+          {
+            "item": "联想ThinkPad T470",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM20910",
+        "tranid": "20910",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1091000000000001"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "3"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashrefund",
+        "externalid": "CR20911",
+        "tranid": "20911",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1091000000000001"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg1":"Unable to Merge. Please enable Group Same Items when merging positive and negative transactions.",
+      "errMsg2":"Unable to Merge. The resulting total of consolidating both negative and positive transactions is a negative value. Check your transactions and try again."
+    }
+  },
+  "test_case_19_4_2_5_2": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10908",
+      "docNumTo": "10911"
+    },
+    "data":[
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "invoice",
+        "externalid": "IN10908",
+        "tranid": "10908",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "shipmethod": "UPS Express",
+        "shippingcost": "200",
+        "handlingcost": "0",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "2"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashsale",
+        "externalid": "CS10909",
+        "tranid": "10909",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "shipmethod": "UPS Express",
+        "shippingcost": "0",
+        "handlingcost": "60",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "2"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM10910",
+        "tranid": "10910",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "shipmethod": "UPS Express",
+        "shippingcost": "300",
+        "handlingcost": "0",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1091000000000001"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashrefund",
+        "externalid": "CR10911",
+        "tranid": "10911",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "shipmethod": "UPS Express",
+        "shippingcost": "0",
+        "handlingcost": "100",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1091000000000001"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"Unable to Merge. The resulting total of consolidating both negative and positive transactions is a negative value. Check your transactions and try again."
+    }
+  },
+
+  "test_case_19_4_2_6": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10912",
+      "docNumTo": "10912"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10912",
+          "tranid": "10912",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "2"
+          },
+          {
+            "item": "打折测试20%Item"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          },
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          },
+          {
+            "item": "打折测试Item Amount 200",
+            "amount": "-200"
+          },
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg1":"Unable to Merge. Please enable Group Same Items when merging single transaction.",
+      "errMsg2":"No transactions available to merge."
+    }
+  },
+
+  "test_case_19_4_2_6_2_2": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10930",
+      "docNumTo": "10930"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10930",
+          "tranid": "10930",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1",
+            "price":"Custom",
+            "amount":"6000"
+          },
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "2",
+            "price":"Custom",
+            "amount":"6000"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"No transactions available to merge."
+    }
+  },
+  "test_case_19_4_2_6_3": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "transType":"Invoice",
+      "datefrom": "11/29/2017",
+      "dateto": "11/29/2017",
+      "docNumFrom": "10701",
+      "docNumTo": "10701"
+    },
+    "expectedResult": {
+      "errMsg":"No transactions available to merge."
+    }
+  },
+  "test_case_19_4_2_6_4": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "transType":"Cash Sale",
+      "datefrom": "11/29/2017",
+      "dateto": "11/29/2017",
+      "docNumFrom": "10701",
+      "docNumTo": "10701"
+    },
+    "expectedResult": {
+      "errMsg":"No transactions available to merge."
+    }
+  },
+  "test_case_19_4_2_7": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10913",
+      "docNumTo": "10914"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "creditmemo",
+          "externalid": "CM10913",
+          "tranid": "10913",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1",
+          "custbody_cn_info_sheet_number": "1091300000000001"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "cashrefund",
+          "externalid": "CR10914",
+          "tranid": "10914",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1",
+          "custbody_cn_info_sheet_number": "1091400000000001"
+        },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"Unable to Merge. Merging Credit Memos or Cash Refunds must have the same Information Sheet Number."
+    }
+  },
+  "test_case_19_4_2_8": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10906",
+      "docNumTo": "10907"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "creditmemo",
+          "externalid": "CM10906",
+          "tranid": "10906",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1",
+          "custbody_cn_info_sheet_number": "1090600000000001"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "cashrefund",
+          "externalid": "CR10907",
+          "tranid": "10907",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1",
+          "custbody_cn_info_sheet_number": "1090600000000001"
+        },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"No transactions available to merge."
+    }
+  },
+  "test_case_19_4_2_9": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10915",
+      "docNumTo": "10918",
+      "enableSalesList": "No"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10915",
+          "tranid": "10915",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashsale",
+        "externalid": "CS10916",
+        "tranid": "10916",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10917",
+          "tranid": "10917",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "discountitem": "打折测试20%Item",
+          "shipmethod": "UPS Express",
+          "shippingcost": "200",
+          "handlingcost": "60",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "1"
+          },
+          {
+            "item": "联想ThinkPad T470",
+            "quantity": "1"
+          },
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10918",
+          "tranid": "10918",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"Unable to merge. There are consolidated or split transactions selected for merging. Remove the consolidated transactions from the selection and try again."
+    }
+  },
+  "test_case_19_4_2_10": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10919",
+      "docNumTo": "10920"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10919",
+          "tranid": "10919",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司02",
+          "trantype": "invoice",
+          "externalid": "IN10920",
+          "tranid": "10920",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"Unable to Merge. Only transactions with same customer can be consolidated."
+    }
+  },
+  "test_case_19_4_2_11": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "11009",
+      "docNumTo": "11010"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "creditmemo",
+          "externalid": "CM11009",
+          "tranid": "11009",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "cashrefund",
+          "externalid": "CR11010",
+          "tranid": "11010",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"Invalid Format. Please apply the Credit Memo or Cash Refund to the VAT Invoice first."
+    }
+  },
+  "test_case_19_4_2_12_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "11011",
+      "docNumTo": "11012"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "id": "IN11011_0",
+          "trantype": "invoice",
+          "externalid": "IN11011_0",
+          "tranid": "IN11011_0",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM11011",
+        "tranid": "11011",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "2"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ],
+        "apply":[
+          {
+            "refid":"IN11011_0",
+            "amount":"500"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "id": "CS11012_0",
+        "trantype": "cashsale",
+        "externalid": "CS11012_0",
+        "tranid": "CS11012_0",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "2"
+      },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "cashrefund",
+          "externalid": "CR11012",
+          "tranid": "11012",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2",
+          "createdfrom": "CS11012_0"
+        }
+      }
+    ],
+    "expectedResult": {
+      "errMsg": "Unable to Merge. Credit Memos or Cash Refunds to be merged must have the same Remarks. (Invoice Code and Invoice Number)"
+    },
+    "vat_invoices_1":{
+      "data":[
+        {"main" : {
+          "trantype":"customrecord_cn_vat_invoices",
+          "custrecord_cn_invoice_type_fk_tran": "internalID",
+          "custrecord_cn_vat_invoice_code":"1000000001",
+          "custrecord_cn_vat_invoice_number":"100001",
+          "custrecord_cn_vat_status":"2",
+          "custrecord_cn_vat_invoice_date":"20180102"
+        }
+        }
+      ]
+    },
+    "vat_invoices_2":{
+      "data":[
+        {"main" : {
+          "trantype":"customrecord_cn_vat_invoices",
+          "custrecord_cn_invoice_type_fk_tran": "internalID",
+          "custrecord_cn_vat_invoice_code":"1000000003",
+          "custrecord_cn_vat_invoice_number":"100003",
+          "custrecord_cn_vat_status":"2",
+          "custrecord_cn_vat_invoice_date":"20180102"
+        }
+        }
+      ]
+    }
+  },
+  "test_case_19_4_2_12_1_2": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "11013",
+      "docNumTo": "11014"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "id": "IN11013_0",
+          "trantype": "invoice",
+          "externalid": "IN11013_0",
+          "tranid": "IN11013_0",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "id": "IN11013_1",
+          "trantype": "invoice",
+          "externalid": "IN11013_1",
+          "tranid": "IN11013_1",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "2"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM11013",
+        "tranid": "11013",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "2"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "3"
+          }
+        ],
+        "apply":[
+          {
+            "refid":"IN11013_0",
+            "amount":"500"
+          },
+          {
+            "refid":"IN11013_1",
+            "amount":"500"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "id": "CS11014_0",
+        "trantype": "cashsale",
+        "externalid": "CS11014_0",
+        "tranid": "CS11014_0",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "2"
+      },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "cashrefund",
+          "externalid": "CR11014",
+          "tranid": "11014",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2",
+          "createdfrom": "CS11014_0"
+        }
+      }
+    ],
+    "expectedResult": {
+      "errMsg": "Unable to Merge. Credit Memos or Cash Refunds to be merged must have the same Remarks. (Invoice Code and Invoice Number)"
+    },
+    "vat_invoices_1":{
+      "data":[
+        {"main" : {
+          "trantype":"customrecord_cn_vat_invoices",
+          "custrecord_cn_invoice_type_fk_tran": "internalID",
+          "custrecord_cn_vat_invoice_code":"1000000001",
+          "custrecord_cn_vat_invoice_number":"100001",
+          "custrecord_cn_vat_status":"2",
+          "custrecord_cn_vat_invoice_date":"20180102"
+        }
+        }
+      ]
+    },
+    "vat_invoices_2":{
+      "data":[
+        {"main" : {
+          "trantype":"customrecord_cn_vat_invoices",
+          "custrecord_cn_invoice_type_fk_tran": "internalID",
+          "custrecord_cn_vat_invoice_code":"1000000001",
+          "custrecord_cn_vat_invoice_number":"100001",
+          "custrecord_cn_vat_status":"2",
+          "custrecord_cn_vat_invoice_date":"20180102"
+        }
+        }
+      ]
+    },
+    "vat_invoices_3":{
+      "data":[
+        {"main" : {
+          "trantype":"customrecord_cn_vat_invoices",
+          "custrecord_cn_invoice_type_fk_tran": "internalID",
+          "custrecord_cn_vat_invoice_code":"1000000003",
+          "custrecord_cn_vat_invoice_number":"100003",
+          "custrecord_cn_vat_status":"2",
+          "custrecord_cn_vat_invoice_date":"20180102"
+        }
+        }
+      ]
+    }
+  },
+  "test_case_19_4_2_12_2": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "11015",
+      "docNumTo": "11016"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "id": "IN11015_0",
+          "trantype": "invoice",
+          "externalid": "IN11015_0",
+          "tranid": "IN11015_0",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "id": "IN11015_1",
+          "trantype": "invoice",
+          "externalid": "IN11015_1",
+          "tranid": "IN11015_1",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "2"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM11015",
+        "tranid": "11015",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "2"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "3"
+          }
+        ],
+        "apply":[
+          {
+            "refid":"IN11015_0",
+            "amount":"500"
+          },
+          {
+            "refid":"IN11015_1",
+            "amount":"500"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "id": "IN11016_0",
+          "trantype": "invoice",
+          "externalid": "IN11016_0",
+          "tranid": "IN11016_0",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM11016",
+        "tranid": "11016",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "2"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ],
+        "apply":[
+          {
+            "refid":"IN11016_0",
+            "amount":"500"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg": "This Credit Memo can only be applied to one VAT Invoice."
+    },
+    "vat_invoices_1":{
+      "data":[
+        {"main" : {
+          "trantype":"customrecord_cn_vat_invoices",
+          "custrecord_cn_invoice_type_fk_tran": "internalID",
+          "custrecord_cn_vat_invoice_code":"1000000001",
+          "custrecord_cn_vat_invoice_number":"100001",
+          "custrecord_cn_vat_status":"2",
+          "custrecord_cn_vat_invoice_date":"20180102"
+        }
+        },
+        {"main" : {
+          "trantype":"customrecord_cn_vat_invoices",
+          "custrecord_cn_invoice_type_fk_tran": "internalID",
+          "custrecord_cn_vat_invoice_code":"1000000003",
+          "custrecord_cn_vat_invoice_number":"100003",
+          "custrecord_cn_vat_status":"2",
+          "custrecord_cn_vat_invoice_date":"20180102"
+        }
+        }
+      ]
+    },
+    "vat_invoices_2":{
+      "data":[
+        {"main" : {
+          "trantype":"customrecord_cn_vat_invoices",
+          "custrecord_cn_invoice_type_fk_tran": "internalID",
+          "custrecord_cn_vat_invoice_code":"1000000002",
+          "custrecord_cn_vat_invoice_number":"100002",
+          "custrecord_cn_vat_status":"2",
+          "custrecord_cn_vat_invoice_date":"20180102"
+        }
+        },
+        {"main" : {
+          "trantype":"customrecord_cn_vat_invoices",
+          "custrecord_cn_invoice_type_fk_tran": "internalID",
+          "custrecord_cn_vat_invoice_code":"1000000004",
+          "custrecord_cn_vat_invoice_number":"100004",
+          "custrecord_cn_vat_status":"2",
+          "custrecord_cn_vat_invoice_date":"20180102"
+        }
+        }
+      ]
+    },
+    "vat_invoices_3":{
+      "data":[
+        {"main" : {
+          "trantype":"customrecord_cn_vat_invoices",
+          "custrecord_cn_invoice_type_fk_tran": "internalID",
+          "custrecord_cn_vat_invoice_code":"1000000001",
+          "custrecord_cn_vat_invoice_number":"100001",
+          "custrecord_cn_vat_status":"2",
+          "custrecord_cn_vat_invoice_date":"20180102"
+        }
+        }
+      ]
+    }
+  },
+  "test_case_19_4_2_13": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "11017",
+      "docNumTo": "11018"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "id": "IN11017_0",
+          "trantype": "invoice",
+          "externalid": "IN11017_0",
+          "tranid": "IN11017_0",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM11017",
+        "tranid": "11017",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "2"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ],
+        "apply":[
+          {
+            "refid":"IN11017_0",
+            "amount":"500"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "id": "CS11018_0",
+        "trantype": "cashsale",
+        "externalid": "CS11018_0",
+        "tranid": "CS11018_0",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "2"
+      },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "cashrefund",
+          "externalid": "CR11018",
+          "tranid": "11018",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2",
+          "createdfrom": "CS11018_0"
+        }
+      }
+    ],
+    "expectedResult": {
+      "errMsg": "The invoice selected does not have VAT Information or has remarks that are in incorrect format."
+    }
+  },
+  "test_case_19_4_5_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "11020",
+      "docNumTo": "11022"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN11020",
+          "tranid": "11020",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashsale",
+        "externalid": "CS11021",
+        "tranid": "11021",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN11022",
+          "tranid": "11022",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"Unable to unmerge. Select the consolidated primary rows and try again."
+    }
+  },
+  "test_case_19_4_4_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10924",
+      "docNumTo": "10925"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10924",
+          "tranid": "10924",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashsale",
+        "externalid": "CS10925",
+        "tranid": "10925",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg1":"You have unsaved changes. Selected transactions will not be consolidated. Are you sure you want to cancel?",
+      "errMsg2":"Click Cancel to continue editing or click OK to quit editing."
+    }
+  }
+}

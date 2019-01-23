@@ -1,0 +1,21 @@
+2018-12-02 16:11:34,722 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: test_8_1_2(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 16:11:34,722 ERROR com.netsuite.testautomation.junit.runners.SuiteSetupRule - There was a problem while executing SuiteSetup method - test 'test_8_1_2' is marked as failed.
+net.qaautomation.exceptions.TestCaseException: Unexpected Error
+Caused by: java.lang.Exception: Role with name: [vhls_base_qa], and company: [CN VAT Input Tax Integration QA Testing_OW] does not exist!!
+	at com.netsuite.base.lib.login.LoginUtil.getCorrectRoleValue(LoginUtil.groovy:177)
+	at com.netsuite.base.lib.login.LoginUtil$getCorrectRoleValue$6.callCurrent(Unknown Source)
+	at com.netsuite.base.lib.login.LoginUtil.switchToRoleForMultiLanguageTeam(LoginUtil.groovy:191)
+	at com.netsuite.base.lib.login.LoginUtil$switchToRoleForMultiLanguageTeam$5.callCurrent(Unknown Source)
+	at com.netsuite.base.lib.login.LoginUtil.switchToRole(LoginUtil.groovy:217)
+	at com.netsuite.base.lib.login.LoginUtil$switchToRole$4.callCurrent(Unknown Source)
+	at com.netsuite.base.lib.login.LoginUtil.loginAsRole(LoginUtil.groovy:272)
+	at com.netsuite.base.lib.login.LoginUtil$loginAsRole$2.call(Unknown Source)
+	at com.netsuite.base.BaseAppTestSuite.login(BaseAppTestSuite.groovy:157)
+	at com.netsuite.base.BaseAppTestSuite.setUpTestSuite(BaseAppTestSuite.groovy:90)
+	at com.netsuite.chinalocalization.vhls.JVHLSBaseTestSuite.super$4$setUpTestSuite(JVHLSBaseTestSuite.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at com.netsuite.chinalocalization.vhls.JVHLSBaseTestSuite.setUpTestSuite(JVHLSBaseTestSuite.groovy:35)
+2018-12-02 16:11:34,722 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - End of: test_8_1_2(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 16:11:34,737 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: SuiteTeardown(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 16:11:37,689 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - End of: SuiteTeardown(com.netsuite.chinalocalization.vhls.VHLSPrintTest)

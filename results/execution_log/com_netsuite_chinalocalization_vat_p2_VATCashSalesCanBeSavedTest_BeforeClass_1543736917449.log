@@ -1,0 +1,611 @@
+2018-12-02 15:48:37,427 INFO  com.netsuite.testautomation.junit.reporting.SuiteLogger$1 - Start of: com.netsuite.chinalocalization.vat.p2.VATCashSalesCanBeSavedTest
+2018-12-02 15:48:37,896 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Browser Type [CHROME], Download Directory [data/downloads], Enable JS Checking [false]
+2018-12-02 15:48:37,897 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Setting BrowserType to: [CHROME]
+2018-12-02 15:48:37,912 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:37,913 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:37,913 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:37,913 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:37,913 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:37,914 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:37,914 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:37,915 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:37,917 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:37,918 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,421 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Browser Type [CHROME], Download Directory [data/downloads], Enable JS Checking [false]
+2018-12-02 15:48:38,422 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Setting BrowserType to: [CHROME]
+2018-12-02 15:48:38,425 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,426 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,426 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,429 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,429 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,429 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,434 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,434 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,435 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,435 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,449 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,450 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,450 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,450 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,451 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,451 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,452 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,452 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,452 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,454 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,608 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:38,712 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,713 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,713 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,713 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,713 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,713 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,714 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,714 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,714 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,714 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,715 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:38,715 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,715 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,715 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,716 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,716 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,716 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,716 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,717 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,717 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,717 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,717 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:38,734 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,735 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,735 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,735 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,736 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,736 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,736 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,736 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,737 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,737 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,737 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,737 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,738 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,738 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,738 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,738 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,738 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,739 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,739 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,739 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,754 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,754 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,755 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,755 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,755 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,755 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,755 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,755 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,755 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,756 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,770 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,771 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,771 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,771 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,771 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,772 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,772 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,772 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,772 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,772 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,772 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:38,773 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,773 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,773 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,773 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,773 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,774 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,775 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,775 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,775 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,777 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,778 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:38,779 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,779 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,779 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,780 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,780 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,780 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,780 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,780 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,781 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,781 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,781 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:38,781 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,782 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,782 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,782 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,782 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,783 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,783 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,783 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,783 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,783 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,785 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:38,797 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,797 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,798 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,798 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,798 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,798 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,799 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,799 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,799 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,799 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,823 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,823 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,824 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,824 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,824 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,824 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,824 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,824 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,824 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,825 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,825 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,825 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,825 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,825 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,825 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,826 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,826 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,826 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,826 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,826 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,842 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,842 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,842 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,842 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,843 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,843 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,843 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,844 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,856 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,857 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:38,858 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:38,858 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:38,859 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:38,860 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:38,860 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:38,861 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:38,861 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:38,861 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:38,861 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:38,861 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,033 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,033 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,034 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,034 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,034 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,034 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,034 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,034 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,034 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,035 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,035 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,035 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,036 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,036 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,036 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,036 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,036 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,036 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,037 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,037 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,037 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,037 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,038 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,038 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,038 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,039 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,039 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,039 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,039 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,039 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,039 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,039 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,040 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,040 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,040 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,040 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,041 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,041 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,041 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,041 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,041 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,042 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,042 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,042 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,056 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,057 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,057 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,057 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,057 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,057 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,057 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,057 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,058 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,058 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,058 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,058 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,059 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,059 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,059 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,059 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,059 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,059 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,059 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,059 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,060 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,060 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,060 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,061 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,061 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,061 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,061 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,062 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,065 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,067 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,067 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,067 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,068 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,069 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,069 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,069 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,069 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,070 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,070 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,071 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,071 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,071 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,071 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,071 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,072 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,072 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,073 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,073 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,073 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,073 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,073 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,073 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,074 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,074 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,074 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,075 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,075 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,075 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,075 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,075 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,075 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,075 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,075 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,075 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,075 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,076 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,076 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,076 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,076 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,076 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,076 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,077 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,077 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,077 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,077 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,077 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,077 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,077 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,077 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,078 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,078 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,078 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,078 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,078 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,079 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,079 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,079 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,079 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,079 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,079 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,080 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,080 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,080 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,080 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,080 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,080 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,081 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,081 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,081 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,081 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,081 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,082 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,082 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,082 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,082 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,082 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,082 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,083 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,083 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,083 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,083 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,083 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,083 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,083 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,083 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,084 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,084 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,084 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,084 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,084 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,085 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,085 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,085 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,085 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,085 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,085 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,085 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,085 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,085 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,086 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,086 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,086 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,086 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,086 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,086 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,086 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,087 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,087 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,087 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,087 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,087 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,087 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,087 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,087 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,087 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,088 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,088 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,088 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,088 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,088 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,088 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,089 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,089 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,089 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,089 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,090 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,090 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,090 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,090 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,090 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,090 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,091 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,091 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,091 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,091 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,092 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,092 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,092 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,092 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,092 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,092 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,093 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,093 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,093 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,093 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,093 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,094 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,094 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,094 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,095 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,095 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,095 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,095 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,095 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,095 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,095 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,095 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,095 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,096 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,096 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,096 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,096 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,096 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,096 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,096 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,096 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,096 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,097 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,097 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,097 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,097 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,097 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,097 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,097 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,097 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,097 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,098 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,098 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,098 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,098 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,098 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,098 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,098 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,098 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,099 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,099 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,099 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,099 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,099 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,100 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,100 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,100 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,100 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,100 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,101 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,101 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,101 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,101 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,101 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,101 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,101 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,102 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,102 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,102 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,102 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,103 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,103 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,103 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,103 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,103 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,103 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,103 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,104 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,104 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,104 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,105 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,106 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,106 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,106 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,106 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,106 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,106 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,106 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,106 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,107 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,107 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,107 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,107 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,107 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,108 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,108 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,108 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,108 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,108 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,108 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,108 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,109 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,109 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,109 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,109 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,110 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,110 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,110 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,110 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,111 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,111 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,111 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,111 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]
+2018-12-02 15:48:39,111 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'EQUALS_TEXT' with value '_text_'
+2018-12-02 15:48:39,111 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CONTAINS_TEXT' with value '_contains_text_'
+2018-12-02 15:48:39,111 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'APPROXIMATES_TEXT' with value '_fuzzy_text_'
+2018-12-02 15:48:39,111 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'NBSP' with value ' '
+2018-12-02 15:48:39,111 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CRLF' with value '
+'
+2018-12-02 15:48:39,112 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'CR' with value ''
+2018-12-02 15:48:39,112 INFO  com.netsuite.testautomation.aut.BaseApp - Saved variable 'LF' with value '
+'
+2018-12-02 15:48:39,112 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load title and js]
+2018-12-02 15:48:39,112 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page load hourglass]
+2018-12-02 15:48:39,112 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Disable header menu]
+2018-12-02 15:48:39,112 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Registering page load condition: [Page Execute JS Complete Condition]

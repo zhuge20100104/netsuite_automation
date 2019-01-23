@@ -1,0 +1,315 @@
+{
+  "test case 1.50.4.1": {
+    "data": [{
+      "main": {
+        "id": "CFS1.50.4.1",
+        "trantype": "journalentry",
+        "subsidiary": "CFS Validation BU",
+        "trandate": "4/8/2018",
+        "postingperiod": "Apr 2018",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "line": [
+        {
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "1000",
+          "custcol_cseg_cn_cfi": ""
+        },
+        {
+          "account": "1100 Accounts Receivable",
+          "credit": "1000",
+          "custcol_cseg_cn_cfi": ""
+        }
+      ]
+    }]
+  },
+  "test case 1.50.4.3": {
+    "data": [{
+      "main": {
+        "id": "CFS1.50.4.3",
+        "trantype": "journalentry",
+        "subsidiary": "CFS Validation BU",
+        "trandate": "4/8/2018",
+        "postingperiod": "Apr 2018",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "line": [
+        {
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "1000",
+          "custcol_cseg_cn_cfi": ""
+        },
+        {
+          "account": "1100 Accounts Receivable",
+          "credit": "1000",
+          "custcol_cseg_cn_cfi": ""
+        }
+      ]
+    }]
+  },
+  "test case 1.52.4.1": {
+    "main": {
+      "entity":"CN Automation Customer",
+      "entitytype": "customer",
+      "subsidiary":"China BU",
+      "location": "CN_BJ",
+      "memo": "test case 1.52.4.1"
+    },
+    "item": [
+      {
+        "item": "CN Auto CashFlow Item1",
+        "quantity": "1",
+        "amount": "1000",
+        "taxcode": "VAT_CN:UNDEF-CN",
+        "custcol_cseg_cn_cfi": ""
+      },
+      {
+        "item": "CFS Service for Sale",
+        "quantity": "1",
+        "amount": "500",
+        "taxcode": "VAT_CN:UNDEF-CN",
+        "custcol_cseg_cn_cfi": ""
+      },
+      {
+        "item": "Subtotal",
+        "taxcode": "VAT_CN:UNDEF-CN"
+      }
+    ]
+  },
+  "test case 1.52.4.2": {
+    "main": {
+      "entity":"CN Automation Customer",
+      "entitytype": "customer",
+      "subsidiary":"China BU",
+      "location": "CN_BJ",
+      "memo": "test case 1.52.4.2"
+    },
+    "item": [
+      {
+        "item": "CN Auto CashFlow Item1",
+        "quantity": "1",
+        "amount": "1000",
+        "custcol_cseg_cn_cfi": "Cash received from sales and services"
+      },
+      {
+        "item": "CFS Service for Sale",
+        "quantity": "1",
+        "amount": "500",
+        "custcol_cseg_cn_cfi": "Cash received from sales and services"
+      },
+      {
+        "item": "Subtotal"
+      }
+    ]
+  },
+  "test case 1.52.4.3": {
+    "main": {
+      "entity":"CN Automation Customer",
+      "entitytype": "customer",
+      "subsidiary":"China BU",
+      "trandate": "4/24/2018",
+      "postingperiod": "Apr 2018",
+      "location": "CN_BJ",
+      "memo": "test case 1.52.4.3"
+    },
+    "item": [
+      {
+        "item": "CN Auto CashFlow Item1",
+        "quantity": "1",
+        "amount": "1000",
+        "custcol_cseg_cn_cfi": ""
+      },
+      {
+        "item": "CFS Service for Sale",
+        "quantity": "1",
+        "amount": "500",
+        "custcol_cseg_cn_cfi": "Cash received from sales and services"
+      },
+      {
+        "item": "Subtotal"
+      }
+    ]
+  },
+  "test case 1.52.5.1": {
+    "main": {
+      "entity":"CN Automation Customer",
+      "entitytype": "customer",
+      "subsidiary":"China BU",
+      "location": "CN_BJ",
+      "memo": "test case 1.52.5.1"
+    },
+    "item": [
+      {
+        "item": "CFS Gift Certificate Item",
+        "quantity": "1",
+        "amount": "1000",
+        "giftcertfrom": "Customer",
+        "giftcertrecipientname": "Lily",
+        "giftcertrecipientemail": "lisha.hao@oracle.com",
+        "giftcertmessage": "message",
+        "taxcode": "VAT_CN:UNDEF-CN",
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  },
+  "test case 1.52.5.2": {
+    "main": {
+      "entity":"CN Automation Customer",
+      "entitytype": "customer",
+      "subsidiary":"China BU",
+      "trandate": "4/24/2018",
+      "postingperiod": "Apr 2018",
+      "location": "CN_BJ",
+      "memo": "test case 1.52.5.2",
+      "custbody_cseg_cn_cfi": ""
+    },
+    "item": [
+      {
+        "item": "CFS Gift Certificate Item",
+        "quantity": "1",
+        "amount": "1000",
+        "giftcertfrom": "Customer",
+        "giftcertrecipientname": "Lily",
+        "giftcertrecipientemail": "lisha.hao@oracle.com",
+        "giftcertmessage": "message",
+        "taxcode": "VAT_CN:UNDEF-CN",
+        "custcol_cseg_cn_cfi": "Cash received from sales and services"
+      }
+    ]
+  },
+  "test case 1.52.5.3": {
+    "main": {
+      "entity":"CN Automation Customer",
+      "entitytype": "customer",
+      "subsidiary":"China BU",
+      "trandate": "4/24/2018",
+      "postingperiod": "Apr 2018",
+      "location": "CN_BJ",
+      "memo": "test case 1.52.5.3",
+      "custbody_cseg_cn_cfi": "Cash received from sales and services"
+    },
+    "item": [
+      {
+        "item": "CFS Gift Certificate Item",
+        "quantity": "1",
+        "amount": "1000",
+        "giftcertfrom": "Customer",
+        "giftcertrecipientname": "Lily",
+        "giftcertrecipientemail": "lisha.hao@oracle.com",
+        "giftcertmessage": "message",
+        "taxcode": "VAT_CN:UNDEF-CN",
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  },
+  "test case 1.52.6.1": {
+    "main": {
+      "entity":"CN Automation Customer",
+      "entitytype": "customer",
+      "subsidiary":"China BU",
+      "account": "10020103 银行存款 : 人民币 : 工行T1",
+      "location": "CN_BJ",
+      "memo": "test case 1.52.6.1"
+    },
+    "item": [
+      {
+        "item": "CFS Item Group",
+        "taxcode": "VAT_CN:UNDEF-CN"
+      }
+    ]
+  },
+  "test case 1.52.6.2": {
+    "main": {
+      "entity":"CN Automation Customer",
+      "entitytype": "customer",
+      "subsidiary":"China BU",
+      "account": "10020103 银行存款 : 人民币 : 工行T1",
+      "trandate": "4/24/2018",
+      "postingperiod": "Apr 2018",
+      "location": "CN_BJ",
+      "memo": "test case 1.52.6.2"
+    },
+    "item": [
+      {
+        "item": "CFS Item Group",
+        "taxcode": "VAT_CN:UNDEF-CN",
+        "custcol_cseg_cn_cfi": "Taxes and surcharges refunds"
+      }
+    ]
+  },
+  "test case 1.53.1.1": {
+    "data": [
+      {
+        "main": {
+          "id": "1.53.1.1",
+          "trantype": "salesorder",
+          "entity": "CN Automation Customer",
+          "entitytype": "customer",
+          "trandate": "5/2/2018",
+          "location": "CN_BJ",
+          "custbody_cseg_cn_cfi": "",
+          "memo": "test case 1.53.1.1"
+        },
+        "item": [
+          {
+            "item": "CN Auto Non-inventory Item3 for Resale",
+            "quantity": "1",
+            "amount": "100",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ]
+  },
+  "test case 1.53.1.2": {
+    "data": [
+      {
+        "main": {
+          "id": "1.53.1.2",
+          "trantype": "salesorder",
+          "entity": "CN Automation Customer",
+          "trandate": "5/2/2018",
+          "location": "CN_BJ",
+          "custbody_cseg_cn_cfi": "",
+          "memo": "test case 1.53.1.2"
+        },
+        "item": [
+          {
+            "item": "CN Auto Non-inventory Item3 for Resale",
+            "quantity": "1",
+            "amount": "100",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": "Taxes and surcharges refunds"
+          }
+        ]
+      }
+    ]
+  },
+  "test case 1.53.1.3": {
+    "data": [
+      {
+        "main": {
+          "id": "1.53.1.3",
+          "trantype": "salesorder",
+          "entity": "CN Automation Customer",
+          "trandate": "5/2/2018",
+          "location": "CN_BJ",
+          "custbody_cseg_cn_cfi": "Taxes and surcharges refunds",
+          "memo": "test case 1.53.1.3"
+        },
+        "item": [
+          {
+            "item": "CN Auto Non-inventory Item3 for Resale",
+            "quantity": "1",
+            "amount": "100",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ]
+  }
+}

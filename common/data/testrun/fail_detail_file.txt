@@ -1,0 +1,7 @@
+com.netsuite.chinalocalization.vat.VATBaseAccountTest#test_case_1|com.netsuite.common.P1, com.netsuite.common.OW|Fail
+com.netsuite.chinalocalization.vat.VATBaseAccountTest#test_case_1|com.netsuite.common.P1, com.netsuite.common.OW|Fail
+com.netsuite.chinalocalization.vat.VATBaseAccountTest#test_case_1|com.netsuite.common.P1, com.netsuite.common.OW|Fail
+com.netsuite.chinalocalization.voucher.VoucherGLVoidWithReversalTest#case_6.2.1|com.netsuite.common.OWAndSI, com.netsuite.common.P0|Fail
+com.netsuite.chinalocalization.voucher.VoucherGLVoidWithoutReversalTest#case_6.1.1|com.netsuite.common.OWAndSI, com.netsuite.common.P0|Fail
+com.netsuite.chinalocalization.extendreport.CashBankRefreshTest#test_case_2_1_1|com.netsuite.common.P0, com.netsuite.common.OWAndSI|Fail
+com.netsuite.chinalocalization.cashflow.CashflowDefaultItemTest#Case_1_36_3_4|com.netsuite.common.OW, com.netsuite.common.P3|Fail

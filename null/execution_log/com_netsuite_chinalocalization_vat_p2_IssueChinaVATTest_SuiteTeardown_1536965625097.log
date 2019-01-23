@@ -1,0 +1,2 @@
+2018-09-15 06:53:45,331 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: SuiteTeardown(com.netsuite.chinalocalization.vat.p2.IssueChinaVATTest)
+2018-09-15 06:53:45,331 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - End of: SuiteTeardown(com.netsuite.chinalocalization.vat.p2.IssueChinaVATTest)

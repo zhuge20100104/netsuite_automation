@@ -1,0 +1,87 @@
+<pre>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;head&gt;
+	&lt;title&gt;NetSuite Login&lt;/title&gt;
+	&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/core/styles/pagestyles.nl?ct=-2&amp;amp;bglt=F2F4F6&amp;amp;bgmd=EDF1F7&amp;amp;bgdk=737A82&amp;amp;bgon=5C7499&amp;amp;bgoff=AFB5BF&amp;amp;bgbar=5C7499&amp;amp;tasktitletext=E4EAF4&amp;amp;crumbtext=C4C8CF&amp;amp;headertext=B5C1D5&amp;amp;ontab=FFFFFF&amp;amp;offtab=000000&amp;amp;text=000000&amp;amp;link=000000&amp;amp;bgbody=FFFFFF&amp;amp;bghead=FFFFFF&amp;amp;portlet=C0CAD9&amp;amp;portletlabel=000000&amp;amp;bgbutton=FFE599&amp;amp;bgrequiredfld=FFFFE5&amp;amp;font=Verdana%2CHelvetica%2Csans-serif&amp;amp;size_site_content=9pt&amp;amp;size_site_title=9pt&amp;amp;size=1.0&amp;amp;nlinputstyles=T&amp;amp;accessibility=F&amp;amp;appOnly=F&amp;amp;NS_VER=2018.2.0&quot; /&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;/uirefresh/css/fonts.css&quot; /&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;/uirefresh/css/global.css&quot; /&gt;
+	&lt;link rel=&quot;stylesheet&quot; href=&quot;/uirefresh/css/oneoff_loginpage.css?VER=2018.06.15&quot; /&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/javascript/NLPortal.jsp?NS_VER=2018.2.0&amp;amp;minver=71&amp;amp;JSP_VER=1&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/authentication/ui/jquery/jquery-3.2.1.min.js?NS_VER=2018.2.0&amp;amp;minver=71&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/authentication/ui/jquery/jquery_isolation.js?NS_VER=2018.2.0&amp;amp;minver=71&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/javascript/NLUtil.jsp?NS_VER=2018.2.0&amp;amp;minver=71&amp;amp;JSP_VER=1&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/javascript/NLUtil.js?NS_VER=2018.2.0&amp;amp;minver=71&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/javascript/NLAppUtil.js?NS_VER=2018.2.0&amp;amp;minver=71&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/javascript/NLAppUtil.jsp?NS_VER=2018.2.0&amp;amp;minver=71&amp;amp;JSP_VER=1&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/assets/loginpage_defaultloginpage/3999100425.js?NS_VER=2018.2.0&amp;amp;minver=71&quot;&gt;&lt;/script&gt;
+
+&lt;/head&gt;
+&lt;body bgcolor=&quot;#FFFFFF&quot; marginheight=&quot;5&quot;&gt;
+
+&lt;table width=&quot;100%&quot; border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;0&quot;&gt;
+	&lt;tbody&gt;&lt;tr&gt;
+	&lt;td align=&quot;LEFT&quot;&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;padding-top:1;&quot;&gt;&lt;a href=&quot;http://www.netsuite.com/portal/home.shtml&quot; style=&quot;white-space:nowrap;&quot;&gt;&lt;img class=&quot;uir-logo&quot; src=&quot;/images/logos/netsuite-oracle.svg&quot; height=&quot;30&quot; border=&quot;0&quot; style=&quot;margin-right:30px;margin-left:20px;&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;td align=&quot;right&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;div class=&quot;header-separator&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;div__alert&quot; align=&quot;center&quot;&gt;&lt;table class=&quot;uir-report-information&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; border=&quot;0&quot; style=&quot;margin:0px; min-height: 65px; border: 1px solid #417ed9;&quot; width=&quot;100%&quot; bgcolor=&quot;#FCE8E8&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; width=&quot;100%&quot; height=&quot;15&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td align=&quot;left&quot; valign=&quot;top&quot;&gt;&lt;div class=&quot;icon error&quot;&gt;&lt;/div&gt;&lt;/td&gt;&lt;td width=&quot;100%&quot; valign=&quot;top&quot;&gt;&lt;div class=&quot;content&quot;&gt;&lt;b&gt;Error&lt;/b&gt;&lt;br /&gt;You have entered an invalid email address or password. Please try again.&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan=&quot;4&quot; width=&quot;100%&quot; height=&quot;15&quot;&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+
+&lt;form method=&quot;post&quot;&gt;
+		&lt;input type=&quot;hidden&quot; id=&quot;showError&quot; value=&quot;T&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; id=&quot;alertBoxType&quot; value=&quot;3&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; id=&quot;errorMessage&quot; value=&quot;You have entered an invalid email address or password. Please try again.&quot; /&gt;
+	&lt;table border=&quot;0&quot; cellspacing=&quot;0&quot; cellpadding=&quot;5&quot; width=&quot;100%&quot;&gt;
+		&lt;tbody&gt;&lt;tr class=&quot;content-row content-row-multiple&quot;&gt;
+			&lt;td class=&quot;page-message&quot;&gt;
+				NetSuite Login
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td&gt;
+				&lt;table border=&quot;0&quot; cellpadding=&quot;5&quot; cellspacing=&quot;0&quot;&gt;
+					&lt;tbody&gt;&lt;tr&gt;
+						&lt;td class=&quot;smalltextnolink&quot; align=&quot;right&quot;&gt;Email address&lt;/td&gt;
+						&lt;td&gt;
+							&lt;input class=&quot;input&quot; name=&quot;email&quot; size=&quot;30&quot; value=&quot;auto1.02@oracle.com&quot; maxlength=&quot;254&quot; /&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td class=&quot;smalltextnolink&quot; align=&quot;right&quot;&gt;Password&lt;/td&gt;
+						&lt;td&gt;
+							&lt;input class=&quot;input&quot; type=&quot;password&quot; name=&quot;password&quot; autocomplete=&quot;off&quot; size=&quot;30&quot; maxlength=&quot;254&quot; /&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td class=&quot;text&quot; id=&quot;rememberMeLabel&quot;&gt;
+							&lt;input type=&quot;hidden&quot; id=&quot;hintText&quot; value=&quot;When you check this box, you will not have to re-enter your e-mail address when you log in. For security, you will always have to re-enter your password.&quot; /&gt;
+							&lt;a id=&quot;remembermehint&quot; class=&quot;smalltext&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Remember Me&lt;/a&gt;
+						&lt;/td&gt;
+						&lt;td&gt;
+							&lt;input id=&quot;rememberme&quot; name=&quot;rememberme&quot; type=&quot;checkbox&quot; value=&quot;&quot; class=&quot;checkbox&quot; /&gt;
+						&lt;/td&gt;
+					&lt;/tr&gt;
+					&lt;tr&gt;
+						&lt;td&gt;&lt;/td&gt;
+					&lt;td&gt;&lt;span id=&quot;tbl_Submit&quot;&gt;&lt;input type=&quot;submit&quot; class=&quot;bgbutton&quot; style=&quot;&quot; value=&quot;Log In&quot; id=&quot;Submit&quot; name=&quot;Submit&quot; /&gt;&lt;/span&gt;&lt;/td&gt;
+					&lt;/tr&gt;
+				&lt;/tbody&gt;&lt;/table&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;td class=&quot;privacy_statement_static&quot;&gt;
+				By clicking on the Log In button, you understand and agree to &lt;a href=&quot;https://www.oracle.com/us/legal/terms/index.html&quot;&gt;Oracle Terms of Use&lt;/a&gt; and &lt;a href=&quot;https://www.oracle.com/us/legal/privacy/privacy-policy/index.html&quot;&gt;Oracle Privacy Policy&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr class=&quot;bottom-links&quot;&gt;
+			&lt;td class=&quot;smalltext&quot;&gt;
+				&lt;a href=&quot;/app/login/preparepwdreset.nl?email=auto1.02@oracle.com&quot;&gt;
+Forgot your password?				&lt;/a&gt;
+			&lt;/td&gt;
+		&lt;/tr&gt;
+
+	&lt;/tbody&gt;&lt;/table&gt;
+&lt;/form&gt;
+
+
+
+&lt;/body&gt;&lt;/html&gt;</pre>

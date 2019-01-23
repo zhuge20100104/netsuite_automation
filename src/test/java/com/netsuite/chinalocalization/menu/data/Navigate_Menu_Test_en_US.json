@@ -1,0 +1,43 @@
+{
+    "defaultRole":"China Account",
+    "label": "Dashboard",
+    "test_case_8_1":{
+        "China Account": [
+            ["Customers", "Sales", "Generate China VAT Transaction"],
+            ["Financial","Other", "China Voucher Printing Report"],
+
+            ["Reports", "Financial",
+                ["China Cash & Bank Journal Ledger",
+                 "China Sub-Ledger" ,
+                 "China Cash Flow Statement",
+                 "China Income Statement" ,
+                 "China Account Balance",
+                 "China Balance Sheet"]
+            ],
+
+            ["Financial", "Reports",
+                ["China Cash & Bank Journal Ledger",
+                 "China Sub-Ledger" ,
+                 "China Cash Flow Statement" ,
+                 "China Income Statement" ,
+                 "China Account Balance" ,
+                 "China Balance Sheet"]
+            ]
+        ],
+        "Administrator":
+        [
+            ["Transactions","Sales", "Generate China VAT Transaction"],
+            ["Transactions","Financial", "China Voucher Printing Report"],
+            ["Reports", "Financial",
+                ["China Cash & Bank Journal Ledger",
+                    "China Sub-Ledger" ,
+                    "China Cash Flow Statement",
+                    "China Income Statement" ,
+                    "China Account Balance",
+                    "China Balance Sheet"]
+            ],
+            ["Setup", "Users/Roles", "Manage Creator/Approver/Poster"],
+            ["Setup", "China Localization", "China Localization Preferences"]
+        ]
+    }
+}

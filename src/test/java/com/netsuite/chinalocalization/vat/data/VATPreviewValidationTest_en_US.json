@@ -1,0 +1,351 @@
+{
+  "test_case_19_4_1_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10901",
+      "docNumTo": "10901"
+    },
+    "data":[
+      {
+        "main": {
+          "trantype": "customer",
+          "externalid": "VATCU19411",
+          "companyname": "VAT Invalid Customer19411",
+          "subsidiary": "Parent Company : 中国VAT : 北京VAT"
+        }
+      },
+      {
+        "main": {
+          "entity": "VAT Invalid Customer19411",
+          "trantype": "invoice",
+          "externalid": "IN10901",
+          "tranid": "10901",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"No valid transactions to edit. Please check and correct the transactions according to the messages."
+    }
+  },
+  "test_case_19_4_1_2": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10931",
+      "docNumTo": "10931"
+    },
+    "data":[
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "invoice",
+        "externalid": "IN10931",
+        "tranid": "10931",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "-1",
+            "amount": "2000"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "-1",
+            "amount": "1000"
+          },
+          {
+            "item": "联想ThinkPad T470",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg1":"The quantity or amount does not match the selected VAT invoice.",
+      "errMsg2":"No valid transactions to edit. Please check and correct the transactions according to the messages."
+    }
+  },
+  "test_case_19_4_1_3": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10921",
+      "docNumTo": "10921"
+    },
+    "data":[
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "invoice",
+        "externalid": "IN10921",
+        "tranid": "10921",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1",
+            "amount": "-2000"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "1",
+            "amount": "-1000"
+          },
+          {
+            "item": "联想ThinkPad T470",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg1":"Discount should not exceed tax exclusive amount.",
+      "errMsg2":"No valid transactions to edit. Please check and correct the transactions according to the messages."
+    }
+  },
+
+  "test_case_19_4_1_4": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10922",
+      "docNumTo": "10923"
+    },
+    "data":[
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM10922",
+        "tranid": "10922",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashrefund",
+        "externalid": "CR10923",
+        "tranid": "10923",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"The invoice selected does not have VAT Information Sheet Number or has remarks that are in incorrect format."
+    }
+  },
+  "test_case_19_4_3_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "11001",
+      "docNumTo": "11004"
+    },
+    "data":[
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "invoice",
+        "externalid": "IN11001",
+        "tranid": "11001",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "3"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashsale",
+        "externalid": "CS11002",
+        "tranid": "11002",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "3"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM11003",
+        "tranid": "11003",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1100000000000001"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashrefund",
+        "externalid": "CR11004",
+        "tranid": "11004",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1100000000000001"
+      },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"Unable to Edit. The selected transaction has been merged and cannot be changed. To edit, reset the merged transaction and try again."
+    }
+  },
+  "test_case_6_4_2_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "9/1/2018",
+      "dateto": "9/1/2018",
+      "docNumFrom": "10710",
+      "docNumTo": "10710"
+    },
+    "expectedResult": {
+      "errMsg":"No Search Results Match Your Criteria."
+    }
+  },
+  "test_case_6_4_3_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice",
+      "datefrom": "11/29/2017",
+      "dateto": "11/29/2017",
+      "docNumFrom": "10710",
+      "docNumTo": "10710"
+    },
+    "expectedResult": {
+      "errMsg":"Invalid Format. Please apply the Credit Memo or Cash Refund to the VAT Invoice first."
+    }
+  },
+  "test_case_6_4_4_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice",
+      "datefrom": "11/29/2017",
+      "dateto": "11/29/2017",
+      "docNumFrom": "10711",
+      "docNumTo": "10711"
+    },
+    "expectedResult": {
+      "errMsg": "Invalid Format. Please apply the Credit Memo or Cash Refund to the VAT Invoice first."
+    }
+  },
+  "test_case_6_4_5_4": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10926",
+      "docNumTo": "10926"
+    },
+    "data":[
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM10926",
+        "tranid": "10926",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1090000000000001"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1",
+            "price": "Custom",
+            "amount": "-200"
+          },
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "-1",
+            "amount": "500"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "-1",
+            "amount": "-300"
+          },
+          {
+            "item": "联想ThinkPad T470",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg1":"The quantity or amount does not match the selected VAT invoice."
+    }
+  }
+}

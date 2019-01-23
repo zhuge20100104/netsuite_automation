@@ -1,0 +1,25 @@
+{
+    "test_4_4_1_1":{
+    "steps":[
+        {
+            "navigateToPage":{
+                "url":"/app/common/item/item.nl?itemtype=OthCharge&subtype=Resale&isserialitem=F&islotitem=F"
+            }
+        },
+        {
+            "expects":{
+                "data":{
+                    "TAB": "China VAT",
+                    "//span[@id='custitem_cn_vat_item_model_fs_lbl']/a" :{
+                        "values":["China VAT Item Model"]
+                    }
+                }
+            }
+        }
+
+    ]
+
+
+}
+
+}

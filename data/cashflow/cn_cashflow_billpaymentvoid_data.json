@@ -1,0 +1,243 @@
+{
+  "test case 1.44.1.1": {
+    "data": [
+      {
+        "main": {
+          "id": "CFS1.44.1.1_1",
+          "trantype": "vendorbill",
+          "tranid": "CFS1.44.1.1_1",
+          "entity": "CN Automation Vendor",
+          "subsidiary": "Parent Company : China BU",
+          "trandate": "12/1/2017",
+          "postingperiod": "Dec 2017",
+          "memo": "Test Case_1.44.1.1",
+          "location": "CN_BJ",
+          "custbody_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        "item": [
+          {
+            "item": "CN Auto Service Item4 for Purchase",
+            "quantity": "3",
+            "rate": "1000.00",
+            "taxcode": "VAT_CN:UNDEF-CN"
+          }
+        ]
+      },
+      {
+        "main": {
+          "id": "CFS1.44.1.1_2",
+          "trantype": "vendorpayment",
+          "entity": "CN Automation Vendor",
+          "trandate": "12/1/2017",
+          "postingperiod": "Dec 2017",
+          "account": "10020103 银行存款 : 人民币 : 工行T1"
+        },
+        "apply": [
+          {
+            "refid": "CFS1.44.1.1_1",
+            "amount": "3000.00"
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id": "CFS1.44.1.1_3",
+          "trantype": "journalentry",
+          "trandate": "1/25/2018",
+          "postingperiod": "Jan 2018"
+        }
+      }
+    ],
+    "expected_payment": [
+      {
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "trandate": "12/1/2017",
+        "item": "Cash paid for goods and services",
+        "amount": "3000.00"
+      }
+    ],
+    "expected_journal": [
+      {
+        "postingperiod": "FY 2018 : Q1 2018 : Jan 2018",
+        "trandate": "1/25/2018",
+        "item": "Cash paid for goods and services",
+        "amount": "-3000.00"
+      }
+    ]
+  },
+  "test case 1.44.1.2" : {
+    "data": [
+      {
+        "main": {
+          "id": "CFS1.44.1.2_1",
+          "trantype": "vendorbill",
+          "tranid": "CFS1.44.1.2_1",
+          "entity": "CN Automation Vendor",
+          "trandate": "12/1/2017",
+          "subsidiary":"Parent Company : China BU",
+          "postingperiod": "Dec 2017",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "memo": "bill 1 void test case 1.44.1.2",
+          "custbody_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        "item": [
+          {
+            "item": "CN Auto Service Item4 for Purchase",
+            "quantity": "4",
+            "rate": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "amount": "4000"
+          }
+        ]
+      },
+      {
+        "main": {
+          "id": "CFS1.44.1.2_2",
+          "trantype":"vendorcredit",
+          "entity":"CN Automation Vendor",
+          "subsidiary":"Parent Company : China BU",
+          "currency":"Yuan",
+          "exchangerate":"1",
+          "trandate": "12/1/2017",
+          "postingperiod":"Dec 2017",
+          "memo": "bill credit 1 void test case 1.44.1.2",
+          "custbody_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        "item": [
+          {
+            "item": "CN Auto Service Item4 for Purchase",
+            "quantity": "1",
+            "rate": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "amount": "1000"
+          }
+        ]
+      },
+      {
+        "main": {
+          "id": "CFS1.44.1.2_3",
+          "trantype": "vendorbill",
+          "tranid": "CFS1.44.1.2_3",
+          "entity": "CN Automation Vendor",
+          "trandate": "12/1/2017",
+          "subsidiary":"Parent Company : China BU",
+          "postingperiod": "Dec 2017",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "memo": "bill 2 void test case 1.44.1.2",
+          "custbody_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        "item": [
+          {
+            "item": "CN Auto Service Item4 for Purchase",
+            "quantity": "3",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "rate": "1000",
+            "amount": "3000",
+            "custcol_cseg_cn_cfi": "Taxes and surcharges cash payments"
+          },
+          {
+            "item": "CN Auto Non-inventory Item3 for Purchase",
+            "quantity": "1",
+            "taxcode": "VAT_CN:CN_VATOUT_17",
+            "rate": "30",
+            "amount": "30",
+            "custcol_cseg_cn_cfi": "Other cash payments related to operating activities"
+          }
+        ]
+      },
+      {
+        "main": {
+          "trantype": "vendorpayment",
+          "id": "CFS1.44.1.2_4",
+          "entity": "CN Automation Vendor",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "trandate": "12/1/2017",
+          "postingperiod": "Dec 2017",
+          "account": "10020103 银行存款 : 人民币 : 工行T1",
+          "memo": "bill payment void test case 1.44.1.2"
+        },
+        "apply": [
+          {
+            "refid": "CFS1.44.1.2_1",
+            "amount": "3000.00"
+          },
+          {
+            "refid": "CFS1.44.1.2_2",
+            "amount": "-1000.00"
+          },
+          {
+            "refid": "CFS1.44.1.2_3",
+            "amount": "1000.00"
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id": "CFS1.44.1.2_5",
+          "trantype": "journalentry",
+          "trandate": "12/1/2017",
+          "postingperiod": "Dec 2017"
+        }
+      }
+    ],
+    "expected_payment":[
+      {
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "trandate": "12/1/2017",
+        "item": "Cash paid for goods and services",
+        "amount": "3000.00"
+      },
+      {
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "trandate": "12/1/2017",
+        "item": "Other cash payments related to operating activities",
+        "amount": "11.56"
+      },
+      {
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "trandate": "12/1/2017",
+        "item": "Taxes and surcharges cash payments",
+        "amount": "988.44"
+      },
+      {
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "trandate": "12/1/2017",
+        "item": "Cash paid for goods and services",
+        "amount": "-1000.00"
+      }
+    ],
+    "expected_journal": [
+      {
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "trandate": "12/1/2017",
+        "item": "Cash paid for goods and services",
+        "amount": "-3000.00"
+      },
+      {
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "trandate": "12/1/2017",
+        "item": "Cash paid for goods and services",
+        "amount": "1000.00"
+      },
+      {
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "trandate": "12/1/2017",
+        "item": "Taxes and surcharges cash payments",
+        "amount": "-988.44"
+      },
+      {
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "trandate": "12/1/2017",
+        "item": "Other cash payments related to operating activities",
+        "amount": "-11.56"
+      }
+    ]
+  }
+}

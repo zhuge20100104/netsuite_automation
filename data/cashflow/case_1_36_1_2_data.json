@@ -1,0 +1,28 @@
+{
+  "caseId": "test 1.36.1.2",
+  "data": {
+    "item": [
+      {
+        "lineid": "1",
+        "itemold": "CN Auto CashFlow Item1",
+        "itemnew": "CFS Assembly Item"
+      },
+      {
+        "lineid": "2",
+        "itemold": "CFS Gift Certificate Item"
+      }
+    ]
+  },
+  "expected": {
+    "item": [
+      {
+        "cfsold": "Taxes and surcharges refunds",
+        "cfsnew": "Taxes and surcharges refunds"
+      },
+      {
+        "cfsold": "Taxes and surcharges refunds",
+        "cfsnew": "Taxes and surcharges refunds"
+      }
+    ]
+  }
+}

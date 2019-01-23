@@ -1,0 +1,13 @@
+{
+  "test_case_10_1_4": {
+    "subsidiary": {
+      "name_China03"   : "China BlSheet 03",
+      "fiscalcalendar" : "Oracle Fiscal Calendar",
+      "name_China01"   : "China BlSheet 01"
+    },
+    "expected": {
+      "value_sub_ch1"      : "Jan",
+      "value_sub_ch3"      : "Jun"
+    }
+  }
+}

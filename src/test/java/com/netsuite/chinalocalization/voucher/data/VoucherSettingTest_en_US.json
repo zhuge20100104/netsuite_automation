@@ -1,0 +1,128 @@
+{
+  "case_1_15_1_9____1_15_1_10":{
+    "type":"Creator",
+    "transectiontype":"Journal",
+    "user":"auto1.04",
+    "date":"8/24/2017"
+  },
+  "case_1_16_1_1_1":{
+    "type":"Creator",
+    "transactionType":"Journal",
+    "user":"auto1.03",
+    "date":"8/25/2017",
+    "endDate":"8/26/2017"
+  },
+  "case_1_16_2_1_1":{
+    "type":"Poster",
+    "transactionType":"Journal",
+    "user":"auto1.03",
+    "date":"8/27/2017",
+    "endDate":"8/28/2017"
+  },
+  "case_1_16_1_1_4":{
+    "No1":{
+      "type":"Creator",
+      "transectiontype":"Journal",
+      "user":"auto1.01",
+      "date":"4/26/2017"
+    },
+    "No2":{
+      "type":"Creator",
+      "transectiontype":"Journal",
+      "user":"auto1.01",
+      "date":"1/1/2016",
+      "enddate":"12/31/2016"
+    }
+  },
+  "case_1_16_1_1_7":{
+    "type":"Creator",
+    "transactiontype":"Journal",
+    "user":"auto1.01",
+    "date":"4/26/2017",
+    "enddate":"9/1/2017",
+    "changedenddate":"8/31/2017"
+  },
+  "case_1_16_1_1_8":{
+    "type":"Creator",
+    "transactiontype":"Journal",
+    "user":"auto1.01",
+    "date":"4/26/2017",
+    "enddate":"9/1/2017",
+    "changedenddate":"8/1/2017"
+  },
+  "case_1_16_1_1_9":{
+    "type":"Creator",
+    "transactiontype":"Journal",
+    "user":"auto1.01",
+    "date":"4/26/2017",
+    "enddate":"9/1/2018",
+    "changedenddate":"7/31/2017"
+  },
+  "case_1_16_1_1_11":{
+    "type":"Creator",
+    "transactiontype":"Journal",
+    "user":"auto1.01",
+    "date":"4/26/2017",
+    "enddate":"9/1/2018",
+    "changedenddate":"7/31/2017"
+  },
+  "case_1_16_1_1_12":{
+    "type":"Creator",
+    "transactiontype":"Journal",
+    "user":"auto1.01",
+    "date":"4/26/2017"
+  },
+  "case_1_16_1_1_13":{
+    "type":"Creator",
+    "transactiontype":"Journal",
+    "user":"auto1.01",
+    "date":"4/26/2017",
+    "changedenddate":"7/31/2018"
+  },
+  "case_1_16_1_1_15": {
+    "No1": {
+      "type": "Creator",
+      "transectiontype": "Journal",
+      "user": "auto1.01",
+      "date": "4/26/2017",
+      "enddate": "7/31/2017"
+    },
+    "No2": {
+      "type": "Creator",
+      "transectiontype": "Journal",
+      "user": "auto1.01",
+      "date": "1/1/2016",
+      "enddate": "12/31/2016"
+    }
+  },
+  "case_1_16_1_1_17": {
+    "No1": {
+      "type": "Creator",
+      "transectiontype": "Journal",
+      "user": "auto1.01",
+      "date": "4/26/2017",
+      "enddate": "7/31/2017"
+    },
+    "No2": {
+      "type": "Creator",
+      "transectiontype": "Journal",
+      "user": "auto1.01",
+      "date": "1/1/2016",
+      "enddate": "12/31/2016"
+    }
+  },
+  "case_1_16_1_2_2": {
+    "No1": {
+      "type": "Approver",
+      "transectiontype": "Journal",
+      "user": "auto1.07",
+      "date": "4/26/2017"
+    },
+    "No2": {
+      "type": "Approver",
+      "transectiontype": "Bill",
+      "user": "auto1.07",
+      "date": "4/26/2017"
+    }
+  }
+}

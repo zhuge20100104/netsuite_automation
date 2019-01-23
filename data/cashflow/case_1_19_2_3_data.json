@@ -1,0 +1,85 @@
+{
+  "test case 1.19.2.3": {
+    "data": [
+      {
+        "main": {
+          "id": "1.19.2.3_1",
+          "trantype": "cashsale",
+          "entity": "CN Automation Customer",
+          "trandate": "8/23/2017",
+          "postingperiod": "Aug 2017",
+          "location": "CN_BJ",
+          "currency": "Yuan",
+          "memo": "test case 1.19.2.3"
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item1",
+            "quantity": "1",
+            "amount": "1000",
+            "taxcode": "VAT_CN:CN_VATOUT_17",
+            "custcol_cseg_cn_cfi": "Taxes and surcharges refunds"
+          },
+          {
+            "item": "CN Auto CashFlow Item2",
+            "quantity": "1",
+            "amount": "2000",
+            "taxcode": "VAT_CN:CN_VATOUT_6",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id": "1.19.2.3_3",
+          "trantype": "deposite",
+          "account": "10020103 银行存款 : 人民币 : 工行T1",
+          "trandate": "9/6/2017",
+          "postingperiod": "Sep 2017",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "transaction_trandate": "9/6/2017",
+          "memo": "test case 1.19.2.3"
+        },
+        "apply": [
+          {
+            "refid": "1.19.2.3_1",
+            "amount": "3,290.00"
+          }
+        ]
+      }
+    ],
+    "expected": [
+          {
+            "subsidiary": "Parent Company : China BU",
+            "trandate": "9/6/2017",
+            "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+            "item": "Taxes and surcharges refunds",
+            "amount": "1220.61"
+          },
+          {
+            "subsidiary": "Parent Company : China BU",
+            "trandate": "9/6/2017",
+            "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+            "item": "Cash received from sales and services",
+            "amount": "268.39"
+          },
+          {
+            "subsidiary": "Parent Company : China BU",
+            "trandate": "9/6/2017",
+            "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+            "item": "Cash received from sales and services",
+            "amount": "740.61"
+          },
+          {
+            "subsidiary": "Parent Company : China BU",
+            "trandate": "9/6/2017",
+            "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+            "item": "Cash received from sales and services",
+            "amount": "4423.39"
+          }
+        ]
+  }
+}

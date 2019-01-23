@@ -1,0 +1,224 @@
+{
+  "test_case_8_2_1" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "中国 Income华北区",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "ReportData" : [
+      ["100104 - 库存现金中国Income", "期初余额", "", "", "", "", "", "", "平", "0.00"],
+      ["", "日记账", "ISJE20160601", "", "6/10/2016", "", "10,000.00", "", "借", "10,000.00"],
+      ["", "本月合计", "", "", "6/10/2016", "", "10,000.00", "0.00", "借", "10,000.00"],
+      ["", "本年累计", "", "", "6/10/2016", "", "10,000.00", "0.00", "借", "10,000.00"],
+      ["总计 - 100104 - 库存现金中国Income", "", "", "", "", "", "10,000.00", "0.00", "借", "10,000.00"],
+      ["6001 - 主营业务收入", "期初余额", "", "", "", "", "", "", "平", "0.00"],
+      ["", "日记账", "ISJE20160601", "", "6/10/2016", "", "", "10,000.00", "贷", "10,000.00"],
+      ["", "本月合计", "", "", "6/10/2016", "", "0.00", "10,000.00", "贷", "10,000.00"],
+      ["", "本年累计", "", "", "6/10/2016", "", "0.00", "10,000.00", "贷", "10,000.00"],
+      ["总计 - 6001 - 主营业务收入", "", "", "", "", "", "0.00", "10,000.00", "贷", "10,000.00"]
+    ]
+  },
+
+  "test_case_8_2_2" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "中国 Income华北区",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "ExcelData": {
+      "filename":"明细账.xls",
+      "reportHeader" : {
+        "title" : {
+          "row" : 0,
+          "col" : 0,
+          "text" : "明细账"
+        },
+        "subsidiary" : {
+          "row" : 1,
+          "col" : 0,
+          "text" : "子公司: 中国 Income"
+        },
+        "dateZone" : {
+          "row" : 1,
+          "col" : 2,
+          "text" : "6/10/2016 - 6/10/2016"
+        },
+        "currency" : {
+          "row" : 1,
+          "col" : 6,
+          "text" : "币种: CNY"
+        },
+        "location": {
+          "row": 2,
+          "col": 0,
+          "text":"地点: 中国 Income华北区"
+        },
+        "department": {
+          "row": 2,
+          "col": 2,
+          "text":"部门: Income生产部"
+        },
+        "class": {
+          "row": 2,
+          "col": 6,
+          "text":"类别: 智能手机"
+        }
+      }
+    }
+  },
+
+  "test_case_8_2_3" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "中国 Income华北区",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "PdfData" : {
+      "filename":"明细账.pdf",
+      "title" : "明细账",
+      "subsidiary":"子公司：中国 Income",
+      "period" : "6/10/2016 - 6/10/2016",
+      "currency" : "币种：USD",
+      "account" : "科目：100104 - 库存现金中国Income",
+      "account2" : "科目：6001 - 主营业务收入",
+      "classification" : {
+        "location" : "地点：中国 Income华北区",
+        "department":"部门：Income生产部",
+        "class" : "类别：智能手机"
+      }
+    }
+  },
+
+  "test_case_8_2_4" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "ExcelData": {
+      "filename":"明细账.xls",
+      "reportHeader" : {
+        "title" : {
+          "row" : 0,
+          "col" : 0,
+          "text" : "明细账"
+        },
+        "subsidiary" : {
+          "row" : 1,
+          "col" : 0,
+          "text" : "子公司: 中国 Income"
+        },
+        "dateZone" : {
+          "row" : 1,
+          "col" : 2,
+          "text" : "6/10/2016 - 6/10/2016"
+        },
+        "currency" : {
+          "row" : 1,
+          "col" : 6,
+          "text" : "币种: CNY"
+        },
+        "department": {
+          "row": 2,
+          "col": 0,
+          "text":"部门: Income生产部"
+        },
+        "class": {
+          "row": 2,
+          "col": 2,
+          "text":"类别: 智能手机"
+        }
+      }
+    },
+    "PdfData" : {
+      "filename":"明细账.pdf",
+      "title" : "明细账",
+      "subsidiary":"子公司：中国 Income",
+      "period" : "6/10/2016 - 6/10/2016",
+      "currency" : "币种：USD",
+      "account" : "科目：100104 - 库存现金中国Income",
+      "account2" : "科目：6001 - 主营业务收入",
+      "classification" : {
+        "department":"部门：Income生产部",
+        "class" : "类别：智能手机"
+      }
+    }
+  },
+
+  "test_case_8_2_5" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "",
+      "department":"",
+      "class" : "智能手机"
+    },
+    "ExcelData": {
+      "filename":"明细账.xls",
+      "reportHeader" : {
+        "title" : {
+          "row" : 0,
+          "col" : 0,
+          "text" : "明细账"
+        },
+        "subsidiary" : {
+          "row" : 1,
+          "col" : 0,
+          "text" : "子公司: 中国 Income"
+        },
+        "dateZone" : {
+          "row" : 1,
+          "col" : 2,
+          "text" : "6/10/2016 - 6/10/2016"
+        },
+        "currency" : {
+          "row" : 1,
+          "col" : 6,
+          "text" : "币种: CNY"
+        },
+        "class": {
+          "row": 2,
+          "col": 0,
+          "text":"类别: 智能手机"
+        }
+      }
+    },
+    "PdfData" : {
+      "filename":"明细账.pdf",
+      "title" : "明细账",
+      "subsidiary":"子公司：中国 Income",
+      "period" : "6/10/2016 - 6/10/2016",
+      "currency" : "币种：USD",
+      "account" : "科目：100104 - 库存现金中国Income",
+      "account2" : "科目：6001 - 主营业务收入",
+      "classification" : {
+        "class" : "类别：智能手机"
+      }
+    }
+  }
+
+
+}

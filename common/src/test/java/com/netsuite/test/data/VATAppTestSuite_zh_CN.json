@@ -1,0 +1,15 @@
+{
+  "test_5_2_1":{
+    "labels":{
+      "fromDate":"8/1/2017",
+      "toDate":"7/1/2017"
+    },
+    "data":{
+    },
+    "expect":{
+      "errorStartDateMoreThanEndDateMsg":"起始日期须早于截至日期。"
+    },
+    "record": [
+    ]
+  }
+}

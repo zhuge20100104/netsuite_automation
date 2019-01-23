@@ -1,0 +1,56 @@
+{
+  "test_case_1_2_1" : {
+    "Buttons" : {
+      "saveBut" : {
+        "text" : "保存",
+        "displayed" : true
+      },
+      "cancelBut" : {
+        "text" : "取消",
+        "displayed" : true
+      }
+    }
+  },
+  "test_case_1_2_2" : {
+    "Labels" : {
+      "page_title" : {
+        "text" : "配置"
+      },
+      "general_tab" : {
+        "text" : "常规",
+        "fieldid" : "custpage_general_subtab"
+      },
+      "enable_feature" : {
+        "text" : "启用功能",
+        "fieldid" : "custpage_general_field_group"
+      },
+      "vat" : {
+        "text" : "中国增值税接口",
+        "fieldid" : "custrecord_cn_pref_vat"
+      },
+      "cfs" : {
+        "text" : "中国现金流量表",
+        "fieldid" : "custrecord_cn_pref_cfs"
+      }
+    }
+  },
+  "test_case_2_1_1" : {
+    "ItemStat" : {
+      "vat" : "T",
+      "cfs" : "T"
+    }
+  },
+  "test_case_2_1_2" : {
+    "ItemStat" : {
+      "vat" : "F",
+      "cfs" : "F"
+    }
+  },
+  "test_case_2_1_3" : {
+    "ItemStat" : {
+      "vat" : "T",
+      "cfs" : "T"
+    }
+  }
+
+}

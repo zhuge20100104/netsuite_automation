@@ -1,0 +1,15 @@
+{
+    "header":{
+        "account": "科目",
+        "openBalance":"期初余额",
+        "currentPeriod":"本期发生额",
+        "closeBalance":"期末余额",
+        "debitCredit":"方向",
+        "amount":"金额",
+        "debit":"借方",
+        "credit":"贷方"},
+    "expectedResults": {
+        "loadingMsg": "数据加载中..."
+    }
+
+}

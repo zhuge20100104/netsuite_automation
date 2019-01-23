@@ -1,0 +1,298 @@
+{
+  "tranHeader": {
+    "select": "选择",
+    "internalId": "内部标识",
+    "customerName": "客户名称",
+    "tranType": "事务处理类型",
+    "docNum": "单据编号",
+    "status": "状态",
+    "docDate": "单据日期",
+    "amount": "不含税金额",
+    "afterdiscountamt": "折后金额"
+  },
+  "itemHeader": {
+    "itemName": "货物名称",
+    "model": "规格型号",
+    "uom": "单位",
+    "quantity": "数量",
+    "amount": "不含税金额",
+    "unitPrice": "单价",
+    "taxRate": "税率",
+    "discountAmount": "折扣金额"
+  },
+  "test_case_19_2_1_6": {
+    "subsidiary": "北京VAT",
+    "maxInvoiceAmount": "10000",
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "2/1/2018",
+      "dateto": "2/1/2018",
+      "docNumFrom": "10801",
+      "docNumTo": "10802",
+      "customer": "北京一般纳税公司01",
+      "tranType": "发票"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "creditmemo",
+          "externalid": "CM10801",
+          "tranid": "10801",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1",
+          "custbody_cn_info_sheet_number": "1080100000000001"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "creditmemo",
+          "externalid": "CM10802",
+          "tranid": "10802",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1",
+          "custbody_cn_info_sheet_number": "1080100000000001"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "previewData":[
+      {
+        "docNum": "10801",
+        "tranType": "贷项通知单",
+        "internalId": "127720",
+        "customerName": "北京一般纳税公司01",
+        "docDate": "20180201",
+        "lineQuantity": 1,
+        "taxRegisNum": "123456789010001",
+        "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+        "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+        "remark": "开具红字增值税专用发票信息表编号1080100000000001",
+        "itemNameForSale": "",
+        "message": "",
+        "amount": -5600.99,
+        "afterdiscountamt": -5600.99,
+        "vatlineQuantity": 1,
+        "status": "",
+        "item": [
+          {
+            "itemName": "思科CiscoPhone 7970",
+            "model": "7970型号",
+            "uom": "台",
+            "quantity": -1.0,
+            "unitPrice": 5600.99,
+            "amount": -5600.99,
+            "taxRate": 0.17,
+            "discountAmount": 0
+          }
+        ],
+        "discountAmount": 0
+      },
+      {
+        "docNum": "10802",
+        "tranType": "贷项通知单",
+        "internalId": "127721",
+        "customerName": "北京一般纳税公司01",
+        "docDate": "20180201",
+        "lineQuantity": 1,
+        "taxRegisNum": "123456789010001",
+        "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+        "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+        "remark": "开具红字增值税专用发票信息表编号1080100000000001",
+        "itemNameForSale": "",
+        "message": "",
+        "amount": -5600.99,
+        "afterdiscountamt": -5600.99,
+        "vatlineQuantity": 1,
+        "status": "",
+        "item": [
+          {
+            "itemName": "思科CiscoPhone 7970",
+            "model": "7970型号",
+            "uom": "台",
+            "quantity": -1.0,
+            "unitPrice": 5600.99,
+            "amount": -5600.99,
+            "taxRate": 0.17,
+            "discountAmount": 0
+          }
+        ],
+        "discountAmount": 0
+      }
+    ]
+  },
+  "test_case_19_2_1_7": {
+    "subsidiary": "北京VAT",
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税普通发票",
+      "datefrom": "2/1/2018",
+      "dateto": "2/1/2018",
+      "docNumFrom": "10803",
+      "docNumTo": "10804",
+      "customer": "北京一般纳税公司01"
+
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "id": "IN10803_0",
+          "trantype": "invoice",
+          "externalid": "IN10803_0",
+          "tranid": "IN10803_0",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM10803",
+        "tranid": "10803",
+        "trandate": "2/1/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "2"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ],
+        "apply":[
+          {
+            "refid":"IN10803_0",
+            "amount":"500"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "id": "IN10804_0",
+          "trantype": "invoice",
+          "externalid": "IN10804_0",
+          "tranid": "IN10804_0",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM10804",
+        "tranid": "10804",
+        "trandate": "2/1/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "2"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ],
+        "apply":[
+          {
+            "refid":"IN10804_0",
+            "amount":"500"
+          }
+        ]
+      }
+    ],
+    "previewData":[
+      {
+        "docNum": "10803",
+        "tranType": "贷项通知单",
+        "internalId": "130846",
+        "customerName": "北京一般纳税公司01",
+        "docDate": "20180201",
+        "lineQuantity": 1,
+        "taxRegisNum": "123456789010001",
+        "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+        "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+        "remark": "",
+        "itemNameForSale": "",
+        "message": "该发票无对应的正向增值税发票信息或备注栏格式不正确。",
+        "amount": -5600.99,
+        "afterdiscountamt": -5600.99,
+        "vatlineQuantity": 1,
+        "status": "",
+        "item": [
+          {
+            "itemName": "思科CiscoPhone 7970",
+            "model": "7970型号",
+            "uom": "台",
+            "quantity": -1.0,
+            "unitPrice": 5600.99,
+            "amount": -5600.99,
+            "taxRate": 0.17,
+            "discountAmount": 0
+          }
+        ],
+        "discountAmount": 0
+      },
+      {
+        "docNum": "10804",
+        "tranType": "贷项通知单",
+        "internalId": "130848",
+        "customerName": "北京一般纳税公司01",
+        "docDate": "20180201",
+        "lineQuantity": 1,
+        "taxRegisNum": "123456789010001",
+        "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+        "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+        "remark": "",
+        "itemNameForSale": "",
+        "message": "该发票无对应的正向增值税发票信息或备注栏格式不正确。",
+        "amount": -5600.99,
+        "afterdiscountamt": -5600.99,
+        "vatlineQuantity": 1,
+        "status": "",
+        "item": [
+          {
+            "itemName": "思科CiscoPhone 7970",
+            "model": "7970型号",
+            "uom": "台",
+            "quantity": -1.0,
+            "unitPrice": 5600.99,
+            "amount": -5600.99,
+            "taxRate": 0.17,
+            "discountAmount": 0
+          }
+        ],
+        "discountAmount": 0
+      }
+    ]
+  }
+}

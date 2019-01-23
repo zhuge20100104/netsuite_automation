@@ -1,0 +1,212 @@
+{
+    "defaultUserPreference": {
+        "NUMBERFORMAT": "1,000,000.00",
+        "DATEFORMAT": "M/D/YYYY",
+        "TIMEFORMAT": "hh:mm AM/PM",
+        "ONLYSHOWLASTSUBACCT": "T"
+    },
+    "test_case_7_1_1": {
+        "expectedResult": {
+            "buttons":[{
+                "text" : "导出Excel",
+                "fieldid" : "custpage_export_excel",
+                "displayed": true,
+                "disabled": true
+                }
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "1/1/2018",
+            "dateto": "12/31/2018",
+            "accountfrom": "60840203 - Road shipping",
+            "accountto":"60840203 - Road shipping",
+            "accountlevel": "至末级"
+        }
+    },
+    "test_case_7_2_1": {
+        "expectedResult": {
+            "buttons":[{
+                "text" : "导出Excel",
+                "fieldid" : "custpage_export_excel",
+                "displayed": true,
+                "disabled": false
+            }
+            ],
+            "filename":"科目余额表.xls",
+            "reportheader":
+            {
+                "title": {
+                    "row": 0,
+                    "col": 0,
+                    "text": "科目余额表"
+                },
+                "subsidiary": {
+                    "row": 1,
+                    "col": 0,
+                    "text": "子公司：中国 AccountBalance 03"
+                },
+                "period": {
+                    "row": 1,
+                    "col": 2,
+                    "text": "7/1/2016 - 7/31/2016"
+                },
+                "currency": {
+                    "row": 1,
+                    "col": 5,
+                    "text":"币种：CNY"
+                }
+            },
+            "reporttableheader":{
+                "account": {
+                    "row": 2,
+                    "col": 0,
+                    "text":"科目"
+                },
+                "openbalance": {
+                    "row": 2,
+                    "col": 1,
+                    "text":"期初余额"
+                },
+                "currentperiod": {
+                    "row": 2,
+                    "col": 3,
+                    "text":"本期发生额"
+                },
+                "closebalance": {
+                    "row": 2,
+                    "col": 5,
+                    "text":"期末余额"
+                },
+                "openbalance_direction": {
+                    "row": 3,
+                    "col": 1,
+                    "text":"方向"
+                },
+                "openbalance_amount": {
+                    "row": 3,
+                    "col": 2,
+                    "text":"金额"
+                },
+
+                "currentperiod_debit": {
+                    "row": 3,
+                    "col": 3,
+                    "text":"借方"
+                },
+                "currentperiod_credit": {
+                    "row": 3,
+                    "col": 4,
+                    "text":"贷方"
+                },
+                "closebalance_direction": {
+                    "row": 3,
+                    "col": 5,
+                    "text":"方向"
+                },
+                "closebalance_amount": {
+                    "row": 3,
+                    "col": 6,
+                    "text":"金额"
+                }
+            },
+            "datastartrow": 4,
+            "datastartcol" : 0,
+            "data": [
+                ["608402 - shipment", "借","99,899.45","300,100.55", "300,000.00", "借","100,000.00"],
+                ["60840201 - Ocean shipping", "借","100,000.00", "100,000.00","300,000.00","贷","100,000.00"],
+                ["60840202 - Air shipping","贷","100.55","100.55", "0.00","平","0.00"],
+                ["60840203 - Road shipping","平", "0.00","200,000.00","0.00","借", "200,000.00"]
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "7/1/2016",
+            "dateto": "7/31/2016",
+            "accountfrom": "608402 - shipment",
+            "accountto":"608402 - shipment",
+            "accountlevel": "至末级"
+        }
+    },
+    "test_case_7_2_4": {
+        "defaultUserPreference": {
+            "NUMBERFORMAT": "1 000 000.00",
+            "DATEFORMAT": "M/D/YYYY",
+            "TIMEFORMAT": "hh:mm AM/PM",
+            "ONLYSHOWLASTSUBACCT": "T"
+        },
+        "calenderToTest" : "Standard Fiscal Calendar",
+        "expectedResult": {
+            "filename":"科目余额表.xls",
+            "reportheader":
+            {
+                "currency": {
+                    "row": 1,
+                    "col": 5,
+                    "text":"币种：USD"
+                }
+            },
+            "datastartrow": 4,
+            "datastartcol" : 0,
+            "data": [
+                ["1200 - Inventory", "平","0.00","0.00", "10 000.00", "贷","10 000.00"],
+                ["6110 - Interest Expense", "平","0.00", "10 000.00","0.00","借","10 000.00"]
+            ]
+        },
+        "filter": {
+            "subsidiary": "China AccountBalance 01",
+            "datefrom": "5/1/2018",
+            "dateto": "5/31/2018",
+            "accountlevel": "至末级"
+        }
+    },
+    "test_case_7_2_6": {
+        "expectedResult": {
+            "filename":"科目余额表.xls",
+            "datastartrow": 4,
+            "datastartcol" : 0
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "5/1/2018",
+            "dateto": "5/31/2018",
+            "accountlevel": "至末级"
+        }
+    },
+    "test_case_7_2_7": {
+        "expectedResult": {
+            "filename":"科目余额表.xls",
+            "datastartrow": 4,
+            "datastartcol" : 0
+        },
+        "filter": {
+            "subsidiary": "China BU",
+            "datefrom": "1/1/2013",
+            "dateto": "5/31/2018",
+            "accountlevel": "至末级"
+        }
+    },
+    "test_case_7_2_6_old": {
+        "expectedResult": {
+            "filename":"科目余额表.xls",
+            "datastartrow": 4,
+            "datastartcol" : 0,
+            "data": [
+                ["9003 - Longest account-for-balance sprint test for truncate test", "平","0.00","1,000,000,001.16", "0.00", "借","1,000,000,001.16"],
+                ["900301 - Longest account-for-balance sprint test for truncate test01", "平","0.00", "100,000,000.98","0.00","借","100,000,000.98"],
+                ["900302 - Longest account-for-balance sprint test for truncate test02", "平","0.00", "900,000,000.18","0.00","借","900,000,000.18"]
+
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "5/1/2018",
+            "dateto": "5/31/2018",
+            "accountfrom": "9003 - Longest account-for-balance sprint test for truncate test",
+            "accountto":"9003 - Longest account-for-balance sprint test for truncate test",
+            "accountlevel": "至末级"
+        }
+    }
+
+}
+

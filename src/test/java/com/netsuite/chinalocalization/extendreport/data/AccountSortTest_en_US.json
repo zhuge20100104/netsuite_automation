@@ -1,0 +1,297 @@
+{
+    "defaultUserPreference": {
+    "dateformat": "M/D/YYYY"
+    },
+    "test_case_4_1_1": {
+        "expectedResult": {
+            "account":[
+                "6084 - large equipments",
+                "608401 - construction equipments",
+                "60840101 - Type A",
+                "60840102 - Type B",
+                "60840103 - Type C",
+                "608402 - shipment",
+                "60840201 - Ocean shipping",
+                "60840202 - Air shipping",
+                "60840203 - Road shipping",
+                "608403 - destruction"
+
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "5/1/2017",
+            "dateto": "8/31/2017",
+            "accountfrom": "608402 - shipment",
+            "accountto":"608403 - destruction",
+            "accountlevel": "To First"
+        }
+    },
+    "test_case_4_1_2": {
+        "expectedResult": {
+            "account":[
+                "6084 - large equipments",
+                "608401 - large equipments : construction equipments",
+                "60840101 - large equipments : construction equipments : Type A",
+                "60840102 - large equipments : construction equipments : Type B",
+                "60840103 - large equipments : construction equipments : Type C",
+                "608402 - large equipments : shipment",
+                "60840201 - large equipments : shipment : Ocean shipping",
+                "60840202 - large equipments : shipment : Air shipping",
+                "60840203 - large equipments : shipment : Road shipping",
+                "608403 - large equipments : destruction"
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "5/1/2017",
+            "dateto": "8/31/2017",
+            "accountfrom": "608402 - large equipments : shipment",
+            "accountto":"608403 - large equipments : destruction",
+            "accountlevel": "To First"
+        }
+    },
+    "test_case_4_1_3": {
+        "expectedResult": {
+            "account":[
+                "Extendlevel测试2lev5",
+                "Extendlevel测试lev5",
+                "extend现金",
+                "extend银行账户"
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "5/1/2017",
+            "dateto": "8/31/2017",
+            "accountfrom": "608402 - shipment",
+            "accountto":"608403 - destruction",
+            "accountlevel": "To First"
+        }
+    },
+    "test_case_4_1_4": {
+        "expectedResult": {
+            "account":[
+                "extend\u94f6\u884c\u8d26\u6237",
+                "extend\u94f6\u884c\u8d26\u6237 : extend\u73b0\u91d1",
+                "extend\u94f6\u884c\u8d26\u6237 : extend\u73b0\u91d1 : \u4eba\u6c11\u5e01",
+                "extend\u94f6\u884c\u8d26\u6237 : extend\u73b0\u91d1 : \u7f8e\u5143",
+                "extend\u94f6\u884c\u8d26\u6237 : extend\u73b0\u91d1 : \u7f8e\u5143 : \u4e1a\u52a1",
+                "extend\u94f6\u884c\u8d26\u6237 : extend\u73b0\u91d1 : \u7f8e\u5143 : \u4e1a\u52a1 : Extendlevel\u6d4b\u8bd52lev5",
+                "extend\u94f6\u884c\u8d26\u6237 : extend\u73b0\u91d1 : \u7f8e\u5143 : \u4e1a\u52a1 : Extendlevel\u6d4b\u8bd5lev5",
+                "extend\u94f6\u884c\u8d26\u6237 : extend\u73b0\u91d1 : \u7f8e\u5143 : \u5176\u4ed6"
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "5/1/2017",
+            "dateto": "8/31/2017",
+            "accountfrom": "large equipments : shipment",
+            "accountto":"large equipments : destruction",
+            "accountlevel": "To First"
+        }
+    },
+    "test_case_2_2_2": {
+        "expectedResult": {
+            "data":[
+                {
+                    "accountName": "608402 - shipment",
+                    "openBalanceDirection": "Debit",
+                    "openBalance_amount": "99,899.45",
+                    "debitAmount": "500,200.80",
+                    "creditAmount": "400,300.72",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "199,799.53"
+                },
+                {
+                    "accountName": "60840201 - Ocean shipping",
+                    "openBalanceDirection": "Debit",
+                    "openBalance_amount": "100,000.00",
+                    "debitAmount": "300,000.00",
+                    "creditAmount": "300,000.00",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "100,000.00"
+                },
+                {
+                    "accountName": "60840202 - Air shipping",
+                    "openBalanceDirection": "Credit",
+                    "openBalance_amount": "100.55",
+                    "debitAmount": "200.80",
+                    "creditAmount": "300.72",
+                    "closeBalanceDirection": "Credit",
+                    "closeBalanceAmount": "200.47"
+                },
+                {
+                    "accountName": "60840203 - Road shipping",
+                    "openBalanceDirection": "Balanced",
+                    "openBalance_amount": "0.00",
+                    "debitAmount": "200,000.00",
+                    "creditAmount": "100,000.00",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "100,000.00"
+                },
+                {
+                    "accountName": "608403 - destruction",
+                    "openBalanceDirection": "Balanced",
+                    "openBalance_amount": "0.00",
+                    "debitAmount": "100.00",
+                    "creditAmount": "0.00",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "100.00"
+                }
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "6/1/2016",
+            "dateto": "12/31/2016",
+            "accountfrom": "608402 - shipment",
+            "accountto": "608403 - destruction",
+            "accountlevel": "All Accounts and Subaccounts"
+        }
+    },
+    "test_case_4_1_5": {
+        "expectedResult": {
+            "account":[
+                "6084 - large equipments",
+                "608401 - construction equipments",
+                "60840101 - Type A",
+                "60840102 - Type B",
+                "60840103 - Type C",
+                "608402 - shipment",
+                "60840201 - Ocean shipping",
+                "60840202 - Air shipping",
+                "60840203 - Road shipping",
+                "608403 - destruction"
+            ],
+            "data":[
+                {
+                    "accountName": "608402 - shipment",
+                    "openBalanceDirection": "Debit",
+                    "openBalance_amount": "99,899.45",
+                    "debitAmount": "500,200.80",
+                    "creditAmount": "400,300.72",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "199,799.53"
+                },
+                {
+                    "accountName": "60840201 - Ocean shipping",
+                    "openBalanceDirection": "Debit",
+                    "openBalance_amount": "100,000.00",
+                    "debitAmount": "300,000.00",
+                    "creditAmount": "300,000.00",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "100,000.00"
+                },
+                {
+                    "accountName": "60840202 - Air shipping",
+                    "openBalanceDirection": "Credit",
+                    "openBalance_amount": "100.55",
+                    "debitAmount": "200.80",
+                    "creditAmount": "300.72",
+                    "closeBalanceDirection": "Credit",
+                    "closeBalanceAmount": "200.47"
+                },
+                {
+                    "accountName": "60840203 - Road shipping",
+                    "openBalanceDirection": "Balanced",
+                    "openBalance_amount": "0.00",
+                    "debitAmount": "200,000.00",
+                    "creditAmount": "100,000.00",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "100,000.00"
+                },
+                {
+                    "accountName": "608403 - destruction",
+                    "openBalanceDirection": "Balanced",
+                    "openBalance_amount": "0.00",
+                    "debitAmount": "100.00",
+                    "creditAmount": "0.00",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "100.00"
+                }
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "6/1/2016",
+            "dateto": "12/31/2016",
+            "accountfrom": "608402 - shipment",
+            "accountto":"608403 - destruction",
+            "accountlevel": "All Accounts and Subaccounts"
+        }
+    },
+    "test_case_4_1_6": {
+        "expectedResult": {
+            "account":[
+                "6084 - large equipments",
+                "608401 - large equipments : construction equipments",
+                "60840101 - large equipments : construction equipments : Type A",
+                "60840102 - large equipments : construction equipments : Type B",
+                "60840103 - large equipments : construction equipments : Type C",
+                "608402 - large equipments : shipment",
+                "60840201 - large equipments : shipment : Ocean shipping",
+                "60840202 - large equipments : shipment : Air shipping",
+                "60840203 - large equipments : shipment : Road shipping",
+                "608403 - large equipments : destruction",
+                "6090 - Freight & Delivery"
+            ],
+            "data":[
+                {
+                    "accountName": "608402 - shipment",
+                    "openBalanceDirection": "Debit",
+                    "openBalance_amount": "99,899.45",
+                    "debitAmount": "500,200.80",
+                    "creditAmount": "400,300.72",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "199,799.53"
+                },
+                {
+                    "accountName": "60840201 - Ocean shipping",
+                    "openBalanceDirection": "Debit",
+                    "openBalance_amount": "100,000.00",
+                    "debitAmount": "300,000.00",
+                    "creditAmount": "300,000.00",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "100,000.00"
+                },
+                {
+                    "accountName": "60840202 - Air shipping",
+                    "openBalanceDirection": "Credit",
+                    "openBalance_amount": "100.55",
+                    "debitAmount": "200.80",
+                    "creditAmount": "300.72",
+                    "closeBalanceDirection": "Credit",
+                    "closeBalanceAmount": "200.47"
+                },
+                {
+                    "accountName": "60840203 - Road shipping",
+                    "openBalanceDirection": "Balanced",
+                    "openBalance_amount": "0.00",
+                    "debitAmount": "200,000.00",
+                    "creditAmount": "100,000.00",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "100,000.00"
+                },
+                {
+                    "accountName": "608403 - destruction",
+                    "openBalanceDirection": "Balanced",
+                    "openBalance_amount": "0.00",
+                    "debitAmount": "100.00",
+                    "creditAmount": "0.00",
+                    "closeBalanceDirection": "Debit",
+                    "closeBalanceAmount": "100.00"
+                }
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 AccountBalance 03",
+            "datefrom": "6/1/2016",
+            "dateto": "12/31/2016",
+            "accountfrom": "608402 - large equipments : shipment",
+            "accountto":"608403 - large equipments : destruction",
+            "accountlevel": "All Accounts and Subaccounts"
+        }
+    }
+}
+

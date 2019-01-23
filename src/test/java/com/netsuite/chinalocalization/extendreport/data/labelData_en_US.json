@@ -1,0 +1,14 @@
+{
+  "header": {
+    "account": "Account",
+    "openBalance":"Opening Balance",
+    "currentPeriod":"Current Period",
+    "closeBalance":"Closing Balance",
+    "debitCredit":"Debit/Credit",
+    "amount":"Amount",
+    "debit":"Debit",
+    "credit":"Credit"},
+    "expectedResults": {
+        "loadingMsg": "Loading..."
+    }
+}

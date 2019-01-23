@@ -1,0 +1,67 @@
+{
+  "file template": "SJJK0201~~已开发票传出\r\n1~~20150201~~20150228\r\n//发票1\r\n0~~0~~2~~{vatcode}~~{vatnumber}~~1~~20170630~~06~~{internalid}~~85.47~~0.17~~14.53~~TEST~~110229820423002~~Floor 35, China World Trade Center, Jianguomen Wai Da Jie, Beijing, 100004, 中国~~中国银行 23498723487234~~航天信息股份有限公司~~110101801030003~~营业地址 010-123456~~0099988776655544~~999947~~管理员2\r\n~~~~0~~CN标准AR测试~~~~~~1~~85.47~~0.17~~14.53~~85.47~~0~~0",
+  "filter": {
+    "subsidiary": "北京VAT",
+    "invoicetype": "增值税专用发票",
+    "datefrom": "8/1/2016",
+    "dateto": "8/1/2016"
+  },
+  "data": [
+    {
+      "main": {
+        "trantype": "invoice",
+        "entity": "北京一般纳税公司01",
+        "trandate": "8/1/2016",
+        "postingperiod": "Aug 2016",
+        "location":"海淀",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+      "item": [
+        {
+          "item": "思科CiscoPhone 7970",
+          "quantity": "1",
+          "amount": "500"
+        }
+      ]
+    }
+  ],
+  "11.2.1": {
+    "expected": {
+      "code": "code1",
+      "number": "number1",
+      "status": ""
+    }
+  },
+  "11.3.1.1": {
+    "expected": {
+      "code": "",
+      "number": "",
+      "status": "1",
+      "visible":"true"
+    }
+  },
+  "11.3.2.1": {
+    "expected": {
+      "visible":"false"
+    }
+  },
+  "11.3.3.1": {
+    "expected": {
+       "visible":"false"
+    }
+  },
+  "11.4.2.1": {
+    "expected": {
+      "code": "code1",
+      "number": "number1",
+      "status": "2"
+    }
+  },
+  "11.4.3.1": {
+    "expected": {
+      "code": "code2",
+      "number": "number2",
+      "status": "2"
+    }
+  }
+}

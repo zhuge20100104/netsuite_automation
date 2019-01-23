@@ -1,0 +1,27 @@
+{
+  "test_case_4_1_2": {
+    "expectedResult": {
+      "subTab": "中国增值税",
+      "bankAccount": "银行账号",
+      "taxpayer": "中国增值税纳税人类型",
+      "taxpayerOptions": [
+          "", "-新建-",
+        "增值税一般纳税人",
+        "增值税小规模纳税人"
+      ]
+    }
+  },
+  "test_case_11_2_3": {
+    "expectedResult": {
+      "subTab": "中国增值税",
+      "message": "没有记录可显示。"
+    }
+  },
+  "test_case_11_2_4": {
+    "expectedResult": {
+      "subTab": "中国增值税",
+      "message": "没有记录可显示。"
+    }
+  }
+
+}

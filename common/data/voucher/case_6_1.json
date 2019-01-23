@@ -1,0 +1,702 @@
+{
+  "test case 6.1.1": {
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Jan 2018",
+      "periodTo": "Jan 2018",
+      "tranDateFrom": "1/1/2018",
+      "tranDateTo": "1/1/2018"
+    },
+    "data": [
+      {
+        "main": {
+          "id": "CFS6.1.1",
+          "trantype": "vendorbill",
+          "entity": "CN GL Automation Vendor",
+          "trandate": "1/1/2018",
+          "postingperiod": "Jan 2018",
+          "memo": "Test Case_6.1.1",
+          "custbody_cseg_cn_cfi": ""
+        },
+        "expense": [
+          {
+            "account": "6150 Office Expense",
+            "amount": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ],
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "Bill",
+          "trandate": "1/1/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "2000 Accounts Payable",
+            "funcCcyCredit": "",
+            "funcCcyDebit": "0.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyCredit": "0.00",
+            "funcCcyDebit": ""
+          },
+          {
+            "lineNum": 3,
+            "acctDesp": "VAT on Purchases CN",
+            "funcCcyCredit": "0.00",
+            "funcCcyDebit": ""
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.1.2": {
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Jan 2018",
+      "periodTo": "Jan 2018",
+      "tranDateFrom": "1/2/2018",
+      "tranDateTo": "1/2/2018"
+    },
+    "data": [
+      {
+        "main": {
+          "id": "CFS6.1.2",
+          "trantype": "invoice",
+          "entity": "CN GL Automation Customer",
+          "trandate": "1/2/2018",
+          "postingperiod": "Jan 2018",
+          "location": "CN_GL_BJ",
+          "account": "1100 Accounts Receivable",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "custbody_cseg_cn_cfi": "",
+          "memo": "Test Case_6.1.2"
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item1",
+            "quantity": "1",
+            "amount": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ],
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "Invoice",
+          "trandate": "1/2/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "1100 Accounts Receivable",
+            "funcCcyCredit": "",
+            "funcCcyDebit": "0.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "4000 Sales",
+            "funcCcyCredit": "0.00",
+            "funcCcyDebit": ""
+          },
+          {
+            "lineNum": 3,
+            "acctDesp": "VAT on Sales CN",
+            "funcCcyCredit": "0.00",
+            "funcCcyDebit": ""
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.1.3": {
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Jan 2018",
+      "periodTo": "Jan 2018",
+      "tranDateFrom": "1/3/2018",
+      "tranDateTo": "1/3/2018"
+    },
+    "data": [
+      {
+        "main": {
+          "id": "CFS6.1.3",
+          "trantype": "vendorbill",
+          "entity": "CN GL Automation Vendor",
+          "trandate": "1/3/2018",
+          "postingperiod": "Jan 2018",
+          "memo": "Test Case_6.1.3",
+          "custbody_cseg_cn_cfi": ""
+        },
+        "expense": [
+          {
+            "account": "6150 Office Expense",
+            "amount": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ],
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "trandate": "1/3/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "2000 Accounts Payable",
+            "funcCcyCredit": "1,000.00",
+            "funcCcyDebit": ""
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyCredit": "",
+            "funcCcyDebit": "1,000.00"
+          }
+        ]
+      },
+      "voucher2": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "Bill",
+          "trandate": "1/3/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "2000 Accounts Payable",
+            "funcCcyCredit": "",
+            "funcCcyDebit": "0.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyCredit": "0.00",
+            "funcCcyDebit": ""
+          },
+          {
+            "lineNum": 3,
+            "acctDesp": "VAT on Purchases CN",
+            "funcCcyCredit": "0.00",
+            "funcCcyDebit": ""
+          }
+        ]
+      },
+      "voucher3": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "trandate": "1/3/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "2000 Accounts Payable",
+            "funcCcyCredit": "",
+            "funcCcyDebit": "1,000.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyCredit": "1,000.00",
+            "funcCcyDebit": ""
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.1.4": {
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Jan 2018",
+      "periodTo": "Jan 2018",
+      "tranDateFrom": "1/4/2018",
+      "tranDateTo": "01/4/2018"
+    },
+    "data": [
+      {
+        "main": {
+          "id": "CFS6.1.4",
+          "trantype": "invoice",
+          "entity": "CN GL Automation Customer",
+          "trandate": "1/4/2018",
+          "postingperiod": "Jan 2018",
+          "location": "CN_GL_BJ",
+          "account": "1100 Accounts Receivable",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "custbody_cseg_cn_cfi": "",
+          "memo": "Test Case_6.1.4"
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item1",
+            "quantity": "1",
+            "amount": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ],
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "trandate": "1/4/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "1100 Accounts Receivable",
+            "funcCcyCredit": "",
+            "funcCcyDebit": "1,000.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "4000 Sales",
+            "funcCcyCredit": "1,000.00",
+            "funcCcyDebit": ""
+          }
+        ]
+      },
+      "voucher2": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "Invoice",
+          "trandate": "1/4/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "1100 Accounts Receivable",
+            "funcCcyCredit": "",
+            "funcCcyDebit": "0.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "4000 Sales",
+            "funcCcyCredit": "0.00",
+            "funcCcyDebit": ""
+          },
+          {
+            "lineNum": 3,
+            "acctDesp": "VAT on Sales CN",
+            "funcCcyCredit": "0.00",
+            "funcCcyDebit": ""
+          }
+        ]
+      },
+      "voucher3": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "trandate": "1/4/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "1100 Accounts Receivable",
+            "funcCcyCredit": "1,000.00",
+            "funcCcyDebit": ""
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "4000 Sales",
+            "funcCcyCredit": "",
+            "funcCcyDebit": "1,000.00"
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.1.5": {
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Jan 2018",
+      "periodTo": "Jan 2018",
+      "tranDateFrom": "1/5/2018",
+      "tranDateTo": "1/5/2018"
+    },
+    "data": [
+      {
+        "main": {
+          "id": "CFS6.1.5",
+          "trantype": "vendorbill",
+          "entity": "CN GL Automation Vendor",
+          "trandate": "1/5/2018",
+          "postingperiod": "Jan 2018",
+          "memo": "Test Case_6.1.5",
+          "custbody_cseg_cn_cfi": ""
+        },
+        "expense": [
+          {
+            "account": "6150 Office Expense",
+            "amount": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ],
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "trandate": "1/5/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "2000 Accounts Payable",
+            "funcCcyCredit": "1,000.00",
+            "funcCcyDebit": ""
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyCredit": "",
+            "funcCcyDebit": "1,000.00"
+          }
+        ]
+      },
+      "voucher2": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "Bill",
+          "trandate": "1/5/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "2000 Accounts Payable",
+            "funcCcyCredit": "",
+            "funcCcyDebit": "0.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyCredit": "0.00",
+            "funcCcyDebit": ""
+          },
+          {
+            "lineNum": 3,
+            "acctDesp": "VAT on Purchases CN",
+            "funcCcyCredit": "0.00",
+            "funcCcyDebit": ""
+          }
+        ]
+      },
+      "voucher3": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "trandate": "1/5/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "2000 Accounts Payable",
+            "funcCcyCredit": "",
+            "funcCcyDebit": "1,000.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyCredit": "1,000.00",
+            "funcCcyDebit": ""
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.1.6": {
+    "data": [
+      {
+        "main": {
+          "id": "6.1.6",
+          "trantype": "invoice",
+          "entity": "CN GL Automation Customer",
+          "account": "1100 Accounts Receivable",
+          "trandate": "1/6/2018",
+          "postingperiod": "Jan 2018",
+          "location": "CN_GL_BJ",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "memo": "6.1.6",
+          "custbody_cseg_cn_cfi": ""
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item1",
+            "quantity": "1",
+            "amount": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ],
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Jan 2018",
+      "periodTo": "Jan 2018",
+      "tranDateFrom": "1/6/2018",
+      "tranDateTo": "1/6/2018"
+    },
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "voucherNo": "",
+          "trandate": "1/6/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "lineDesp":"",
+            "acctDesp": "1100 Accounts Receivable",
+            "funcCcyCredit":"",
+            "funcCcyDebit":"1,000.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "4000 Sales",
+            "funcCcyCredit":"1,000.00",
+            "funcCcyDebit":""
+          }
+        ]
+      },
+      "voucher2": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "Invoice",
+          "voucherNo": "",
+          "trandate": "1/6/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "1100 Accounts Receivable",
+            "funcCcyCredit":"",
+            "funcCcyDebit":"0.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "4000 Sales",
+            "funcCcyCredit":"0.00",
+            "funcCcyDebit":""
+          },
+          {
+            "lineNum": 3,
+            "acctDesp": "VAT on Sales CN",
+            "funcCcyCredit":"0.00",
+            "funcCcyDebit":""
+          }
+        ]
+      },
+      "voucher3": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "voucherNo": "",
+          "trandate": "1/6/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "1100 Accounts Receivable",
+            "funcCcyCredit":"1,000.00",
+            "funcCcyDebit":""
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "4000 Sales",
+            "funcCcyCredit":"",
+            "funcCcyDebit":"1,000.00"
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.1.7": {
+    "data": [
+      {
+        "main": {
+          "id": "6.1.7",
+          "trantype": "vendorbill",
+          "entity": "CN GL Automation Vendor",
+          "trandate": "1/7/2018",
+          "postingperiod": "Jan 2018",
+          "memo": "6.1.7",
+          "custbody_cseg_cn_cfi": ""
+        },
+        "expense": [
+          {
+            "account": "6150 Office Expense",
+            "amount": "1000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ],
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Jan 2018",
+      "periodTo": "Jan 2018",
+      "tranDateFrom": "1/7/2018",
+      "tranDateTo": "1/7/2018"
+    },
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "voucherNo": "",
+          "trandate": "1/7/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "lineDesp":"",
+            "acctDesp": "2000 Accounts Payable",
+            "funcCcyCredit":"1,000.00",
+            "funcCcyDebit":""
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyCredit":"",
+            "funcCcyDebit":"1,000.00"
+          }
+        ]
+      },
+      "voucher2": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "voucherNo": "",
+          "trandate": "1/7/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "2000 Accounts Payable",
+            "funcCcyCredit":"",
+            "funcCcyDebit":"1,000.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyCredit":"1,000.00",
+            "funcCcyDebit":""
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.1.8": {
+    "data": [
+      {
+        "main": {
+          "id": "6.1.8",
+          "trantype": "invoice",
+          "entity": "CN GL Automation Customer",
+          "account": "1100 Accounts Receivable",
+          "trandate": "1/8/2018",
+          "postingperiod": "Jan 2018",
+          "location": "CN_GL_BJ",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "memo": "6.1.8",
+          "custbody_cseg_cn_cfi": ""
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item1",
+            "quantity": "1",
+            "amount": "2000",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ],
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Jan 2018",
+      "periodTo": "Jan 2018",
+      "tranDateFrom": "1/8/2018",
+      "tranDateTo": "1/8/2018"
+    },
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "voucherNo": "",
+          "trandate": "1/8/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "lineDesp":"",
+            "acctDesp": "1100 Accounts Receivable",
+            "funcCcyCredit":"",
+            "funcCcyDebit":"2,000.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "4000 Sales",
+            "funcCcyCredit":"2,000.00",
+            "funcCcyDebit":""
+          }
+        ]
+      },
+      "voucher2": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "voucherNo": "",
+          "trandate": "1/8/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "1100 Accounts Receivable",
+            "funcCcyCredit":"2,000.00",
+            "funcCcyDebit":""
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "4000 Sales",
+            "funcCcyCredit":"",
+            "funcCcyDebit":"2,000.00"
+          }
+        ]
+      }
+    }
+  }
+}

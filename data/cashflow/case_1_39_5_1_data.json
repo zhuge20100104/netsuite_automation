@@ -1,0 +1,33 @@
+{
+  "caseId": "test 1.39.5.1",
+  "data": {
+    "expense": [
+      {
+        "lineid": "1",
+        "categoryold": "Rent",
+        "categorynew": "Office Expense",
+        "currency": "Yuan",
+        "amount": "100"
+      },
+      {
+        "lineid": "2",
+        "categoryold": "Office Expense",
+        "categorynew": "Rent",
+        "currency": "Yuan",
+        "amount": "100"
+      }
+    ]
+  },
+  "expected": {
+    "expense": [
+      {
+        "cfsold": "Other cash payments related to operating activities",
+        "cfsnew": "Cash paid to and for employees"
+      },
+      {
+        "cfsold": "Cash paid to and for employees",
+        "cfsnew": "Other cash payments related to operating activities"
+      }
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+{
+  "test_case_8_2_1" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "中国 Income华北区",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "ReportData" : [
+      ["100104 - 库存现金中国Income", "", "期初余额", "", "", "", "", "", "", "平"],
+      ["", "6/10/2016", "日记账", "", "ISJE20160601", "", "", "10,000.00", "", "借"],
+      ["", "6/10/2016", "本日合计", "", "", "", "", "10,000.00", "0.00", "借"],
+      ["", "6/10/2016", "本月合计", "", "", "", "", "10,000.00", "0.00", "借"],
+      ["", "6/10/2016", "本年累计", "", "", "", "", "10,000.00", "0.00", "借"],
+      ["总计 - 100104 - 库存现金中国Income", "", "", "", "", "", "", "10,000.00", "0.00", "借"]
+    ]
+  },
+
+  "test_case_8_2_2" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "中国 Income华北区",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "ExcelData" : {
+      "filename" : "现金银行日记账.xls",
+      "reportHeader" : {
+        "title" : {
+          "row" : 0,
+          "col" : 0,
+          "text" : "现金银行日记账"
+        },
+        "subsidiary" : {
+          "row" : 1,
+          "col" : 0,
+          "text" : "子公司: 中国 Income"
+        },
+        "dateZone" : {
+          "row" : 1,
+          "col" : 2,
+          "text" : "6/10/2016 - 6/10/2016"
+        },
+        "currency" : {
+          "row" : 1,
+          "col" : 6,
+          "text" : "币种: USD"
+        },
+        "location": {
+          "row": 2,
+          "col": 0,
+          "text":"地点: 中国 Income华北区"
+        },
+        "department": {
+          "row": 2,
+          "col": 2,
+          "text":"部门: Income生产部"
+        },
+        "class": {
+          "row": 2,
+          "col": 6,
+          "text":"类别: 智能手机"
+        }
+      }
+    }
+  },
+
+  "test_case_8_2_3" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "中国 Income华北区",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "PdfData" : {
+      "filename" : "现金银行日记账.pdf",
+      "title" : "现金银行日记账",
+      "subsidiary":"子公司：中国 Income",
+      "period" : "6/10/2016 - 6/10/2016",
+      "currency" : "币种：USD",
+      "account" : "科目：100104 - 库存现金中国Income",
+      "classification" : {
+        "location" : "地点：中国 Income华北区",
+        "department":"部门：Income生产部",
+        "class" : "类别：智能手机"
+      }
+    }
+  },
+
+  "test_case_8_2_4" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "ExcelData" : {
+      "filename" : "现金银行日记账.xls",
+      "reportHeader" : {
+        "title" : {
+          "row" : 0,
+          "col" : 0,
+          "text" : "现金银行日记账"
+        },
+        "subsidiary" : {
+          "row" : 1,
+          "col" : 0,
+          "text" : "子公司: 中国 Income"
+        },
+        "dateZone" : {
+          "row" : 1,
+          "col" : 2,
+          "text" : "6/10/2016 - 6/10/2016"
+        },
+        "currency" : {
+          "row" : 1,
+          "col" : 6,
+          "text" : "币种: USD"
+        },
+        "department": {
+          "row": 2,
+          "col": 0,
+          "text":"部门: Income生产部"
+        },
+        "class": {
+          "row": 2,
+          "col": 2,
+          "text":"类别: 智能手机"
+        }
+      }
+    },
+    "PdfData" : {
+      "filename" : "现金银行日记账.pdf",
+      "title" : "现金银行日记账",
+      "subsidiary":"子公司：中国 Income",
+      "period" : "6/10/2016 - 6/10/2016",
+      "currency" : "币种：USD",
+      "account" : "科目：100104 - 库存现金中国Income",
+      "classification" : {
+        "department":"部门：Income生产部",
+        "class" : "类别：智能手机"
+      }
+    }
+  },
+
+  "test_case_8_2_5" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "",
+      "department":"",
+      "class" : "智能手机"
+    },
+    "ExcelData" : {
+      "filename" : "现金银行日记账.xls",
+      "reportHeader" : {
+        "title" : {
+          "row" : 0,
+          "col" : 0,
+          "text" : "现金银行日记账"
+        },
+        "subsidiary" : {
+          "row" : 1,
+          "col" : 0,
+          "text" : "子公司: 中国 Income"
+        },
+        "dateZone" : {
+          "row" : 1,
+          "col" : 2,
+          "text" : "6/10/2016 - 6/10/2016"
+        },
+        "currency" : {
+          "row" : 1,
+          "col" : 6,
+          "text" : "币种: USD"
+        },
+        "class": {
+          "row": 2,
+          "col": 0,
+          "text":"类别: 智能手机"
+        }
+      }
+    },
+    "PdfData" : {
+      "filename" : "现金银行日记账.pdf",
+      "title" : "现金银行日记账",
+      "subsidiary":"子公司：中国 Income",
+      "period" : "6/10/2016 - 6/10/2016",
+      "currency" : "币种：USD",
+      "account" : "科目：100104 - 库存现金中国Income",
+      "classification" : {
+        "class" : "类别：智能手机"
+      }
+    }
+  }
+
+
+}

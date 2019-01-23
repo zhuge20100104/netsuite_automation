@@ -1,0 +1,392 @@
+{
+  "test_9_1":{
+    "steps":[
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "//*[@id='custrecord_cn_favo_vhls_template_fs']":"复币"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='custrecord_cn_favo_vhls_template_fs']":{
+              "values":["复币"]
+            },
+            "custrecord_cn_favo_vhls_location":{
+              "value" : "F",
+              "disable" : true
+
+            },
+            "custrecord_cn_favo_vhls_department":{
+              "value" : "F",
+              "disable" : true,
+              "exist" : true
+            },
+            "custrecord_cn_favo_vhls_class":{
+              "value" : "F",
+              "disable" : true,
+              "exist" : true
+            }
+          }
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "//*[@id='custrecord_cn_favo_vhls_template_fs']":"单币",
+            "custrecord_cn_favo_vhls_location": "F",
+            "custrecord_cn_favo_vhls_department":"F",
+            "custrecord_cn_favo_vhls_class":"T"
+
+          }
+        }
+      },
+
+      {
+        "expects":{
+          "data":{
+            "custrecord_cn_favo_vhls_location":{
+              "value" : "F",
+              "checked" : false
+
+            },
+            "custrecord_cn_favo_vhls_department":{
+              "value" : "F",
+              "checked" : false,
+              "exist" : true
+            },
+            "custrecord_cn_favo_vhls_class":{
+              "value" : "T",
+              "checked" : true,
+              "exist" : true
+            }
+
+          }
+        }
+      }
+
+
+    ]
+
+
+  },
+  "test_9_2":{
+    "steps":[
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "//*[@id='custrecord_cn_favo_vhls_template_fs']":"复币",
+            "//*[@id='submitter']":""
+          }
+
+        }
+      },
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+        }
+      },
+
+      {
+        "expects":{
+          "data":{
+            "//*[@id='custrecord_cn_favo_vhls_template_fs']":{
+              "values":["复币"]
+            }
+          }
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "//*[@id='custrecord_cn_favo_vhls_template_fs']":"单币"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='custrecord_cn_favo_vhls_template_fs']":{
+              "values":["单币"]
+            }
+          }
+        }
+      }
+
+
+    ]
+
+
+  },
+  "test_9_3_2_1":{
+    "steps":[
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='custrecord_cn_favo_vhls_maxloadedlines_fs_lbl']":{
+              "values":["最大载入行数（100-5000）"]
+            }
+          }
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "custrecord_cn_favo_vhls_maxloadedlines":"10",
+            "sleep" : "2"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "dialogs":[
+              {
+                "type":"common",
+                "message":"无效号码（必须在100到5000之间）"
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "test_9_3_2_2":{
+    "steps":[
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='custrecord_cn_favo_vhls_maxloadedlines_fs_lbl']":{
+              "values":["最大载入行数（100-5000）"]
+            }
+          }
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "custrecord_cn_favo_vhls_maxloadedlines":"6000"
+          }
+        }
+      },
+
+      {
+        "expects":{
+          "data":{
+            "dialogs":[
+              {
+                "type":"common",
+                "message":"无效号码（必须在100到5000之间）"
+              }
+            ]
+          }
+        }
+      }
+    ]
+
+
+  },
+  "test_9_3_3_1":{
+    "steps":[
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "custrecord_cn_favo_vhls_maxloadedlines":"100",
+            "//*[@id='submitter']":""
+          }
+        }
+      },
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "//*[@id='custpage_subsidiary_fs']":"北京VAT",
+            "//*[@id='custpage_periodfrom_fs']":"Jan 2017",
+            "//*[@id='custpage_periodto_fs']":"Sep 2018",
+            "//*[@id='submitter']":"",
+            "waitforload":"",
+            "sleep" : "30"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "dialogs":[
+              {
+                "type":"common",
+                "message":"您的搜索结果超过100行，当前页面由于系统限制无法显示。您可以点击OK后再点击打印以下载凭证。"
+              }
+            ]
+          }
+        }
+      }
+
+
+
+    ]
+
+
+  },
+  "test_9_3_3_2":{
+    "steps":[
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "custrecord_cn_favo_vhls_maxloadedlines":"100",
+            "//*[@id='submitter']":""
+          }
+        }
+      },
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+            "//*[@id='custpage_periodfrom_fs']":"Aug 2018",
+            "//*[@id='custpage_periodto_fs']":"Sep 2018",
+            "custpage_datefrom":"8/1/2018",
+            "custpage_dateto":"8/2/2018",
+            "//*[@id='submitter']":"",
+            "waitforload":"",
+            "sleep" : "30"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "values0":{
+              "id":"custpage_sublist",
+              "values":[
+                {
+                  "custpage_docnum": {
+                    "view_values": ["VLVB0001","VLIN0001"]
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ]
+
+
+  },
+  "test_11_1":{
+    "steps":[
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_favo:customdeploy_sl_cn_favo"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "custrecord_cn_favo_vhls_maxloadedlines":"5000",
+            "//*[@id='submitter']":"",
+            "sleep" : "10"
+          }
+        }
+      },
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='custpage_print']":{
+              "values": ["打印全部"]
+            }
+          }
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "deletefile":"",
+            "//*[@id='custpage_subsidiary_fs']":"北京VAT",
+            "//*[@id='custpage_periodfrom_fs']":"FY 2017",
+            "//*[@id='custpage_periodto_fs']":"Oct 2018",
+            "//*[@id='submitter']":"",
+            "sleep" : "60",
+            "//*[@id='custpage_print']":"",
+            "sleep" : "5"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "dialogs":[
+              {
+                "type":"common",
+                "message":"此报表生成可能要花一段时间。报表生成并且可以查看时即会通知您。"
+              }
+            ]
+          }
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            ".//*[@class='uir-message-buttons']/button[2]":"",
+            "sleep" : "5",
+            "//*[@id='custpage_print']":"",
+            "sleep" : "5",
+            ".//*[@class='uir-message-buttons']/button[1]":"",
+            "sleep" : "10"
+          }
+        }
+      }
+    ]
+
+  }
+
+}

@@ -1,0 +1,46 @@
+{
+  "test_case_sblg":{
+    "errMsg":"There are over 5000 rows in your result and can not display on current page. Please click OK and export the excel or PDF file to review the report. ",
+    "filter": {
+      "subsidiary": "China BlSheet 01",
+      "datefrom":"1/1/2017",
+      "dateto":"12/31/2017"
+    },
+    "defaultParam": {
+      "subsidiary":"China BlSheet 01",
+      "accountfrom":"",
+      "accountto":""
+    },
+    "filterAfter":{
+      "subsidiary":"China BlSheet 01"
+    },
+    "expectedResult":{
+      "excelfilename":"SubLedger.xls",
+      "pdffilename":"SubLedger.pdf"
+    },
+    "featureName":"SubLedger"
+
+  },
+  "test_case_cbjl":{
+    "errMsg":"There are over 5000 rows in your result and can not display on current page. Please click OK and export the excel or PDF file to review the report. ",
+    "filter": {
+      "subsidiary": "China BlSheet 01",
+      "datefrom":"1/1/2016",
+      "dateto":"6/30/2017"
+    },
+    "defaultParam": {
+      "subsidiary":"China BlSheet 01",
+      "accountfrom":"",
+      "accountto":""
+    },
+    "filterAfter":{
+      "subsidiary":"China BlSheet 01"
+    },
+    "expectedResult":{
+      "excelfilename":"CashBankJournalLedger.xls",
+      "pdffilename":"CashBankJournalLedger.pdf"
+    },
+    "featureName":"CashAndBankJournal"
+
+  }
+}

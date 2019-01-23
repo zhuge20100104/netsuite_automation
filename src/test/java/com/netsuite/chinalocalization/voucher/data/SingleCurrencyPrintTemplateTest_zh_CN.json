@@ -1,0 +1,46 @@
+{
+  "test_1_6_1_3":{
+    "record":[
+      {
+        "main": {
+          "id": "1.6.1.3",
+          "subsidiary": "Parent Company : China BU",
+          "trantype": "journalentry",
+          "trandate": "5/14/2017",
+          "postingperiod": "May 2017",
+          "approved": "T",
+          "currency": "Yuan",
+          "exchangerate": "1.00",
+          "memo": "test_1_6_1_3"
+        },
+        "line": [
+          {
+            "account": "10120203",
+            "debit": "123456789.12",
+            "memo":"甲骨文软件研究开发有限公司北京市海淀区中关村软件园"
+          },
+          {
+            "account": "1231",
+            "credit": "123456789.12"
+          }
+        ]
+      }
+    ],
+    "labels": {
+      "subsidiary": "Parent Company : China BU",
+      "periodFrom": "May 2017",
+      "periodTo": "May 2017",
+      "tranDateFrom": "5/14/2017",
+      "tranDateTo": "5/14/2017"
+    },
+    "expect":[
+      {
+        "lineDesc1": "甲骨文软件研究开发有限公司北京市海淀区",
+        "lineDesc2":"中关村软件园",
+        "accountDesc":"10120203 其他货币资金 : 信用卡 : 工...",
+        "debit":"123,456,789.12",
+        "credit":"123,456,789.12"
+      }
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "defaultUserPreference": {
+    "dateformat": "M/D/YYYY"
+  },
+
+  "test_case_5_2_1":{
+    "errMsg":"The Advanced PDF/HTML Templates feature must be enabled in the account. To enable this feature, go to Setup > Company > Enable Features (SuiteCloud subtab).",
+    "defaultParam": {
+
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"",
+      "accountto":"",
+      "accountlevel":"All Accounts and Subaccounts"
+    },
+    "filterAfter":{
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"1/1/2016",
+      "dateto":"12/31/2016"
+    }
+  },
+  "test_case_5_3_1":{
+    "errMsg":"Please enter a valid date range. The From date must precede the To date.",
+    "filter": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"4/1/2018",
+      "dateto":"12/31/2017"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"4/1/2018",
+      "dateto":"12/31/2017",
+      "accountfrom":"",
+      "accountto":"",
+      "accountlevel":"All Accounts and Subaccounts"
+    },
+    "filterAfter":{
+      "dateto":"8/31/2018",
+      "datefrom":"8/1/2018"
+    }
+  },
+  "test_case_5_3_2":{
+    "errMsg":"Please enter a valid date range. The From date must precede the To date.",
+    "filter": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"",
+      "dateto":"2/28/2018"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"",
+      "dateto":"2/28/2018",
+      "accountfrom":"",
+      "accountto":"",
+      "accountlevel":"All Accounts and Subaccounts"
+    },
+    "filterAfter":{
+      "datefrom":"2/1/2018",
+      "dateto":"2/28/2018"
+    }
+  },
+  "test_case_5_3_3":{
+    "errMsg":"Please enter a valid date range. The From date must precede the To date.",
+    "filter": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"12/31/2017",
+      "dateto":""
+    },
+    "defaultParam": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"12/31/2017",
+      "dateto":"",
+      "accountfrom":"",
+      "accountto":"",
+      "accountlevel":"All Accounts and Subaccounts"
+    },
+    "filterAfter":{
+      "datefrom":"12/31/2017",
+      "dateto":"2/1/2018"
+    }
+  },
+
+  "test_case_5_4_1":{
+    "errMsg":"Please enter a valid account range. The From account must precede the To account.",
+    "filter": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"608402 - shipment",
+      "accountto":"6081 - office equipments"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"608402 - shipment",
+      "accountto":"",
+      "accountlevel":"All Accounts and Subaccounts"
+    }
+  },
+  "test_case_5_4_2":{
+    "errMsg":"Please enter a valid account range. The From account must precede the To account.",
+    "filter": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"Estimates",
+      "accountto":"608102 - furniture"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"Estimates",
+      "accountto":"",
+      "accountlevel":"All Accounts and Subaccounts"
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "filter": {
+    "subsidiary": "北京VAT",
+    "invoicetype_c": "Common VAT Invoice",
+    "invoicetype_s": "Special VAT Invoice"
+  },
+  "tableHeader": {
+
+    "internalId": "Internal ID",
+    "customerName": "Customer Name",
+    "tranType": "Transaction Type",
+    "docNum": "Document Number",
+    "status": "Status",
+    "docDate": "Document Date",
+    "amount": "Tax Exclusive Amount",
+    "afterdiscountamt": "Amount after discount"
+  },
+  "preViewHeader": {
+    "internalId": "Internal ID",
+    "tranType": "Transaction Type",
+    "docNum": "Document Number",
+    "docDate": "Document Date",
+    "lineQuantity": "Line Quantity",
+    "customerName": "Customer Name",
+    "taxRegisNum": "Customer Tax Registration Number",
+    "addressAndPhone": "Customer Address and Phone Number",
+    "bankAccount": "Customer Bank Account",
+    "remark": "Remark",
+    "itemNameForSale": "Item name for sales list line",
+    "message": "Messages"
+  },
+  "tranType": {
+    "CustInvc": "Invoice",
+    "CashSale": "Cash Sale",
+    "CustCred": "Credit Memo",
+    "CashRfnd": "Cash Refund"
+  },
+  "tranNum": {
+    "Invoice"    : 1,
+    "Cash Sale"  : 2,
+    "Credit Memo": 3,
+    "Cash Refund" : 4
+  },
+  "itemHeader": {
+    "itemName": "Item Name",
+    "model": "Model",
+    "uom": "UOM",
+    "quantity": "Quantity",
+    "unitPrice": "Unit Price",
+    "amount": "Tax Exclusive Amount",
+    "discountAmount": "Discount Amount",
+    "taxRate": "Tax Rate"
+  },
+  "expectedResults": {
+    "importtitle": "Import China VAT Invoices",
+    "title": "Generate China VAT Transactions",
+    "editTitle": "China VAT Transactions",
+    "loadingMsg": "Loading..."
+  },
+  "errorMessage": {
+    "noDataExport": "No Search Results Match Your Criteria."
+  },
+  "saleListName": "详见销货清单",
+  "mergeStatus" : "Consolidated",
+  "groupSameItem":"Group Same Items",
+  "saleslist": {
+    "labelName": "ENABLE SALES LIST",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

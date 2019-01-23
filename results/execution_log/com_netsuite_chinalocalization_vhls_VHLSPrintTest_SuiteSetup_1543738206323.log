@@ -1,0 +1,2 @@
+2018-12-02 16:10:07,136 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: SuiteSetup(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 16:10:17,802 INFO  org.apache.log4j.Category$info - Navigated to: https://system.na3.netsuite.com/app/login/secure/enterpriselogin.nl?c=4787462&whence=

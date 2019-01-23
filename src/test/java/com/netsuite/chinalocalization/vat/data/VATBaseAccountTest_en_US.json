@@ -1,0 +1,7 @@
+{
+  "test_case_5_1_1": {
+    "expectedResult": {
+      "message": "You have no subsidiaries in China. Go to Setup > Company > Subsidiaries to create one."
+    }
+  }
+}

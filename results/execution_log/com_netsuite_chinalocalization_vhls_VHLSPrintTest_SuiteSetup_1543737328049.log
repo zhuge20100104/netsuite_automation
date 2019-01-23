@@ -1,0 +1,26 @@
+2018-12-02 15:55:29,456 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: SuiteSetup(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 15:55:32,630 INFO  org.openqa.selenium.remote.ProtocolHandshake - Detected dialect: OSS
+2018-12-02 15:55:32,648 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Browser is: [ChromeDriver: chrome on XP (28b972a84e8d359828458b36c4dbe7f3)]
+2018-12-02 15:55:32,657 INFO  com.netsuite.testautomation.driver.SeleniumDriver - Selenium web driver initialized
+2018-12-02 15:55:39,408 INFO  com.netsuite.testautomation.aut.GenericWebApp - Browser url set to: https://system.netsuite.com/pages/login.jsp
+2018-12-02 15:55:39,421 INFO  org.apache.log4j.Category$info - Navigated to: https://system.netsuite.com/app/login/secure/enterpriselogin.nl?whence=
+2018-12-02 15:55:39,480 INFO  com.netsuite.testautomation.aut.GenericWebApp - Setting fredriczhu.zhu@oracle.com in field SeleniumHtmlElementHandle[xpath://input[@name='email']]
+2018-12-02 15:55:39,814 INFO  com.netsuite.testautomation.driver.SeleniumHtmlElementHandle - DoClick evaluation - Element [SeleniumHtmlElementHandle[id:Submit]], shouldExpectNewPage [true]
+2018-12-02 15:55:49,136 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:55:50,117 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:55:51,489 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:55:53,355 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:55:55,552 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:55:58,139 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:56:01,229 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:56:04,823 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:56:08,720 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:56:13,071 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:56:17,871 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:56:23,146 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:56:28,784 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:56:34,859 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:56:41,336 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:57:04,299 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:57:11,963 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object
+2018-12-02 15:57:20,237 WARN  com.netsuite.testautomation.driver.SeleniumDriver - Error while waiting for page to load - Cannot get property 'webDriver' on null object

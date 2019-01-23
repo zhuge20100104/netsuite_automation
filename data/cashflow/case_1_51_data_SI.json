@@ -1,0 +1,303 @@
+{
+  "test case 1.51.1.1.1" : {
+    "main": {
+      "entity":"CN Automation Vendor",
+      "entitytype": "vendor",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017",
+      "memo":"test case 1.51.1.1.1"
+    },
+    "expense": [
+      {
+        "account": "6150 Office Expense",
+        "amount": "1000",
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  },
+  "test case 1.51.1.1.2" : {
+    "main": {
+      "entity":"CN Automation Vendor",
+      "entitytype": "vendor",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017",
+      "memo":"test case 1.51.1.1.2"
+    },
+    "item": [
+      {
+        "item": "CN Auto Non-inventory Item3 for Purchase",
+        "quantity": "1",
+        "amount": "200" ,
+        "custcol_cseg_cn_cfi": ""
+      },
+      {
+        "item": "CN Auto Non-inventory Item4 for Purchase",
+        "quantity": "1",
+        "amount": "200" ,
+        "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+      }
+    ]
+  },
+  "test case 1.51.1.1.3" : {
+    "main": {
+      "entity":"CN Automation Vendor",
+      "entitytype": "vendor",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017" ,
+      "custbody_cseg_cn_cfi": "Cash paid for goods and services",
+      "memo":"test case 1.51.1.1.3"
+    },
+    "expense": [
+      {
+        "account": "6150 Office Expense",
+        "amount": "1000" ,
+        "custcol_cseg_cn_cfi": ""
+      }
+    ],
+    "item": [
+      {
+        "item": "CN Auto Non-inventory Item3 for Purchase",
+        "quantity": "1",
+        "amount": "200" ,
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  },
+  "test case 1.51.1.1.4" : {
+    "main": {
+      "entity":"CN Automation Vendor",
+      "entitytype": "vendor",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017",
+      "memo":"test case 1.51.1.1.4"
+    },
+    "expense": [
+      {
+        "account": "6150 Office Expense",
+        "amount": "1000" ,
+        "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+      }
+    ],
+    "item": [
+      {
+        "item": "CN Auto Non-inventory Item3 for Purchase",
+        "quantity": "1",
+        "amount": "200" ,
+        "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+      }
+    ]
+  },
+  "test case 1.51.1.2.1" : {
+    "main": {
+      "entity":"CN Automation Vendor",
+      "entitytype": "vendor",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017",
+      "memo":"test case 1.51.1.2.1"
+    },
+    "expense": [
+      {
+        "account": "6150 Office Expense",
+        "amount": "1000" ,
+        "custcol_cseg_cn_cfi": ""
+      }
+    ],
+    "item": [
+      {
+        "item": "CN Auto Non-inventory Item3 for Purchase",
+        "quantity": "1",
+        "amount": "200" ,
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  },
+  "test case 1.51.2.1.1" : {
+    "main": {
+      "entity":"auto1.03",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017"
+    },
+    "expense": [
+      {
+        "expensedate": "12/1/2017",
+        "category": "Office Expense",
+        "currency": "Yuan",
+        "amount": "1000" ,
+        "custcol_cseg_cn_cfi": "",
+        "memo":"test case 1.51.2.1.1"
+      }
+    ]
+  },
+  "test case 1.51.2.1.2" : {
+    "main": {
+      "entity":"auto1.03",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017"
+    },
+    "expense": [
+      {
+        "expensedate": "12/1/2017",
+        "category": "Office Expense",
+        "currency": "Yuan",
+        "amount": "1000" ,
+        "custcol_cseg_cn_cfi": "Cash paid to and for employees",
+        "memo":"test case 1.51.2.1.2"
+      }
+    ]
+  },
+  "test case 1.51.2.2.1" : {
+    "main": {
+      "entity":"auto1.03",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017"
+    },
+    "expense": [
+      {
+        "expensedate": "12/1/2017",
+        "category": "Office Expense",
+        "currency": "Yuan",
+        "amount": "1000" ,
+        "custcol_cseg_cn_cfi": "",
+        "memo":"test case 1.51.2.2.1"
+      }
+    ]
+  },
+  "test case 1.51.3.1.1" : {
+    "main": {
+      "entity":"CN Automation Vendor",
+      "entitytype": "vendor",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017",
+      "memo":"test case 1.51.3.1.1"
+    },
+    "item": [
+      {
+        "item": "CN Auto Non-inventory Item3 for Purchase",
+        "quantity": "1",
+        "amount": "200" ,
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  },
+  "test case 1.51.3.1.2" : {
+    "main": {
+      "entity":"CN Automation Vendor",
+      "entitytype": "vendor",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017",
+      "memo":"test case 1.51.3.1.2"
+    },
+    "expense": [
+      {
+        "account": "6150 Office Expense",
+        "amount": "1000" ,
+        "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+      }
+    ],
+    "item": [
+      {
+        "item": "CFS Description Item",
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  },
+  "test case 1.51.3.2.1" : {
+    "main": {
+      "entity":"CN Automation Vendor",
+      "entitytype": "vendor",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017",
+      "memo":"test case 1.51.3.2.1"
+    },
+    "expense": [
+      {
+        "account": "6150 Office Expense",
+        "amount": "1000" ,
+        "custcol_cseg_cn_cfi": ""
+      }
+    ],
+    "item": [
+      {
+        "item": "CN Auto Non-inventory Item3 for Purchase",
+        "quantity": "1",
+        "amount": "200" ,
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  },
+  "test case 1.51.4.1.1" : {
+    "main": {
+      "entity":"CN Automation Vendor",
+      "entitytype": "vendor",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017"  ,
+      "account": "10020103 银行存款 : 人民币 : 工行T1",
+      "memo":"test case 1.51.4.1.1"
+    },
+    "item": [
+      {
+        "item": "CN Auto Non-inventory Item3 for Purchase",
+        "quantity": "1",
+        "amount": "200" ,
+        "taxcode": "VAT_CN:UNDEF-CN",
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  },
+  "test case 1.51.4.1.2" : {
+    "main": {
+      "entity":"CN Automation Vendor",
+      "entitytype": "vendor",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017",
+      "account": "10020103 银行存款 : 人民币 : 工行T1",
+      "memo":"test case 1.51.4.1.2"
+    },
+    "item": [
+      {
+        "item": "CN Auto Non-inventory Item3 for Purchase",
+        "quantity": "1",
+        "amount": "200" ,
+        "taxcode": "VAT_CN:UNDEF-CN",
+        "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+      },
+      {
+        "item": "CFS Description Item",
+        "taxcode": "VAT_CN:UNDEF-CN",
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  },
+  "test case 1.51.4.2.1" : {
+    "main": {
+      "entity":"CN Automation Vendor",
+      "subsidiary":"China BU",
+      "trandate": "12/1/2017",
+      "postingperiod":"Dec 2017",
+      "account": "10020103 银行存款 : 人民币 : 工行T1",
+      "memo":"test case 1.51.4.2.1"
+    },
+    "item": [
+      {
+        "item": "CN Auto Non-inventory Item3 for Purchase",
+        "quantity": "1",
+        "amount": "200" ,
+        "taxcode": "VAT_CN:UNDEF-CN",
+        "custcol_cseg_cn_cfi": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,553 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Performance UI Page Load Record Benchmarks Results</title>
+</head>
+<head>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+<script src="highcharts.js"></script>
+<script src="drilldown.js"></script>
+
+<script>
+var testNames = [];
+var testTypes = [];
+var totalTimeObject = {};
+var tempObj = {};
+var chartOptions;
+
+function capitalize(string)
+{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function toggle(button_id)
+{
+    var div_id= button_id.substring(7);
+    var element = document.getElementById(button_id);
+    if (element.innerHTML =='Expand') {element.innerHTML='Collapse';}
+    else {element.innerHTML='Expand';}
+    $('#'+div_id).slideToggle(400);
+}
+
+$(document).on('click', 'th', function ()
+               {
+                   var table = $(this).parents('table').eq(0);
+                   var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()));
+                   this.asc = !this.asc;
+                   if (!this.asc)
+                   {
+                       rows = rows.reverse();
+                   }
+                   for (var i = 0; i < rows.length; i++)
+                   {
+                       table.append(rows[i]);}
+               }
+)
+
+function comparer(index)
+{
+    return function (a, b)
+    {
+        var valA = getCellValue(a, index), valB = getCellValue(b, index);
+        return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.localeCompare(valB);
+    }
+}
+
+function getCellValue(row, index) { return $(row).children('td').eq(index).html();}
+
+$(document).on('click', '.limitedRow', function () {
+    var sql_text = $(this).text();
+    var html_text = "<tr><td><code>"+sql_text+"</code></td></tr>";
+    var $dialog = $("#sql_dialog");
+    $dialog.html(html_text);
+    $dialog.dialog({
+                       modal: true,
+                       draggable: false,
+                       resizable: false,
+                       width: 650,
+                       create: function() {
+                           $(this).css("maxHeight", 500);
+                       }
+                   });
+});
+
+$( document ).ready (function()
+                     {
+                         $.ajaxSetup({
+                                         async: false
+                                     });
+                         chartOptions =
+                         {
+                             chart: {
+                                 type: 'column',
+                                 renderTo: 'summarydatastackcolumnchart'
+                             },
+                             title: {
+                                 text: 'Summary Column'
+                             },
+                             credits: {
+                                 enabled: false
+                             },
+                             xAxis: {
+                                 type : 'category',
+                                 title: {
+                                     text: 'Test Name'
+                                 }
+
+                             },
+                             yAxis: {
+                                 min: 0,
+                                 title: {
+                                     text: 'Time'
+                                 },
+                                 stackLabels: {
+                                     enabled: true,
+                                     style: {
+                                         fontWeight: 'bold',
+                                         color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                                     }
+                                 }
+                             },
+                             legend: {
+                                 align: 'right',
+                                 x: 0,
+                                 verticalAlign: 'top',
+                                 y: 20,
+                                 floating: true,
+                                 backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColorSolid) || 'white',
+                                 borderColor: '#CCC',
+                                 borderWidth: 1,
+                                 shadow: false
+                             },
+                             plotOptions: {
+                                 column: {
+                                     stacking: 'normal',
+                                     dataLabels: {
+                                         enabled: true,
+                                         color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                                         style: {
+                                             textShadow: '0 0 3px black, 0 0 3px black'
+                                         }
+                                     }
+                                 },
+                                 series: {
+                                     dataLabels: {
+                                         enabled: true,
+                                         formatter: function() {
+                                             if (this.y > 0)
+                                                 return this.y;
+                                         }
+                                     }
+                                 }
+                             },
+                             series: [],
+                             drilldown: {
+                                 activeDataLabelStyle: {
+                                     color: 'white',
+                                     textShadow: '0 0 2px black, 0 0 2px black'
+                                 },
+                                 series: []
+                             }
+                         };
+
+                         $.getJSON("data/perf_commerceapi.json", function (data)
+                         {
+                             function initChart()
+                             {
+                                 for (var i =0 ; i < testTypes.length;  i++)
+                                 {
+                                     var tempObj = {};
+                                     tempObj["name"] = testTypes[i];
+                                     tempObj["data"] = [];
+                                     for (var y = 0 ; y < testNames.length; y++)
+                                     {
+                                         var tempObjDataPoint = {};
+                                         tempObjDataPoint["name"] = testNames[y];
+                                         var id = testNames[y]+testTypes[i];
+                                         if (totalTimeObject.hasOwnProperty(id))
+                                         {
+                                             var tempVar = parseFloat(totalTimeObject[id]);
+                                             if (tempVar > 0)
+                                             {
+                                                 tempVar*=1000;
+                                                 tempObjDataPoint["y"] = tempVar;
+                                             }
+                                             else
+                                             {
+                                                 tempObjDataPoint["y"] = 0;
+                                             }
+
+                                         }
+                                         else
+                                         {
+                                             tempObjDataPoint["y"] = 0;
+                                         }
+
+                                         tempObjDataPoint["drilldown"]=testNames[y]+testTypes[i];
+                                         tempObj["data"].push(tempObjDataPoint)
+                                     }
+                                     chartOptions.series.push(tempObj);
+                                 }
+                                 var chart = new Highcharts.Chart(chartOptions);
+                             }
+                             $.each(data.performanceTestResults, function (element_index, element)
+                             {
+                                 var commerceapi_perf_result_summary = "<tr><td> " + element.testName + "</td>";
+                                 commerceapi_perf_result_summary += "<td>" + element.type + "</td>";
+                                 commerceapi_perf_result_summary += "<td>" + "<a href= '";
+                                 commerceapi_perf_result_summary += "data/" + element.filename + ".json' target=_blank download";
+                                 commerceapi_perf_result_summary += ">" + element.filename + "</a></td></tr>";
+                                 $(commerceapi_perf_result_summary).appendTo("#commerceapi_perf_result_summary tbody");
+                                 if(testNames.indexOf(element.testName) < 0) {testNames.push(element.testName);}
+                                 if(testTypes.indexOf(element.type)<0) {testTypes.push(element.type);}
+
+                                 $.getJSON("data/" + element.filename + ".json", function (individual_data)
+                                 {
+                                     function addToggleButton(input, value, totop)
+                                     {
+                                         var buttonval = "<button type = 'button' class= 'btn btn-primary btn-xs pull-right' id=";
+                                         buttonval += input;
+                                         buttonval += " onClick='toggle(this.id)'>" + value + "</button>";
+                                         if (totop == 0)
+                                         {
+                                             buttonval = '<a href= "#top" > <button type = "button" class ="btn btn-info btn-xs pull-right">Go To Top</button></a>' + buttonval;
+                                         }
+                                         return buttonval
+                                     }
+                                     function generate_test_run_wrapper()
+                                     {
+                                         var wrapper;
+                                         wrapper = '<div class="table-responsive panel panel-danger" id=' + element.testName + '>';
+                                         wrapper += '</div>';
+                                         return wrapper;
+                                     }
+                                     function generate_panel(panel_type, heading_id, heading_title, body_id, body_text, display)
+                                     {
+                                         var panel;
+                                         panel = '<div class ="table-responsive panel ' + panel_type + '">';
+                                         panel += '<div class ="panel-heading" id=' + heading_id + '>' + heading_title
+                                         //panel += addToggleButton(body_id);
+                                         panel += '</div>';
+                                         panel += '<div class ="panel-body" id=' + body_id + ' style="display: ' + display + ' ">' + body_text;
+                                         panel += '</div>';
+                                         panel += '</div>';
+                                         return panel
+                                     }
+                                     function generate_operation_panel_and_heading()
+                                     {
+                                         var panel = generate_panel('panel-primary', element.testName + element.type + 'heading', capitalize(element.type) + " " + element.testName, element.testName + element.type, '', 'block');
+                                         return panel
+                                     }
+
+                                     function generate_summary_profile_data_panel()
+                                     {
+                                         var panel = generate_panel('panel-info', element.testName + element.type + 'summaryheading', 'Summary Profile Data Information', element.testName + element.type + 'summary', '', 'none');
+                                         return panel
+                                     }
+
+                                     function generate_std_dev_header_and_value()
+                                     {
+                                         var std_dev_summary = '<table class="table table-striped table-hover table-bordered table-condensed">';
+                                         std_dev_summary += '<thead><tr class ="info">';
+                                         std_dev_summary += '<th> Std-dev SuiteScript Time (ms) </th>';
+                                         std_dev_summary += '<th> Std-dev Sql Time (ms) </th>';
+                                         std_dev_summary += '<th> Std-dev Number of Sqls </th>';
+                                         std_dev_summary += '<th> Std-dev Total Time (s) </th>';
+                                         std_dev_summary += '</tr></thead> ';
+                                         std_dev_summary += '<tbody> ';
+
+                                         std_dev_summary += '<tr>'
+                                         std_dev_summary += '<td>' + individual_data.summary.std_SuiteScriptTime + '</td>';
+                                         std_dev_summary += '<td>' + individual_data.summary.std_SqlTime + '</td>';
+                                         std_dev_summary += '<td>' + individual_data.summary.std_SqlCalls + '</td>';
+                                         std_dev_summary += '<td>' + individual_data.summary.std_TotalTime + '</td>';
+                                         std_dev_summary += '</tr>';
+                                         std_dev_summary += '</tbody> </table>';
+
+                                         return std_dev_summary
+                                     }
+
+                                     function generate_avg_header_and_value()
+                                     {
+                                         var avg_summary = '<table class="table table-striped table-hover table-bordered table-condensed">';
+                                         avg_summary += '<thead><tr class ="info">';
+                                         avg_summary += '<th> Avg SuiteScript Time (ms) </th>';
+                                         avg_summary += '<th> Avg Sql Time (ms) </th>';
+                                         avg_summary += '<th> Avg Number of Sqls </th>';
+                                         avg_summary += '<th> Avg Total Time (s) </th>';
+                                         avg_summary += '</tr></thead> ';
+                                         avg_summary += '<tbody> ';
+
+                                         avg_summary += '<tr>'
+                                         avg_summary += '<td>' + individual_data.summary.avg_SuiteScriptTime + '</td>';
+                                         avg_summary += '<td>' + individual_data.summary.avg_SqlTime + '</td>';
+                                         avg_summary += '<td>' + individual_data.summary.avg_SqlCalls + '</td>';
+                                         avg_summary += '<td>' + individual_data.summary.avg_TotalTime + '</td>';
+                                         avg_summary += '</tr>';
+                                         avg_summary += '</tbody> </table>';
+
+                                         var id = element.testName+element.type;
+                                         totalTimeObject[id]=individual_data.summary.avg_TotalTime;
+                                         //push the drill down into an array of objects in chartoptions
+                                         tempObj = {};
+                                         tempObj["id"] = id;
+                                         tempObj["name"] = element.type;
+                                         tempObj["data"] = [];
+                                         tempObj["data"].push(["SuiteScript Time", parseInt(individual_data.summary.avg_SuiteScriptTime)]);
+                                         tempObj["data"].push(["Sql Time", parseInt(individual_data.summary.avg_SqlTime)]);
+                                         chartOptions.drilldown.series.push(tempObj);
+                                         return avg_summary
+                                     }
+
+                                     function generate_median_header_and_value()
+                                     {
+                                         var median_summary = '<table class="table table-striped table-hover table-bordered table-condensed">';
+                                         median_summary += '<thead><tr class ="info">';
+                                         median_summary += '<th> Median SuiteScript Time (ms) </th>';
+                                         median_summary += '<th> Median Sql Time (ms) </th>';
+                                         median_summary += '<th> Median Number of Sqls </th>';
+                                         median_summary += '<th> Median Total Time (s) </th>';
+                                         median_summary += '</tr></thead> ';
+                                         median_summary += '<tbody> ';
+
+                                         median_summary += '<tr>'
+                                         median_summary += '<td>' + individual_data.summary.med_SuiteScriptTime + '</td>';
+                                         median_summary += '<td>' + individual_data.summary.med_SqlTime + '</td>';
+                                         median_summary += '<td>' + individual_data.summary.med_SqlCalls + '</td>';
+                                         median_summary += '<td>' + individual_data.summary.med_TotalTime + '</td>';
+                                         median_summary += '</tr>';
+                                         median_summary += '</tbody> </table>';
+
+                                         return median_summary
+                                     }
+
+
+                                     function generate_average_and_std_dev_summary()
+                                     {
+                                         var summary_avg_entry_html = '<tr>';
+                                         summary_avg_entry_html += '<td>' + element.testName + '</td>';
+                                         summary_avg_entry_html += "<td>" + "<a href= #";
+                                         summary_avg_entry_html += individual_data.testName + individual_data.type + "heading";
+                                         summary_avg_entry_html += ">" + capitalize(individual_data.type) + "</a></td>";
+                                         summary_avg_entry_html += '<td>' + individual_data.summary.avg_SuiteScriptTime + '</td>';
+                                         summary_avg_entry_html += '<td>' + individual_data.summary.avg_SqlTime + '</td>';
+                                         summary_avg_entry_html += '<td>' + individual_data.summary.avg_TotalTime + '</td>';
+                                         summary_avg_entry_html += '<td>' + individual_data.summary.avg_SqlCalls + '</td>';
+                                         summary_avg_entry_html += '</tr>';
+                                         $(summary_avg_entry_html).appendTo("#average_webstore_summary tbody");
+
+                                         var summary_std_entry_html = '<tr>';
+                                         summary_std_entry_html += '<td>' +  element.testName + '</td>'
+                                         summary_std_entry_html += '<td>' + capitalize(individual_data.type) + '</td>';
+                                         summary_std_entry_html += '<td>' + individual_data.summary.std_SuiteScriptTime + '</td>';
+                                         summary_std_entry_html += '<td>' + individual_data.summary.std_SqlTime + '</td>';
+                                         summary_std_entry_html += '<td>' + individual_data.summary.std_TotalTime + '</td>';
+                                         summary_std_entry_html += '<td>' + individual_data.summary.std_SqlCalls + '</td>';
+                                         summary_std_entry_html += '</tr>';
+                                         $(summary_std_entry_html).appendTo("#standard_deviation_webstore_summary tbody");
+
+                                         var summary_median_entry_html = '<tr>';
+                                         summary_median_entry_html += '<td>' +  element.testName + '</td>'
+                                         summary_median_entry_html += '<td>' + capitalize(individual_data.type) + '</td>';
+                                         summary_median_entry_html += '<td>' + individual_data.summary.med_SuiteScriptTime + '</td>';
+                                         summary_median_entry_html += '<td>' + individual_data.summary.med_SqlTime + '</td>';
+                                         summary_median_entry_html += '<td>' + individual_data.summary.med_TotalTime + '</td>';
+                                         summary_median_entry_html += '<td>' + individual_data.summary.med_SqlCalls + '</td>';
+                                         summary_median_entry_html += '</tr>';
+                                         $(summary_median_entry_html).appendTo("#median_webstore_summary tbody");
+
+                                         $.each(individual_data.recordRuns, function (individual_result)
+                                         {
+                                             var individual_commerceapi_html = '<tr>';
+                                             individual_commerceapi_html += "<td>" + "<a href= #";
+                                             individual_commerceapi_html += individual_data.filename + "heading";
+                                             individual_commerceapi_html += ">" + individual_data.filename + "</a></td>";
+                                             individual_commerceapi_html += '<td>' + individual_result.suiteScriptTime + '</td>';
+                                             individual_commerceapi_html += '<td>' + individual_result.sqlTime + '</td>';
+                                             individual_commerceapi_html += '<td>' + individual_result.sqlCalls + '</td>';
+                                             individual_commerceapi_html += '<td>' + individual_result.totalTime + '</td>';
+                                             individual_commerceapi_html += '</tr>';
+                                             $(individual_commerceapi_html).appendTo("#individual_commerceapi_summary tbody");
+                                         });
+                                     }
+                                     function generate_individual_profile_data_panel()
+                                     {
+                                         var panel = generate_panel('panel-info', element.testName + element.type + 'individualrunsheading', 'Individual Profile Data', element.testName + element.type + 'individualruns', '', 'none');
+                                         return panel
+                                     }
+
+                                     function generate_individual_profile_data()
+                                     {
+                                         var individual_profile_data_run = '<table class="table table-striped table-hover table-bordered table-condensed">';
+                                         individual_profile_data_run += '<thead><tr class ="info">';
+                                         individual_profile_data_run += '<th> Suitescript Time (ms) </th>';
+                                         individual_profile_data_run += '<th> Sql Time (ms) </th>';
+                                         individual_profile_data_run += '<th> Number of Sqls </th>';
+                                         individual_profile_data_run += '<th> Total Time (s) </th>';
+                                         individual_profile_data_run += '</tr></thead> ';
+                                         individual_profile_data_run += '<tbody>';
+                                         $.each(individual_data.recordRuns, function (individual_index, individual_element)
+                                         {
+                                             individual_profile_data_run += '<tr>'
+                                             individual_profile_data_run += '<td>' + individual_element.suiteScriptTime + '</td>';
+                                             individual_profile_data_run += '<td>' + individual_element.sqlTime + '</td>';
+                                             individual_profile_data_run += '<td>' + individual_element.sqlCalls + '</td>';
+                                             individual_profile_data_run += '<td>' + individual_element.totalTime + '</td>';
+                                             individual_profile_data_run += '</tr>';
+                                         });
+                                         individual_profile_data_run += ' </tbody> </table>';
+                                         return individual_profile_data_run;
+                                     }
+
+                                     var html_element;
+                                     generate_average_and_std_dev_summary();
+
+                                     //top summary table of all runs
+                                     if (document.getElementById(element.testName) == null)
+                                     {
+                                         html_element = generate_test_run_wrapper();
+                                     }
+
+                                     $(html_element).appendTo("#commerceapi_benchmark_results");
+
+                                     //Create Individual Record Operation Panel
+                                     html_element = generate_operation_panel_and_heading();
+                                     $(html_element).appendTo("#" + element.testName);
+                                     html_element = addToggleButton("button_" + element.testName + element.type, "Collapse", 0);
+                                     $(html_element).appendTo("#" + element.testName + element.type + 'heading');
+
+
+                                     //Summary section
+                                     html_element = generate_summary_profile_data_panel();
+                                     $(html_element).appendTo("#" + element.testName + element.type);
+                                     html_element = addToggleButton("button_" + element.testName + element.type + "summary", "Expand", 1);
+                                     $(html_element).appendTo("#" + element.testName + element.type + 'summaryheading');
+
+                                     html_element = generate_avg_header_and_value();
+                                     $(html_element).appendTo("#" + element.testName + element.type + "summary");
+                                     html_element = generate_std_dev_header_and_value();
+                                     $(html_element).appendTo("#" + element.testName + element.type + "summary");
+                                     html_element = generate_median_header_and_value();
+                                     $(html_element).appendTo("#" + element.testName + element.type + "summary");
+
+                                     // Individual Profile Data
+                                     html_element = generate_individual_profile_data_panel();
+                                     $(html_element).appendTo("#" + element.testName + element.type);
+                                     html_element = addToggleButton("button_" + element.testName + element.type + "individualruns", "Expand", 1);
+                                     $(html_element).appendTo("#" + element.testName + element.type + 'individualrunsheading');
+
+                                     html_element = generate_individual_profile_data();
+                                     $(html_element).appendTo("#" + element.testName + element.type + "individualruns");
+                                 })
+                             })
+                             initChart();
+                         })
+
+                     });
+</script>
+
+<style>
+
+    .limitedRow { width: 100%; max-height: 20px; max-width: 650px; overflow-x:hidden; }
+
+    table {border-collapse:collapse; table-layout:fixed; }
+    table th, table td {border: 1px; width:100px; word-wrap:break-word;}
+
+    .container
+    {
+        border: 2px;
+        width: auto;
+    }
+
+    .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+        background-color: #999;
+    }
+
+    p{font-size: 12px}
+</style>
+</head>
+
+
+<body>
+<div class='page-header'>
+    <h1 class="text-center">Commerce API Benchmarks Results</h1>
+</div>
+
+<div class = "container">
+    <div id="summarydatastackcolumnchart" style="min-width: 310px; height: 900px; margin: 0 auto"></div>
+    <h3>Summary Data for Webstore Commerce API Operations <small> - This table test cases specific to webstore</small></h3>
+    <div class = "table-responsive panel panel-primary" id=webstore_summary_data>
+        <div class ="panel-header ">
+            <table class="table table-striped table-hover table-bordered table-condensed" id="average_webstore_summary">
+                <thead><tr class ="info">
+                    <th> Test Name </th>
+                    <th> Commerce API Method </th>
+                    <th> AVG Suitescript Time </th>
+                    <th> AVG Sql Time </th>
+                    <th> AVG Total Time</th>
+                    <th> AVG Sql Calls </th>
+                </tr></thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <table class="table table-striped table-hover table-bordered table-condensed" id="standard_deviation_webstore_summary">
+                <thead><tr class ="info">
+                    <th> Test Name </th>
+                    <th> Commerce API Method </th>
+                    <th> STD-DEV Suitescript Time </th>
+                    <th> STD-DEV Sql Time </th>
+                    <th> STD-DEV Total Time</th>
+                    <th> STD-DEV Sql Calls </th>
+                </tr></thead>
+                <tbody>
+                </tbody>
+            </table>
+
+            <table class="table table-striped table-hover table-bordered table-condensed" id="median_webstore_summary">
+                <thead><tr class ="info">
+                    <th> Test Name </th>
+                    <th> Commerce API Method </th>
+                    <th> MEDIAN Suitescript Time </th>
+                    <th> MEDIAN Sql Time </th>
+                    <th> MEDIAN Total Time</th>
+                    <th> MEDIAN Sql Calls </th>
+                </tr></thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h3> Detail Results for Commerce API Methods <small> - for summary results, please click Go To Top button </small></h3>
+    <div class="table-responsive" id="commerceapi_benchmark_results">
+    </div>
+
+    <div class= 'table-responsive' id='commerceapifooter'>
+        <table class = "table table-striped table-hover table-bordered table-condensed" id= "commerceapi_perf_result_summary">
+            <thead>
+            <tr class ="info">
+                <th> Run ID </th>
+                <th> Record Type</th>
+                <th> File Name </th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+</body>
+</html>

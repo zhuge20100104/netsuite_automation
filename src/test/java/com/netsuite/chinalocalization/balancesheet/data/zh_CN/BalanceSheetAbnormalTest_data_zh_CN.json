@@ -1,0 +1,90 @@
+{
+    "test_case_8_2_1_1": {
+      "report": {
+        "reportName": "",
+        "subsidiary": "China BlSheet 03",
+        "asof": "Jan 2017",
+        "unit": "万元"
+      },
+      "error": {
+        "title": "错误",
+        "text": "请输入值:资产负债表名称。"
+
+      }
+
+  },
+  "test_case_8_2_1_2": {
+    "report": {
+      "reportName": "中国资产负债表（China BISheet 03)",
+      "subsidiary": "China BlSheet 03",
+      "asof": "Jan 2017",
+      "unit": "万元"
+    },
+    "error": {
+      "title": "错误",
+      "text": "请输入值:资产负债表名称。"
+
+    }
+
+  },
+  "test_case_8_2_1_3": {
+    "report": {
+      "reportName": "中国资产负债表（China BISheet 03)XXX",
+      "subsidiary": "China BlSheet 03",
+      "asof": "Jan 2017",
+      "unit": "万元"
+    },
+    "error": {
+      "title": "错误",
+      "text": "请输入正确的资产负债表名称。"
+
+    }
+
+  },
+  "test_case_8_2_1_4": {
+  "normal": {
+    "reportName": "中国资产负债表（China BISheet 03)",
+    "subsidiary": "China BlSheet 03",
+    "asof": "Jan 2017",
+    "unit": "万元"
+  },
+  "error": {
+    "reportName": "中国资产负债表（China BISheet 03)XXX",
+    "title": "错误",
+    "text": "请输入正确的资产负债表名称。"
+
+  }
+
+  },
+  "test_case_8_3_1_1": {
+    "normal": {
+      "reportName": "中国资产负债表（China BISheet 03)case41",
+      "subsidiary": "China BlSheet 03",
+      "asof": "Jan 2017",
+      "unit": "万元"
+    },
+    "error": {
+      "title": "错误",
+      "text": "资产负债表固定行名不正确。请将报表固定行命名为{流动资产,非流动资产,资产总计,流动负债,非流动负债,负债合计,所有者权益（或股东权益）,负债和所有者权益（或股东权益）总计}。 资产负债表列名不正确。请将报表固定列命名为{期初余额}。"
+
+    }
+
+  },
+
+  "test_case_8_3_1_2": {
+    "normal": {
+      "reportName": "中国资产负债表（China BISheet 03)case43",
+      "subsidiary": "China BlSheet 03",
+      "asof": "Jan 2017",
+      "unit": "万元"
+    },
+    "error": {
+      "title": "错误",
+      "text": "资产负债表列名不正确。请将报表固定列命名为{期初余额,期末余额}。"
+
+    }
+
+  }
+
+
+}

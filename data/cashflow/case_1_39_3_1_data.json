@@ -1,0 +1,61 @@
+{
+  "caseId": "test 1.39.3.1",
+  "data": {
+    "item": [
+      {
+        "lineid": "1",
+        "itemold": "T1 Non-Inventory for Resale",
+        "cfsnew": "Cash paid for goods and services"
+      },
+      {
+        "lineid": "2",
+        "itemold": "T1 Service for Resale",
+        "itemnew": "CFS Inventory Item Matrix : CFS Inventory Item Matrix-B-S"
+      },
+      {
+        "lineid": "3",
+        "itemold": "Discount Item 10%"
+      }
+    ],
+    "expense": [
+      {
+        "lineid": "1",
+        "accountold": "6200 Rent Expense",
+        "accountnew": "6150 Office Expense",
+        "amount": "100"
+      },
+      {
+        "lineid": "2",
+        "accountold": "6150 Office Expense",
+        "accountnew": "6200 Rent Expense",
+        "amount": "100"
+      }
+    ]
+  },
+  "expected": {
+    "item": [
+      {
+        "cfsold": "",
+        "cfsnew": "Cash paid for goods and services"
+      },
+      {
+        "cfsold": "Other cash payments related to operating activities",
+        "cfsnew": "Cash paid for goods and services"
+      },
+      {
+        "cfsold": "",
+        "cfsnew": ""
+      }
+    ],
+    "expense": [
+      {
+        "cfsold": "Other cash payments related to operating activities",
+        "cfsnew": "Cash paid to and for employees"
+      },
+      {
+        "cfsold": "Cash paid to and for employees",
+        "cfsnew": "Other cash payments related to operating activities"
+      }
+    ]
+  }
+}

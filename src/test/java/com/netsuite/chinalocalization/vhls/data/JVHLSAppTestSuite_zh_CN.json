@@ -1,0 +1,174 @@
+{
+    "case 2.1.1":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "waitforload":"",
+                        "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+                        "//*[@id='custpage_periodfrom_fs']":"Aug 2018",
+                        "//*[@id='custpage_periodto_fs']":"Sep 2018",
+                        "custpage_datefrom":"8/1/2018",
+                        "custpage_dateto":"8/15/2018",
+                        "custpage_createdby": ["Molly Feng"],
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":"",
+                        "sleep" : "30"
+
+                    }
+                }
+            },
+
+            {
+                "expects":{
+                    "data":{
+
+                        "//tr[@id='custpage_sublistheader']/td[1]/div":  { "values" : ["凭证编号"]},
+                        "//tr[@id='custpage_sublistheader']/td[2]/div" : { "values" : ["备注"]},
+                        "//tr[@id='custpage_sublistheader']/td[3]/div":  { "values" : ["日期"]},
+                        "//tr[@id='custpage_sublistheader']/td[4]/div" : { "values" : ["交易类型" ]},
+                        "//tr[@id='custpage_sublistheader']/td[5]/div" : { "values" : ["文档编号"]},
+                        "//tr[@id='custpage_sublistheader']/td[6]/div" : { "values" : ["金额"]},
+                        "//tr[@id='custpage_sublistheader']/td[7]/div" : { "values" : ["创建人"]},
+
+
+
+                        "//tr[@id='custpage_sublistrow1']/td[1]":   { "values" : [  "VL2018Q3000003"]}    ,
+                        "//tr[@id='custpage_sublistrow1']/td[2]" :  { "values" : [  "China VoucherList:Bill0001"]},
+                        "//tr[@id='custpage_sublistrow1']/td[3]":   { "values" : [  "8/2/2018"]},
+                        "//tr[@id='custpage_sublistrow1']/td[4]" :  { "values" : [  "账单"]},
+                        "//tr[@id='custpage_sublistrow1']/td[5]" :  { "values" : [  "VLVB0001"]},
+                        "//tr[@id='custpage_sublistrow1']/td[6]" :  { "values" : [  "100.00" ]},
+                        "//tr[@id='custpage_sublistrow1']/td[7]" :  { "values" : [  "Molly Feng"]},
+
+
+                        "custpage_refresh":{
+                            "value":"刷新"
+                        },
+                        "//td[@id='fg_custpage_main_filter_group']/b":{
+                            "values":["过滤器"]
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+
+                        "//td[@id='fg_custpage_main_filter_group']":"",
+                        "sleep": "10"
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "//*[@id='custpage_subsidiary_fs']":{
+                            "values":["中国 VoucherList"]
+                        },
+                        "//*[@id='custpage_periodfrom_fs']":{
+                            "values" : ["Aug 2018"]
+                        },
+                        "//*[@id='custpage_periodto_fs']":{
+                            "values":["Sep 2018"]
+                        },
+                        "custpage_datefrom":{
+                            "value" : "8/1/2018",
+                            "disable" : false,
+                            "exist" : true,
+                            "trantype": "date"
+                        },
+                        "custpage_dateto":{
+                            "value" : "8/15/2018",
+                            "disable" : false,
+                            "exist" : true,
+                            "trantype": "date"
+                        },
+
+                        "custpage_refresh":{
+                            "value":"刷新"
+                        }
+                    }
+                }
+            }
+        ]
+
+
+    },
+    "case 2.1.2":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "waitforload":"",
+                        "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+                        "//*[@id='custpage_periodfrom_fs']":"FY 2018",
+                        "//*[@id='custpage_periodto_fs']":"FY 2018",
+                        "custpage_createdby": ["ying huang"],
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":"",
+                        "sleep" : "30"
+
+                    }
+                }
+            }
+
+
+        ],
+
+       "sublist_report":{
+        "rows": [
+            {
+                "glnum":"",
+                "memo":"China VoucherList:Journal VL2018060101",
+                "date":"6/1/2018",
+                "docnum":"VL2018060101",
+                "trantype":"日记账",
+                "amount":60000.0,
+                "createdby":"ying huang"
+            },
+            {
+                "glnum":"VL2018Q3000001",
+                "memo":"China VoucherList:Journal VL2018070101",
+                "date":"7/1/2018",
+                "docnum":"VL2018070101",
+                "trantype":"日记账",
+                "amount":70000.0,
+                "createdby":"ying huang"
+            },
+            {
+                "glnum":"VL2018Q3000009",
+                "memo":"China VoucherList:Journal VL2018090101",
+                "date":"9/1/2018",
+                "docnum":"VL2018090101",
+                "trantype":"日记账",
+                "amount":90000.0,
+                "createdby":"ying huang"
+            },
+            {
+                "glnum":"VL2018Q3000010",
+                "memo":"China VoucherList:Journal VL2018100101",
+                "date":"10/1/2018",
+                "docnum":"VL2018100101",
+                "trantype":"日记账",
+                "amount":100000.0,
+                "createdby":"ying huang"
+            }
+        ]
+
+       }
+
+    }
+}

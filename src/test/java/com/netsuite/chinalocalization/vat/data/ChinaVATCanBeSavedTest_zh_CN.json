@@ -1,0 +1,11 @@
+{
+  "labels":{
+    "subsidiaryName":"北京VAT",
+    "tableTag" :"事务处理类型: 现金交易"
+  },
+  "data":{
+    "fromDate":"6/1/2017",
+    "toDate":"6/1/2017",
+    "transactionViewPageURL":"/app/accounting/transactions/cashsale.nl"
+  }
+}

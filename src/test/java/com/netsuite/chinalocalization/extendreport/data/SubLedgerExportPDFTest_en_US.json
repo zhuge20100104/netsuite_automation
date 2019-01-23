@@ -1,0 +1,110 @@
+{
+    "title" : "Subledger",
+    "filename" : "Subledger",
+    "currency": "Currency: ",
+    "company" : "Company: ",
+    "printby" : "Print By: ",
+    "printTime" : "Print Time: ",
+    "page" : "Page: ",
+    "account" : "Account: ",
+    "lables":{
+        "subsidiary":"SUBSIDIARY",
+        "datefrom":"Date From",
+        "dateto":"To",
+        "accountfrom":"ACCOUNT FROM",
+        "accountto":"TO",
+        "accountlevel":"ACCOUNT LEVEL"
+    },
+    "defaultUserPreference": {
+        "NUMBERFORMAT": "1,000,000.00",
+        "DATEFORMAT": "M/D/YYYY",
+        "TIMEFORMAT": "hh:mm AM/PM",
+        "ONLYSHOWLASTSUBACCT": "T"
+    },
+    "employeeName": {
+        "auto1.07@oracle.com": "auto1.07",
+        "auto1.06@oracle.com": "auto1.06",
+        "auto1.05@oracle.com": "auto1.05",
+        "molly.feng@oracle.com": "Molly Feng",
+        "testuser02@oracle.com": "testuser02",
+        "testuser01@oracle.com": "testuser01",
+        "testuser03@oracle.com": "testuser03"
+
+    },
+    "test_case_5_1_1": {
+        "expectedResult": {
+            "buttons":[{
+                "text" : "Export PDF",
+                "fieldid" : "custpage_export_pdf",
+                "displayed": true,
+                "disabled": true
+            }
+            ]
+        },
+        "filter": {
+            "subsidiary": "中国 SubLedger 03",
+            "datefrom": "1/31/2015",
+            "dateto": "12/31/2015"
+        }
+    },
+    "test_case_5_2_1": {
+        "filter": {
+            "subsidiary": "中国 SubLedger 03",
+            "datefrom": "7/1/2016",
+            "dateto": "7/31/2016",
+            "accountfrom": "6002 - 企业营业收入",
+            "accountto":"6002 - 企业营业收入"
+        },
+        "expectedResult": {
+            "buttons":[{
+                "text" : "Export PDF",
+                "fieldid" : "custpage_export_pdf",
+                "displayed": true,
+                "disabled": false
+            }
+            ]
+
+        }
+    },
+
+    "test_case_5_3_3": {
+        "filter": {
+            "datefrom": "5/1/2018",
+            "dateto": "5/31/2018",
+            "accountfrom": "608402 - shipment",
+            "accountto":"608402 - shipment"
+        },
+        "expectedResult": {
+
+            "title": "Subledger",
+            "subsidiary":"Company: ",
+            "period":"5/1/2018 - 5/31/2018",
+            "currency":"Currency: CNY",
+            "tableHeader":[["Balance"],
+                ["Document"],
+                ["Type","GL#","Date","Memo","Debit","Credit"],
+                ["Number"],
+                ["Debit/Credit","Amount"]
+            ],
+            "data":[
+                {"account":"60840201 - Ocean shipping",
+                    "lines":[
+                        ["Opening Balance", "Debit", "100,000.00"],
+                        ["Monthly Total", "5/31/2018",  "0.00","0.00", "Debit","100,000.00"],
+                        ["Yearly Total", "5/31/2018",  "0.00","0.00", "Debit","100,000.00"],
+                        ["Total",  "0.00","0.00", "Debit","100,000.00"]
+                    ]
+                },
+                {"account":"60840202 - Air shipping",
+                    "lines":[
+                        ["Opening Balance", "Credit", "200.47"],
+                        ["Monthly Total", "5/31/2018",  "0.00","0.00", "Credit","200.47"],
+                        ["Yearly Total", "5/31/2018",  "0.00","0.00", "Credit","200.47"],
+                        ["Total",  "0.00","0.00", "Credit","200.47"]
+                    ]
+                }
+            ]
+        }
+    }
+}
+

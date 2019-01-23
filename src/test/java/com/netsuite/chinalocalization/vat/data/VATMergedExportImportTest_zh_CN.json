@@ -1,0 +1,110 @@
+{
+  "file template": "SJJK0201~~已开发票传出\r\n1~~20150201~~20150228\r\n//发票1\r\n0~~0~~2~~{vatcode}~~{vatnumber}~~1~~20170630~~06~~{internalid}~~85.47~~0.17~~14.53~~TEST~~110229820423002~~Floor 35, China World Trade Center, Jianguomen Wai Da Jie, Beijing, 100004, 中国~~中国银行 23498723487234~~航天信息股份有限公司~~110101801030003~~营业地址 010-123456~~0099988776655544~~999947~~管理员2\r\n~~~~0~~CN标准AR测试~~~~~~1~~85.47~~0.17~~14.53~~85.47~~0~~0",
+  "filter": {
+    "subsidiary": "北京VAT",
+    "invoicetype": "增值税专用发票",
+    "datefrom": "2/28/2018",
+    "dateto": "2/28/2018",
+    "tranid": "10883",
+    "to_tranid": "10886"
+  },
+  "data": [
+    {
+      "main": {
+        "trantype": "invoice",
+        "entity": "北京一般纳税公司01",
+        "trandate": "2/28/2018",
+        "externalid": "IN10883",
+        "tranid": "10883",
+        "location":"海淀",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+      "item": [
+        {
+          "item": "思科CiscoPhone 7970",
+          "quantity": "2"
+          
+        }
+      ]
+    },
+    {
+      "main": {
+        "trantype": "cashsale",
+        "entity": "北京一般纳税公司01",
+        "trandate": "2/28/2018",
+        "externalid": "CS10884",
+        "tranid": "10884",
+        "location":"海淀",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+      "item": [
+        {
+          "item": "思科CiscoPhone 7970",
+          "quantity": "2"
+          
+        }
+      ]
+    },
+    {
+      "main": {
+        "trantype": "creditmemo",
+        "entity": "北京一般纳税公司01",
+        "trandate": "2/28/2018",
+        "externalid": "CM10885",
+        "tranid": "10885",
+        "location":"海淀",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1086300000000001"
+      },
+      "item": [
+        {
+          "item": "思科CiscoPhone 7970",
+          "quantity": "1"          
+        }
+      ]
+    },
+    {
+      "main": {
+        "trantype": "cashrefund",
+        "entity": "北京一般纳税公司01",
+        "trandate": "2/28/2018",
+        "externalid": "CR10886",
+        "tranid": "10886",
+        "location":"海淀",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1086300000000001"
+      },
+      "item": [
+        {
+          "item": "思科CiscoPhone 7970",
+          "quantity": "1"
+        }
+      ]
+    }
+  ],
+
+  "refresh1": {
+    "expected": {
+      "visible":"false"
+    }
+  },
+  "refresh2": {
+    "expected": {
+       "visible":"false"
+    }
+  },
+  "import1": {
+    "expected": {
+      "code": "code1",
+      "number": "number1",
+      "status": "2"
+    }
+  },
+  "import2": {
+    "expected": {
+      "code": "code2",
+      "number": "number2",
+      "status": "2"
+    }
+  }
+}

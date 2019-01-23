@@ -1,0 +1,375 @@
+{
+  "testcase_13.0.1": {
+    "param_1": {
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        }
+      ]
+    },
+    "param_2": {
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "Cash Flow Japan BU"
+        }
+      ]
+    }
+  },
+  "testcase_13.1.1": {
+    "report": {
+      "name": "中国资产负债表模板_bl03_Filter",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "Feb 2018"
+        }
+      ],
+      "customFilters": [
+        {
+          "label": "Department",
+          "filterOperator": "IN",
+          "text": ["采购部门"]
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "货币资金"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应收票据"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应付账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "长期借款"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "期末余额 (AS OF FEB 2018)"
+        }
+      ]
+    }
+  },
+  "testcase_13.1.2": {
+    "report": {
+      "name": "中国资产负债表模板_bl03_Filter",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "Feb 2018"
+        }
+      ],
+      "customFilters": [
+        {
+          "label": "Class",
+          "filterOperator": "IN",
+          "text": [
+            "Paas"
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "货币资金"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应收票据"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应付账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "长期借款"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "期末余额 (AS OF FEB 2018)"
+        }
+      ]
+    }
+  },
+  "testcase_13.1.3": {
+    "report": {
+      "name": "中国资产负债表模板_bl03_Filter",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "Feb 2018"
+        }
+      ],
+      "customFilters": [
+        {
+          "label": "Location",
+          "filterOperator": "IN",
+          "text": ["华南地区"]
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "货币资金"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应收票据"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应付账款"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "期末余额 (AS OF FEB 2018)"
+        }
+      ]
+    }
+  },
+  "testcase_13.1.4": {
+    "report": {
+      "name": "中国资产负债表模板_bl03_Filter",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "Feb 2018"
+        }
+      ],
+      "customFilters": [
+        {
+          "label": "Department",
+          "filterOperator": "IN",
+          "text": [
+            "财务部门",
+            "财务部门1"
+          ]
+        },
+        {
+          "label": "Class",
+          "filterOperator": "IN",
+          "text": ["Pass"]
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "货币资金"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应收票据"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应付账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "长期借款"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "期末余额 (AS OF FEB 2018)"
+        }
+      ]
+    }
+  },
+  "testcase_13.1.8": {
+    "report": {
+      "name": "中国资产负债表模板_bl03_Filter",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "Feb 2018"
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "货币资金"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应收票据"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应付账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "长期借款"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "期末余额 (AS OF FEB 2018)"
+        }
+      ]
+    }
+  },
+  "testcase_13.6.1": {
+    "report": {
+      "name": "中国资产负债表模板_bl03_Filter",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "Feb 2018"
+        }
+      ],
+      "customFilters": [
+        {
+          "label": "Location",
+          "filterOperator": "IN",
+          "text":  [
+            "华南地区"
+          ]
+        },
+        {
+          "label": "Department",
+          "filterOperator": "IN",
+          "text": [
+            "采购部门"
+          ]
+        },
+        {
+          "label": "Class",
+          "filterOperator": "IN",
+          "text": [
+            "Paas"
+          ]
+        }
+      ]
+    }
+  },
+  "testcase_13.6.2": {
+    "report": {
+      "name": "中国资产负债表模板_bl03_Filter",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "Feb 2018"
+        }
+      ],
+      "customFilters": [
+        {
+          "label": "Location",
+          "filterOperator": "IN",
+          "text":  [
+            "华南地区"
+          ]
+        },
+        {
+          "label": "Department",
+          "filterOperator": "IN",
+          "text": [
+            "财务部门1"
+          ]
+        }
+      ]
+    }
+  },
+  "testcase_13.6.3": {
+    "report": {
+      "name": "中国资产负债表模板_bl03_Filter",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "Feb 2018"
+        }
+      ],
+      "customFilters": [
+        {
+          "label": "Location",
+          "filterOperator": "IN",
+          "text":  [
+            "北京地区"
+          ]
+        },
+        {
+          "label": "Class",
+          "filterOperator": "IN",
+          "text": [
+            "Paas"
+          ]
+        }
+      ]
+    }
+  },
+  "testcase_13.6.4": {
+    "report": {
+      "name": "中国资产负债表模板_bl03_Filter",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "Feb 2018"
+        }
+      ],
+      "customFilters": [
+        {
+          "label": "Department",
+          "filterOperator": "IN",
+          "text": [
+            "财务部门"
+          ]
+        },
+        {
+          "label": "Class",
+          "filterOperator": "IN",
+          "text":  [
+            "ERP_CFS"
+          ]
+        }
+      ]
+    }
+  }
+}

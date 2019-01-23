@@ -1,0 +1,56 @@
+{
+  "labels": {
+    "fieldLabel": {
+      "vatinvoicetype": "增值税发票类型",
+      "vatinfosheetnumber": "红字增值税专用发票信息表编号",
+      "vatcreatefrom": "创建自",
+      "vatsplitrule": "增值税发票拆分规则",
+      "tabLabel": "中国增值税",
+      "sublistLabel": "增值税发票",
+      "vatStatus": "开票状态",
+      "vatInvoiceCode": "发票代码",
+      "vatInvoiceNum": "发票号码",
+      "vatInvoiceDate": "开票日期",
+      "vatInvoiceTaxAmount": "合计税额",
+      "vatInvoiceTaxExclusiveAmount": "不含税金额"
+    }
+  },
+  "test_case_12_4_1": {
+    "expected": {
+      "VATSplitRule": "增值税发票拆分规则",
+      "RuleDetails": [  "", "-新建-","拆分单价","拆分数量"]
+    }
+  },
+  "test_case_4_5_1_3": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税普通发票"
+    },
+    "data": [
+      {
+        "main": {
+          "trantype": "creditmemo",
+          "entity": "北京小规模纳税公司C",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expected": {
+      "VATSplitRule": "增值税发票拆分规则",
+      "RuleDetails": [  "", "-新建-","拆分单价","拆分数量"],
+      "VATInvoiceType": [  "", "-新建-","增值税专用发票","增值税普通发票"],
+      "VATInvoiceStatus": ["","已导出","已完成"],
+      "VATInvoiceStatusString": "[{\"value\":\"\",\"text\":\"\"},{\"value\":\"1\",\"text\":\"已导出\"},{\"value\":\"2\",\"text\":\"已完成\"}]",
+      "warningDialog": {
+        "ok": "确定"
+      }
+    }
+  }
+}

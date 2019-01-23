@@ -1,0 +1,46 @@
+{
+  "test_1_13_1_6":{
+    "labels":{
+      "subsidiary": "Parent Company : China BU",
+      "periodFrom":"Apr 2017",
+      "periodTo":"Apr 2017",
+      "tranDateFrom":"4/30/2017",
+      "tranDateTo":"4/30/2017"
+    },
+    "data":{
+      "bill":{
+        "main":{
+          "entity":"CN Cashflow Vendor",
+          "subsidiary":"China BU",
+          "trandate":"4/25/2017",
+          "currency":"US Dollar",
+          "exchangerate":"5.55",
+          "custbody_cseg_cn_cfi":"Taxes and surcharges cash payments"
+        },
+        "expense":
+        {
+            "account": "Advances Paid",
+            "amount": "30000",
+            "taxcode": "VAT_CN:UNDEF-CN"
+        }
+      },
+      "currencyRevaluation":{
+        "subsidiary":"China BU",
+        "period":"Apr 2017"
+      },
+      "currencyRevaluationList":{
+        "dateColumnName":"Date",
+        "internalIdColumnName":"Internal ID"
+      }
+    },
+    "expect": {
+      "expectedHeader":{
+        "subsidiary":"China BU",
+        "tranType":"Currency Revaluation",
+        "trandate":"4/30/2017",
+        "postingPeriod":"Apr 2017",
+        "currency":"CNY"
+      }
+    }
+  }
+}

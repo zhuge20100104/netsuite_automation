@@ -1,0 +1,219 @@
+{
+  "test_case_8_2_1" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "中国 Income华北区",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "ReportData" : [
+      ["100104 - 库存现金中国Income", "", "Opening Balance", "", "", "", "", "", "", "Balanced"],
+      ["", "6/10/2016", "Journal", "", "ISJE20160601", "", "", "10,000.00", "", "Debit"],
+      ["", "6/10/2016", "Daily Total", "", "", "", "", "10,000.00", "0.00", "Debit"],
+      ["", "6/10/2016", "Monthly Total", "", "", "", "", "10,000.00", "0.00", "Debit"],
+      ["", "6/10/2016", "Yearly Total", "", "", "", "", "10,000.00", "0.00", "Debit"],
+      ["Total - 100104 - 库存现金中国Income", "", "", "", "", "", "", "10,000.00", "0.00", "Debit"]
+    ]
+
+
+  },
+
+  "test_case_8_2_2" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "中国 Income华北区",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "ExcelData" : {
+      "filename" : "CashBankJournalLedger.xls",
+      "reportHeader" : {
+        "title" : {
+          "row" : 0,
+          "col" : 0,
+          "text" : "Cash & Bank Journal Ledger"
+        },
+        "subsidiary" : {
+          "row" : 1,
+          "col" : 0,
+          "text" : "Subsidiary: 中国 Income"
+        },
+        "dateZone" : {
+          "row" : 1,
+          "col" : 2,
+          "text" : "6/10/2016 - 6/10/2016"
+        },
+        "currency" : {
+          "row" : 1,
+          "col" : 6,
+          "text" : "Currency: USD"
+        },
+        "location": {
+          "row": 2,
+          "col": 0,
+          "text":"Location: 中国 Income华北区"
+        },
+        "department": {
+          "row": 2,
+          "col": 2,
+          "text":"Department: Income生产部"
+        },
+        "class": {
+          "row": 2,
+          "col": 6,
+          "text":"Class: 智能手机"
+        }
+      }
+    }
+  },
+
+  "test_case_8_2_3" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "中国 Income华北区",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "PdfData" : {
+      "filename" : "CashBankJournalLedger.pdf",
+      "title" : "Cash & Bank Journal Ledger",
+      "subsidiary":"Subsidiary: 中国 Income",
+      "period" : "6/10/2016 - 6/10/2016",
+      "currency" : "Currency: USD",
+      "account" : "Account: 100104 - 库存现金中国Income",
+      "classification" : {
+        "location" : "Location: 中国 Income华北区",
+        "department":"Department: Income生产部",
+        "class" : "Class: 智能手机"
+      }
+    }
+  },
+
+  "test_case_8_2_4" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "ExcelData" : {
+      "filename" : "CashBankJournalLedger.xls",
+      "reportHeader" : {
+        "title" : {
+          "row" : 0,
+          "col" : 0,
+          "text" : "Cash & Bank Journal Ledger"
+        },
+        "subsidiary" : {
+          "row" : 1,
+          "col" : 0,
+          "text" : "Subsidiary: 中国 Income"
+        },
+        "dateZone" : {
+          "row" : 1,
+          "col" : 2,
+          "text" : "6/10/2016 - 6/10/2016"
+        },
+        "currency" : {
+          "row" : 1,
+          "col" : 6,
+          "text" : "Currency: USD"
+        },
+        "department": {
+          "row": 2,
+          "col": 0,
+          "text":"Department: Income生产部"
+        },
+        "class": {
+          "row": 2,
+          "col": 2,
+          "text":"Class: 智能手机"
+        }
+      }
+    },
+    "PdfData" : {
+      "filename" : "CashBankJournalLedger.pdf",
+      "title" : "Cash & Bank Journal Ledger",
+      "subsidiary":"Subsidiary: 中国 Income",
+      "period" : "6/10/2016 - 6/10/2016",
+      "currency" : "Currency: USD",
+      "account" : "Account: 100104 - 库存现金中国Income",
+      "classification" : {
+        "department":"Department: Income生产部",
+        "class" : "Class: 智能手机"
+      }
+    }
+  },
+
+  "test_case_8_2_5" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "",
+      "department":"",
+      "class" : "智能手机"
+    },
+    "ExcelData" : {
+      "filename" : "CashBankJournalLedger.xls",
+      "reportHeader" : {
+        "title" : {
+          "row" : 0,
+          "col" : 0,
+          "text" : "Cash & Bank Journal Ledger"
+        },
+        "subsidiary" : {
+          "row" : 1,
+          "col" : 0,
+          "text" : "Subsidiary: 中国 Income"
+        },
+        "dateZone" : {
+          "row" : 1,
+          "col" : 2,
+          "text" : "6/10/2016 - 6/10/2016"
+        },
+        "currency" : {
+          "row" : 1,
+          "col" : 6,
+          "text" : "Currency: USD"
+        },
+        "class": {
+          "row": 2,
+          "col": 0,
+          "text":"Class: 智能手机"
+        }
+      }
+    },
+    "PdfData" : {
+      "filename" : "CashBankJournalLedger.pdf",
+      "title" : "Cash & Bank Journal Ledger",
+      "subsidiary":"Subsidiary: 中国 Income",
+      "period" : "6/10/2016 - 6/10/2016",
+      "currency" : "Currency: USD",
+      "account" : "Account: 100104 - 库存现金中国Income",
+      "classification" : {
+        "class" : "Class: 智能手机"
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,253 @@
+{"journalEntry_allClassificatioin": {
+    "data":[
+      {
+        "main": {
+          "trantype": "journalentry",
+          "externalid": "ISJE20160601",
+          "tranid": "ISJE20160601",
+          "subsidiary":"Parent Company : 中国 Income",
+          "trandate": "6/10/2016",
+          "approvalstatus": "2"
+        },
+        "line": [
+          {
+            "account": "6001",
+            "credit": "10000",
+            "location":"中国 Income华北区",
+            "department":"Income生产部",
+            "class":"智能手机"
+          },
+          {
+            "account": "100104",
+            "debit": "10000",
+            "location":"中国 Income华北区",
+            "department":"Income生产部",
+            "class":"智能手机"
+          },
+          {
+            "account": "6001",
+            "credit": "10001",
+            "location":"中国 Income华北区 : 中国 北京",
+            "department":"Income生产部 : Income生产部01",
+            "class":"智能手机 : Plus系列"
+          },
+          {
+            "account": "100104",
+            "debit": "10001",
+            "location":"中国 Income华北区 : 中国 北京",
+            "department":"Income生产部 : Income生产部01",
+            "class":"智能手机 : Plus系列"
+          },
+          {
+            "account": "6001",
+            "credit": "10002",
+            "location":"中国 Income华北区 : 中国 北京",
+            "department":"Income生产部 : Income生产部02",
+            "class":"智能手机 : X系列"
+          },
+          {
+            "account": "100104",
+            "debit": "10002",
+            "location":"中国 Income华北区 : 中国 北京",
+            "department":"Income生产部 : Income生产部02",
+            "class":"智能手机 : X系列"
+          },
+          {
+            "account": "6001",
+            "credit": "20000",
+            "location":"中国 Income华北区",
+            "department":"Income生产部",
+            "class":"电脑"
+          },
+          {
+            "account": "100104",
+            "debit": "20000",
+            "location":"中国 Income华北区",
+            "department":"Income生产部",
+            "class":"电脑"
+          },
+          {
+            "account": "6001",
+            "credit": "30000",
+            "location":"中国 Income华中区",
+            "department":"Income生产部",
+            "class":"穿戴设备"
+          },
+          {
+            "account": "100104",
+            "debit": "30000",
+            "location":"中国 Income华中区",
+            "department":"Income生产部",
+            "class":"穿戴设备"
+          },
+          {
+            "account": "6001",
+            "credit": "40000",
+            "location":"中国 Income华南区",
+            "department":"Income生产部",
+            "class":"配件"
+          },
+          {
+            "account": "100104",
+            "debit": "40000",
+            "location":"中国 Income华南区",
+            "department":"Income生产部",
+            "class":"配件"
+          },
+          {
+            "account": "6001",
+            "credit": "40001",
+            "location":"中国 Income华南区",
+            "department":"Income生产部",
+            "class":"智能手机"
+          },
+          {
+            "account": "100104",
+            "debit": "40001",
+            "location":"中国 Income华南区",
+            "department":"Income生产部",
+            "class":"智能手机"
+          },
+          {
+            "account": "6001",
+            "credit": "50000",
+            "location":"中国 Income华北区",
+            "department":"Income业务部",
+            "class":"售后支持"
+          },
+          {
+            "account": "100104",
+            "debit": "50000",
+            "location":"中国 Income华北区",
+            "department":"Income业务部",
+            "class":"售后支持"
+          }
+        ]
+      },
+      {
+        "main": {
+          "trantype": "journalentry",
+          "externalid": "ISJE20170601",
+          "tranid": "ISJE20170601",
+          "subsidiary":"Parent Company : 中国 Income",
+          "trandate": "6/10/2017",
+          "approvalstatus": "2"
+        },
+        "line": [
+          {
+            "account": "6001",
+            "credit": "100000",
+            "location":"中国 Income华北区",
+            "department":"Income生产部",
+            "class":"智能手机"
+          },
+          {
+            "account": "100104",
+            "debit": "100000",
+            "location":"中国 Income华北区",
+            "department":"Income生产部",
+            "class":"智能手机"
+          },
+          {
+            "account": "6001",
+            "credit": "100010",
+            "location":"中国 Income华北区 : 中国 北京",
+            "department":"Income生产部 : Income生产部01",
+            "class":"智能手机 : Plus系列"
+          },
+          {
+            "account": "100104",
+            "debit": "100010",
+            "location":"中国 Income华北区 : 中国 北京",
+            "department":"Income生产部 : Income生产部01",
+            "class":"智能手机 : Plus系列"
+          },
+          {
+            "account": "6001",
+            "credit": "100020",
+            "location":"中国 Income华北区 : 中国 北京",
+            "department":"Income生产部 : Income生产部02",
+            "class":"智能手机 : X系列"
+          },
+          {
+            "account": "100104",
+            "debit": "100020",
+            "location":"中国 Income华北区 : 中国 北京",
+            "department":"Income生产部 : Income生产部02",
+            "class":"智能手机 : X系列"
+          },
+          {
+            "account": "6001",
+            "credit": "200000",
+            "location":"中国 Income华北区",
+            "department":"Income生产部",
+            "class":"电脑"
+          },
+          {
+            "account": "100104",
+            "debit": "200000",
+            "location":"中国 Income华北区",
+            "department":"Income生产部",
+            "class":"电脑"
+          },
+          {
+            "account": "6001",
+            "credit": "300000",
+            "location":"中国 Income华中区",
+            "department":"Income生产部",
+            "class":"穿戴设备"
+          },
+          {
+            "account": "100104",
+            "debit": "300000",
+            "location":"中国 Income华中区",
+            "department":"Income生产部",
+            "class":"穿戴设备"
+          },
+          {
+            "account": "6001",
+            "credit": "400000",
+            "location":"中国 Income华南区",
+            "department":"Income生产部",
+            "class":"配件"
+          },
+          {
+            "account": "100104",
+            "debit": "400000",
+            "location":"中国 Income华南区",
+            "department":"Income生产部",
+            "class":"配件"
+          },
+          {
+            "account": "6001",
+            "credit": "400010",
+            "location":"中国 Income华南区",
+            "department":"Income生产部",
+            "class":"智能手机"
+          },
+          {
+            "account": "100104",
+            "debit": "400010",
+            "location":"中国 Income华南区",
+            "department":"Income生产部",
+            "class":"智能手机"
+          },
+          {
+            "account": "6001",
+            "credit": "500000",
+            "location":"中国 Income华北区",
+            "department":"Income业务部",
+            "class":"售后支持"
+          },
+          {
+            "account": "100104",
+            "debit": "500000",
+            "location":"中国 Income华北区",
+            "department":"Income业务部",
+            "class":"售后支持"
+          }
+        ]
+      }
+    ]
+  }
+}

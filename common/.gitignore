@@ -1,0 +1,8 @@
+# ignore list
+.project
+results/
+.idea/
+null/
+target/
+*.iml
+lib/

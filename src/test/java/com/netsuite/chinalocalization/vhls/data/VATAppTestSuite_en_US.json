@@ -1,0 +1,59 @@
+{
+  "test_5_2_1":{
+    "labels":{
+      "fromDate":"8/1/2017",
+      "toDate":"7/1/2017"
+    },
+    "data":{
+    },
+    "expect":{
+      "errorStartDateMoreThanEndDateMsg":"Select a start date that is earlier than the end date."
+    },
+    "record":{
+
+      "invoice": [
+        { "main": {
+
+          "id": "211",
+          "trantype": "invoice",
+          "externalid": "DVR 2.1.1",
+          "tranid": "DVR 2.1.1",
+          "entity": "Mini Cooper",
+          "trandate": "6/1/2018",
+          "postingperiod": "Jun 2018",
+          "location": "Munich",
+          "currency": "Euro",
+          "exchangerate": "1",
+          "memo": "one item and fully pay"
+        },
+          "item": [
+            {
+              "item": "EMEA Non-inventory Item for Sale 1_Term12",
+              "quantity": "1",
+              "amount": "1000.00",
+              "taxcode": "RR-DE-19%"
+            }
+          ]
+        },
+        {
+          "main": {
+            "trantype": "customerpayment",
+            "externalid": "DVR_PAYMENT 2.1.1",
+            "tranid": "DVR_PAYMENT 2.1.1",
+            "customer": "Mini Cooper",
+            "currency": "Euro",
+            "exchangerate": "1.00",
+            "trandate": "6/1/2018",
+            "postingperiod": "Jun 2018"
+          },
+          "apply": [{
+            "refid": "211",
+            "amount": "1190"
+          }]
+        }
+      ]
+
+
+    }
+  }
+}

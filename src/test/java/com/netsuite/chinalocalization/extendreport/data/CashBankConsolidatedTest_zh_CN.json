@@ -1,0 +1,128 @@
+{
+    "defaultUserPreference": {
+        "NUMBERFORMAT": "1,000,000.00",
+        "DATEFORMAT": "M/D/YYYY",
+        "TIMEFORMAT": "hh:mm AM/PM",
+        "ONLYSHOWLASTSUBACCT": "T"
+    },
+    "test_case_9_1_1": {
+        "expectedResult": {
+            "subsidiary": [
+                "中国合并 (已综合)",
+                "中国合并",
+                "中国合并01",
+                "中国合并02",
+                "中国合并03"]
+        }
+    },
+    "test_case_9_1_2": {
+        "filter": {
+            "subsidiary": "中国合并 (已综合)"
+        },
+        "expectedResult": {
+            "accountfrom":[
+                "9005 - 中国合并现金",
+                "900501 - 中国合并01现金",
+                "900502 - 中国合并02现金",
+                "900503 - 中国合并03现金" ],
+            "accountto":[
+                "9005 - 中国合并现金",
+                "900501 - 中国合并01现金",
+                "900502 - 中国合并02现金",
+                "900503 - 中国合并03现金" ],
+            "hasnot":{
+                "accountfrom":["6002 - 企业营业收入"],
+                "accountto":["6002 - 企业营业收入"]
+            }
+        }
+    },
+    "test_case_9_1_3": {
+        "filter": {
+            "subsidiary": "中国合并"
+        },
+        "expectedResult": {
+            "accountfrom":[
+                "9005 - 中国合并现金"],
+            "accountto":[
+                "9005 - 中国合并现金" ],
+            "hasnot":{
+                "accountfrom":[
+                    "900501 - 中国合并01现金",
+                    "900502 - 中国合并02现金",
+                   "900503 - 中国合并03现金" ],
+                "accountto":[
+                    "900501 - 中国合并01现金",
+                    "900502 - 中国合并02现金",
+                   "900503 - 中国合并03现金"]
+            }
+        }
+    },
+    "test_case_9_1_4": {
+        "filter": {
+            "subsidiary": "中国 Income (已综合)"
+        },
+        "expectedResult": {
+            "location":["中国 Income华北区",
+                "中国 北京",
+                "中国 Income 03华北区",
+                "China Income 01华北区"],
+            "department":["Income生产部",
+                "Income生产部01",
+                "中国 Income 03生产部",
+                "China Income 01生产部"
+            ],
+            "class":[
+                "智能手机",
+                "Plus系列",
+                "中国 Income 03智能手机",
+                "China Income 01智能手机"],
+            "hasnot":{
+                "location":["海淀"],
+                "department":["北京VATDepartment"],
+                "class":["北京VATClass"]
+            }
+        }
+    },
+    "test_case_9_1_5": {
+        "filter": {
+            "subsidiary": "中国 Income"
+        },
+        "expectedResult": {
+            "location":["中国 Income华北区",
+                "中国 北京"],
+            "department":["Income生产部",
+                "Income生产部01" ],
+            "class":[
+                "智能手机",
+                "Plus系列"],
+            "hasnot":{
+                "location":["中国 Income 03华北区",
+                    "China Income 01华北区"],
+                "department":["中国 Income 03生产部",
+                    "China Income 01生产部"],
+                "class":["中国 Income 03智能手机",
+                    "China Income 01智能手机"]
+            }
+        }
+    },
+
+    "test_case_9_2_2": {
+        "filter" : {
+            "subsidiary": "中国 Income (已综合)",
+            "datefrom": "6/10/2018",
+            "dateto": "6/15/2018",
+            "location": "China Income 01华北区",
+            "department": "China Income 01生产部",
+            "class": "China Income 01智能手机"
+        },
+        "expectedResult" : [
+            ["100107 - 库存现金China Income 01", "", "期初余额", "", "", "", "", "", "", "平"],
+            ["", "6/12/2018", "日记账", "", "IS2018061003", "", "", "30,000.00", "", "借"],
+            ["", "6/12/2018", "本日合计", "", "", "", "", "30,000.00", "0.00", "借"],
+            ["", "6/15/2018", "本月合计", "", "", "", "", "30,000.00", "0.00", "借"],
+            ["", "6/15/2018", "本年累计", "", "", "", "", "30,000.00", "0.00", "借"],
+            ["总计 - 100107 - 库存现金China Income 01", "", "", "", "", "", "", "30,000.00", "0.00", "借"]
+            ]
+    }
+}
+

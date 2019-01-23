@@ -1,0 +1,27 @@
+{
+  "case_1_1_1_2": {
+    "data": [{
+      "main": {
+        "id": "voucher_1_1_1_2",
+        "trantype": "journalentry",
+        "subsidiary": "China BU",
+        "trandate": "11/8/2018",
+        "postingperiod": "Nov 2018",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "line": [
+        {
+          "account": "10020104 银行存款 : 人民币 : 建行T1",
+          "debit": "1000",
+          "custcol_cseg_cn_cfi": ""
+        },
+        {
+          "account": "1100 Accounts Receivable",
+          "credit": "1000",
+          "custcol_cseg_cn_cfi": ""
+        }
+      ]
+    }]
+  }
+}

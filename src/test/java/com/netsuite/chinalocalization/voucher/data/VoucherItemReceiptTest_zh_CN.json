@@ -1,0 +1,54 @@
+{
+  "test_1_13_1_5":{
+    "labels":{
+      "subsidiary": "Parent Company : China BU",
+      "periodFrom":"Jul 2017",
+      "periodTo":"Jul 2017",
+      "tranDateFrom":"7/5/2017",
+      "tranDateTo":"7/5/2017"
+    },
+    "data":{
+      "main":{
+        "entity":"CN Cashflow Vendor",
+        "trandate":"7/5/2017",
+        "currency":"Yuan",
+        "exchangerate":"1.00",
+        "location":"CN_BJ"
+      },
+      "item": {
+        "item":"CN Inv Item1",
+        "quantity": "1",
+        "amount":"500",
+        "taxcode":"VAT_CN:UNDEF-CN"
+      }
+    },
+    "expect": {
+      "expectedHeader":{
+        "subsidiary":"China BU",
+        "tranType":"货品收据",
+        "trandate":"7/5/2017",
+        "postingPeriod":"Jul 2017",
+        "currency":"CNY"
+      },
+      "expectedRow": [
+        { "accountAndDescription":"Accrued Purchases",
+          "transactionCurrency":"CNY",
+          "rate":"1.00",
+          "transactionCurrencyDebit":"",
+          "transactionCurrencyCredit":"500.00",
+          "functionalCurrencyDebit":"",
+          "functionalCurrencyCredit":"500.00"
+        },
+        {
+          "accountAndDescription":"1200 Inventory",
+          "transactionCurrency":"CNY",
+          "rate":"1.00",
+          "transactionCurrencyDebit":"500.00",
+          "transactionCurrencyCredit":"",
+          "functionalCurrencyDebit":"500.00",
+          "functionalCurrencyCredit":""
+        }
+      ]
+    }
+  }
+}

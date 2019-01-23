@@ -1,0 +1,351 @@
+{
+  "test_case_19_4_1_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10901",
+      "docNumTo": "10901"
+    },
+    "data":[
+      {
+        "main": {
+          "trantype": "customer",
+          "companyname": "VAT Invalid Customer19411",
+          "externalid": "VATCU19411",
+          "subsidiary": "Parent Company : 中国VAT : 北京VAT"
+        }
+      },
+      {
+        "main": {
+          "entity": "VAT Invalid Customer19411",
+          "trantype": "invoice",
+          "externalid": "IN10901",
+          "tranid": "10901",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"没有有效的可编辑数据,请查看消息内容并编辑事务处理后重试。"
+    }
+  },
+  "test_case_19_4_1_2": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10931",
+      "docNumTo": "10931"
+    },
+    "data":[
+      {"main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10931",
+          "tranid": "10931",
+          "trandate": "1/2/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "-1",
+            "amount": "2000"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "-1",
+            "amount": "1000"
+          },
+          {
+            "item": "联想ThinkPad T470",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg1":"数量或者金额与所要开具的增值税发票不符。",
+      "errMsg2":"没有有效的可编辑数据,请查看消息内容并编辑事务处理后重试。"
+    }
+  },
+  "test_case_19_4_1_3": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10921",
+      "docNumTo": "10921"
+    },
+    "data":[
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "invoice",
+        "externalid": "IN10921",
+        "tranid": "10921",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1",
+            "amount": "-2000"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "1",
+            "amount": "-1000"
+          },
+          {
+            "item": "联想ThinkPad T470",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg1":"折扣金额不能大于不含税金额。",
+      "errMsg2":"没有有效的可编辑数据,请查看消息内容并编辑事务处理后重试。"
+    }
+  },
+
+  "test_case_19_4_1_4": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10922",
+      "docNumTo": "10923"
+    },
+    "data":[
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM10922",
+        "tranid": "10922",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashrefund",
+        "externalid": "CR10923",
+        "tranid": "10923",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"该发票无红字发票信息表编号或备注栏格式不正确。"
+    }
+  },
+  "test_case_19_4_3_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "11001",
+      "docNumTo": "11004"
+    },
+    "data":[
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "invoice",
+        "externalid": "IN11001",
+        "tranid": "11001",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "3"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashsale",
+        "externalid": "CS11002",
+        "tranid": "11002",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+
+      },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "3"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM11003",
+        "tranid": "11003",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1100000000000001"
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "cashrefund",
+        "externalid": "CR11004",
+        "tranid": "11004",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1100000000000001"
+      },
+        "item": [
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg":"不能编辑，该事务处理已经合并开票。如需编辑，请撤销合并后重试。"
+    }
+  },
+  "test_case_6_4_2_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "9/1/2018",
+      "dateto": "9/1/2018",
+      "docNumFrom": "10710",
+      "docNumTo": "10710"
+    },
+    "expectedResult": {
+      "errMsg":"没有与搜索条件匹配的结果。"
+    }
+  },
+  "test_case_6_4_3_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税普通发票",
+      "datefrom": "11/29/2017",
+      "dateto": "11/29/2017",
+      "docNumFrom": "10710",
+      "docNumTo": "10710"
+    },
+    "expectedResult": {
+      "errMsg":"无效格式。请先核销对应的正向增值税发票。"
+    }
+  },
+  "test_case_6_4_4_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税普通发票",
+      "datefrom": "11/29/2017",
+      "dateto": "11/29/2017",
+      "docNumFrom": "10711",
+      "docNumTo": "10711"
+    },
+    "expectedResult": {
+      "errMsg":"无效格式。请先核销对应的正向增值税发票。"
+    }
+
+  },
+  "test_case_6_4_5_4": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "1/2/2018",
+      "dateto": "1/2/2018",
+      "docNumFrom": "10926",
+      "docNumTo": "10926"
+    },
+    "data":[
+      {"main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "creditmemo",
+        "externalid": "CM10926",
+        "tranid": "10926",
+        "trandate": "1/2/2018",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1",
+        "custbody_cn_info_sheet_number": "1090000000000001"
+
+      },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1",
+            "price": "Custom",
+            "amount": "-200"
+          },
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "-1",
+            "amount": "500"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "-1",
+            "amount": "-300"
+          },
+          {
+            "item": "联想ThinkPad T470",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResult": {
+      "errMsg1":"数量或者金额与所要开具的增值税发票不符。"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+2018-12-02 16:12:23,502 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: SuiteSetup(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 16:12:31,063 INFO  org.apache.log4j.Category$info - Navigated to: https://system.netsuite.com/app/login/secure/enterpriselogin.nl?whence=
+2018-12-02 16:12:43,133 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Logged in successfully.
+2018-12-02 16:12:43,325 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Logged in successfully.
+2018-12-02 16:12:44,084 INFO  com.netsuite.testautomation.aut.NetSuiteApp - Page title: 主页 - NetSuite (CN VAT Input Tax Integration QA Testing_OW)
+2018-12-02 16:12:44,461 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - End of: SuiteSetup(com.netsuite.chinalocalization.vhls.VHLSPrintTest)

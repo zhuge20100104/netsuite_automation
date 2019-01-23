@@ -1,0 +1,68 @@
+{
+  "test_case_5_1_1":{
+    "SearchParm" : {
+      "subsidiary":"中国 SubLedger 02"
+    },
+    "CalenderToTest" : "No Period Calendar",
+    "errMsg" : "<Period Parameter>is not defined for this fiscal calender. Go to Setup>Accounting>Manage Accounting Periods and set up assign the period you need.",
+    "FieldDefault":{
+      "subsidiary":"Parent Company",
+      "datefrom":"1.6.2018",
+      "dateto":"30.6.2018",
+      "accountfrom":"",
+      "accountto":""
+    }
+  },
+
+  "test_case_5_2_1":{
+    "errMsg" : "The Advanced PDF/HTML Templates feature must be enabled in the account. To enable this feature, go to Setup > Company > Enable Features (SuiteCloud subtab).",
+    "FieldDefault":{
+      "subsidiary":"Parent Company",
+      "datefrom":"1.6.2018",
+      "dateto":"30.6.2018",
+      "accountfrom":"",
+      "accountto":""
+    }
+  },
+
+  "test_case_5_3_1":{
+    "errMsg" : "Please enter a valid date range. The From date must precede the To date.",
+    "SearchParm":{
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"30.6.2018",
+      "dateto":"1.6.2017"
+    },
+    "FieldDefault":{
+      "subsidiary":"Parent Company",
+      "datefrom":"30.6.2018",
+      "dateto":"30.6.2018"
+    }
+  },
+
+  "test_case_5_3_2":{
+    "errMsg" : "Please enter a valid date range. The From date must precede the To date.",
+    "SearchParm":{
+      "datefrom":""
+    },
+    "FieldDefault":{
+      "subsidiary":"Parent Company",
+      "datefrom":"1.6.2018",
+      "dateto":"30.6.2018"
+    }
+  },
+
+  "test_case_5_4_1":{
+    "errMsg" : "Please enter a valid account range. The From account must precede the To account.",
+    "SearchParm":{
+      "subsidiary":"中国 SubLedger 03",
+      "accountfrom":"600203 - 资产增值收入",
+      "accountto":"600201 - 产品类收入"
+    },
+    "FieldDefault":{
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"1.6.2018",
+      "dateto":"30.6.2018"
+    }
+  }
+
+}

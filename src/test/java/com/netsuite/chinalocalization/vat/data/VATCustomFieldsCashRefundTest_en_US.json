@@ -1,0 +1,58 @@
+{
+  "labels": {
+    "fieldLabel": {
+      "vatinvoicetype": "China VAT Invoice Type",
+      "vatinfosheetnumber": "Information Sheet Number",
+      "vatcreatedfrom": "China VAT Created From",
+      "vatsplitrule": "VAT Split Rule",
+      "tabLabel": "China VAT",
+      "sublistLabel": "VAT Invoices",
+      "vatStatus": "Status",
+      "vatInvoiceCode": "Invoice Code",
+      "vatInvoiceNum": "Invoice Number",
+      "vatInvoiceDate": "Invoice Date",
+      "vatInvoiceTaxAmount": "Total Tax Amount",
+      "vatInvoiceTaxExclusiveAmount": "Tax Exclusive Amount"
+    }
+  },
+
+  "test_case_12_4_1": {
+    "expected": {
+      "VATSplitRule": "VAT Split Rule",
+      "RuleDetails": [  "", "- New -","Split rate","Split quantity"]
+    }
+  },
+
+  "test_case_4_6_1_5": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice"
+    },
+    "data": [
+      {
+        "main": {
+          "trantype": "cashrefund",
+          "entity": "北京小规模纳税公司C",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expected": {
+      "VATSplitRule": "VAT Split Rule",
+      "RuleDetails": [  "", "- New -","Split rate","Split quantity"],
+      "VATInvoiceType": [  "", "- New -","Special VAT Invoice","Common VAT Invoice"],
+      "VATInvoiceStatus": ["","Exported","Completed"],
+      "VATInvoiceStatusString": "[{\"value\":\"\",\"text\":\"\"},{\"value\":\"1\",\"text\":\"Exported\"},{\"value\":\"2\",\"text\":\"Completed\"}]",
+      "warningDialog": {
+        "ok": "OK"
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "test_case_4_1_1":{
+    "errMsg":"Accounting Period is not defined for this fiscal calendar. Go to Setup > Accounting > Manage Accounting Periods and set up or assign the date you need.",
+    "filter": {
+      "subsidiary": "中国 SubLedger 02"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 SubLedger 02",
+      "accountfrom":"",
+      "accountto":""
+    },
+    "filterAfter":{
+      "subsidiary":"中国 SubLedger 03"
+    }
+  },
+  "test_case_4_2_1":{
+    "errMsg":"The Advanced PDF/HTML Templates feature must be enabled in the account. To enable this feature, go to Setup > Company > Enable Features (SuiteCloud subtab).",
+    "defaultParam": {
+      "subsidiary":"Parent Company (Consolidated)",
+      "accountfrom":"",
+      "accountto":""
+    },
+    "filterAfter":{
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"1/1/2016",
+      "dateto":"12/31/2016"
+    }
+  },
+  "test_case_4_3_1":{
+    "errMsg":"Please enter a valid date range. The From date must precede the To date.",
+    "filter": {
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"4/1/2018",
+      "dateto":"12/31/2017"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"4/1/2018",
+      "accountfrom":"",
+      "accountto":""
+    },
+
+    "filterAfter":{
+      "subsidiary":"中国 SubLedger 03"
+    }
+  },
+  "test_case_4_3_2":{
+    "errMsg":"Please enter a valid date range. The From date must precede the To date.",
+    "filter": {
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"4/1/2018",
+      "dateto":"12/31/2017"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"4/1/2018",
+      "accountfrom":"",
+      "accountto":""
+    },
+
+    "filterAfter":{
+      "subsidiary":"中国 SubLedger 03"
+    }
+  },
+  "test_case_4_3_3":{
+    "errMsg":"Please enter a valid date range. The From date must precede the To date.",
+    "filter": {
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom": "",
+      "dateto":"12/31/2017"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom": "",
+      "dateto":"12/31/2017",
+      "accountfrom":"",
+      "accountto":""
+    },
+
+    "filterAfter":{
+      "subsidiary":"中国 SubLedger 03"
+    }
+  },
+
+  "test_case_4_4_1":{
+    "errMsg":"Please enter a valid account range. The From account must precede the To account.",
+    "filter": {
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"608402 - shipment",
+      "accountto":"6081 - office equipments"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"608402 - shipment",
+      "accountto":""
+    }
+  },
+  "test_case_4_4_2":{
+    "errMsg":"Please enter a valid account range. The From account must precede the To account.",
+    "filter": {
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"Estimates",
+      "accountto":"608102 - furniture"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 SubLedger 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"Estimates",
+      "accountto":""
+    }
+  }
+}

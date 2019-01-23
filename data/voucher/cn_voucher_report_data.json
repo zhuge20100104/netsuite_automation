@@ -1,0 +1,211 @@
+{
+    "test case 1.13.1.1": {
+        "data": {
+            "subsidiary": "China BU",
+            "fromaccount": "10020103 银行存款 : 人民币 : 工行T1",
+            "toaccount": "10020104 银行存款 : 人民币 : 建行T1",
+            "trandate": "7/1/2017",
+            "fromamount": "1000",
+            "toamount": "1000"
+        },
+        "ui": {
+            "voucherPrintParams": {
+                "subsidiary": "Parent Company : China BU",
+                "periodFrom": "Jul 2017",
+                "periodTo": "Jul 2017",
+                "tranDateFrom": "7/1/2017",
+                "tranDateTo": "7/1/2017"
+            }
+        },
+        "expected": {
+            "voucherReportMain": {
+                "subsidiary": "China BU",
+                "tranType": {
+                    "zhCN":"转账",
+                    "enUS":"Transfer"
+                },
+                "date": "7/1/2017",
+                "postingPeriod": "Jul 2017",
+                "currency": "CNY"
+            },
+            "voucherReportFooter": {
+                "creator": "auto1.02",
+                "approver": "",
+                "poster": "auto1.02"
+            }
+        }
+    },
+    "test case 1.13.2.2": {
+        "data": [
+            {
+                "main": {
+                    "id": "1.13.2.2",
+                    "trantype": "customerdeposit",
+                    "customer": "CN Automation Customer",
+                    "trandate": "7/8/2017",
+                    "postingperiod": "Jul 2017",
+                    "currency": "US Dollar",
+                    "exchangerate": "6.8",
+                    "account": "10020204 银行存款 : 美元 : 建行T1",
+                    "payment": "100",
+                    "memo": "test case 1.13.2.2"
+                }
+            }
+        ],
+        "ui": {
+            "voucherPrintParams": {
+                "subsidiary": "Parent Company : China BU",
+                "periodFrom": "Jul 2017",
+                "periodTo": "Jul 2017",
+                "tranDateFrom": "7/8/2017",
+                "tranDateTo": "7/8/2017"
+            }
+        },
+        "expected": {
+            "voucherReportMain": {
+                "tranType": {
+                    "zhCN":"客户存款",
+                    "enUS":"Customer Deposit"
+                },
+                "date": "7/8/2017",
+                "postingPeriod": "Jul 2017",
+                "currency": "CNY"
+            },
+            "voucherReportFooter": {
+                "creator": "auto1.04",
+                "approver": "",
+                "poster": "auto1.04"
+            }
+        }
+    },
+    "test case 1.18.1.1": {
+        "data": [
+            {
+                "main": {
+                    "id": "1.18.1.1",
+                    "trantype": "customerdeposit",
+                    "customer": "CN Automation Customer",
+                    "trandate": "7/8/2017",
+                    "postingperiod": "Jul 2017",
+                    "currency": "US Dollar",
+                    "exchangerate": "6.8",
+                    "account": "10020204 银行存款 : 美元 : 建行T1",
+                    "payment": "100",
+                    "memo": "test case 1.18.1.1"
+                }
+            }
+        ],
+        "ui": {
+            "voucherPrintParams": {
+                "subsidiary": "Parent Company : China BU",
+                "periodFrom": "Jul 2017",
+                "periodTo": "Jul 2017",
+                "tranDateFrom": "7/8/2017",
+                "tranDateTo": "7/8/2017",
+                "template":{
+                    "zhCN":"单币",
+                    "enUS":"Single Currency"
+                }
+            }
+        },
+        "expected": {
+            "voucherReportMain": {
+                "tranType": {
+                    "zhCN":"客户存款",
+                    "enUS":"Customer Deposit"
+                },
+                "date": "7/8/2017",
+                "postingPeriod": "Jul 2017",
+                "currency": "CNY"
+            },
+            "voucherReportFooter": {
+                "creator": "auto1.04",
+                "approver": "",
+                "poster": "auto1.04"
+            },
+            "voucherReportBody": [
+                {
+                    "lineNum": 1,
+                    "acctDesp": "10020204 银行存款 : 美元 : 建行T1",
+                    "funcCcyDebit": "680.00",
+                    "funcCcyCredit": ""
+                },
+                {
+                    "lineNum": 2,
+                    "acctDesp": "2200 Customer Deposits",
+                    "funcCcyDebit": "",
+                    "funcCcyCredit": "680.00"
+                }
+            ]
+        }
+    },
+    "test case 1.18.1.2": {
+        "data": [
+            {
+                "main": {
+                    "id": "1.18.1.2",
+                    "trantype": "customerdeposit",
+                    "customer": "CN Automation Customer",
+                    "trandate": "7/8/2017",
+                    "postingperiod": "Jul 2017",
+                    "currency": "US Dollar",
+                    "exchangerate": "6.8",
+                    "account": "10020204 银行存款 : 美元 : 建行T1",
+                    "payment": "100",
+                    "memo": "test case 1.18.1.2"
+                }
+            }
+        ],
+        "ui": {
+            "voucherPrintParams": {
+                "subsidiary": "Parent Company : China BU",
+                "periodFrom": "Jul 2017",
+                "periodTo": "Jul 2017",
+                "tranDateFrom": "7/8/2017",
+                "tranDateTo": "7/8/2017",
+                "template":{
+                    "zhCN":"复币",
+                    "enUS":"Multiple Currencies"
+                }
+            }
+        },
+        "expected": {
+            "voucherReportMain": {
+                "tranType": {
+                    "zhCN":"客户存款",
+                    "enUS":"Customer Deposit"
+                },
+                "date": "7/8/2017",
+                "postingPeriod": "Jul 2017",
+                "currency": "CNY"
+            },
+            "voucherReportFooter": {
+                "creator": "auto1.04",
+                "approver": "",
+                "poster": "auto1.04"
+            },
+            "voucherReportBody": [
+                {
+                    "lineNum": 1,
+                    "acctDesp": "10020204 银行存款 : 美元 : 建行T1",
+                    "tranCcy": "USD",
+                    "rate": "6.80",
+                    "tranCcyDebit": "100.00",
+                    "tranCcyCredit": "",
+                    "funcCcyDebit": "680.00",
+                    "funcCcyCredit": ""
+                },
+                {
+                    "lineNum": 2,
+                    "acctDesp": "2200 Customer Deposits",
+                    "tranCcy": "USD",
+                    "rate": "6.80",
+                    "tranCcyDebit": "",
+                    "tranCcyCredit": "100.00",
+                    "funcCcyDebit": "",
+                    "funcCcyCredit": "680.00"
+                }
+            ]
+        }
+    }
+}

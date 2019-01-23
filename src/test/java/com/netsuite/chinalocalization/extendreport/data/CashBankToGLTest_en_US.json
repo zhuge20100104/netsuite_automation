@@ -1,0 +1,33 @@
+{
+  "test_case_9_7" : {
+    "searchPara" : {
+      "title" : "GL Impact",
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "07/25/2018",
+      "dateto" : "07/25/2018",
+      "accountfrom" : "600201 - 产品类收入",
+      "accountto" : "600201 - 产品类收入"
+    },
+    "transactionPara" : {
+      "title" : "Journal",
+      "docnum" : "SLCM10001",
+      "returnto" : "Return to Journal #SLCM10001"
+    }
+  },
+  "test_case_9_8" : {
+    "searchPara" : {
+      "title" : "GL Impact",
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "07/25/2018",
+      "dateto" : "07/25/2018",
+      "accountfrom" : "600201 - 产品类收入",
+      "accountto" : "600201 - 产品类收入"
+    },
+    "transactionPara" : {
+      "title" : "Journal",
+      "docnum" : "None",
+      "returnto" : "Return to Journal"
+    }
+  }
+
+}

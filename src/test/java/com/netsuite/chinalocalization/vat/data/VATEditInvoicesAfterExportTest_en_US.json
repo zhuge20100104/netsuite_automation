@@ -1,0 +1,32 @@
+{
+  "test_case_2_11_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice"
+    },
+    "data": [
+      {
+        "main": {
+          "trantype": "invoice",
+          "entity": "北京一般纳税公司01",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2",
+          "custbody_cn_vat_split_rule": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResults": {
+      "warningDialog": {
+        "title": "Edit Warning",
+        "message": "The transaction has already been exported for VAT invoicing.",
+        "ok": "OK"
+      }
+    }
+  }
+}

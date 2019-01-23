@@ -1,0 +1,67 @@
+{
+  "test_case_6_4_3_5": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice"
+    },
+    "data": [
+      {
+        "main": {
+          "id": "invoice6.4.3.5",
+          "trantype": "invoice",
+          "entity": "北京小规模纳税公司C",
+          "location": "海淀"
+        },
+        "item":[
+          {"item":"思科CiscoPhone 7970","quantity":"1"}
+        ]
+      },
+      {
+        "main":{
+          "trantype":"creditmemo",
+          "entity": "北京小规模纳税公司C",
+          "location": "海淀"
+        },
+        "item":[
+          {"item":"思科CiscoPhone 7970","quantity":"1"}
+        ],
+        "apply": [
+          {"refid": "invoice6.4.3.5", "amount": "1000"}
+        ]
+      }
+    ],
+    "expectedResults": {
+      "missing_vat": "The invoice selected does not have VAT Information or has remarks that are in incorrect format."
+    }
+  },
+  "test_case_6_4_4_3": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Common VAT Invoice"
+    },
+    "data": [
+      {
+        "main": {
+          "id": "cashsale6.4.4.3",
+          "trantype": "cashsale",
+          "entity": "北京小规模纳税公司C",
+          "location": "海淀"
+        },
+        "item":[
+          {"item":"思科CiscoPhone 7970","quantity":"1"}
+        ]
+      },
+      {
+        "main":{
+          "trantype":"cashrefund",
+          "entity": "北京小规模纳税公司C",
+          "location": "海淀",
+          "createdfrom": "cashsale6.4.4.3"
+        }
+      }
+    ],
+    "expectedResults": {
+      "missing_vat": "The invoice selected does not have VAT Information or has remarks that are in incorrect format."
+    }
+  }
+}

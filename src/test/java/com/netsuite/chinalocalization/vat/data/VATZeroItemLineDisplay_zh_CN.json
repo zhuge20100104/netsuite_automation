@@ -1,0 +1,762 @@
+{
+  "tranHeader": {
+    "select": "选择",
+    "internalId": "内部标识",
+    "customerName": "客户名称",
+    "tranType": "事务处理类型",
+    "docNum": "单据编号",
+    "status": "状态",
+    "docDate": "单据日期",
+    "amount": "不含税金额",
+    "afterdiscountamt": "折后金额"
+  },
+  "itemHeader": {
+    "itemName": "货物名称",
+    "model": "规格型号",
+    "uom": "单位",
+    "quantity": "数量",
+    "amount": "不含税金额",
+    "unitPrice": "单价",
+    "taxRate": "税率",
+    "discountAmount": "折扣金额"
+  },
+  "test_case_19_5_1_1": {
+    "subsidiary": "北京VAT",
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "2/1/2018",
+      "dateto": "2/1/2018",
+      "docNumFrom": "10810",
+      "docNumTo": "10810",
+      "customer": "北京一般纳税公司01",
+      "transType": "发票"
+    },
+    "expResult":{
+      "docNum": "10810",
+      "tranType":"发票",
+      "lineQuantity":"0"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10810",
+          "tranid": "10810",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "0"
+          }
+        ]
+      }
+    ],
+    "previewData":[
+        {
+            "docNum": "10810",
+            "tranType": "发票",
+            "internalId": "25565",
+            "customerName": "北京一般纳税公司01",
+            "docDate": "20180201",
+            "lineQuantity": 0,
+            "taxRegisNum": "123456789010001",
+            "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+            "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+            "remark": "",
+            "itemNameForSale": "",
+            "message": "",
+            "amount": 0,
+            "afterdiscountamt": 0,
+            "vatlineQuantity": 0,
+            "status": "",
+            "item": [
+
+            ],
+            "discountAmount": 0
+        }
+    ]
+  },
+
+  "test_case_19_5_1_2": {
+    "subsidiary": "北京VAT",
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "2/1/2018",
+      "dateto": "2/1/2018",
+      "docNumFrom": "10811",
+      "docNumTo": "10811",
+      "customer": "北京一般纳税公司01",
+      "tranType": "发票"
+    },
+    "expResult":{
+      "docNum": "10811",
+      "tranType":"发票",
+      "lineQuantity":"2"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10811",
+          "tranid": "10811",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1",
+          "shipmethod": "UPS Express",
+          "shippingcost": "100",
+          "handlingcost": "20"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "0"
+          }
+        ]
+      }
+    ],
+    "previewData":[
+      {
+        "docNum": "10811",
+        "tranType": "发票",
+        "internalId": "25566",
+        "customerName": "北京一般纳税公司01",
+        "docDate": "20180201",
+        "lineQuantity": 2,
+        "taxRegisNum": "123456789010001",
+        "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+        "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+        "remark": "",
+        "itemNameForSale": "",
+        "message": "",
+        "amount": 120.0,
+        "afterdiscountamt": 120.0,
+        "vatlineQuantity": 2,
+        "status": "",
+        "item": [
+          {
+            "itemName": "运费",
+            "model": "",
+            "uom": "",
+            "quantity": 1.0,
+            "unitPrice": 100.0,
+            "amount": 100.0,
+            "taxRate": 0.17,
+            "discountAmount": 0
+          },
+          {
+            "itemName": "手续费",
+            "model": "",
+            "uom": "",
+            "quantity": 1.0,
+            "unitPrice": 20.0,
+            "amount": 20.0,
+            "taxRate": 0.17,
+            "discountAmount": 0
+          }
+        ],
+        "discountAmount": 0
+      }
+    ]
+
+  },
+  "test_case_19_5_1_3": {
+    "subsidiary": "北京VAT",
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "2/1/2018",
+      "dateto": "2/1/2018",
+      "docNumFrom": "10810",
+      "docNumTo": "10810",
+      "customer": "北京一般纳税公司01",
+      "transType": "现金交易"
+    },
+    "expResult":{
+      "docNum": "10810",
+      "lineQuantity":"1"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "cashsale",
+          "externalid": "CS10810",
+          "tranid": "10810",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "0",
+            "amount": "2000"
+          }
+        ]
+      }
+    ],
+    "previewData":[
+      {
+        "docNum": "10810",
+        "tranType": "现金交易",
+        "internalId": "25567",
+        "customerName": "北京一般纳税公司01",
+        "docDate": "20180201",
+        "lineQuantity": 1,
+        "taxRegisNum": "123456789010001",
+        "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+        "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+        "remark": "",
+        "itemNameForSale": "",
+        "message": "",
+        "amount": 2000.0,
+        "afterdiscountamt": 2000.0,
+        "vatlineQuantity": 1,
+        "status": "",
+        "item": [
+          {
+            "itemName": "思科CiscoPhone 7970",
+            "model": "7970型号",
+            "uom": "台",
+            "quantity": 0.0,
+            "unitPrice": "",
+            "amount": 2000.0,
+            "taxRate": 0.17,
+            "discountAmount": 0
+          }
+        ],
+        "discountAmount": 0
+      }
+    ]
+  },
+  "test_case_19_5_2_1": {
+    "subsidiary": "北京VAT",
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "2/1/2018",
+      "dateto": "2/1/2018",
+      "docNumFrom": "10812",
+      "docNumTo": "10813",
+      "customer": "北京一般纳税公司01"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10812",
+          "tranid": "10812",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "creditmemo",
+          "externalid": "CM10813",
+          "tranid": "10813",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "previewData":[
+        {
+            "docNum": "10812",
+            "tranType": "发票",
+            "internalId": "25568",
+            "customerName": "北京一般纳税公司01",
+            "docDate": "20180201",
+            "lineQuantity": 2,
+            "taxRegisNum": "123456789010001",
+            "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+            "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+            "remark": "",
+            "itemNameForSale": "",
+            "message": "",
+            "amount": 26802.97,
+            "afterdiscountamt": 26802.97,
+            "vatlineQuantity": 2,
+            "status": "",
+            "item": [
+                {
+                    "itemName": "思科CiscoPhone 7970",
+                    "model": "7970型号",
+                    "uom": "台",
+                    "quantity": 1.0,
+                    "unitPrice": 5600.99,
+                    "amount": 5600.99,
+                    "taxRate": 0.17,
+                    "discountAmount": 0
+                },
+                {
+                    "itemName": "联想ThinkPad T460",
+                    "model": "T460型号",
+                    "uom": "Meter",
+                    "quantity": 2.0,
+                    "unitPrice": 10600.99,
+                    "amount": 21201.98,
+                    "taxRate": 0.17,
+                    "discountAmount": 0
+                }
+            ],
+            "discountAmount": 0
+        },
+        {
+            "docNum": "10813",
+            "tranType": "贷项通知单",
+            "internalId": "25569",
+            "customerName": "北京一般纳税公司01",
+            "docDate": "20180201",
+            "lineQuantity": 1,
+            "taxRegisNum": "123456789010001",
+            "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+            "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+            "remark": "",
+            "itemNameForSale": "",
+            "message": "该发票无红字发票信息表编号或备注栏格式不正确。",
+            "amount": -5600.99,
+            "afterdiscountamt": -5600.99,
+            "vatlineQuantity": 1,
+            "status": "",
+            "item": [
+                {
+                    "itemName": "思科CiscoPhone 7970",
+                    "model": "7970型号",
+                    "uom": "台",
+                    "quantity": -1.0,
+                    "unitPrice": 5600.99,
+                    "amount": -5600.99,
+                    "taxRate": 0.17,
+                    "discountAmount": 0
+                }
+            ],
+            "discountAmount": 0
+        }
+    ]
+  },
+  "test_case_19_5_2_2": {
+    "subsidiary": "北京VAT",
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "2/1/2018",
+      "dateto": "2/1/2018",
+      "docNumFrom": "10814",
+      "docNumTo": "10815",
+      "customer": "北京一般纳税公司01"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "invoice",
+          "externalid": "IN10814",
+          "tranid": "10814",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1",
+          "shipmethod": "UPS Express",
+          "shippingcost": "100",
+          "handlingcost": "20"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "creditmemo",
+          "externalid": "CM10815",
+          "tranid": "10815",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1",
+          "shipmethod": "UPS Express",
+          "shippingcost": "100",
+          "handlingcost": "20"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+
+        ]
+      }
+    ],
+    "previewData":[
+        {
+            "docNum": "10814",
+            "tranType": "发票",
+            "internalId": "25639",
+            "customerName": "北京一般纳税公司01",
+            "docDate": "20180201",
+            "lineQuantity": 3,
+            "taxRegisNum": "123456789010001",
+            "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+            "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+            "remark": "",
+            "itemNameForSale": "",
+            "message": "",
+            "amount": 5720.99,
+            "afterdiscountamt": 5720.99,
+            "vatlineQuantity": 3,
+            "status": "",
+            "item": [
+                {
+                    "itemName": "思科CiscoPhone 7970",
+                    "model": "7970型号",
+                    "uom": "台",
+                    "quantity": 1.0,
+                    "unitPrice": 5600.99,
+                    "amount": 5600.99,
+                    "taxRate": 0.17,
+                    "discountAmount": 0
+                },
+                {
+                    "itemName": "运费",
+                    "model": "",
+                    "uom": "",
+                    "quantity": 1.0,
+                    "unitPrice": 100.0,
+                    "amount": 100.0,
+                    "taxRate": 0.17,
+                    "discountAmount": 0
+                },
+                {
+                    "itemName": "手续费",
+                    "model": "",
+                    "uom": "",
+                    "quantity": 1.0,
+                    "unitPrice": 20.0,
+                    "amount": 20.0,
+                    "taxRate": 0.17,
+                    "discountAmount": 0
+                }
+            ],
+            "discountAmount": 0
+        },
+        {
+            "docNum": "10815",
+            "tranType": "贷项通知单",
+            "internalId": "25640",
+            "customerName": "北京一般纳税公司01",
+            "docDate": "20180201",
+            "lineQuantity": 3,
+            "taxRegisNum": "123456789010001",
+            "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+            "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+            "remark": "",
+            "itemNameForSale": "",
+            "message": "该发票无红字发票信息表编号或备注栏格式不正确。",
+            "amount": -5720.99,
+            "afterdiscountamt": -5720.99,
+            "vatlineQuantity": 3,
+            "status": "",
+            "item": [
+                {
+                    "itemName": "思科CiscoPhone 7970",
+                    "model": "7970型号",
+                    "uom": "台",
+                    "quantity": -1.0,
+                    "unitPrice": 5600.99,
+                    "amount": -5600.99,
+                    "taxRate": 0.17,
+                    "discountAmount": 0
+                },
+                {
+                    "itemName": "运费",
+                    "model": "",
+                    "uom": "",
+                    "quantity": -1.0,
+                    "unitPrice": 100.0,
+                    "amount": -100.0,
+                    "taxRate": 0.17,
+                    "discountAmount": 0
+                },
+                {
+                    "itemName": "手续费",
+                    "model": "",
+                    "uom": "",
+                    "quantity": -1.0,
+                    "unitPrice": 20.0,
+                    "amount": -20.0,
+                    "taxRate": 0.17,
+                    "discountAmount": 0
+                }
+            ],
+            "discountAmount": 0
+        }
+    ]
+  },
+  "test_case_19_5_2_3": {
+    "subsidiary": "北京VAT",
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票",
+      "datefrom": "2/1/2018",
+      "dateto": "2/1/2018",
+      "docNumFrom": "10816",
+      "docNumTo": "10817",
+      "customer": "北京一般纳税公司01"
+    },
+    "data":[
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "cashsale",
+          "externalid": "CS10816",
+          "tranid": "10816",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2",
+            "price": "Custom",
+            "amount": "3000"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2",
+            "price": "Custom",
+            "amount": "4000"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2",
+            "price": "Custom",
+            "amount": "5000"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2",
+            "price": "Custom",
+            "amount": "6000"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2",
+            "price": "Custom",
+            "amount": "7000"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2",
+            "price": "Custom",
+            "amount": "8000"
+          },
+          {
+            "item": "联想ThinkPad T460",
+            "quantity": "2",
+            "price": "Custom",
+            "amount": "9000"
+          }
+        ]
+      },
+      {
+        "main": {
+          "entity": "北京一般纳税公司01",
+          "trantype": "cashrefund",
+          "externalid": "CR10817",
+          "tranid": "10817",
+          "trandate": "2/1/2018",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "previewData":[
+      {
+          "docNum": "10816",
+          "tranType": "现金交易",
+          "internalId": "25570",
+          "customerName": "北京一般纳税公司01",
+          "docDate": "20180201",
+          "lineQuantity": 9,
+          "taxRegisNum": "123456789010001",
+          "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+          "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+          "remark": "",
+          "itemNameForSale": "详见销货清单",
+          "message": "",
+          "amount": 68802.97,
+          "afterdiscountamt": 68802.97,
+          "vatlineQuantity": 9,
+          "status": "",
+          "item": [
+              {
+                  "itemName": "思科CiscoPhone 7970",
+                  "model": "7970型号",
+                  "uom": "台",
+                  "quantity": 1.0,
+                  "unitPrice": 5600.99,
+                  "amount": 5600.99,
+                  "taxRate": 0.17,
+                  "discountAmount": 0
+              },
+              {
+                  "itemName": "联想ThinkPad T460",
+                  "model": "T460型号",
+                  "uom": "Meter",
+                  "quantity": 2.0,
+                  "unitPrice": 10600.99,
+                  "amount": 21201.98,
+                  "taxRate": 0.17,
+                  "discountAmount": 0
+              },
+              {
+                  "itemName": "联想ThinkPad T460",
+                  "model": "T460型号",
+                  "uom": "Meter",
+                  "quantity": 2.0,
+                  "unitPrice": 1500.0,
+                  "amount": 3000.0,
+                  "taxRate": 0.17,
+                  "discountAmount": 0
+              },
+              {
+                  "itemName": "联想ThinkPad T460",
+                  "model": "T460型号",
+                  "uom": "Meter",
+                  "quantity": 2.0,
+                  "unitPrice": 2000.0,
+                  "amount": 4000.0,
+                  "taxRate": 0.17,
+                  "discountAmount": 0
+              },
+              {
+                  "itemName": "联想ThinkPad T460",
+                  "model": "T460型号",
+                  "uom": "Meter",
+                  "quantity": 2.0,
+                  "unitPrice": 2500.0,
+                  "amount": 5000.0,
+                  "taxRate": 0.17,
+                  "discountAmount": 0
+              },
+              {
+                  "itemName": "联想ThinkPad T460",
+                  "model": "T460型号",
+                  "uom": "Meter",
+                  "quantity": 2.0,
+                  "unitPrice": 3000.0,
+                  "amount": 6000.0,
+                  "taxRate": 0.17,
+                  "discountAmount": 0
+              },
+              {
+                  "itemName": "联想ThinkPad T460",
+                  "model": "T460型号",
+                  "uom": "Meter",
+                  "quantity": 2.0,
+                  "unitPrice": 3500.0,
+                  "amount": 7000.0,
+                  "taxRate": 0.17,
+                  "discountAmount": 0
+              },
+              {
+                  "itemName": "联想ThinkPad T460",
+                  "model": "T460型号",
+                  "uom": "Meter",
+                  "quantity": 2.0,
+                  "unitPrice": 4000.0,
+                  "amount": 8000.0,
+                  "taxRate": 0.17,
+                  "discountAmount": 0
+              },
+              {
+                  "itemName": "联想ThinkPad T460",
+                  "model": "T460型号",
+                  "uom": "Meter",
+                  "quantity": 2.0,
+                  "unitPrice": 4500.0,
+                  "amount": 9000.0,
+                  "taxRate": 0.17,
+                  "discountAmount": 0
+              }
+          ],
+          "discountAmount": 0
+      },
+      {
+          "docNum": "10817",
+          "tranType": "现金交易退款",
+          "internalId": "25571",
+          "customerName": "北京一般纳税公司01",
+          "docDate": "20180201",
+          "lineQuantity": 1,
+          "taxRegisNum": "123456789010001",
+          "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+          "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+          "remark": "",
+          "itemNameForSale": "",
+          "message": "该发票无红字发票信息表编号或备注栏格式不正确。",
+          "amount": -5600.99,
+          "afterdiscountamt": -5600.99,
+          "vatlineQuantity": 1,
+          "status": "",
+          "item": [
+              {
+                  "itemName": "思科CiscoPhone 7970",
+                  "model": "7970型号",
+                  "uom": "台",
+                  "quantity": -1.0,
+                  "unitPrice": 5600.99,
+                  "amount": -5600.99,
+                  "taxRate": 0.17,
+                  "discountAmount": 0
+              }
+          ],
+          "discountAmount": 0
+      }
+  ]
+  }
+}

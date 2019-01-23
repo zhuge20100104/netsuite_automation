@@ -1,0 +1,45 @@
+{
+  "labels" : {
+    "tabLabel": "中国增值税",
+    "fieldLabel" : "中国增值税发票最高开票限额"
+  },
+  "test_case_2_3_3": {
+    "main": {
+      "entity":"北京一般纳税公司01",
+      "entitytype": "customer",
+      "subsidiary":"北京VAT",
+      "trandate": "6/27/2016",
+      "postingperiod": "Jun 2016",
+      "location": "海淀",
+      "memo": "test_case_2_3_3"
+    },
+    "item": [
+      {
+        "item": "思科CiscoPhone 7970",
+        "quantity": "1",
+        "amount": "5,600.99",
+        "taxcode": "VAT_CN:CN-VATOUT17"
+      }
+    ]
+  },
+  "test_case_2_3_4": {
+    "main": {
+      "entity":"北京一般纳税公司01",
+      "entitytype": "customer",
+      "subsidiary":"北京VAT",
+      "trandate": "6/27/2016",
+      "postingperiod": "Jun 2016",
+      "location": "海淀",
+      "memo": "test_case_2_3_4"
+    },
+    "item": [
+      {
+        "item": "思科CiscoPhone 7970",
+        "quantity": "1",
+        "amount": "5,600.99",
+        "taxcode": "VAT_CN:CN-VATOUT17"
+      }
+    ]
+  }
+
+}

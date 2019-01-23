@@ -1,0 +1,464 @@
+{
+  "test case 6.2.1": {
+    "data": [
+      {
+        "main": {
+          "id": "6.2.1",
+          "trantype": "check",
+          "entity": "CN GL Automation Vendor",
+          "trandate": "2/1/2018",
+          "postingperiod": "Feb 2018",
+          "account": "10020106 银行存款 : 人民币 : 招行T1",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "memo": "6.2.1"
+        },
+        "expense": [
+          {
+            "account": "6150 Office Expense",
+            "amount": "200",
+            "taxcode": "VAT_CN:UNDEF-CN"
+          }
+        ]
+      }
+    ],
+    "ui": {
+        "main": {
+          "trantype": "journalentry",
+          "trandate": "2/1/2018",
+          "postingperiod": "Feb 2018"
+        }
+      },
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Feb 2018",
+      "periodTo": "Feb 2018"
+    },
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "trandate": "2/1/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "10020106 银行存款 : 人民币 : 招行T1",
+            "funcCcyDebit":"",
+            "funcCcyCredit":"200.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyDebit":"200.00",
+            "funcCcyCredit":""
+          }
+        ]
+      },
+      "voucher2": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment",
+          "trandate": "2/1/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "10020106 银行存款 : 人民币 : 招行T1",
+            "funcCcyDebit":"200.00",
+            "funcCcyCredit":""
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyDebit":"",
+            "funcCcyCredit":"200.00"
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.2.2": {
+    "data": [
+      {
+        "main": {
+          "id": "6.2.2.1",
+          "trantype": "customerdeposit",
+          "customer": "CN GL Automation Customer",
+          "trandate": "2/2/2018",
+          "postingperiod": "Feb 2018",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "payment": "1000",
+          "memo": "deposit_6.2.2",
+          "custbody_cseg_cn_cfi": ""
+        }
+      },
+      {
+        "main": {
+          "id": "6.2.2.2",
+          "trantype": "customerrefund",
+          "customer": "CN GL Automation Customer",
+          "trandate": "2/2/2018",
+          "postingperiod": "Feb 2018",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "paymentmethod": "Cash",
+          "memo": "refund_6.2.2",
+          "custbody_cseg_cn_cfi": ""
+        },
+        "deposit": [
+          {
+            "refid": "6.2.2.1",
+            "amount": "1000"
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id": "6.2.2_3",
+          "trantype": "JOURNAL_ENTRY",
+          "trandate": "2/2/2018",
+          "postingperiod": "Feb 2018"
+        }
+      }
+    ],
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Feb 2018"
+    },
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "GL Impact Adjustment"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "1090 Undeposited Funds",
+            "funcCcyDebit":"",
+            "funcCcyCredit":"1,000.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "2200 Customer Deposits",
+            "funcCcyDebit":"1,000.00",
+            "funcCcyCredit":""
+          }
+        ]
+      },
+      "voucher2": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "customerdeposit"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "1090 Undeposited Funds",
+            "funcCcyDebit":"1,000.00",
+            "funcCcyCredit":""
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "2200 Customer Deposits",
+            "funcCcyDebit":"",
+            "funcCcyCredit":"1,000.00"
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.2.3": {
+    "data": [
+      {
+        "main": {
+          "id": "6.2.3",
+          "trantype": "check",
+          "entity": "CN GL Automation Vendor",
+          "trandate": "2/3/2018",
+          "postingperiod": "Feb 2018",
+          "account": "10020106 银行存款 : 人民币 : 招行T1",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "memo": "6.2.3",
+          "custbody_cseg_cn_cfi": ""
+        },
+        "expense": [
+          {
+            "account": "6150 Office Expense",
+            "amount": "200",
+            "taxcode": "VAT_CN:UNDEF-CN",
+            "custcol_cseg_cn_cfi": "Cash paid to and for employees"
+          }
+        ]
+      }
+    ],
+    "ui": {
+      "main": {
+        "trantype": "journalentry",
+        "trandate": "2/3/2018",
+        "postingperiod": "Feb 2018"
+      }
+    },
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Feb 2018",
+      "periodTo": "Feb 2018"
+    },
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "Check",
+          "trandate": "2/3/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "10020106 银行存款 : 人民币 : 招行T1",
+            "funcCcyDebit":"",
+            "funcCcyCredit":"200.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyDebit":"200.00",
+            "funcCcyCredit":""
+          }
+        ]
+      },
+      "voucher2": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "Journal",
+          "trandate": "2/3/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "10020106 银行存款 : 人民币 : 招行T1",
+            "funcCcyDebit":"200.00",
+            "funcCcyCredit":""
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "6150 Office Expense",
+            "funcCcyDebit":"",
+            "funcCcyCredit":"200.00"
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.2.4": {
+    "data": [
+      {
+        "main": {
+          "id": "6.2.4.1",
+          "trantype": "customerdeposit",
+          "customer": "CN GL Automation Customer",
+          "trandate": "2/4/2018",
+          "postingperiod": "Feb 2018",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "payment": "1000",
+          "memo": "deposit_6.2.4",
+          "custbody_cseg_cn_cfi": ""
+        }
+      },
+      {
+        "main": {
+          "id": "6.2.4.2",
+          "trantype": "customerrefund",
+          "customer": "CN GL Automation Customer",
+          "trandate": "2/4/2018",
+          "postingperiod": "Feb 2018",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "paymentmethod": "Cash",
+          "memo": "refund_6.2.4",
+          "custbody_cseg_cn_cfi": ""
+        },
+        "deposit": [
+          {
+            "refid": "6.2.4.1",
+            "amount": "1000"
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id": "6.2.4_3",
+          "trantype": "JOURNAL_ENTRY",
+          "trandate": "2/4/2018",
+          "postingperiod": "Feb 2018"
+        }
+      }
+    ],
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Feb 2018",
+      "periodTo": "Feb 2018"
+    },
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "customerdeposit",
+          "trandate": "2/4/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "1090 Undeposited Funds",
+            "funcCcyCredit":"",
+            "funcCcyDebit":"1,000.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "2200 Customer Deposits",
+            "funcCcyCredit":"1,000.00",
+            "funcCcyDebit":""
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.3.1": {
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Feb 2018",
+      "periodTo": "Feb 2018"
+    },
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "trandate": "2/5/2018",
+          "tranType": "InvReval"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "10020106 银行存款 : 人民币 : 招行T1",
+            "funcCcyDebit":"0.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "1200 Inventory",
+            "funcCcyCredit":"0.00"
+          },
+          {
+            "lineNum": 3,
+            "acctDesp": "1200 Inventory",
+            "funcCcyCredit":"0.00"
+          }
+        ]
+      }
+    }
+  },
+  "test case 6.4.1": {
+    "data": [
+      {
+        "main": {
+          "trantype": "journalentry",
+          "subsidiary": "Parent Company : China GL BU",
+          "trandate": "2/6/2018",
+          "postingperiod": "Feb 2018",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "approvalstatus": "Approved"
+        },
+        "line": [
+          {
+            "account": "10020106 银行存款 : 人民币 : 招行T1",
+            "credit": "0"
+          },
+          {
+            "account": "1100 Accounts Receivable",
+            "debit": "0"
+          }
+        ]
+      },
+      {
+        "main": {
+          "trantype": "journalentry",
+          "subsidiary": "Parent Company : China GL BU",
+          "trandate": "2/7/2018",
+          "postingperiod": "Feb 2018",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "approvalstatus": "Approved",
+        },
+        "line": [
+          {
+            "account": "10020106 银行存款 : 人民币 : 招行T1",
+            "credit": "0"
+          },
+          {
+            "account": "1100 Accounts Receivable",
+            "debit": "0"
+          }
+        ]
+      }
+    ],
+    "label": {
+      "subsidiary": "Parent Company : China GL BU",
+      "periodFrom": "Feb 2018",
+      "periodTo": "Feb 2018"
+    },
+    "expect": {
+      "voucher1": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "Journal",
+          "trandate": "2/6/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "10020106 银行存款 : 人民币 : 招行T1",
+            "funcCcyCredit":"",
+            "funcCcyDebit":"0.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "1100 Accounts Receivable",
+            "funcCcyCredit":"0.00",
+            "funcCcyDebit":""
+          }
+        ]
+      },
+      "voucher2": {
+        "expectedHeader": {
+          "subsidiary": "China GL BU",
+          "tranType": "Journal",
+          "trandate": "2/7/2018"
+        },
+        "expectedBody": [
+          {
+            "lineNum": 1,
+            "acctDesp": "10020106 银行存款 : 人民币 : 招行T1",
+            "funcCcyCredit":"",
+            "funcCcyDebit":"0.00"
+          },
+          {
+            "lineNum": 2,
+            "acctDesp": "1100 Accounts Receivable",
+            "funcCcyCredit":"0.00",
+            "funcCcyDebit":""
+          }
+        ]
+      }
+    }
+  }
+}
+
+

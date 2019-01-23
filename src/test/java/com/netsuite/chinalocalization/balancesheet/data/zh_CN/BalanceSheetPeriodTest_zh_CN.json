@@ -1,0 +1,882 @@
+{
+
+  "test_case_8_5_1_1": {
+    "subsidiary": {
+      "name": "China BlSheet 03",
+      "fiscalcalendar": "Standard Fiscal Calendar"
+    },
+    "filter": {
+      "name": "中国资产负债表（China BISheet 03)",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "FY 2013"
+        },
+        {
+          "label": "Unit",
+          "text": "万元"
+        }
+      ]
+    },
+    "nonperiodmessage": "未对此财政日历指定 上一期 >。 请依次转到““设置”>“会计”>“管理会计期间””，然后设置或指定所需期间。"
+  },
+
+  "test_case_10_1_1": {
+    "subsidiary": {
+      "name": "Parent Company",
+      "fiscalcalendar": "No Period Calendar"
+    }
+  },
+
+  "test_case_10_2_5":{
+    "subsidiary": {
+      "name": "China BlSheet 03",
+      "fiscalcalendar": "Oracle Fiscal Calendar"
+    },
+    "blsReport":{
+      "name": "中国资产负债表（China BISheet 03)",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "May 2017"
+        },
+        {
+          "label": "Unit",
+          "text": "Unit"
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "货币资金"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应收账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total current assets"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "固定资产"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total non-current assets"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total assets"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应付账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total current liabilities"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total non-current liabilities"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total liabilities"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total owner's equity"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total liabilities and owner's equity"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "Closing Balance"
+        },
+        {
+          "columnHeader": "Opening Balance"
+        }
+      ]
+    },
+    "savedReport": {
+      "name": "中国资产负债表（China BISheet 03)",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "May 2017"
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "货币资金"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应收账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "流动资产合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "固定资产"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "非流动资产合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "资产总计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应付账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "流动负债合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "非流动负债合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "负债合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "所有者权益（或股东权益）合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "负债和所有者权益（或股东权益）总计"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "期末余额 (AS OF MAY 2017)"
+        },
+        {
+          "columnHeader": "期初余额 (AS OF APR 2017)"
+        }
+      ]
+    }
+  },
+  "test_case_10_1_3": {
+    "subsidiary": {
+      "name": "Parent Company",
+      "fiscalcalendar": "Standard Fiscal Calendar"
+    },
+
+    "test_case_10_2_7":{
+      "subsidiary": {
+        "name": "China BlSheet 03",
+        "fiscalcalendar": "Oracle Fiscal Calendar"
+      },
+      "blsReport":{
+        "name": "中国资产负债表（China BISheet 03)",
+        "standardFilters": [
+          {
+            "label": "Subsidiary",
+            "text": "China BlSheet 03"
+          },
+          {
+            "label": "As of",
+            "text": "Jun 2017"
+          },
+          {
+            "label": "Unit",
+            "text": "Unit"
+          }
+        ],
+        "rows": [
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "货币资金"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "应收账款"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total current assets"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "固定资产"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total non-current assets"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total assets"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "应付账款"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total current liabilities"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total non-current liabilities"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total liabilities"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total owner's equity"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total liabilities and owner's equity"
+          }
+        ],
+        "columns": [
+          {
+            "columnHeader": "Closing Balance"
+          },
+          {
+            "columnHeader": "Opening Balance"
+          }
+        ]
+      },
+      "savedReport": {
+        "name": "中国资产负债表（China BISheet 03)",
+        "standardFilters": [
+          {
+            "label": "Subsidiary",
+            "text": "China BlSheet 03"
+          },
+          {
+            "label": "As of",
+            "text": "Jun 2017"
+          }
+        ],
+        "rows": [
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "货币资金"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "应收账款"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "流动资产合计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "固定资产"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "非流动资产合计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "资产总计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "应付账款"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "流动负债合计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "非流动负债合计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "负债合计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "所有者权益（或股东权益）合计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "负债和所有者权益（或股东权益）总计"
+          }
+        ],
+        "columns": [
+          {
+            "columnHeader": "期末余额 (AS OF JUN 2017)"
+          },
+          {
+            "columnHeader": "期初余额 (AS OF MAY 2017)"
+          }
+        ]
+      }
+    },
+
+    "test_case_10_2_8":{
+      "subsidiary": {
+        "name": "China BlSheet 03",
+        "fiscalcalendar": "Oracle Fiscal Calendar"
+      },
+      "blsReport":{
+        "name": "中国资产负债表（China BISheet 03)",
+        "standardFilters": [
+          {
+            "label": "Subsidiary",
+            "text": "China BlSheet 03"
+          },
+          {
+            "label": "As of",
+            "text": "FY 2018"
+          },
+          {
+            "label": "Unit",
+            "text": "Unit"
+          }
+        ],
+        "rows": [
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "货币资金"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "应收账款"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total current assets"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "固定资产"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total non-current assets"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total assets"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "应付账款"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total current liabilities"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total non-current liabilities"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total owner's equity"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "Total liabilities and owner's equity"
+          }
+        ],
+        "columns": [
+          {
+            "columnHeader": "Closing Balance"
+          },
+          {
+            "columnHeader": "Opening Balance"
+          }
+        ]
+      },
+      "savedReport": {
+        "name": "中国资产负债表（China BISheet 03)",
+        "standardFilters": [
+          {
+            "label": "Subsidiary",
+            "text": "China BlSheet 03"
+          },
+          {
+            "label": "As of",
+            "text": "FY 2018"
+          }
+        ],
+        "rows": [
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "货币资金"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "应收账款"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "流动资产合计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "固定资产"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "非流动资产合计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "资产总计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "应付账款"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "流动负债合计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "非流动负债合计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "所有者权益（或股东权益）合计"
+          },
+          {
+            "columnHeader": "FINANCIAL ROW",
+            "text": "负债和所有者权益（或股东权益）总计"
+          }
+        ],
+        "columns": [
+          {
+            "columnHeader": "期末余额 (AS OF MAY 2018)"
+          },
+          {
+            "columnHeader": "期初余额 (AS OF MAY 2017)"
+          }
+        ]
+      }
+    }
+  },
+
+  "test_case_10_2_7":{
+    "subsidiary": {
+      "name": "China BlSheet 03",
+      "fiscalcalendar": "Oracle Fiscal Calendar"
+    },
+    "blsReport":{
+      "name": "中国资产负债表（China BISheet 03)",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "Jun 2017"
+        },
+        {
+          "label": "Unit",
+          "text": "Unit"
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "货币资金"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应收账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total current assets"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "固定资产"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total non-current assets"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total assets"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应付账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total current liabilities"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total non-current liabilities"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total liabilities"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total owner's equity"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total liabilities and owner's equity"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "Closing Balance"
+        },
+        {
+          "columnHeader": "Opening Balance"
+        }
+      ]
+    },
+    "savedReport": {
+      "name": "中国资产负债表（China BISheet 03)",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "Jun 2017"
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "货币资金"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应收账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "流动资产合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "固定资产"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "非流动资产合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "资产总计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应付账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "流动负债合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "非流动负债合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "负债合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "所有者权益（或股东权益）合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "负债和所有者权益（或股东权益）总计"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "期末余额 (AS OF JUN 2017)"
+        },
+        {
+          "columnHeader": "期初余额 (AS OF MAY 2017)"
+        }
+      ]
+    }
+  },
+
+  "test_case_10_2_8":{
+    "subsidiary": {
+      "name": "China BlSheet 03",
+      "fiscalcalendar": "Oracle Fiscal Calendar"
+    },
+    "blsReport":{
+      "name": "中国资产负债表（China BISheet 03)",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "FY 2018"
+        },
+        {
+          "label": "Unit",
+          "text": "Unit"
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "货币资金"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应收账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total current assets"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "固定资产"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total non-current assets"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total assets"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应付账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total current liabilities"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total non-current liabilities"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total owner's equity"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "Total liabilities and owner's equity"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "Closing Balance"
+        },
+        {
+          "columnHeader": "Opening Balance"
+        }
+      ]
+    },
+    "savedReport": {
+      "name": "中国资产负债表（China BISheet 03)",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "China BlSheet 03"
+        },
+        {
+          "label": "As of",
+          "text": "FY 2018"
+        }
+      ],
+      "rows": [
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "货币资金"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应收账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "流动资产合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "固定资产"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "非流动资产合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "资产总计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "应付账款"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "流动负债合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "非流动负债合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "所有者权益（或股东权益）合计"
+        },
+        {
+          "columnHeader": "FINANCIAL ROW",
+          "text": "负债和所有者权益（或股东权益）总计"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "期末余额 (AS OF MAY 2018)"
+        },
+        {
+          "columnHeader": "期初余额 (AS OF MAY 2017)"
+        }
+      ]
+    }
+  },
+
+  "test_case_4_3_1_1_1": {
+    "filter": {
+      "reportName": "中国资产负债表（China BISheet 03)case41",
+      "subsidiary": "China BlSheet 03",
+      "asof": "Jun 2017",
+      "unit": "元"
+    },
+    "expected": {
+      "filename": "资产负债表.xls",
+      "reportheader":{
+        "title": {
+          "row": 0,
+          "col": 0,
+          "text": "资产负债表"
+        },
+        "formname": {
+          "row": 1,
+          "col": 2,
+          "text": "会企01表"
+        },
+        "preparedby": {
+          "row": 2,
+          "col": 0,
+          "text": "编制单位: China BlSheet 03"
+        },
+        "period": {
+          "row": 2,
+          "col": 3,
+          "text": "6/30/2017"
+        },
+        "currency": {
+          "row": 2,
+          "col": 5,
+          "text":"单位: CNY/元"
+        }
+      },
+      "tablestartrow":3,
+      "tableheader": ["资产","行次","期末余额","期初余额","负债和所有者权益（或股东权益）","行次","期末余额","期初余额"],
+      "tabledata": [
+        ["流动资产","1","", "", "流动负债","9", "", ""],
+        ["流动资产合计","2","", "", "流动负债合计","10", "",""],
+        ["非流动资产","3","","","非流动负债","11","",""],
+        ["非流动资产合计","4","", "", "非流动负债合计","12", "", ""],
+        ["","5","", "", "负债合计","13","",""],
+        ["","6","","","所有者权益（或股东权益）","14","",""],
+        ["","7","","","所有者权益（或股东权益）合计","15","",""],
+        ["资产总计","8","","","负债和所有者权益（或股东权益）总计","16","",""]
+      ]
+    }
+  },
+
+  "test_case_6_3_1_2_1": {
+    "filter": {
+      "reportName": "中国资产负债表（China BISheet 03)",
+      "subsidiary": "China BlSheet 03",
+      "asof": "Jun 2017",
+      "unit": "万元"
+    },
+    "expected": {
+      "filename": "资产负债表.xls",
+      "reportheader":{
+        "title": {
+          "row": 0,
+          "col": 0,
+          "text": "资产负债表"
+        },
+        "formname": {
+          "row": 1,
+          "col": 2,
+          "text": "会企01表"
+        },
+        "preparedby": {
+          "row": 2,
+          "col": 0,
+          "text": "编制单位: China BlSheet 03"
+        },
+        "period": {
+          "row": 2,
+          "col": 3,
+          "text": "6/30/2017"
+        },
+        "currency": {
+          "row": 2,
+          "col": 5,
+          "text":"单位: CNY/万元"
+        }
+      },
+      "tablestartrow":3,
+      "tableheader": ["资产","行次","期末余额","期初余额","负债和所有者权益（或股东权益）","行次","期末余额","期初余额"]
+    }
+  }
+
+}

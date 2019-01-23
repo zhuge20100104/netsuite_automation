@@ -1,0 +1,24 @@
+2018-12-02 16:12:22,689 [INFO ] [com.netsuite.testautomation.junit.reporting.SuiteLogger$1] - Start of: com.netsuite.chinalocalization.vhls.VHLSPrintTest
+2018-12-02 16:12:23,502 [INFO ] [com.netsuite.testautomation.junit.runners.SuiteSetupRule] - Start of: SuiteSetup(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 16:12:31,063 [INFO ] [org.apache.log4j.Category$info] - Navigated to: https://system.netsuite.com/app/login/secure/enterpriselogin.nl?whence=
+2018-12-02 16:12:43,133 [INFO ] [com.netsuite.testautomation.aut.NetSuiteApp] - Logged in successfully.
+2018-12-02 16:12:43,325 [INFO ] [com.netsuite.testautomation.aut.NetSuiteApp] - Logged in successfully.
+2018-12-02 16:12:44,084 [INFO ] [com.netsuite.testautomation.aut.NetSuiteApp] - Page title: 主页 - NetSuite (CN VAT Input Tax Integration QA Testing_OW)
+2018-12-02 16:12:44,461 [INFO ] [com.netsuite.testautomation.junit.runners.SuiteSetupRule] - End of: SuiteSetup(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 16:12:44,492 [INFO ] [com.netsuite.testautomation.junit.reporting.TestLogger] - Start of: test_8_1_2(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 16:12:44,852 [INFO ] [org.apache.log4j.Category$info] - Start to Execute Action: navigateToPage
+2018-12-02 16:12:47,347 [INFO ] [com.netsuite.testautomation.junit.runners.SuiteSetupRule] - Start of: SuiteTeardown(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 16:12:50,241 [INFO ] [com.netsuite.testautomation.junit.runners.SuiteSetupRule] - End of: SuiteTeardown(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 16:12:50,257 [ERROR] [com.netsuite.testautomation.junit.reporting.TestLogger] - Invoke method failed: [com.netsuite.base.page.jsondriver.JPageBase.navigateToPage]
+net.qaautomation.exceptions.TestCaseException: Invoke method failed: [com.netsuite.base.page.jsondriver.JPageBase.navigateToPage]
+	at com.netsuite.base.page.actions.utils.ActionUtils.invokeMethod(ActionUtils.groovy:95)
+	at com.netsuite.base.page.actions.utils.ActionUtils$invokeMethod$2.call(Unknown Source)
+	at com.netsuite.base.page.actions.CommonAction.execute(CommonAction.groovy:86)
+	at com.netsuite.base.page.actions.IAction$execute.call(Unknown Source)
+	at com.netsuite.base.JBaseAppTestSuite.executeAction(JBaseAppTestSuite.groovy:84)
+	at com.netsuite.base.JBaseAppTestSuite$_executeCase_closure2.doCall(JBaseAppTestSuite.groovy:56)
+	at com.netsuite.base.JBaseAppTestSuite.executeCase(JBaseAppTestSuite.groovy:55)
+	at com.netsuite.base.JBaseAppTestSuite$executeCase$0.callCurrent(Unknown Source)
+	at com.netsuite.chinalocalization.vhls.VHLSPrintTest.test_8_1_2(VHLSPrintTest.groovy:31)
+2018-12-02 16:12:50,257 [INFO ] [com.netsuite.testautomation.junit.reporting.TestLogger] - End of: test_8_1_2(com.netsuite.chinalocalization.vhls.VHLSPrintTest)
+2018-12-02 16:12:50,303 [INFO ] [com.netsuite.testautomation.junit.reporting.SuiteLogger$1] - End of: com.netsuite.chinalocalization.vhls.VHLSPrintTest

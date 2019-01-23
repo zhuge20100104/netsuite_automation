@@ -1,0 +1,227 @@
+{
+    "test_atbl_mini_permission":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_atbl:customdeploy_sl_cn_atbl"
+                }
+            },
+
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_subsidiary_fs']":"中国 Income",
+                        "custpage_datefrom":"6/10/2016",
+                        "custpage_dateto":"6/10/2016",
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":"",
+                        "sleep" : "10"
+
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "custpage_refresh":{
+                            "value":"刷新",
+                            "disable" : false
+                        },
+                        "custpage_export_excel":{
+                            "value":"导出Excel",
+                            "disable" : false
+                        },
+                        "custpage_export_pdf":{
+                            "value":"导出PDF",
+                            "disable" : false
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "deletefile":"",
+                        "//*[@id='custpage_export_excel']":"",
+                        "waitforload":"",
+                        "sleep" : "10"
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "checkreportfile":"科目余额表"
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_export_pdf']":"",
+                        "waitforload":"",
+                        "sleep" : "10"
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "checkreportfile":"科目余额表"
+                        }
+                    }
+            }
+        ]
+    },
+    "test_sblg_mini_permission":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_sblg:customdeploy_sl_cn_sblg"
+                }
+            },
+
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_subsidiary_fs']":"中国 Income",
+                        "custpage_datefrom":"6/10/2016",
+                        "custpage_dateto":"6/10/2016",
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":"",
+                        "sleep" : "10"
+
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "custpage_refresh":{
+                            "value":"刷新",
+                            "disable" : false
+                        },
+                        "custpage_export_excel":{
+                            "value":"导出Excel",
+                            "disable" : false
+                        },
+                        "custpage_export_pdf":{
+                            "value":"导出PDF",
+                            "disable" : false
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "deletefile":"",
+                        "//*[@id='custpage_export_excel']":"",
+                        "waitforload":"",
+                        "sleep" : "10"
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "checkreportfile":"明细账"
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_export_pdf']":"",
+                        "waitforload":"",
+                        "sleep" : "10"
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "checkreportfile":"明细账"
+                    }
+                }
+            }
+        ]
+    },
+    "test_cbjl_mini_permission":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_cbjl:customdeploy_sl_cn_cbjl"
+                }
+            },
+
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_subsidiary_fs']":"中国 Income",
+                        "custpage_datefrom":"6/10/2016",
+                        "custpage_dateto":"6/10/2016",
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":"",
+                        "sleep" : "10"
+
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "custpage_refresh":{
+                            "value":"刷新",
+                            "disable" : false
+                        },
+                        "custpage_export_excel":{
+                            "value":"导出Excel",
+                            "disable" : false
+                        },
+                        "custpage_export_pdf":{
+                            "value":"导出PDF",
+                            "disable" : false
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "deletefile":"",
+                        "//*[@id='custpage_export_excel']":"",
+                        "waitforload":"",
+                        "sleep" : "10"
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "checkreportfile":"现金银行日记账"
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_export_pdf']":"",
+                        "waitforload":"",
+                        "sleep" : "10"
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "checkreportfile":"现金银行日记账"
+                    }
+                }
+            }
+        ]
+    }
+}

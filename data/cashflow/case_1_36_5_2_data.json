@@ -1,0 +1,37 @@
+{
+  "caseId": "test 1.36.5.2",
+  "data": {
+    "item": [
+      {
+        "lineid": "1",
+        "itemold": "CFS Serialized Inventory Item",
+        "cfsnew": "Other cash payments related to operating activities"
+      },
+      {
+        "lineid": "2",
+        "itemold": "CFS Serialized Inventory Item",
+        "itemnew": "T1 Other Charge for Resale"
+      },
+      {
+        "lineid": "3",
+        "itemold": "Discount Item 10%"
+      }
+    ]
+  },
+  "expected": {
+    "item": [
+      {
+        "cfsold": "",
+        "cfsnew": "Other cash payments related to operating activities"
+      },
+      {
+        "cfsold": "",
+        "cfsnew": "Taxes and surcharges refunds"
+      },
+      {
+        "cfsold": "",
+        "cfsnew": ""
+      }
+    ]
+  }
+}

@@ -1,0 +1,2 @@
+2018-12-02 15:50:38,914 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: SuiteTeardown(com.netsuite.chinalocalization.vat.p2.VATCashSalesCanBeSavedTest)
+2018-12-02 15:50:39,848 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - End of: SuiteTeardown(com.netsuite.chinalocalization.vat.p2.VATCashSalesCanBeSavedTest)

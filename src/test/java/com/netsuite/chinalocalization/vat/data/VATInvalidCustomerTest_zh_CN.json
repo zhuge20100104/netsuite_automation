@@ -1,0 +1,77 @@
+{
+  "test_case_6_4_1_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税普通发票"
+    },
+    "data": [
+      {
+        "main": {
+          "trantype": "customer",
+          "companyname": "VAT Invalid Customer6411",
+          "externalid": "VATCU6411",
+          "subsidiary": "Parent Company : 中国VAT : 北京VAT"
+        }
+      },
+      {
+        "main": {
+          "trantype": "invoice",
+          "entity": "VAT Invalid Customer6411",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "2"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResults": {
+         "tax_reg_num_missing": "发票必须字段 {客户纳税人识别号}缺失。"
+    }
+  },
+  "test_case_6_4_1_3": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票"
+    },
+    "data": [
+      {
+        "main": {
+          "trantype": "customer",
+          "companyname": "VAT Invalid Customer6413",
+          "externalid": "VATCU6413",
+          "subsidiary": "Parent Company : 中国VAT : 北京VAT"
+        }
+      },
+      {
+        "main": {
+          "trantype": "invoice",
+          "entity": "VAT Invalid Customer6413",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1"
+          }
+        ]
+      }
+    ],
+    "expectedResults": {
+      "customer_fields_missing": "发票必须字段 {客户纳税人识别号, 客户开户行及账号, 客户地址、电话}缺失。"
+    }
+  },
+  "test_case_2_12_1": {
+
+      "expectedResults": {
+        "errmsg1": "{客户开户行及账号} 超过100字符长度限制。",
+        "errmsg2" :"{货物名称} 超过92字符长度限制。",
+        "errmsg3" : "{单位} 超过22字符长度限制。",
+        "errmsg4":"点击“取消”停止导出,或点击“确定”继续导出。"
+      }
+  }
+}

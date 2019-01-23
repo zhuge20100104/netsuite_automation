@@ -1,0 +1,10 @@
+{
+  "test_1_3_1_1_8":{
+    "expect":{
+      "defaultTemplate":"单币",
+      "printTemplateLOV":["复币","单币"]
+    }
+
+  }
+
+}

@@ -1,0 +1,399 @@
+{
+    "test_case_8_2_1_1": {
+        "report": {
+            "name": "中国利润表测试Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "一、营业收入"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "本期金额 (JUN 2017)"
+                },
+                {
+                    "columnHeader": "上期金额 (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "编制单位： 中国 Income",
+                "period": "Jun 2017",
+                "currency": "单位： USD/元"
+            }
+        },
+        "filter": {
+            "reportName": "中国利润表测试Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"元"
+        }
+    },
+    "test_case_8_2_1_2": {
+        "report": {
+            "name": "中国利润表测试Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+                {
+                    "label": "Location",
+                    "filterOperator": "IN",
+                    "text": ["中国 Income华北区"]
+                }
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "一、营业收入"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "本期金额 (JUN 2017)"
+                },
+                {
+                    "columnHeader": "上期金额 (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "编制单位： 中国 Income",
+                "period": "Jun 2017",
+                "currency": "单位： USD/元"
+            },
+            "LabelIn4thLine": {
+                "reportHeaderL4Left": "地点： 中国 Income华北区"
+            }
+        },
+        "filter": {
+            "reportName": "中国利润表测试Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"元",
+            "location":"中国 Income华北区"
+        }
+    },
+    "test_case_8_2_1_3": {
+        "report": {
+            "name": "中国利润表测试Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+                {
+                    "label": "Location",
+                    "filterOperator": "IN",
+                    "text": ["中国 Income华北区"]
+                },
+                {
+                    "label": "Department",
+                    "filterOperator": "IN",
+                    "text": ["Income生产部"]
+                }
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "一、营业收入"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "本期金额 (JUN 2017)"
+                },
+                {
+                    "columnHeader": "上期金额 (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "编制单位： 中国 Income",
+                "period": "Jun 2017",
+                "currency": "单位： USD/元"
+            },
+            "LabelIn4thLine": {
+                "reportHeaderL4Left": "地点： 中国 Income华北区",
+                "reportHeaderL4Center": "部门： Income生产部"
+            }
+        },
+        "filter": {
+            "reportName": "中国利润表测试Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"元",
+            "location":"中国 Income华北区",
+            "department":"Income生产部"
+        }
+    },
+    "test_case_8_2_1_4": {
+        "report": {
+            "name": "中国利润表测试Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+                {
+                    "label": "Location",
+                    "filterOperator": "IN",
+                    "text": ["中国 Income华北区"]
+                },
+                {
+                    "label": "Department",
+                    "filterOperator": "IN",
+                    "text": ["Income生产部"]
+                },
+                {
+                    "label": "Class",
+                    "filterOperator": "IN",
+                    "text": ["智能手机"]
+                }
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "一、营业收入"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "本期金额 (JUN 2017)"
+                },
+                {
+                    "columnHeader": "上期金额 (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "编制单位： 中国 Income",
+                "period": "Jun 2017",
+                "currency": "单位： USD/元"
+            },
+            "LabelIn4thLine": {
+                "reportHeaderL4Left": "地点： 中国 Income华北区",
+                "reportHeaderL4Center": "部门： Income生产部",
+                "reportHeaderL4Right": "类别： 智能手机"
+            },
+            "fileNameExcel": "利润表.xls",
+            "fileNamePDF": "利润表.pdf"
+        },
+        "filter": {
+            "reportName": "中国利润表测试Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"元",
+            "location":"中国 Income华北区",
+            "department":"Income生产部",
+            "class": "智能手机"
+        }
+    },
+    "test_case_8_2_1_5": {
+        "report": {
+            "name": "中国利润表测试Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+
+                {
+                    "label": "Department",
+                    "filterOperator": "IN",
+                    "text": ["Income生产部"]
+                },
+                {
+                    "label": "Class",
+                    "filterOperator": "IN",
+                    "text": ["智能手机"]
+                }
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "一、营业收入"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "本期金额 (JUN 2017)"
+                },
+                {
+                    "columnHeader": "上期金额 (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "编制单位： 中国 Income",
+                "period": "Jun 2017",
+                "currency": "单位： USD/元"
+            },
+            "LabelIn4thLine": {
+                "reportHeaderL4Left": "部门： Income生产部",
+                "reportHeaderL4Center": "类别： 智能手机"
+            }
+        },
+        "filter": {
+            "reportName": "中国利润表测试Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"元",
+            "department":"Income生产部",
+            "class": "智能手机"
+        }
+    },
+    "test_case_8_2_1_6": {
+        "report": {
+            "name": "中国利润表测试Month",
+            "standardFilters": [
+                {
+                    "label": "Subsidiary",
+                    "text": "中国 Income"
+                },
+                {
+                    "label": "From",
+                    "text": "Jun 2017"
+                },
+                {
+                    "label": "To",
+                    "text": "Jun 2017"
+                }
+            ],
+            "customFilters": [
+                {
+                    "label": "Class",
+                    "filterOperator": "IN",
+                    "text": ["智能手机"]
+                }
+            ],
+            "rows": [
+                {
+                    "columnHeader": "财务报表",
+                    "text": "一、营业收入"
+                }
+            ],
+            "columns": [
+                {
+                    "columnHeader": "本期金额 (JUN 2017)"
+                },
+                {
+                    "columnHeader": "上期金额 (JUN 2016)"
+                }
+            ]
+        },
+        "expectedResult": {
+            "LabelIn3rdLine":{
+                "preparedBy": "编制单位： 中国 Income",
+                "period": "Jun 2017",
+                "currency": "单位： USD/元"
+            },
+            "LabelIn4thLine": {
+                "reportHeaderL4Left": "类别： 智能手机"
+            }
+        },
+        "filter": {
+            "reportName": "中国利润表测试Month",
+            "subsidiary": "中国 Income",
+            "period": "Jun 2017",
+            "unit":"元",
+            "class": "智能手机"
+        }
+    },
+    "test_case_8_1_1_1": {
+        "expectedResult": {
+            "locations":["中国 Income华北区",
+            "中国 北京",
+            "中国 Income华中区",
+            "中国 上海",
+            "中国 Income华南区"],
+            "departments": ["Income业务部",
+            "Income会计部",
+            "Income生产部",
+            "Income生产部01",
+            "Income生产部02",
+            "Income开发部"],
+            "classes": [
+                "售后支持",
+                "智能手机",
+                "Plus系列",
+                "X系列",
+                "电脑",
+                "穿戴设备",
+                "配件"
+            ],
+            "defaultLocation":"",
+            "defaultDepartment":"",
+            "defaultClass": ""
+        },
+        "filter": {
+            "reportName": "中国利润表测试Month",
+            "subsidiary": "中国 Income"
+        }
+    }
+}
+

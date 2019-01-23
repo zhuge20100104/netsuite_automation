@@ -1,0 +1,680 @@
+{
+  "test case 1.50_Journal_1": {
+    "data": [{
+      "main": {
+        "id": "CFS1.50_Journal_1",
+        "trantype": "journalentry",
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "line": [
+        {
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "200",
+          "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        {
+          "account": "10020119 银行存款 : 人民币 : 工行_M",
+          "debit": "500"
+        },
+        {
+          "account": "1105 Other Receivables",
+          "debit": "300",
+          "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        {
+          "account": "1100 Accounts Receivable",
+          "credit": "1000",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      ]
+    }]
+  },
+  "test case 1.50_Journal_2": {
+    "data": [{
+      "main": {
+        "id": "CFS1.50_Journal_2",
+        "trantype": "journalentry",
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "line": [
+        {
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "200",
+          "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        {
+          "account": "10020119 银行存款 : 人民币 : 工行_M",
+          "debit": "500",
+          "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        {
+          "account": "1105 Other Receivables",
+          "debit": "300"
+        },
+        {
+          "account": "1100 Accounts Receivable",
+          "credit": "1000",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      ]
+    }]
+  },
+  "test case 1.50_Journal_3": {
+    "data": [{
+      "main": {
+        "id": "CFS1.50_Journal_3",
+        "trantype": "journalentry",
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "line": [
+        {
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "200"
+        },
+        {
+          "account": "10020119 银行存款 : 人民币 : 工行_M",
+          "debit": "500"
+        },
+        {
+          "account": "1105 Other Receivables",
+          "debit": "300"
+        },
+        {
+          "account": "1100 Accounts Receivable",
+          "credit": "1000"
+        }
+      ]
+    }]
+  },
+  "test case 1.50_Journal_4": {
+    "data": [{
+      "main": {
+        "id": "CFS1.50_Journal_4",
+        "trantype": "journalentry",
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "line": [
+        {
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "200",
+          "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        {
+          "account": "1090 Undeposited Funds",
+          "debit": "500"
+        },
+        {
+          "account": "1105 Other Receivables",
+          "debit": "300",
+          "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        {
+          "account": "1100 Accounts Receivable",
+          "credit": "1000",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      ]
+    }]
+  },
+  "test case 1.50_Journal_5": {
+    "data": [{
+      "main": {
+        "id": "CFS1.50_Journal_5",
+        "trantype": "journalentry",
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "line": [
+        {
+          "account": "1100 Accounts Receivable",
+          "debit": "100",
+          "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        {
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "200"
+        },
+        {
+          "account": "10020119 银行存款 : 人民币 : 工行_M",
+          "debit": "150",
+          "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        {
+          "account": "1105 Other Receivables",
+          "credit": "150"
+        }
+      ]
+    }]
+  },
+  "test case 1.50_Journal_6": {
+    "data": [{
+      "main": {
+        "id": "CFS1.50_Journal_6",
+        "trantype": "journalentry",
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "line": [
+        {
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "200"
+        },
+        {
+          "account": "10020119 银行存款 : 人民币 : 工行_M",
+          "credit": "200"
+        }
+      ]
+    }]
+  },
+  "test case 1.50_Journal_7": {
+    "data": [{
+      "main": {
+        "id": "CFS1.50_Journal_7",
+        "trantype": "journalentry",
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "line": [
+        {
+          "account": "1100 Accounts Receivable",
+          "debit": "200"
+        },
+        {
+          "account": "1105 Other Receivables",
+          "credit": "200"
+        }
+      ]
+    }]
+  },
+  "test case 1.50_Journal_8": {
+    "data": [{
+      "main": {
+        "id": "CFS1.50_Journal_8",
+        "trantype": "journalentry",
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "line": [
+        {
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "200",
+          "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        {
+          "account": "10020119 银行存款 : 人民币 : 工行_M",
+          "debit": "500",
+          "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        {
+          "account": "1105 Other Receivables",
+          "debit": "300",
+          "custcol_cseg_cn_cfi": "Cash paid for goods and services"
+        },
+        {
+          "account": "1100 Accounts Receivable",
+          "credit": "1000",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      ]
+    }]
+  },
+  "test case 1.50_Intercompany Journal_1": {
+      "main": {
+        "subsidiary": "CFS Validation BU 01",
+        "tosubsidiary": "CFS Validation BU 02",
+        "trandate": "6/27/2016",
+        "postingperiod":"Jun 2016"
+
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "1105 Other Receivables",
+          "credit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "10020118 银行存款 : 人民币 : 建行_M2",
+          "debit": "200"
+        },
+
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "200",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      ]
+  },
+  "test case 1.50_Intercompany Journal_2": {
+      "main": {
+        "subsidiary": "CFS Validation BU 01",
+        "tosubsidiary": "CFS Validation BU 02",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016"
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "1105 Other Receivables",
+          "credit": "200",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "10020118 银行存款 : 人民币 : 建行_M2",
+          "debit": "200"
+        },
+
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "200"
+        }
+      ]
+  },
+  "test case 1.50_Intercompany Journal_3": {
+      "main": {
+        "subsidiary": "CFS Validation BU 01",
+        "tosubsidiary": "CFS Validation BU 02",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016"
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020120 银行存款 : 人民币 : 工行_M1",
+          "credit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1105 Other Receivables",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "200"
+        }
+      ]
+  },
+  "test case 1.50_Intercompany Journal_4": {
+      "main": {
+        "subsidiary": "CFS Validation BU 01",
+        "tosubsidiary": "CFS Validation BU 02",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016"
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "1105 Other Receivables",
+          "credit": "200",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "10020118 银行存款 : 人民币 : 建行_M2",
+          "debit": "200"
+        },
+
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "200"
+        }
+      ]
+  },
+  "test case 1.50_Intercompany Journal_5": {
+      "main": {
+        "subsidiary": "CFS Validation BU 01",
+        "tosubsidiary": "CFS Validation BU 02",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016"
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "1105 Other Receivables",
+          "credit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "10020118 银行存款 : 人民币 : 建行_M2",
+          "debit": "200"
+        },
+
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "200",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      ]
+  },
+  "test case 1.50_Intercompany Journal_6": {
+      "main": {
+        "subsidiary": "CFS Validation BU 01",
+        "tosubsidiary": "CFS Validation BU 02",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016"
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "1105 Other Receivables",
+          "credit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "10020118 银行存款 : 人民币 : 建行_M2",
+          "debit": "200"
+        },
+
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "200"
+        }
+      ]
+  },
+  "test case 1.50_Advanced Intercompany Journal_1": {
+      "main": {
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016"
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "500"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "1105 Other Receivables",
+          "credit": "500",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "1105 Other Receivables",
+          "credit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "10020118 银行存款 : 人民币 : 建行_M2",
+          "debit": "300"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "300",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      ]
+  },
+  "test case 1.50_Advanced Intercompany Journal_2": {
+      "main": {
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016"
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "500"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "1105 Other Receivables",
+          "credit": "500"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "1105 Other Receivables",
+          "credit": "200",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "10020118 银行存款 : 人民币 : 建行_M2",
+          "debit": "300"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "300"
+        }
+      ]
+  },
+  "test case 1.50_Advanced Intercompany Journal_3": {
+      "main": {
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016"
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "500"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "10020119 银行存款 : 人民币 : 工行_M",
+          "credit": "500"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020120 银行存款 : 人民币 : 工行_M1",
+          "credit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1105 Other Receivables",
+          "debit": "300"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "300"
+        }
+      ]
+  },
+  "test case 1.50_Advanced Intercompany Journal_4": {
+      "main": {
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016"
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "500"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "1105 Other Receivables",
+          "credit": "500",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "1105 Other Receivables",
+          "credit": "200",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "10020118 银行存款 : 人民币 : 建行_M2",
+          "debit": "300"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "300"
+        }
+      ]
+  },
+  "test case 1.50_Advanced Intercompany Journal_5": {
+      "main": {
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016"
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "500"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "1105 Other Receivables",
+          "credit": "500",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "1105 Other Receivables",
+          "credit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "10020118 银行存款 : 人民币 : 建行_M2",
+          "debit": "300"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "300",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      ]
+  },
+  "test case 1.50_Advanced Intercompany Journal_6": {
+      "main": {
+        "subsidiary": "CFS Validation BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016"
+      },
+      "line": [
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "10020113 银行存款 : 人民币 : 建行_M",
+          "debit": "500"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU",
+          "account": "1105 Other Receivables",
+          "credit": "500"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "10020117 银行存款 : 人民币 : 建行_M1",
+          "debit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 01",
+          "account": "1105 Other Receivables",
+          "credit": "200"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "10020118 银行存款 : 人民币 : 建行_M2",
+          "debit": "300"
+        },
+        {
+          "linesubsidiary": "CFS Validation BU 02",
+          "account": "1100 Accounts Receivable",
+          "credit": "300"
+        }
+      ]
+  }
+}

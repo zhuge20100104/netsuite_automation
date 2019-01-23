@@ -1,0 +1,154 @@
+{
+    "test_bs_mini_permission":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_blsheet:customdeploy_sl_cn_blsheet"
+                }
+            },
+
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_reportname_fs']":"中国资产负债表（China BISheet 03)",
+                        "//*[@id='custpage_subsidiary_fs']":"China BlSheet 03",
+                        "//*[@id='custpage_asof_fs']":"Jun 2017",
+                        "//*[@id='custpage_unit_fs']":"千元",
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":""
+
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "custpage_refresh":{
+                            "value":"刷新",
+                            "disable" : false
+                        },
+                        "custpage_export_excel":{
+                            "value":"导出Excel",
+                            "disable" : false
+                        },
+                        "custpage_export_pdf":{
+                            "value":"导出PDF",
+                            "disable" : false
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "deletefile":"",
+                        "//*[@id='custpage_export_excel']":"",
+                        "waitforload":""
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "checkreportfile":"资产负债表"
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_export_pdf']":"",
+                        "waitforload":""
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "checkreportfile":"资产负债表",
+                        ".//*[@id='blsheet_data']/tbody/tr[2]/td[1]/b":{
+                            "values":"流动资产"
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "test_is_mini_permission":{
+        "steps":[
+
+            {
+                "navigateToPage":{
+                    "type:scriptId:deployId":"suitelet:customscript_sl_cn_income:customdeploy_sl_cn_income"
+                }
+            },
+
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_reportname_fs']":"中国利润表测试Month",
+                        "//*[@id='custpage_subsidiary_fs']":"中国 Income 03",
+                        "sleep" : "2",
+                        "//*[@id='custpage_refresh']":"",
+                        "waitforload":""
+
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "custpage_refresh":{
+                            "value":"刷新",
+                            "disable" : false
+                        },
+                        "custpage_export_excel":{
+                            "value":"导出Excel",
+                            "disable" : false
+                        },
+                        "custpage_export_pdf":{
+                            "value":"导出PDF",
+                            "disable" : false
+                        }
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "deletefile":"",
+                        "//*[@id='custpage_export_excel']":"",
+                        "waitforload":""
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "checkreportfile":"利润表"
+                    }
+                }
+            },
+            {
+                "actions": {
+                    "data":{
+                        "//*[@id='custpage_export_pdf']":"",
+                        "waitforload":""
+                    }
+                }
+            },
+            {
+                "expects":{
+                    "data":{
+                        "checkreportfile":"利润表",
+
+                        ".//*[@id='incomestatement_data']/tbody/tr[18]/td[2]":{
+                            "values":"17"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

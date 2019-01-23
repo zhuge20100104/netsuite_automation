@@ -1,0 +1,119 @@
+{
+  "defaultUserPreference": {
+    "dateformat": "M/D/YYYY"
+  },
+  "test_case_5_2_1":{
+    "errMsg":"高级PDF/HTML模板 功能没有启用。请访问“设置>公司>启用功能>SuiteCloud”开启该功能。",
+
+    "defaultParam": {
+
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"",
+      "accountto":"",
+      "accountlevel":"至末级"
+    },
+    "filterAfter":{
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"1/1/2016",
+      "dateto":"12/31/2016"
+    }
+  },
+  "test_case_5_3_1":{
+    "errMsg":"请输入一个有效的日期范围。起始日期必须在截止日期前。",
+    "filter": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"4/1/2018",
+      "dateto":"12/31/2017"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"4/1/2018",
+      "dateto":"12/31/2017",
+      "accountfrom":"",
+      "accountto":"",
+      "accountlevel":"至末级"
+    },
+    "filterAfter":{
+      "dateto":"8/31/2018",
+      "datefrom":"8/1/2018"
+    }
+  },
+  "test_case_5_3_2":{
+    "errMsg":"请输入一个有效的日期范围。起始日期必须在截止日期前。",
+    "filter": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"",
+      "dateto":"2/28/2018"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"",
+      "dateto":"2/28/2018",
+      "accountfrom":"",
+      "accountto":"",
+      "accountlevel":"至末级"
+    },
+    "filterAfter":{
+      "datefrom":"2/1/2018",
+      "dateto":"2/28/2018"
+    }
+  },
+  "test_case_5_3_3":{
+    "errMsg":"请输入一个有效的日期范围。起始日期必须在截止日期前。",
+    "filter": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"12/31/2017",
+      "dateto":""
+    },
+    "defaultParam": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"12/31/2017",
+      "dateto":"",
+      "accountfrom":"",
+      "accountto":"",
+      "accountlevel":"至末级"
+    },
+    "filterAfter":{
+      "datefrom":"12/31/2017",
+      "dateto":"2/1/2018"
+    }
+  },
+
+  "test_case_5_4_1":{
+    "errMsg":"请输入一个有效的科目范围。起始科目必须在截止科目前。",
+    "filter": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"608402 - shipment",
+      "accountto":"6081 - office equipments"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"608402 - shipment",
+      "accountto":"",
+      "accountlevel":"至末级"
+    }
+  },
+  "test_case_5_4_2":{
+    "errMsg":"请输入一个有效的科目范围。起始科目必须在截止科目前。",
+    "filter": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"Estimates",
+      "accountto":"608102 - furniture"
+    },
+    "defaultParam": {
+      "subsidiary":"中国 AccountBalance 03",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "accountfrom":"Estimates",
+      "accountto":"",
+      "accountlevel":"至末级"
+    }
+  }
+}

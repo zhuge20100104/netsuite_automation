@@ -1,0 +1,72 @@
+{
+  "inflow": [
+    {
+      "item": "Cash received from sales and services"
+    },
+    {
+      "item": "Taxes and surcharges refunds"
+    },
+    {
+      "item": "Other cash receipts related to operating activities"
+    },
+    {
+      "item": "Cash received from withdraw of investments"
+    },
+    {
+      "item": "Cash received from investment income"
+    },
+    {
+      "item": "Net cash received from disposal of fixed assets, intangible assets and other long-term assets"
+    },
+    {
+      "item": "Net cash received from disposal of subsidiaries and other business units"
+    },
+    {
+      "item": "Other cash receipts related to investing activities"
+    },
+    {
+      "item": "Cash received from investments by others"
+    },
+    {
+      "item": "Cash received from borrowings"
+    },
+    {
+      "item": "Other cash receipts related to other financing activities"
+    }
+  ],
+  "outflow": [
+    {
+      "item": "Cash paid for goods and services"
+    },
+    {
+      "item": "Cash paid to and for employees"
+    },
+    {
+      "item": "Taxes and surcharges cash payments"
+    },
+    {
+      "item": "Other cash payments related to operating activities"
+    },
+    {
+      "item": "Cash paid for fixed assets, intangible assets and other long-term assets"
+    },
+    {
+      "item": "Cash payments for investments"
+    },
+    {
+      "item": "Net cash paid for acquiring subsidiaries and other business units"
+    },
+    {
+      "item": "Other cash payments related to investing activities"
+    },
+    {
+      "item": "Cash repayments for debts"
+    },
+    {
+      "item": "Cash payments for distribution of dividends, profit and interest expenses"
+    },
+    {
+      "item": "Other cash payments related to financing activities"
+    }
+  ]
+}

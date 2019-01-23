@@ -1,0 +1,434 @@
+{
+
+  "test_2_1_1":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+            "//*[@id='custpage_periodfrom_fs']":"Aug 2018",
+            "//*[@id='custpage_periodto_fs']":"Sep 2018",
+            "custpage_datefrom":"8/1/2018",
+            "custpage_dateto":"8/15/2018",
+            "custpage_createdby": ["Molly Feng"],
+            "//*[@id='submitter']":"",
+            "waitforload":""
+
+          }
+        }
+      },
+
+      {
+        "expects":{
+          "data":{
+            "//*[@id='submitter']":{
+              "values":["Refresh"]
+            },
+            "//td[@id='fg_custpage_main_filter_group']/b":{
+              "values":["FILTERS"]
+            }
+          }
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "//td[@id='fg_custpage_main_filter_group']":"",
+            "sleep": "10"
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='custpage_subsidiary_fs']":{
+              "values":["中国 VoucherList"]
+            },
+            "//*[@id='custpage_periodfrom_fs']":{
+              "values" : ["Aug 2018"]
+            },
+            "//*[@id='custpage_periodto_fs']":{
+              "values":["Sep 2018"]
+            },
+            "custpage_datefrom":{
+              "value" : "8/1/2018",
+              "disable" : false,
+              "exist" : true,
+              "trantype": "date"
+            },
+            "custpage_dateto":{
+              "value" : "8/15/2018",
+              "disable" : false,
+              "exist" : true,
+              "trantype": "date"
+            },
+
+            "//*[@id='submitter']":{
+              "values":["Refresh"]
+            }
+          }
+        }
+      }
+    ]
+
+
+  },
+
+
+  "test_2_1_2":{
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+            "//*[@id='custpage_periodfrom_fs']":"FY 2018",
+            "//*[@id='custpage_periodto_fs']":"FY 2018",
+            "custpage_createdby": ["ying huang"],
+            "//*[@id='submitter']":"",
+            "waitforload":""
+
+          }
+        }
+      }
+
+
+    ],
+
+    "sublist_report":{
+      "rows": [
+        {
+          "glnum":"",
+          "memo":"China VoucherList:Journal VL2018060101",
+          "date":"6/1/2018",
+          "docnum":"VL2018060101",
+          "trantype":"Journal",
+          "amount":60000.0,
+          "createdby":"ying huang"
+        },
+        {
+          "glnum":"VL2018Q3000001",
+          "memo":"China VoucherList:Journal VL2018070101",
+          "date":"7/1/2018",
+          "docnum":"VL2018070101",
+          "trantype":"Journal",
+          "amount":70000.0,
+          "createdby":"ying huang"
+        },
+        {
+          "glnum":"VL2018Q3000009",
+          "memo":"China VoucherList:Journal VL2018090101",
+          "date":"9/1/2018",
+          "docnum":"VL2018090101",
+          "trantype":"Journal",
+          "amount":90000.0,
+          "createdby":"ying huang"
+        },
+        {
+          "glnum":"VL2018Q3000010",
+          "memo":"China VoucherList:Journal VL2018100101",
+          "date":"10/1/2018",
+          "docnum":"VL2018100101",
+          "trantype":"Journal",
+          "amount":100000.0,
+          "createdby":"ying huang"
+        }
+      ]
+
+    }
+
+  },
+
+
+  "test_3_1_3": {
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+
+            "custpage_datefrom":"9/1/2018",
+            "custpage_dateto":"8/15/2018",
+            "//*[@id='submitter']":"",
+            "waitforload":""
+
+          }
+        }
+      },
+
+      {
+        "expects":{
+          "data":{
+
+            "//*[@id='submitter']":{
+              "values":["Refresh"]
+            },
+            "dialogs":[
+              {
+                "type":"common",
+                "message":"Please enter a valid date range. The From date must precede the To date."
+              }
+            ]
+          }
+        }
+      }
+
+
+    ]
+  },
+  "test_3_1_6": {
+    "steps":[
+
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_sl_cn_vhls:customdeploy_sl_cn_vhls"
+        }
+      },
+      {
+        "actions": {
+          "data":{
+            "waitforload":"",
+            "//*[@id='custpage_subsidiary_fs']":"中国 VoucherList",
+            "//*[@id='custpage_periodfrom_fs']":"Sep 2018",
+            "//*[@id='custpage_periodto_fs']":"Aug 2018",
+            "//*[@id='submitter']":"",
+            "waitforload":""
+
+          }
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "//*[@id='submitter']":{
+              "values":["Refresh"]
+            },
+
+            "dialogs":[
+              {
+                "type":"common",
+                "message":"Please enter a valid period range. The From period must precede the To period."
+              }
+            ]
+
+          }
+        }
+      }
+
+
+    ]
+  },
+
+  "test_2_1_4":{
+    "steps": [
+      {
+        "navigateToPage":{
+          "url":"/app/accounting/transactions/custinvc.nl"
+        }
+      },
+
+
+
+      {
+        "actions": {
+
+          "data":{
+            "//*[@id='customform_fs']":"Standard Service Invoice",
+            "entity":"2 Mini Cooper",
+            "startdate":"7/1/2018",
+            "values0":{
+              "id":"item",
+              "TAB":"Items",
+
+              "values":[
+                {
+                  "item":"EMEA Service for Resale",
+                  "amount":"1000.00"
+                },
+                {
+                  "item":"EMEA Service for Resale",
+                  "amount":"1000.00"
+                },
+                {
+                  "item":"EMEA Service for Resale",
+                  "quantity":"3",
+                  "amount":"2000.00"
+                }
+              ]
+            },
+
+            "//*[@id='btn_multibutton_submitter']":""
+          }
+
+        }
+      }
+
+
+    ]
+  },
+
+
+
+  "test_2_1_5":{
+    "steps":[
+      {
+        "navigateToPage":{
+          "url":"/app/common/item/taxitem.nl?nexuscountry=DE"
+        }
+      },
+
+      {
+        "actions": {
+          "data": {
+            "itemid": "211",
+            "description": "hehe",
+            "parent":"ABNW (-48.5%)",
+            "subsidiary":["Parent Company","Parent Company : Germany Company 01"],
+            "custrecord_deferred_vat_flag": "T"
+          }
+        }
+      }
+
+
+    ]
+  },
+
+
+  "test_2_1_6": {
+    "steps": [
+      {
+        "navigateToPage":{
+          "url":"/app/common/item/taxitem.nl?nexuscountry=DE"
+        }
+      },
+
+      {
+        "expects":{
+          "data":{
+            "custrecord_deferred_vat_flag":{
+              "disabled": false
+            }
+          }
+        }
+      },
+
+      {
+        "actions": {
+          "data": {
+            "itemid": "211",
+            "description": "hehe",
+            "parent":"ABNW (-48.5%)",
+            "subsidiary":["Parent Company","Parent Company : Germany Company 01"],
+            "custrecord_deferred_vat_flag": "T"
+          }
+        }
+      },
+
+      {
+        "expects":{
+          "data":{
+            "custrecord_deferred_vat_flag":{
+              "checked": true
+            },
+
+            "dialogs": [{
+              "trantype":"reload",
+              "message":""
+            }]
+
+          }
+        }
+      }
+
+
+    ]
+  },
+
+
+
+
+  "test_2_1_7": {
+
+    "steps":[
+      {
+        "navigateToPage":{
+          "type:scriptId:deployId":"suitelet:customscript_emea_sl_dvr:customdeploy_emea_sl_dvr"
+        }
+      },
+      {
+        "actions": {
+          "data": {
+            "//*[@id='custpage_subsidiary_fs']": "Germany Company 01",
+            "//*[@id='custpage_period_fs']": "Jun 2018"
+          }
+        }
+      },
+      {
+        "expects": {
+          "data":{
+            "dialogs":[
+              {
+                "trantype":"reload",
+                "message":""
+              }
+            ]
+          }
+        }
+      }
+
+
+
+
+
+
+    ]
+
+  },
+
+
+
+
+  "test_2_1_8":{
+    "steps":[
+      {
+        "navigateToPage":{
+          "url":"/app/accounting/transactions/custinvc.nl"
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "waitforload":"",
+            "menus":["Memorize","Go To Register"]
+          }
+        }
+      }
+
+
+
+    ]
+  }
+
+
+
+}

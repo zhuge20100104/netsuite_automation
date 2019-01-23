@@ -1,0 +1,192 @@
+{
+    "docNum" :"None",
+    "test_case_8_1_1": {
+
+        "filter": {
+            "subsidiary": "中国 SubLedger 03",
+            "datefrom": "2018/5/1",
+            "dateto": "2018/5/31",
+            "accountfrom": "6003 - 企业营业收入&(Special)",
+            "accountto":"6003 - 企业营业收入&(Special)",
+            "accountlevel": "All Accounts and Subaccounts"
+        },
+        "expectedResult": {
+            "account" : [
+                "6003 - 企业营业收入&(Special)",
+                "6003-02 - 服务类收入&(Special)",
+                "6003.01 - 产品类收入&(Special)"
+            ],
+            "subtitle" : "China Subledger",
+            "journaltype" : "Journal",
+
+            "filter" : {
+                "subsidiary" : "中国 SubLedger 03",
+                "datefrom" : "2018/5/1",
+                "dateto" : "2018/5/31",
+                "accountfrom" : "6003-02 - 服务类收入&(Special)",
+                "accountto" : "6003-02 - 服务类收入&(Special)"
+            },
+            "gltitle" : "GL Impact",
+            "glaccount" : [
+                "6003-02 服务类收入&(Special)"
+            ],
+            "glreturn" : "Return to "
+
+        }
+
+    },
+    "test_case_8_1_2": {
+
+        "filter": {
+            "subsidiary": "中国 SubLedger 03",
+            "datefrom": "2018/5/1",
+            "dateto": "2018/5/31",
+            "accountfrom": "6003 - 企业营业收入&(Special)",
+            "accountto":"6003 - 企业营业收入&(Special)",
+            "accountlevel": "All Accounts and Subaccounts"
+        },
+        "expectedResult": {
+            "account":[
+                "6003 - 企业营业收入&(Special)",
+                "6003-02 - 服务类收入&(Special)",
+                "6003.01 - 产品类收入&(Special)"
+            ],
+            "subtitle":"China Subledger",
+            "journaltype":"Journal",
+            "filter": {
+                "subsidiary": "中国 SubLedger 03",
+                "datefrom": "2018/5/1",
+                "dateto": "2018/5/31",
+                "accountfrom": "6003 - 企业营业收入&(Special)",
+                "accountto":"6003 - 企业营业收入&(Special)"
+            },
+            "gltitle":"GL Impact",
+            "glaccount":[
+                "6003-02 服务类收入&(Special)",
+                "6003.01 产品类收入&(Special)"
+            ],
+            "glreturn" : "Return to "
+        }
+    },
+    "test_case_8_1_3": {
+
+        "filter": {
+            "subsidiary": "中国 SubLedger 03",
+            "datefrom": "2018/5/1",
+            "dateto": "2018/5/31",
+            "accountfrom": "6003-02 - 服务类收入&(Special)",
+            "accountto":"6003-02 - 服务类收入&(Special)",
+            "accountlevel": "Only Last Subaccounts"
+        },
+        "expectedResult": {
+            "account" : [
+                "6003.01 - 产品类收入&(Special)"
+            ],
+            "subtitle" : "China Subledger",
+            "journaltype" : "Journal",
+
+            "filter" : {
+                "subsidiary" : "中国 SubLedger 03",
+                "datefrom" : "2018/5/1",
+                "dateto" : "2018/5/31",
+                "accountfrom" : "6003.01 - 产品类收入&(Special)",
+                "accountto" : "6003.01 - 产品类收入&(Special)"
+            },
+            "gltitle" : "GL Impact",
+            "glaccount" : [  "6003.01 产品类收入&(Special)" ],
+            "glreturn" : "Return to "
+        }
+    },
+    "test_case_8_2_2": {
+
+        "filter": {
+            "subsidiary": "中国 SubLedger 03",
+            "datefrom": "2018/7/1",
+            "dateto": "2018/7/31",
+            "accountfrom": "6003-02 - 服务类收入&(Special)",
+            "accountto":"6003-02 - 服务类收入&(Special)",
+            "accountlevel": "Only Last Subaccounts"
+        },
+        "expectedResult": {
+            "account" : [
+                "6003-02 - 服务类收入&(Special)"
+            ],
+            "subtitle" : "China Subledger",
+            "journaltype" : "Journal",
+
+            "filter" : {
+                "subsidiary" : "中国 SubLedger 03",
+                "datefrom": "2018/7/1",
+                "dateto": "2018/7/31",
+                "accountfrom" : "6003-02 - 服务类收入&(Special)",
+                "accountto" : "6003-02 - 服务类收入&(Special)"
+            },
+            "gltitle" : "GL Impact",
+            "glaccount" : [  "6003-02 服务类收入&(Special)" ],
+            "glreturn" : "Return to "
+        }
+    },
+    "test_case_8_2_3": {
+
+        "filter": {
+            "subsidiary": "中国 SubLedger 03",
+            "datefrom": "2018/7/1",
+            "dateto": "2018/7/31",
+            "accountfrom": "6003 - 企业营业收入&(Special)",
+            "accountto":"6003 - 企业营业收入&(Special)",
+            "accountlevel": "All Accounts and Subaccounts"
+        },
+        "expectedResult": {
+            "account" :[
+            "6003 - 企业营业收入&(Special)",
+            "6003-02 - 服务类收入&(Special)",
+            "6003.01 - 产品类收入&(Special)"
+            ],
+            "subtitle" : "China Subledger",
+            "journaltype" : "Journal",
+
+            "filter" : {
+                "subsidiary" : "中国 SubLedger 03",
+                "datefrom": "2018/7/1",
+                "dateto": "2018/7/31",
+                "accountfrom" : "6003.01 - 产品类收入&(Special)",
+                "accountto" : "6003.01 - 产品类收入&(Special)"
+            },
+            "gltitle" : "GL Impact",
+            "glaccount" : [  "6003.01 产品类收入&(Special)" ],
+            "glreturn" : "Return to "
+        }
+    },
+    "test_case_8_2_4": {
+
+        "filter": {
+            "subsidiary": "China SubLedger 01",
+            "datefrom": "2018/7/1",
+            "dateto": "2018/7/31",
+            "accountfrom": "1100 - Accounts Receivable",
+            "accountto":"1100 - Accounts Receivable",
+            "accountlevel": "Only Last Subaccounts"
+        },
+        "expectedResult": {
+            "account" : [
+                "1100 - Accounts Receivable"
+            ],
+            "subtitle" : "China Subledger",
+            "journaltype" : "Payment",
+
+            "filter" : {
+                "subsidiary" : "China SubLedger 01",
+                "datefrom": "2018/7/1",
+                "dateto": "2018/7/31",
+                "accountfrom" : "1100 - Accounts Receivable",
+                "accountto" : "1100 - Accounts Receivable"
+            },
+            "gltitle" : "GL Impact",
+            "glaccount" : [  "1100 Accounts Receivable","1090 Undeposited Funds" ],
+            "glreturn" : "Return to "
+        }
+    }
+
+
+}
+

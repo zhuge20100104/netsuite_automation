@@ -1,0 +1,307 @@
+{
+  "test case 1.25.1.1": {
+    "data": [
+      {
+        "main": {
+          "id": "1.25.1.1_1",
+          "trantype": "customerdeposit",
+          "customer": "CN Automation Customer",
+          "trandate": "9/1/2017",
+          "payment": "500",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "account": "10020103 银行存款 : 人民币 : 工行T1",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      },
+      {
+        "main": {
+          "id": "1.25.1.1_2",
+          "trantype": "customerdeposit",
+          "customer": "CN Automation Customer",
+          "trandate": "9/1/2017",
+          "payment": "7000",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "account": "10020103 银行存款 : 人民币 : 工行T1",
+          "custbody_cseg_cn_cfi": "Other cash receipts related to operating activities"
+        }
+      },
+      {
+        "main": {
+          "id": "1.25.1.1_3",
+          "trantype": "customerrefund",
+          "customer": "CN Automation Customer",
+          "aracct": "11220103 应收账款 : 销售商品 : 设备T1",
+          "trandate": "9/3/2017",
+          "currency": "Yuan",
+          "account": "1090 Undeposited Funds",
+          "memo": "CFS 1.25.1.1",
+          "custbody_cseg_cn_cfi": "Taxes and surcharges refunds",
+          "paymentmethod": "Cash"
+        },
+        "deposit": [
+          {
+            "refid": "1.25.1.1_1",
+            "amount": "300.12"
+          },
+          {
+            "refid": "1.25.1.1_2",
+            "amount": "6700.13"
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id": "1.25.1.1_4",
+          "account": "10020103 银行存款 : 人民币 : 工行T1",
+          "trandate": "9/4/2017",
+          "memo": "UI Automation 1.25.1.1",
+          "transaction_trandate": "9/3/2017"
+        },
+        "apply": [
+          {
+            "refid": "1.25.1.1_3",
+            "amount": ""
+          }
+        ]
+      }
+    ],
+    "expect": [
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "9/4/2017",
+        "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+        "item": "Taxes and surcharges refunds",
+        "amount": "-7000.25"
+      }
+    ]
+  },
+  "test case 1.25.1.2": {
+    "data": [
+      {
+        "main": {
+          "id": "1.25.1.2_1",
+          "trantype": "customerdeposit",
+          "customer": "CN Automation Customer",
+          "trandate": "9/1/2017",
+          "postingperiod": "Sep 2017",
+          "currency": "US Dollar",
+          "exchangerate": "6.80",
+          "account": "10020203 银行存款 : 美元 : 工行T1",
+          "payment": "1,000.00",
+          "memo": "test case 1.25.1.2",
+          "custbody_cseg_cn_cfi": "Other cash receipts related to operating activities"
+        }
+      },
+      {
+        "main": {
+          "id": "1.25.1.2_2",
+          "trantype": "customerrefund",
+          "customer": "CN Automation Customer",
+          "aracct": "11220103 应收账款 : 销售商品 : 设备T1",
+          "trandate": "9/2/2017",
+          "postingperiod": "Sep 2017",
+          "currency": "US Dollar",
+          "exchangerate": "6.80",
+          "account": "10020203 银行存款 : 美元 : 工行T1",
+          "payment": "1,000.00",
+          "memo": "test case 1.25.1.2",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services",
+          "paymentmethod": "Cash"
+        },
+        "deposit": [
+          {
+            "refid": "1.25.1.2_1",
+            "amount": "1000"
+          }
+        ]
+      }
+    ],
+    "expect": [
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "9/2/2017",
+        "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+        "item": "Cash received from sales and services",
+        "amount": "-6800.00"
+      }
+    ]
+  },
+  "test case 1.40.1.1": {
+    "data": [
+      {
+        "main": {
+          "id": "CFS1.40.1.1_1",
+          "trantype": "customerdeposit",
+          "customer": "CN Automation Customer",
+          "trandate": "12/24/2017",
+          "postingperiod": "Dec 2017",
+          "currency": "US Dollar",
+          "exchangerate": "6.80",
+          "account": "10020204 银行存款 : 美元 : 建行T1",
+          "payment": "1000",
+          "memo": "test void customer refund case 1.40.1.1",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      },
+      {
+        "main": {
+          "id": "CFS1.40.1.1_2",
+          "trantype": "customerrefund",
+          "customer": "CN Automation Customer",
+          "trandate": "12/25/2017",
+          "postingperiod": "Dec 2017",
+          "currency": "US Dollar",
+          "exchangerate": "7.00",
+          "account": "10020204 银行存款 : 美元 : 建行T1",
+          "paymentmethod": "Cash",
+          "memo": "test void customer refund case 1.40.1.1",
+          "custbody_cseg_cn_cfi": "Taxes and surcharges refunds"
+        },
+        "deposit": [
+          {
+            "refid": "CFS1.40.1.1_1",
+            "amount": "1000"
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id": "CFS1.40.1.1_3",
+          "trantype": "JOURNAL_ENTRY",
+          "trandate": "1/25/2018",
+          "postingperiod": "Jan 2018"
+        }
+      }
+    ],
+    "expect_1": [
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "12/24/2017",
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "item": "Cash received from sales and services",
+        "amount": "6800.00"
+      }
+    ],
+    "expect_2": [
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "12/25/2017",
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "item": "Taxes and surcharges refunds",
+        "amount": "-7000.00"
+      }
+    ],
+    "expect_3": [
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "1/25/2018",
+        "postingperiod": "FY 2018 : Q1 2018 : Jan 2018",
+        "item": "Taxes and surcharges refunds",
+        "amount": "7000.00"
+      }
+    ]
+  },
+  "test case 1.40.1.2": {
+    "data": [
+      {
+        "main": {
+          "id": "CFS1.40.1.2",
+          "trantype": "customerdeposit",
+          "customer": "CN Automation Customer",
+          "trandate": "12/24/2017",
+          "payment": "1000",
+          "currency": "Yuan",
+          "exchangerate": "1.00",
+          "account": "10020104 银行存款 : 人民币 : 建行T1",
+          "memo": "Groovy CFS Case 1.40.1.2",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      },
+      {
+        "main": {
+          "id": "CFS1.40.1.2.1",
+          "trantype": "customerrefund",
+          "customer": "CN Automation Customer",
+          "account": "10020104 银行存款 : 人民币 : 建行T1",
+          "aracct": "11220103 应收账款 : 销售商品 : 设备T1",
+          "exchangerate": "1.00",
+          "trandate": "12/25/2017",
+          "postingperiod": "Dec 2017",
+          "paymentmethod": "Cash",
+          "memo": "Groovy CFS Case 1.40.1.2",
+          "custbody_cseg_cn_cfi": "Taxes and surcharges refunds"
+        },
+        "deposit": [
+          {
+            "refid": "CFS1.40.1.2",
+            "amount": "1000.00"
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id": "Void Customer Refund",
+          "trandate": "1/25/2018",
+          "postingperiod": "Jan 2018"
+        }
+      },
+      {
+        "main": {
+          "id": "Update Customer Refund",
+          "trandate": "2/25/2018",
+          "postingperiod": "Feb 2018",
+          "custbody_cseg_cn_cfi": "Other cash receipts related to operating activities"
+        }
+      }
+    ],
+    "expect": [
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "1/25/2018",
+        "postingperiod": "FY 2018 : Q1 2018 : Jan 2018",
+        "item": "Taxes and surcharges refunds",
+        "amount": "1000.00"
+      }
+    ],
+    "expect_2": [
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "12/25/2017",
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "item": "Taxes and surcharges refunds",
+        "amount": "-1000.00"
+      },
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "12/25/2017",
+        "postingperiod": "FY 2017 : Q4 2017 : Dec 2017",
+        "item": "Other cash receipts related to operating activities",
+        "amount": "-1000.00"
+      }
+    ],
+    "expect_3": [
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "1/25/2018",
+        "postingperiod": "FY 2018 : Q1 2018 : Jan 2018",
+        "item": "Taxes and surcharges refunds",
+        "amount": "1000.00"
+      },
+      {
+        "subsidiary": "Parent Company : China BU",
+        "trandate": "1/25/2018",
+        "postingperiod": "FY 2018 : Q1 2018 : Jan 2018",
+        "item": "Other cash receipts related to operating activities",
+        "amount": "1000.00"
+      }
+    ]
+  }
+}

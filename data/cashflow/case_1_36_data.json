@@ -1,0 +1,29 @@
+{
+  "caseId": "test 1.36",
+  "data": {
+    "item": [
+      {
+        "lineid": "1",
+        "itemold": "T1 Other Charge for Sale",
+        "cfsnew": "Other cash payments related to operating activities"
+      },
+      {
+        "lineid": "2",
+        "itemold": "CN Auto CashFlow Item1",
+        "itemnew": "CFS KitPackage Item"
+      }
+    ]
+  },
+  "expected": {
+    "item": [
+      {
+        "cfsold": "Taxes and surcharges refunds",
+        "cfsnew": "Other cash payments related to operating activities"
+      },
+      {
+        "cfsold": "Taxes and surcharges refunds",
+        "cfsnew": "Cash received from sales and services"
+      }
+    ]
+  }
+}

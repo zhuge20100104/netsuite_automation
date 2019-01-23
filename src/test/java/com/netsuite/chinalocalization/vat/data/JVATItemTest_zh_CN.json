@@ -1,0 +1,24 @@
+{
+  "test_4_4_1_1":{
+    "steps":[
+      {
+        "navigateToPage":{
+          "url":"/app/common/item/item.nl?itemtype=OthCharge&subtype=Resale&isserialitem=F&islotitem=F"
+        }
+      },
+      {
+        "expects":{
+          "data":{
+            "TAB":"中国增值税",
+            "//span[@id='custitem_cn_vat_item_model_fs_lbl']" : {
+              "values": ["增值税规格型号"]
+            }
+
+          }
+        }
+      }
+    ]
+
+
+  }
+}

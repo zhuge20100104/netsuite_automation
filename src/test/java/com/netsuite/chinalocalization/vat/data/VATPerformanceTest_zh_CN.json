@@ -1,0 +1,10 @@
+{
+  "filter": {
+    "subsidiary": "China VAT PT Subsidiary",
+    "invoicetype": "Special VAT Invoice",
+    "datefrom": "2/23/2018",
+    "dateto": "2/23/2018",
+    "tranid": "9510003592",
+    "to_tranid": "9510003641"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "pageName":"中国明细账",
+  "test_case_1_2_2":{
+    "fieldValues":{
+
+      "accountfrom":"",
+      "accountto":"",
+      "datefrom":"cur",
+      "dateto":"cur",
+      "location" : "",
+      "department":"",
+      "class" : ""
+
+    }
+  },
+  "test_case_1_4_1":{
+    "expectOptions":[
+      "中国 SubLedger",
+      "China SubLedger 01",
+      "中国 SubLedger 02",
+      "中国 SubLedger 03"
+    ]
+  },
+  "test_case_1_4_2":{
+    "expectOptions":[
+      "Oct 2017",
+      "Nov 2017",
+      "Dec 2017",
+      "FY 2018"
+
+    ]
+  },
+  "test_case_1_4_3":{
+    "expectedResult": {
+      "account":[
+        "6081 - office equipments",
+        "608101 - daily use item",
+        "608102 - furniture",
+        "60810201 - desk",
+        "60810202 - chair",
+        "608103 - storage",
+        "60810301 - maintains",
+        "6082 - long term rental equipments",
+        "608201 - yearly",
+        "60820101 - by year",
+        "60820102 - by decade",
+        "608202 - monthly",
+        "6083 - wastage",
+        "608301 - daily loss",
+        "6084 - large equipments",
+        "608401 - construction equipments",
+        "60840101 - Type A",
+        "60840102 - Type B",
+        "60840103 - Type C",
+        "608402 - shipment",
+        "60840201 - Ocean shipping",
+        "60840202 - Air shipping",
+        "60840203 - Road shipping",
+        "608403 - destruction"
+      ]
+    },
+    "filter": {
+      "subsidiary": "中国 SubLedger 03"
+    }
+  },
+  "test_case_1_4_4":{
+    "expectedResult": {
+      "account":[
+        "6081 - office equipments",
+        "608101 - office equipments : daily use item",
+        "608102 - office equipments : furniture",
+        "60810201 - office equipments : furniture : desk",
+        "60810202 - office equipments : furniture : chair",
+        "608103 - office equipments : storage",
+        "60810301 - office equipments : storage : maintains",
+        "6082 - long term rental equipments",
+        "608201 - long term rental equipments : yearly",
+        "60820101 - long term rental equipments : yearly : by year",
+        "60820102 - long term rental equipments : yearly : by decade",
+        "608202 - long term rental equipments : monthly",
+        "6083 - wastage",
+        "608301 - wastage : daily loss",
+        "6084 - large equipments",
+        "608401 - large equipments : construction equipments",
+        "60840101 - large equipments : construction equipments : Type A",
+        "60840102 - large equipments : construction equipments : Type B",
+        "60840103 - large equipments : construction equipments : Type C",
+        "608402 - large equipments : shipment",
+        "60840201 - large equipments : shipment : Ocean shipping",
+        "60840202 - large equipments : shipment : Air shipping",
+        "60840203 - large equipments : shipment : Road shipping",
+        "608403 - large equipments : destruction"
+      ]
+    },
+    "filter": {
+      "subsidiary": "中国 SubLedger 03"
+    }
+  },
+  "test_case_1_5_1": {
+    "expectedResult": {
+      "period":[
+        "Oct 2017",
+        "Q3 2018",
+        "Q4 2018"
+      ]
+    },
+    "filter": {
+      "subsidiary": "中国 SubLedger 02"
+    },
+    "calenderToTest" : "Calendar without CurrPeriod",
+    "defaultCalendar" : "No Period Calendar"
+  },
+  "test_case_1_5_2": {
+    "accountToCheck":"102205 - cash for ATBL",
+    "filterWithTarget": {
+      "subsidiary": "中国 AccountBalance 03"
+    },
+    "filterWithoutTarget": {
+      "subsidiary": "中国 SubLedger 03"
+    }
+  },
+
+  "test_case_8_1_2" : {
+    "searchparm" : {
+      "subsidiary":"中国 Income",
+      "datefrom":"6/10/2016",
+      "dateto":"6/10/2016",
+      "accountfrom":"",
+      "accountto":"",
+      "location" : "中国 Income华北区",
+      "department":"Income生产部",
+      "class" : "智能手机"
+    },
+    "LocOptions" : [
+      "中国 Income华中区",
+      "中国 Income华北区",
+      "中国 上海",
+      "中国 北京",
+      "中国 Income华南区"
+    ],
+    "DepOptions" : [
+      "Income业务部",
+      "Income会计部",
+      "Income生产部",
+      "Income生产部01",
+      "Income生产部02",
+      "Income开发部"
+    ],
+    "ClassOptions" : [
+      "售后支持",
+      "智能手机",
+      "Plus系列",
+      "X系列",
+      "电脑",
+      "穿戴设备",
+      "配件"
+    ]
+  }
+}

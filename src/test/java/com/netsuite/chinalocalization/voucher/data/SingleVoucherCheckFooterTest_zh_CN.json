@@ -1,0 +1,57 @@
+{
+  "test_1_11_2_1_1":{
+    "record":[
+      {
+        "main": {
+          "id": "1.11.2.1.1",
+          "trantype": "journalentry",
+          "trandate": "5/13/2017",
+          "postingperiod": "May 2017",
+          "approved": "F",
+          "currency": "Yuan",
+          "exchangerate": "1.00",
+          "memo": "test_1_11_2_1_1"
+        },
+        "line": [
+          {
+            "account": "10020103",
+            "debit": "100.00"
+          },
+          {
+            "account": "1231",
+            "credit": "100.00"
+          }
+        ]
+      }
+    ],
+    "data":[
+      {
+        "username":"auto1.03@oracle.com",
+        "password":"ns1A2b3c4d!!",
+        "update":{
+          "approved": "T"
+        }
+      },
+      {
+        "username":"auto1.02@oracle.com",
+        "password":"ns1A2b3c4d!!",
+        "update":{
+          "approved": "T"
+        }
+      }
+    ],
+    "labels": {
+      "periodFrom": "May 2017",
+      "periodTo": "May 2017",
+      "tranDateFrom": "5/13/2017",
+      "tranDateTo": "5/13/2017"
+  },
+    "expect":[
+      {
+        "creator": "auto1.03",
+        "approver":"auto1.04",
+        "poster":"auto1.05"
+      }
+    ]
+    }
+}

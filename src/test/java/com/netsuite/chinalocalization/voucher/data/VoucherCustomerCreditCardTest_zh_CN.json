@@ -1,0 +1,55 @@
+{
+  "test_1_13_1_4":{
+    "labels":{
+      "subsidiary": "Parent Company : China BU",
+      "periodFrom":"Oct 2017",
+      "periodTo":"Oct 2017",
+      "tranDateFrom":"10/11/2017",
+      "tranDateTo":"10/11/2017"
+    },
+    "data":{
+      "main":{
+        "entity":"CN Cashflow Vendor",
+        "trandate":"10/11/2017",
+        "postingperiod":"Oct 2017",
+        "taxtotal"	:"0"
+      },
+      "expense": {
+        "account":"6015 Amortization Expense",
+        "amount":"500",
+        "taxcode":"VAT_CN:UNDEF-CN"
+      }
+    },
+    "expect": {
+      "expectedHeader":{
+        "subsidiary":"China BU",
+        "tranType":"信用卡",
+        "trandate":"10/11/2017",
+        "postingPeriod":"Oct 2017",
+        "currency":"CNY"
+      },
+      "expectedRow": [
+        { "accountAndDescription":"100199 Credit Card_T1_01",
+          "transactionCurrency":"CNY",
+          "rate":"1.00",
+          "transactionCurrencyDebit":"",
+          "transactionCurrencyCredit":"500.00",
+          "functionalCurrencyDebit":"",
+          "functionalCurrencyCredit":"500.00"
+        },
+        {
+          "accountAndDescription":"6015 Amortization Expense",
+          "transactionCurrency":"CNY",
+          "rate":"1.00",
+          "transactionCurrencyDebit":"500.00",
+          "transactionCurrencyCredit":"",
+          "functionalCurrencyDebit":"500.00",
+          "functionalCurrencyCredit":""
+        }
+      ]
+
+    },
+    "record": []
+  }
+
+}

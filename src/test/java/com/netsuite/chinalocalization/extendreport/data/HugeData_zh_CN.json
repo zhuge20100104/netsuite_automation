@@ -1,0 +1,46 @@
+{
+  "test_case_sblg":{
+    "errMsg":"您的搜索结果超过5000行，当前页面无法显示。您可以点击OK后导出excel或PDF文件来获取报表。",
+    "filter": {
+      "subsidiary": "China BlSheet 01",
+      "datefrom":"1/1/2017",
+      "dateto":"12/31/2017"
+    },
+    "defaultParam": {
+      "subsidiary":"China BlSheet 01",
+      "accountfrom":"",
+      "accountto":""
+    },
+    "filterAfter":{
+      "subsidiary":"China BlSheet 01"
+    },
+    "expectedResult":{
+      "excelfilename":"明细账.xls",
+      "pdffilename":"明细账.pdf"
+    },
+    "featureName":"SubLedger"
+
+  },
+  "test_case_cbjl":{
+    "errMsg":"您的搜索结果超过5000行，当前页面无法显示。您可以点击OK后导出excel或PDF文件来获取报表。",
+    "filter": {
+      "subsidiary": "China BlSheet 01",
+      "datefrom":"1/1/2016",
+      "dateto":"6/30/2017"
+    },
+    "defaultParam": {
+      "subsidiary":"China BlSheet 01",
+      "accountfrom":"",
+      "accountto":""
+    },
+    "filterAfter":{
+      "subsidiary":"China BlSheet 01"
+    },
+    "expectedResult":{
+      "excelfilename":"现金银行日记账.xls",
+      "pdffilename":"现金银行日记账.pdf"
+    },
+    "featureName":"CashAndBankJournal"
+
+  }
+}

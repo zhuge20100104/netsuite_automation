@@ -1,0 +1,35 @@
+{
+  "caseId": "test 1.36.4.2",
+  "data": {
+    "item": [
+      {
+        "lineid": "1",
+        "itemold": "T1 Other Charge for Resale"
+      },
+      {
+        "lineid": "2",
+        "itemold": "CFS Markup Item 10%"
+      },
+      {
+        "lineid": "3",
+        "itemold": "CFS Serialized Inventory Item"
+      }
+    ]
+  },
+  "expected": {
+    "item": [
+      {
+        "cfsold": "Taxes and surcharges refunds",
+        "cfsnew": "Taxes and surcharges refunds"
+      },
+      {
+        "cfsold": "",
+        "cfsnew": ""
+      },
+      {
+        "cfsold": "",
+        "cfsnew": ""
+      }
+    ]
+  }
+}

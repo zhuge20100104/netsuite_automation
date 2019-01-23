@@ -1,0 +1,86 @@
+{
+  "test_case_9_1" : {
+    "searchPara" : {
+      "page_title" : "中国现金银行日记账",
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "01/01/2018",
+      "dateto" : "08/01/2018",
+      "accountfrom" : "6002 - 企业营业收入",
+      "accountto" : "6002 - 企业营业收入",
+      "accountlevel" : "至末级"
+    },
+    "account":"6002 - 企业营业收入",
+    "expPara" : {
+      "filename" : "现金银行日记账.xls",
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "1/1/2018",
+      "dateto" : "8/1/2018",
+      "accountfrom" : "6002 - 企业营业收入",
+      "accountto" : "6002 - 企业营业收入"
+    }
+  },
+  "test_case_9_2" : {
+    "searchPara" : {
+      "page_title" : "中国现金银行日记账",
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "01/01/2018",
+      "dateto" : "08/01/2018",
+      "accountfrom" : "6002 - 企业营业收入",
+      "accountto" : "6002 - 企业营业收入",
+      "accountlevel" : "至末级"
+    },
+    "searchPara_sec" : {
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "06/01/2017",
+      "dateto" : "07/01/2017",
+      "accountfrom" : "6002 - 企业营业收入",
+      "accountto" : "600203 - 资产增值收入",
+      "accountlevel" : "至顶级"
+    },
+    "account":"600203 - 资产增值收入",
+    "expPara" : {
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "1/1/2018",
+      "dateto" : "8/1/2018",
+      "accountfrom" : "600203 - 资产增值收入",
+      "accountto" : "600203 - 资产增值收入"
+    }
+  },
+  "test_case_9_3" : {
+    "searchPara" : {
+      "page_title" : "中国现金银行日记账",
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "01/01/2018",
+      "dateto" : "08/01/2018",
+      "accountfrom" : "6002 - 企业营业收入",
+      "accountto" : "6002 - 企业营业收入",
+      "accountlevel" : "至末级"
+    },
+    "expPara" : {
+      "filename" : "现金银行日记账.pdf",
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "1/1/2018",
+      "dateto" : "8/1/2018",
+      "accountfrom" : "6002 - 企业营业收入",
+      "accountto" : "6002 - 企业营业收入"
+    }
+  },
+  "test_case_9_4" : {
+    "searchPara" : {
+      "page_title" : "中国现金银行日记账",
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "01/01/2018",
+      "dateto" : "08/01/2018",
+      "accountfrom" : "6002 - 企业营业收入",
+      "accountto" : "6002 - 企业营业收入",
+      "accountlevel" : "至末级"
+    },
+    "expPara" : {
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "1/1/2018",
+      "dateto" : "8/1/2018",
+      "accountfrom" : "600203 - 企业营业收入 : 资产增值收入",
+      "accountto" : "600203 - 企业营业收入 : 资产增值收入"
+    }
+  }
+}

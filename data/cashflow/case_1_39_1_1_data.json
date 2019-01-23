@@ -1,0 +1,37 @@
+{
+  "caseId": "test 1.39.1.1",
+  "data": {
+    "item": [
+      {
+        "lineid": "1",
+        "itemold": "CFS Serialized Inventory Item",
+        "cfsnew": ""
+      },
+      {
+        "lineid": "2",
+        "itemold": "CN Auto Non-inventory Item4 for Purchase",
+        "itemnew": "CFS Lot Numbered Inventory Item"
+      },
+      {
+        "lineid": "3",
+        "itemold": "CFS Description Item"
+      }
+    ]
+  },
+  "expected": {
+    "item": [
+      {
+        "cfsold": "Cash paid for goods and services",
+        "cfsnew": ""
+      },
+      {
+        "cfsold": "Other cash payments related to operating activities",
+        "cfsnew": "Cash paid for goods and services"
+      },
+      {
+        "cfsold": "",
+        "cfsnew": ""
+      }
+    ]
+  }
+}

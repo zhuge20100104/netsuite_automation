@@ -1,0 +1,247 @@
+{
+
+  "test_case_5_1": {
+    "report": {
+      "name": "China Income Statement Testing Month",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "中国 Income 03"
+        },
+        {
+          "label": "From",
+          "text": "Jun 2017"
+        },
+        {
+          "label": "To",
+          "text": "Jun 2017"
+        }
+      ],
+
+      "rows": [
+        {
+          "columnHeader": "财务报表",
+          "text": "1. Operating revenue"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Less: Operating cost"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Taxes and surcharges"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Selling expenses"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Administrative expenses"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Finance expenses"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Impairment on assets"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Add: Gain from fair-value changes(\"-\" for loss)"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Investment income(\"-\" for loss)"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "2. Operating profits(\"-\" for loss)"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Add:non-operating income"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Including:gain from disposal of non-current assets"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Less:non-operating expenses"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Including:loss on disposal of non-current assets"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "3. Profit before tax(\"-\" for loss)"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Less:income tax"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "4. Net profit(\"-\" for net loss)"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "Current Period (JUN 2017)"
+        },
+        {
+          "columnHeader": "Prior Period (JUN 2016)"
+        }
+      ]
+    },
+    "expResult": {
+      "filename":"IncomeStatement.xls",
+      "datastartrow": 4,
+      "datastartcol" : 0
+    },
+    "filter": {
+      "reportName": "China Income Statement Testing Month",
+      "subsidiary": "中国 Income 03",
+      "period": "Jun 2017",
+      "unit":"Thousand"
+
+    }
+  },
+  "test_case_8_2_2_1": {
+    "report": {
+      "name": "China Income Statement Testing Month",
+      "standardFilters": [
+        {
+          "label": "Subsidiary",
+          "text": "中国 Income"
+        },
+        {
+          "label": "From",
+          "text": "Jun 2017"
+        },
+        {
+          "label": "To",
+          "text": "Jun 2017"
+        }
+      ],
+
+      "rows": [
+        {
+          "columnHeader": "财务报表",
+          "text": "1. Operating revenue"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Less: Operating cost"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Taxes and surcharges"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Selling expenses"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Administrative expenses"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Finance expenses"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Impairment on assets"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Add: Gain from fair-value changes(\"-\" for loss)"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Investment income(\"-\" for loss)"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "2. Operating profits(\"-\" for loss)"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Add:non-operating income"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Including:gain from disposal of non-current assets"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Less:non-operating expenses"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Including:loss on disposal of non-current assets"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "3. Profit before tax(\"-\" for loss)"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "Less:income tax"
+        },
+        {
+          "columnHeader": "财务报表",
+          "text": "4. Net profit(\"-\" for net loss)"
+        }
+      ],
+      "columns": [
+        {
+          "columnHeader": "Current Period (JUN 2017)"
+        },
+        {
+          "columnHeader": "Prior Period (JUN 2016)"
+        }
+      ]
+    },
+    "expResult": {
+      "filename":"IncomeStatement.xls",
+      "datastartrow": 5,
+      "datastartcol" : 0,
+      "reportheader":
+      {
+        "location": {
+          "row": 3,
+          "col": 0,
+          "text":"Location: 中国 Income华北区"
+        },
+        "department": {
+          "row": 3,
+          "col": 3,
+          "text":"Department: Income生产部"
+        },
+        "class": {
+          "row": 3,
+          "col": 5,
+          "text":"Class: 智能手机"
+        }
+      }
+    },
+    "filter": {
+      "reportName": "China Income Statement Testing Month",
+      "subsidiary": "中国 Income",
+      "period": "Jun 2017",
+      "unit":"Unit",
+      "location":"中国 Income华北区",
+      "department":"Income生产部",
+      "class": "智能手机"
+
+    }
+  }
+
+
+}
+

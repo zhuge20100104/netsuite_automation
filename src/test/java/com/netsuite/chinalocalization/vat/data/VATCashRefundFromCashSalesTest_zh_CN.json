@@ -1,0 +1,34 @@
+{
+  "labels": {
+    "fieldLabel": {
+      "tabLabel": "中国增值税",
+      "tabGoods": "货品",
+      "itemLabel": "思科CiscoPhone 7970",
+      "smallCompanyC":"北京小规模纳税公司C",
+      "commonCompany1":"北京一般纳税公司02",
+      "unCategoryCompany":"北京未分类公司",
+      "vatSpecialInvoice":"增值税专用发票",
+      "vatCommonInvoice":"增值税普通发票",
+      "location":"海淀",
+      "commonCompany2":"北京一般纳税公司02"
+    }
+  },
+  "data":{
+
+  },
+  "recordData": [
+    {
+      "main": {
+        "trantype":"cashsale",
+        "entity":"北京一般纳税公司02",
+        "trandate":"8/8/2017",
+        "postingperiod":"Aug 2017",
+        "location":"海淀",
+        "custbody_cn_vat_invoice_type": "2"
+      },
+      "item":[
+        {"item":"思科CiscoPhone 7970","quantity":"1"}
+      ]
+    }
+  ]
+}

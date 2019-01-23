@@ -1,0 +1,57 @@
+{
+  "test_1_1_1_3":{
+    "labels":{
+      "subsidiary":"Parent Company : China BU",
+      "periodFrom":"Jul 2017",
+      "periodTo":"Jul 2017",
+      "startDate":"7/13/2017",
+      "endDate":"7/13/2017",
+      "shortSubsidiary":"China BU"
+    },
+    "data":{
+
+    },
+    "expect":{
+    },
+    "record": [
+      {
+        "main": {
+          "id": "1.11.1.4.1",
+          "trantype": "customerdeposit",
+          "customer": "CN Automation Customer",
+          "trandate": "7/13/2017",
+          "postingperiod": "Jul 2017",
+          "currency": "US Dollar",
+          "exchangerate": "6.80",
+          "account": "10020204 银行存款 : 美元 : 建行T1",
+          "payment": "100.00",
+          "memo": "test_1_11_1_4_1"
+        }
+      }
+    ]
+  },
+
+
+
+
+  "test_1_7_1_2":{
+    "labels":{
+      "subsidiary":"Parent Company : China BU",
+      "periodFrom":"Jul 2016",
+      "periodTo":"Jul 2016",
+      "voucherNoFromType":"始于",
+      "voucherNoFromValue":"201607"
+    },
+    "data":{
+
+    },
+    "expect":{
+    },
+    "record": [
+    ]
+  }
+
+
+
+
+}

@@ -1,0 +1,130 @@
+{
+  "test case 1.28.3.1": {
+    "data": [
+      {
+        "main": {
+          "id": "1.28.3.1_1",
+          "trantype": "cashsale",
+          "entity": "CN Automation Customer",
+          "trandate": "9/6/2017",
+          "postingperiod": "Sep 2017",
+          "location": "CN_BJ",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "shippingcost": "200",
+          "shipmethod": "T1 Shipping method 200 Yuan",
+          "shippingtaxcode": "VAT_CN:CN_VATOUT_17",
+          "shippingtax1rate": "17%",
+          "memo": "test case 1.28.3.1",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        "item": [
+          {
+            "item": "CN Auto CashFlow Item1",
+            "quantity": "1",
+            "amount": "1000",
+            "taxcode": "VAT_CN:CN_VATOUT_17",
+            "custcol_cseg_cn_cfi": "Taxes and surcharges refunds"
+          },
+          {
+            "item": "CN Auto CashFlow Item2",
+            "quantity": "2",
+            "amount": "4000",
+            "taxcode": "VAT_CN:CN_VATOUT_6",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      },
+      {
+        "main": {
+          "id": "1.28.3.1_2",
+          "trantype": "cashsale",
+          "entity": "CN Automation Customer",
+          "trandate": "9/6/2017",
+          "postingperiod": "Sep 2017",
+          "location": "CN_BJ",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "shippingcost": "200",
+          "shipmethod": "T1 Shipping method 200 Yuan",
+          "shippingtaxcode": "VAT_CN:CN_VATOUT_6",
+          "shippingtax1rate": "6%",
+          "memo": "test case 1.28.3.1",
+          "custbody_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        "item": [
+          {
+            "item": "CN Inv Item1",
+            "quantity": "1",
+            "amount": "500",
+            "taxcode": "VAT_CN:CN_VATOUT_17",
+            "custcol_cseg_cn_cfi": ""
+          },
+          {
+            "item": "CN Inv Item1",
+            "quantity": "1",
+            "amount": "200",
+            "taxcode": "VAT_CN:CN_VATOUT_6",
+            "custcol_cseg_cn_cfi": ""
+          }
+        ]
+      }
+    ],
+    "ui": [
+      {
+        "main": {
+          "id": "1.28.3.1_3",
+          "trantype": "deposite",
+          "account": "10020103 银行存款 : 人民币 : 工行T1",
+          "trandate": "9/6/2017",
+          "postingperiod": "Sep 2017",
+          "currency": "Yuan",
+          "exchangerate": "1",
+          "transaction_trandate": "9/6/2017",
+
+          "memo": "test case 1.28.3.1"
+        },
+        "apply": [
+          {
+            "refid": "1.28.3.1_1",
+            "amount": "5644.00"
+          },
+          {
+            "refid": "1.28.3.1_2",
+            "amount": "1,009.00"
+          }
+        ]
+      }
+    ],
+    "expected": [
+          {
+            "subsidiary": "Parent Company : China BU",
+            "trandate": "9/6/2017",
+            "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+            "item": "Taxes and surcharges refunds",
+            "amount": "1220.61"
+          },
+          {
+            "subsidiary": "Parent Company : China BU",
+            "trandate": "9/6/2017",
+            "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+            "item": "Cash received from sales and services",
+            "amount": "268.39"
+          },
+          {
+            "subsidiary": "Parent Company : China BU",
+            "trandate": "9/6/2017",
+            "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+            "item": "Cash received from sales and services",
+            "amount": "740.61"
+          },
+          {
+            "subsidiary": "Parent Company : China BU",
+            "trandate": "9/6/2017",
+            "postingperiod": "FY 2017 : Q3 2017 : Sep 2017",
+            "item": "Cash received from sales and services",
+            "amount": "4423.39"
+          }
+        ]
+  }
+}

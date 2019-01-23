@@ -1,0 +1,4 @@
+Date Start,Date End,Duration(secs),Class Path,Test Name,Status
+2018-12-02  16:12:23.502  +0800,2018-12-02  16:12:44.461  +0800,20,com.netsuite.chinalocalization.vhls.VHLSPrintTest,SuiteSetup,Passed
+2018-12-02  16:12:44.492  +0800,2018-12-02  16:12:44.492  +0800,0,com.netsuite.chinalocalization.vhls.VHLSPrintTest,test_8_1_2,Passed
+2018-12-02  16:12:47.347  +0800,2018-12-02  16:12:50.257  +0800,2,com.netsuite.chinalocalization.vhls.VHLSPrintTest,SuiteTeardown,Failed

@@ -1,0 +1,11 @@
+{
+  "Administrator": "管理员",
+  "ChinaAccountant": "中国会计",
+  "BaseRole": "中国会计_base_qa",
+  "NoChina": "nochina_base_qa",
+  "ChinaAccountantNoPeriod":"中国会计_NoPeriod",
+  "Bookkeeper":"记账员",
+  "MiniRole_bs_is":"baserole_bs_is",
+  "MiniRole_ab_sb_cb":"baserole_ab_sb_cb",
+  "MiniRole_vhls" : "vhls_base_qa"
+}

@@ -1,0 +1,20 @@
+{
+    "title": "利润表",
+    "location": "地点： ",
+    "department": "部门： ",
+    "class": "类别： ",
+    "PreparedBy": "编制单位： ",
+    "test_case_8_2_2_2": {
+    "filter": {
+        "reportName": "中国利润表测试Month",
+        "subsidiary": "中国 Income",
+        "period": "Jun 2017",
+        "unit": "元",
+        "location": "中国 Income华北区",
+        "department": "Income生产部",
+        "class": "智能手机"
+    }
+
+    }
+}
+

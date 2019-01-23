@@ -1,0 +1,33 @@
+{
+  "test_case_9_7" : {
+    "searchPara" : {
+      "title" : "总账影响",
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "07/25/2018",
+      "dateto" : "07/25/2018",
+      "accountfrom" : "600201 - 产品类收入",
+      "accountto" : "600201 - 产品类收入"
+    },
+    "transactionPara" : {
+      "title" : "日记账",
+      "docnum" : "SLCM10001",
+      "returnto" : "返回至日记账 #SLCM10001"
+    }
+  },
+  "test_case_9_8" : {
+    "searchPara" : {
+      "title" : "总账影响",
+      "subsidiary" : "中国 SubLedger 03",
+      "datefrom" : "07/25/2018",
+      "dateto" : "07/25/2018",
+      "accountfrom" : "600201 - 产品类收入",
+      "accountto" : "600201 - 产品类收入"
+    },
+    "transactionPara" : {
+      "title" : "日记账",
+      "docnum" : "无",
+      "returnto" : "返回至日记账"
+    }
+  }
+
+}

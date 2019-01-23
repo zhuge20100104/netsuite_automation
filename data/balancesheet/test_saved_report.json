@@ -1,0 +1,41 @@
+{
+  "caseId": "test saved report",
+  "report":
+  {
+    "name": "中国资产负债表模板_中文",
+    "standardFilters": [
+      {
+        "label": "Subsidiary",
+        "text":"China BU"
+      },
+      {
+        "label": "As of",
+        "text":"Feb 2018"
+      }
+    ],
+    "customFilters":[
+      {
+        "label": "Location",
+        "filterOperator": "IN",
+        "text":[
+          "CN_BJ",
+          "CN_Loc"
+        ]
+      }
+    ],
+    "rows": [
+      {
+        "columnHeader":"FINANCIAL ROW",
+        "text":"Bank"
+      }
+    ],
+    "columns": [
+      {
+        "columnHeader":"期末余额 (AS OF FEB 2018)"
+      },
+      {
+        "columnHeader":"期初余额 (AS OF FEB 2018)"
+      }
+    ]
+  }
+}

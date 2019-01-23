@@ -1,0 +1,174 @@
+{
+  "file template": "SJJK0201~~已开发票传出\r\n1~~20150201~~20150228\r\n//发票1\r\n0~~0~~2~~{vatcode}~~{vatnumber}~~1~~20170630~~06~~{internalid}-1~~85.47~~0.17~~14.53~~TEST~~110229820423002~~Floor 35, China World Trade Center, Jianguomen Wai Da Jie, Beijing, 100004, 中国~~中国银行 23498723487234~~航天信息股份有限公司~~110101801030003~~营业地址 010-123456~~0099988776655544~~999947~~管理员2~~~~\r\n0~~CN标准AR测试~~~~~~1~~85.47~~0.17~~14.53~~85.47~~0~~0\r\n//发票2\r\n0~~0~~2~~{vatcode}~~{vatnumber}~~1~~20170630~~06~~{internalid}-2~~85.47~~0.17~~14.53~~TEST~~110229820423002~~Floor 35, China World Trade Center, Jianguomen Wai Da Jie, Beijing, 100004, 中国~~中国银行 23498723487234~~航天信息股份有限公司~~110101801030003~~营业地址 010-123456~~0099988776655544~~999947~~管理员2~~~~\r\n0~~CN标准AR测试~~~~~~1~~85.47~~0.17~~14.53~~85.47~~0~~0",
+
+  "test_case_14_2_1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "2/15/2018",
+      "dateto": "2/15/2018",
+      "tranid": "10881",
+      "to_tranid": "10881"
+    },
+    "data":[
+      { "main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "invoice", 
+        "trandate": "2/15/2018",
+        "externalid": "IN10881",
+        "tranid": "10881",
+        "location": "海淀",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+        "item": [
+          {"item": "Item-Description"},
+          {"item": "Item-Discount", "amount": "40"},
+          {"item": "Item-Markup", "amount": "200"},
+          {"item": "Item-Payment", "amount": "100"},
+          {"item": "Item-GiftCertificates", "amount": "8000", "giftcertfrom": "aa", "giftcertrecipientname": "BB", "giftcertrecipientemail": "aa.bb@oracle.com", "giftcertmessage":"Hola"},
+          {"item": "Item-Subtotal"}]
+      }
+    ],
+    "previewData":[
+      {
+        "docNum": "10881",
+        "tranType": "发票",
+        "internalId": "25866",
+        "customerName": "北京一般纳税公司01",
+        "docDate": "20180215",
+        "lineQuantity": 0,
+        "taxRegisNum": "123456789010001",
+        "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+        "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+        "remark": "",
+        "itemNameForSale": "",
+        "message": "",
+        "amount": 0,
+        "afterdiscountamt": 0,
+        "vatlineQuantity": 0,
+        "status": "",
+        "item": [
+
+        ],
+        "discountAmount": 0
+      }
+    ]
+  },
+  "test_case_14_2_2": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "Special VAT Invoice",
+      "datefrom": "2/15/2018",
+      "dateto": "2/15/2018",
+      "tranid": "10882",
+      "to_tranid": "10882"
+    },
+    "data":[
+      { "main": {
+        "entity": "北京一般纳税公司01",
+        "trantype": "invoice",
+        "trandate": "2/15/2018",
+        "externalid": "IN10882",
+        "tranid": "10882",
+        "location": "海淀",
+        "discountitem": "Item-Discount",
+        "custbody_cn_vat_invoice_type": "1"
+      },
+        "item": [
+        {"item": "Item-OtherCharge", "amount": "1000"},
+        {"item": "Item-Noninventory", "amount": "2000"},
+        {"item": "Item-Inventory", "amount": "3000"},
+        {"item": "Item-Service", "amount": "6000"},
+        {"item": "Item-KitPackage", "amount": "10000"},
+        {"item": "Item-OtherCharge", "amount": "1000"}
+        ]
+
+      }
+
+    ],
+    "previewData":[
+      {
+        "docNum": "10882",
+        "tranType": "发票",
+        "internalId": "25867",
+        "customerName": "北京一般纳税公司01",
+        "docDate": "20180215",
+        "lineQuantity": 6,
+        "taxRegisNum": "123456789010001",
+        "addressAndPhone": "中关村软件园24号楼T1海淀区北京 China 010-61065156",
+        "bankAccount": "中国银行 北京分行 1234 5678 9012 34567",
+        "remark": "",
+        "itemNameForSale": "详见销货清单",
+        "message": "",
+        "amount": 23000.0,
+        "afterdiscountamt": 22800.0,
+        "vatlineQuantity": 12,
+        "status": "",
+        "item": [
+          {
+            "itemName": "Item-OtherCharge",
+            "model": "",
+            "uom": "",
+            "quantity": 1.0,
+            "unitPrice": 1000.0,
+            "amount": 1000.0,
+            "taxRate": 0.17,
+            "discountAmount": 8.69
+          },
+          {
+            "itemName": "Item-Noninventory",
+            "model": "",
+            "uom": "",
+            "quantity": 1.0,
+            "unitPrice": 2000.0,
+            "amount": 2000.0,
+            "taxRate": 0.17,
+            "discountAmount": 17.39
+          },
+          {
+            "itemName": "Item-Inventory",
+            "model": "",
+            "uom": "",
+            "quantity": 1.0,
+            "unitPrice": 3000.0,
+            "amount": 3000.0,
+            "taxRate": 0.17,
+            "discountAmount": 26.09
+          },
+          {
+            "itemName": "Item-Service",
+            "model": "",
+            "uom": "",
+            "quantity": 1.0,
+            "unitPrice": 6000.0,
+            "amount": 6000.0,
+            "taxRate": 0.17,
+            "discountAmount": 52.17
+          },
+          {
+            "itemName": "Item-KitPackage",
+            "model": "",
+            "uom": "",
+            "quantity": 1.0,
+            "unitPrice": 10000.0,
+            "amount": 10000.0,
+            "taxRate": 0.17,
+            "discountAmount": 86.96
+          },
+          {
+            "itemName": "Item-OtherCharge",
+            "model": "",
+            "uom": "",
+            "quantity": 1.0,
+            "unitPrice": 1000.0,
+            "amount": 1000.0,
+            "taxRate": 0.17,
+            "discountAmount": 8.7
+          }
+        ],
+        "discountAmount": 200.0
+      }
+    ]
+  }
+
+}

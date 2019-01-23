@@ -1,0 +1,29 @@
+{
+  "caseId": "test 1.36.3.4",
+  "data": {
+    "item": [
+      {
+        "lineid": "1",
+        "itemold": "CFS Lot Numbered Inventory Item",
+        "cfsnew": "Other cash payments related to operating activities"
+      },
+      {
+        "lineid": "2",
+        "itemold": "T1 Non-Inventory for Resale",
+        "itemnew": "T1 Service for Resale"
+      }
+    ]
+  },
+  "expected": {
+    "item": [
+      {
+        "cfsold": "Taxes and surcharges refunds",
+        "cfsnew": "Other cash payments related to operating activities"
+      },
+      {
+        "cfsold": "",
+        "cfsnew": "Taxes and surcharges refunds"
+      }
+    ]
+  }
+}

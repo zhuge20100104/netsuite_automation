@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: eviware:soapui:4.5.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/eviware/soapui/4.5.0-SNAPSHOT/soapui-4.5.0-20180411.054347-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/eviware/soapui/4.5.0-SNAPSHOT/soapui-4.5.0-20180411.054347-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/eviware/soapui/4.5.0-SNAPSHOT/soapui-4.5.0-20180411.054347-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,23 @@
+2018-09-15 06:53:45,112 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - Start of: SuiteSetup(com.netsuite.chinalocalization.vat.p2.IssueChinaVATTest)
+2018-09-15 06:53:45,316 ERROR com.netsuite.testautomation.junit.runners.SuiteSetupRule - There was a problem while executing suite setup method.
+net.qaautomation.exceptions.TestCaseException: Unexpected Error
+Caused by: net.qaautomation.exceptions.SystemException: Chrome Driver Binary is not a file: lib/chromedriver-win.exe
+	at com.netsuite.testautomation.driver.SeleniumDriver.ensureChromeDriverBinaryPath(SeleniumDriver.java:2011)
+	at com.netsuite.testautomation.driver.SeleniumDriver.setupChromeDriver(SeleniumDriver.java:2216)
+	at com.netsuite.testautomation.driver.SeleniumDriver.initializeWebDriver(SeleniumDriver.java:2177)
+	at com.netsuite.testautomation.driver.SeleniumDriver.setBaseUrl(SeleniumDriver.java:164)
+	at com.netsuite.testautomation.aut.GenericWebApp.navigateTo(GenericWebApp.java:123)
+	at com.netsuite.testautomation.aut.GenericWebApp$navigateTo.call(Unknown Source)
+	at com.netsuite.base.lib.login.LoginUtil.logInViaForm(LoginUtil.groovy:56)
+	at com.netsuite.base.lib.login.LoginUtil.logInViaForm(LoginUtil.groovy:50)
+	at com.netsuite.base.lib.login.LoginUtil$logInViaForm$1.callCurrent(Unknown Source)
+	at com.netsuite.base.lib.login.LoginUtil.loginAndAnswerQuestion(LoginUtil.groovy:100)
+	at com.netsuite.base.lib.login.LoginUtil.loginAsRole(LoginUtil.groovy:291)
+	at com.netsuite.base.lib.login.LoginUtil$loginAsRole$0.call(Unknown Source)
+	at com.netsuite.chinalocalization.common.BaseAppTestSuite.login(BaseAppTestSuite.groovy:137)
+	at com.netsuite.chinalocalization.common.BaseAppTestSuite.setUpTestSuite(BaseAppTestSuite.groovy:80)
+	at com.netsuite.chinalocalization.vat.VATAppTestSuite.super$4$setUpTestSuite(VATAppTestSuite.groovy)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1218)
+	at com.netsuite.chinalocalization.vat.VATAppTestSuite.setUpTestSuite(VATAppTestSuite.groovy:39)
+2018-09-15 06:53:45,316 INFO  com.netsuite.testautomation.junit.runners.SuiteSetupRule - End of: SuiteSetup(com.netsuite.chinalocalization.vat.p2.IssueChinaVATTest)

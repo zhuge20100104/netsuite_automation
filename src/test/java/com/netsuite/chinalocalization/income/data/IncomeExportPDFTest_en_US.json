@@ -1,0 +1,21 @@
+{
+    "title": "IncomeStatement",
+    "location": "Location: ",
+    "department": "Department: ",
+    "class": "Class: ",
+    "PreparedBy": "Prepared by:",
+    "test_case_8_2_2_2": {
+        "filter": {
+            "filter": {
+                "reportName": "China Income Statement Testing Month",
+                "subsidiary": "中国 Income",
+                "period": "Jun 2017",
+                "unit": "Unit",
+                "location": "中国 Income华北区",
+                "department": "Income生产部",
+                "class": "智能手机"
+            }
+        }
+    }
+}
+

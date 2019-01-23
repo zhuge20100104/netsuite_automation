@@ -1,0 +1,202 @@
+{
+  "test case 1.46.1.1": {
+    "ui": [{
+      "main": {
+        "id": "CFS1.46.1.1",
+        "trantype": "journalentry",
+        "subsidiary": "China BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "item": [
+        {
+          "account": "10020104 银行存款 : 人民币 : 建行T1",
+          "debit": "200",
+          "custcol_cseg_cn_cfi": "Taxes and surcharges refunds"
+        },
+        {
+          "account": "10020103 银行存款 : 人民币 : 工行T1",
+          "debit": "500"
+        },
+        {
+          "account": "1105 Other Receivables",
+          "debit": "300"
+        },
+        {
+          "account": "1100 Accounts Receivable",
+          "credit": "1000",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        }
+      ]
+    }]
+  },
+  "test case 1.46.1.2": {
+    "data": [],
+    "ui": [{
+      "main": {
+        "id": "CFS1.46.1.2",
+        "trantype": "journalentry",
+        "subsidiary": "China BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "item": [
+        {
+          "account": "10020104 银行存款 : 人民币 : 建行T1",
+          "credit": "-100"
+        },
+        {
+          "account": "1100 Accounts Receivable",
+          "debit": "-10",
+          "custcol_cseg_cn_cfi": "Taxes and surcharges refunds"
+        },
+        {
+          "account": "1231 坏账准备",
+          "debit": "-30",
+          "custcol_cseg_cn_cfi": "Cash received from sales and services"
+        },
+        {
+          "account": "1090 Undeposited Funds",
+          "debit": "-56.5",
+          "custcol_cseg_cn_cfi": "Cash received from withdraw of investments"
+        }
+      ]
+    }]
+  },
+  "test case 1.46.1.3": {
+    "data": [],
+    "ui": [{
+      "main": {
+        "id": "CFS1.46.1.3",
+        "trantype": "journalentry",
+        "subsidiary": "China BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "item": [
+        {
+          "id": "0",
+          "account": "1100 Accounts Receivable",
+          "debitOld": "20",
+          "debitNew": "10",
+          "custcol_cseg_cn_cfi": "Cash paid to and for employees"
+        },
+        {
+          "id": "1",
+          "account": "1100 Accounts Receivable",
+          "debitOld": "-10",
+          "debitNew": "10",
+          "custcol_cseg_cn_cfi": "Taxes and surcharges refunds"
+        },
+        {
+          "id": "2",
+          "account": "1231 坏账准备",
+          "debit": "30",
+          "credit": "30",
+          "custcol_cseg_cn_cfi": "Taxes and surcharges refunds"
+        },
+        {
+          "id": "3",
+          "account": "1090 Undeposited Funds",
+          "debit": "56.5",
+          "credit": "-56.5",
+          "custcol_cseg_cn_cfi": "Cash paid to and for employees"
+        }
+      ]
+    }]
+  },
+  "test case 1.46.1.4": {
+    "data": [],
+    "ui": [{
+      "main": {
+        "id": "CFS1.46.1.4",
+        "trantype": "journalentry",
+        "subsidiary": "China BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Euro",
+        "exchangerate": "1"
+      },
+      "item": [
+        {
+          "id": "0",
+          "account": "1100 Accounts Receivable",
+          "creditOld": "1000",
+          "creditNew": "-1000",
+          "custcol_cseg_cn_cfi": "Taxes and surcharges refunds"
+        },
+        {
+          "id": "1",
+          "account": "1100 Accounts Receivable",
+          "creditOld": "-2000",
+          "creditNew": "-1000",
+          "custcol_cseg_cn_cfi": "Cash paid to and for employees"
+        },
+        {
+          "id": "2",
+          "account": "1231 坏账准备",
+          "debit": "-3000",
+          "credit": "-3000",
+          "custcol_cseg_cn_cfi": "Taxes and surcharges refunds"
+        },
+        {
+          "id": "3",
+          "account": "1090 Undeposited Funds",
+          "debit": "6000",
+          "credit": "-6000",
+          "custcol_cseg_cn_cfi": "Cash paid to and for employees"
+        }
+      ]
+    }]
+  },
+  "test case 1.46.2.1": {
+    "data": [
+      {
+        "main": {
+          "trantype":"journalentry",
+          "subsidiary":"Parent Company : China BU",
+          "trandate":"6/27/2016",
+          "postingperiod":"Jun 2016",
+          "currency":"Yuan",
+          "exchangerate":"1"
+        },
+        "line":[
+          {"account":"10020104 银行存款 : 人民币 : 建行T1","debit":"200","custcol_cseg_cn_cfi":"Taxes and surcharges refunds"},
+          {"account":"10020103 银行存款 : 人民币 : 工行T1","debit":"500"},
+          {"account":"1105 Other Receivables","debit":"300"},
+          {"account":"1100 Accounts Receivable","credit":"1000","custcol_cseg_cn_cfi":"Cash received from sales and services"}
+        ]
+      }
+    ],
+    "ui": [{
+      "main": {
+        "id": "CFS1.46.2.1",
+        "trantype": "journalentry",
+        "subsidiary": "China BU",
+        "trandate": "6/27/2016",
+        "postingperiod": "Jun 2016",
+        "currency": "Yuan",
+        "exchangerate": "1"
+      },
+      "item": [
+        {
+          "account": "1090 Undeposited Funds",
+          "debit": "20",
+          "credit": "20",
+          "zero": "0"
+        },
+        {
+          "account": "1090 Undeposited Funds",
+          "debit": "-20",
+          "credit": "-20"
+        }
+      ]
+    }]
+  }
+}

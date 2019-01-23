@@ -1,0 +1,59 @@
+{
+  "test case 6.4.7.1": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票"
+    },
+    "data": [
+      {
+        "main": {
+          "trantype": "creditmemo",
+          "entity": "北京一般纳税公司01",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1",
+            "amount": "500"
+          }
+        ]
+      }
+    ],
+    "expected": {
+      "message": "该发票无红字发票信息表编号或备注栏格式不正确。"
+    }
+  },
+  "test case 6.4.7.2": {
+    "filter": {
+      "subsidiary": "北京VAT",
+      "invoicetype": "增值税专用发票"
+    },
+    "data": [
+      {
+        "main": {
+          "trantype": "cashrefund",
+          "entity": "北京一般纳税公司01",
+          "location": "海淀",
+          "custbody_cn_vat_invoice_type": "1"
+        },
+        "item": [
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1",
+            "amount": "500"
+          },
+          {
+            "item": "思科CiscoPhone 7970",
+            "quantity": "1",
+            "amount": "500"
+          }
+        ]
+      }
+    ],
+    "expected": {
+      "message": "该发票无红字发票信息表编号或备注栏格式不正确。"
+    }
+  }
+}
